@@ -90,7 +90,7 @@
   </div>
   <section><div id="content"><div class="empty">Загрузка данных…</div></div></section>
 </main>
-<footer class="footer">Команда в игре: <code>/suit packname:heroname</code> · Данные: <code>heroes_list.json</code> · Полный список: <a style="color:var(--blue)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a></footer>
+<footer class="footer">Команда в игре: <code>/suit packname:heroname</code> · Данные: <code>heroes_list.json</code> · Полный список: <a style="color:var(--blue)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a> · <a style="color:var(--blue)" href="tests.html">автотесты</a></footer>
 <div class="toast" id="toast">Скопировано</div>
 <script>
 const DISPLAY = {"fiskheroes": "FiskHeroes", "misc": "Miscellaneous", "morningstar": "Morningstar", "tgheroes": "TGHeroes", "8thpack": "8thPack", "dhhp": "DERPZ Heroes", "ironmaniac": "Iron Maniac", "jmctheroes": "JMCT Heroes", "nameless": "Nameless Heroes", "ninjago": "Ninjago", "runnyhero": "RunnyHeroes", "sabri": "Sabri Enhanced", "secretheroes": "SecretHeroes", "shadows": "Shadows", "sind": "SIND Iron Man", "skarlet": "Skarlet", "stellar": "StellarHeroes", "pwt": "The Pack With Things", "tmf": "TMF", "transformers_pack": "Transformers Pack", "unconventional": "Unconventional"};
@@ -151,7 +151,8 @@ function renderHeroes(items){if(!items.length) return '<div class="empty">Нич
 function renderPacks(items){if(!items.length) return '<div class="empty">Паки не найдены по текущему фильтру.</div>';return `<div class="grid">${items.map(p=>`<article class="pack-card"><div class="colorbar" style="background:${p.color}"></div><div class="topline"><div><h3>${escapeHtml(p.display)}</h3><div class="mini">${escapeHtml(p.key)}</div></div><div class="count" style="color:${p.color}">${p.count}</div></div><div class="mini">${escapeHtml(p.source || 'Источник не указан')}</div><div class="mini">Примеры: ${p.heroes.slice(0,3).map(h=>escapeHtml(h.name)).join(', ')}</div><div class="actions"><button class="btn" data-packjump="${p.key}">Показать героев</button></div></article>`).join('')}</div>`}
 function render(){
   const searching = !!norm(state.query);
-  byId('landing').style.display = searching ? 'none' : '';
+  const pristine = !searching && state.pack==='all' && state.view==='heroes'; // landing only in the initial state
+  byId('landing').style.display = pristine ? '' : 'none';
   byId('searchBox').classList.toggle('has-q', searching);
   const heroes=filteredHeroes();const packs=filteredPacks();
   byId('statHeroes').textContent=state.data.meta.total;byId('statPacks').textContent=state.data.packs.length;
@@ -159,8 +160,10 @@ function render(){
     ? `Найдено: ${state.view==='heroes'?heroes.length:packs.length}`
     : (state.view==='heroes'?`Показано ${heroes.length} из ${state.data.meta.total} героев`:`Показано ${packs.length} из ${state.data.packs.length} паков`);
   renderPackTabs();
-  if(!searching){ // pack cards pinned to the top of the landing
+  if(pristine){ // pack cards pinned to the top of the landing
     byId('homePacks').innerHTML = renderPacks(state.data.packs);
+  } else if(byId('homePacks').innerHTML){ // avoid stale duplicate cards outside the landing
+    byId('homePacks').innerHTML = '';
   }
   const content=byId('content');
   content.innerHTML=state.view==='heroes'?renderHeroes(heroes):renderPacks(packs);

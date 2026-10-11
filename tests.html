@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hero Atlas — автотесты</title>
+<style>
+  body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#0b101b;color:#f3f7ff;padding:24px}
+  h1{margin:0 0 6px;font-size:22px} .sub{color:#9db0c9;margin:0 0 18px;font-size:13px}
+  #app{width:100%;height:640px;border:1px solid #2c3d57;border-radius:12px;background:#0b101b}
+  ol{padding-left:22px} li{margin:4px 0} li b{font-family:ui-monospace,Consolas,monospace;font-size:12px}
+  .pass{color:#8ce3bb} .fail{color:#ff8fae}
+  #summary{margin-top:14px;padding:12px 14px;border-radius:12px;border:1px solid #2c3d57;display:none}
+  .ok{border-color:#3f7d5f}.bad{border-color:#a34}
+</style>
+</head>
+<body>
+<h1>Hero Atlas — автотесты</h1>
+<p class="sub">Страница прогоняет все сценарии каталога внутри iframe с <code>index.html</code> и печатает результат. Открой этот файл на любом деплое — сервер и инструменты не нужны.</p>
+<iframe id="app" src="index.html"></iframe>
+<ol id="results"></ol>
+<div id="summary"></div>
+<script>
+const app = document.getElementById('app');
+const resultsEl = document.getElementById('results');
+const summaryEl = document.getElementById('summary');
+const tick = (ms=120) => new Promise(r => setTimeout(r, ms));
+const waitFor = async (fn, timeout=8000) => {
+  const t0 = Date.now();
+  while (Date.now() - t0 < timeout) { try { const v = fn(); if (v) return v; } catch(e){} await tick(100); }
+  return null;
+};
+
+async function runSuite(){
+  const w = app.contentWindow, d = w.document;
+  const $ = s => d.querySelector(s), $$ = s => [...d.querySelectorAll(s)];
+  const results = [];
+  const ok = (name, cond, detail='') => { results.push({name, pass:!!cond, detail}); };
+
+  // wait for app init (DOM-based: `let state` is not reachable from outside)
+  const ready = await waitFor(() => $$('.row').length === 535);
+  ok('приложение загрузилось, 535 строк отрендерено', !!ready, ready ? '' : 'init не завершился');
+
+  // stub toast before copy tests
+  w.toast = msg => { w.__lastToast = msg; };
+
+  // 1. initial state
+  ok('статистика: 535 героев / 21 пак', $('#statHeroes').textContent === '535' && $('#statPacks').textContent === '21');
+  ok('лендинг виден в стартовом состоянии', d.getElementById('landing').style.display !== 'none');
+  ok('21 карточка пака на лендинге', $$('#homePacks .pack-card').length === 21);
+  ok('23 кнопки в фильтрах (Все + 21 пак + Паки)', $$('#packTabs .tab').length === 23);
+
+  // 2. THE BUG: "Показать героев" from the landing
+  $$('#homePacks [data-packjump="pwt"]')[0].click();
+  await tick();
+  ok('клик «Показать героев» на лендинге скрывает лендинг', d.getElementById('landing').style.display === 'none');
+  ok('после клика виден список пака pwt (15 строк)', $$('.row').length === 15);
+  ok('фильтр «The Pack With Things» активен', ($('.tab.active')||{textContent:''}).textContent.includes('The Pack With Things'));
+  ok('каждая строка содержит команду /suit pwt:', $$('.row .r-cmd').every(c => c.textContent.startsWith('/suit pwt:')));
+
+  // 3. «Все»
+  $('[data-pack="all"]').click(); await tick();
+  ok('фильтр «Все» возвращает 535 строк', $$('.row').length === 535);
+
+  // 4. packs view
+  $('[data-pack="__packs__"]').click(); await tick();
+  ok('кнопка «📦 Паки» показывает 21 карточку', $$('#content .pack-card').length === 21);
+  ok('лендинг скрыт вне стартового состояния (нет дублей карточек)', d.getElementById('landing').style.display === 'none' && $$('.pack-card').length === 21);
+  ok('счётчик паков: «Показано 21 из 21 паков»', $('#counter').textContent === 'Показано 21 из 21 паков');
+  $('[data-pack="all"]').click(); await tick();
+
+  // 5. search: names, IDs, aliases (RU/EN/acronyms)
+  const search = async q => { const i = $('#search'); i.value = q; i.dispatchEvent(new w.Event('input', {bubbles:true})); await tick(150); };
+  const ids = () => $$('.r-id').map(e => e.textContent);
+
+  await search('one punch man');
+  ok('«one punch man» → 2 результата', $$('.row').length === 2);
+  ok('«one punch man» находит Saitama и Sukuna', ids().includes('secretheroes:saitama') && ids().includes('pwt:sukuna'));
+  ok('счётчик в режиме поиска: «Найдено: 2»', $('#counter').textContent === 'Найдено: 2');
+  ok('лендинг скрыт во время поиска', d.getElementById('landing').style.display === 'none');
+
+  await search('человек-паук');
+  ok('«человек-паук» → >= 10 результатов (RU-алиас)', $$('.row').length >= 10);
+
+  await search('росомаха');
+  ok('«росомаха» находит Wolverine в tgheroes', ids().includes('tgheroes:wolverine'));
+
+  await search('железный человек марк 42');
+  ok('«железный человек марк 42» → 5 вариантов', $$('.row').length === 5);
+
+  await search('оптимус прайм');
+  ok('«оптимус прайм» → Transformers Pack', ids().includes('transformers_pack:g1_optimus_prime'));
+
+  await search('tgheroes:thor');
+  ok('поиск по точному ID → 1 результат', $$('.row').length === 1 && ids()[0] === 'tgheroes:thor');
+
+  await search('zzzz_no_such_hero');
+  ok('пустой результат показывает заглушку', $$('.empty').length === 1 && $$('.row').length === 0);
+
+  // 6. tooltip with aliases
+  await search('one punch man'); await tick();
+  const tip = ($('.row .r-name') || {getAttribute:()=>''}).getAttribute('title') || '';
+  ok('тултип строки содержит «Также ищется как»', tip.includes('Также ищется как'));
+
+  // 7. clear button
+  $('#clearBtn').click(); await tick();
+  ok('✕ очищает поиск и возвращает лендинг', d.getElementById('landing').style.display !== 'none' && $$('.row').length === 535);
+
+  // 8. chips
+  $('[data-chip="sukuna"]') ? null : null;
+  const chip = $('[data-chip]');
+  const chipQ = chip ? chip.dataset.chip : '';
+  if (chip) { chip.click(); await tick(); }
+  ok('чипс применяет свой запрос', chipQ !== '' && $('#search').value === chipQ && $$('.row').length > 0);
+  $('#clearBtn').click(); await tick();
+
+  // 9. copy wiring (toast stubbed)
+  await w.copy('/suit test:hero');
+  ok('копирование вызывает тост с командой', String(w.__lastToast).includes('/suit test:hero'));
+
+  // 10. data consistency from the UI side
+  ok('все отрендеренные ID уникальны', new Set($$('.row .r-id').map(e => e.textContent)).size === 535);
+  ok('команды = "/suit " + ID', $$('.row .r-cmd').every((c, i) => c.textContent === '/suit ' + $$('.row .r-id')[i].textContent));
+
+  // render results
+  resultsEl.innerHTML = results.map(r =>
+    `<li class="${r.pass?'pass':'fail'}"><b>${r.pass?'PASS':'FAIL'}</b> ${r.name}${r.detail?` — <span style="color:#9db0c9">${r.detail}</span>`:''}</li>`).join('');
+  const pass = results.filter(r => r.pass).length;
+  const allPass = pass === results.length;
+  summaryEl.style.display = 'block';
+  summaryEl.className = allPass ? 'ok' : 'bad';
+  summaryEl.innerHTML = allPass
+    ? `<b class="pass">PASSED</b> — ${pass}/${results.length} проверок пройдено`
+    : `<b class="fail">FAILED</b> — ${pass}/${results.length} пройдено, ошибки: ${results.filter(r=>!r.pass).map(r=>r.name).join('; ')}`;
+  document.title = `Тесты ${allPass?'PASSED':'FAILED'}: ${pass}/${results.length}`;
+  window.__ALL_PASS = allPass;
+}
+
+// wait for the iframe document to be the APP (not the initial about:blank), then run
+(async function boot(){
+  while(!(app.contentDocument && app.contentDocument.readyState === 'complete' && app.contentDocument.getElementById('search'))) await tick(100);
+  try { await runSuite(); } catch (e) {
+    summaryEl.style.display = 'block';
+    summaryEl.className = 'bad';
+    summaryEl.textContent = 'Ошибка автотестов: ' + (e && (e.stack || e.message));
+    document.title = 'Тесты FAILED (error)';
+  }
+})();
+</script>
+</body>
+</html>
