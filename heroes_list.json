@@ -1,0 +1,2319 @@
+{
+  "meta": {
+    "mod": "Fisk's Superheroes (FiskHeroes) 2.4.0, Minecraft 1.7.10 Forge",
+    "command_usage": "/suit <packname>:<heroname>",
+    "generated": "2026-10-11",
+    "total": 535,
+    "packs": 21
+  },
+  "packs": {
+    "fiskheroes": {
+      "sources": [
+        "FiskHeroes-1.7.10-2.4.0.jar"
+      ],
+      "count": 67,
+      "heroes": [
+        {
+          "id": "fiskheroes:agent_liberty",
+          "name": "Agent Liberty"
+        },
+        {
+          "id": "fiskheroes:ant_man",
+          "name": "Ant-Man"
+        },
+        {
+          "id": "fiskheroes:anti_monitor",
+          "name": "Anti-Monitor"
+        },
+        {
+          "id": "fiskheroes:arrow",
+          "name": "Arrow"
+        },
+        {
+          "id": "fiskheroes:arsenal",
+          "name": "Arsenal"
+        },
+        {
+          "id": "fiskheroes:atom",
+          "name": "Atom"
+        },
+        {
+          "id": "fiskheroes:atom_smasher",
+          "name": "Atom-Smasher"
+        },
+        {
+          "id": "fiskheroes:august_heart_comics",
+          "name": "August Heart"
+        },
+        {
+          "id": "fiskheroes:batman_dceu",
+          "name": "Batman"
+        },
+        {
+          "id": "fiskheroes:black_canary",
+          "name": "Black Canary/Laurel Lance"
+        },
+        {
+          "id": "fiskheroes:black_canary_dinah",
+          "name": "Black Canary/Dinah Drake"
+        },
+        {
+          "id": "fiskheroes:black_lightning",
+          "name": "Black Lightning"
+        },
+        {
+          "id": "fiskheroes:black_manta_dceu",
+          "name": "Black Manta"
+        },
+        {
+          "id": "fiskheroes:black_panther",
+          "name": "Black Panther"
+        },
+        {
+          "id": "fiskheroes:captain_america",
+          "name": "Captain America/Steve Rogers"
+        },
+        {
+          "id": "fiskheroes:captain_america_sam",
+          "name": "Captain America/Sam Wilson"
+        },
+        {
+          "id": "fiskheroes:captain_cold",
+          "name": "Captain Cold"
+        },
+        {
+          "id": "fiskheroes:chronos",
+          "name": "Chronos"
+        },
+        {
+          "id": "fiskheroes:citizen_steel",
+          "name": "Citizen Steel"
+        },
+        {
+          "id": "fiskheroes:colossus_xmen",
+          "name": "Colossus"
+        },
+        {
+          "id": "fiskheroes:crossbones",
+          "name": "Crossbones"
+        },
+        {
+          "id": "fiskheroes:dark_archer",
+          "name": "Dark Archer"
+        },
+        {
+          "id": "fiskheroes:deadpool_xmen",
+          "name": "Deadpool"
+        },
+        {
+          "id": "fiskheroes:deathstroke_dceu",
+          "name": "Deathstroke"
+        },
+        {
+          "id": "fiskheroes:doctor_octopus",
+          "name": "Doctor Octopus"
+        },
+        {
+          "id": "fiskheroes:doctor_strange",
+          "name": "Doctor Strange"
+        },
+        {
+          "id": "fiskheroes:falcon",
+          "name": "Falcon"
+        },
+        {
+          "id": "fiskheroes:firestorm",
+          "name": "Firestorm/Ronnie Raymond"
+        },
+        {
+          "id": "fiskheroes:firestorm_jax",
+          "name": "Firestorm/Jax Jackson"
+        },
+        {
+          "id": "fiskheroes:geomancer",
+          "name": "Geomancer"
+        },
+        {
+          "id": "fiskheroes:godspeed_comics",
+          "name": "Godspeed"
+        },
+        {
+          "id": "fiskheroes:green_arrow",
+          "name": "Green Arrow"
+        },
+        {
+          "id": "fiskheroes:guardian",
+          "name": "Guardian"
+        },
+        {
+          "id": "fiskheroes:harbinger",
+          "name": "Harbinger"
+        },
+        {
+          "id": "fiskheroes:heatwave",
+          "name": "Heatwave"
+        },
+        {
+          "id": "fiskheroes:iron_man",
+          "name": "Iron Man"
+        },
+        {
+          "id": "fiskheroes:iron_man_mk50",
+          "name": "Iron Man/Mark 50"
+        },
+        {
+          "id": "fiskheroes:iron_man_mk85",
+          "name": "Iron Man/Mark 85"
+        },
+        {
+          "id": "fiskheroes:kid_flash",
+          "name": "Kid Flash"
+        },
+        {
+          "id": "fiskheroes:killer_frost",
+          "name": "Killer Frost"
+        },
+        {
+          "id": "fiskheroes:martian_manhunter",
+          "name": "Martian Manhunter"
+        },
+        {
+          "id": "fiskheroes:martian_manhunter_comics",
+          "name": "Martian Manhunter"
+        },
+        {
+          "id": "fiskheroes:mysterio",
+          "name": "Mysterio"
+        },
+        {
+          "id": "fiskheroes:obsidian",
+          "name": "Obsidian"
+        },
+        {
+          "id": "fiskheroes:prometheus",
+          "name": "Prometheus"
+        },
+        {
+          "id": "fiskheroes:reverse_flash",
+          "name": "Reverse-Flash"
+        },
+        {
+          "id": "fiskheroes:rip_hunter",
+          "name": "Rip Hunter"
+        },
+        {
+          "id": "fiskheroes:rupture",
+          "name": "Rupture"
+        },
+        {
+          "id": "fiskheroes:savitar",
+          "name": "Savitar"
+        },
+        {
+          "id": "fiskheroes:senor_cactus",
+          "name": "Se\\u00f1or Cactus"
+        },
+        {
+          "id": "fiskheroes:shazam_dceu",
+          "name": "Shazam"
+        },
+        {
+          "id": "fiskheroes:spectre",
+          "name": "Spectre"
+        },
+        {
+          "id": "fiskheroes:spider_man",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "fiskheroes:spider_man_ps4",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "fiskheroes:spider_man_raimi",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "fiskheroes:spider_man_webb",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "fiskheroes:spodermen",
+          "name": "Spodermen"
+        },
+        {
+          "id": "fiskheroes:the_flash",
+          "name": "The Flash/Barry Allen"
+        },
+        {
+          "id": "fiskheroes:the_flash_hunter",
+          "name": "The Flash/Hunter Zolomon"
+        },
+        {
+          "id": "fiskheroes:the_flash_jay",
+          "name": "The Flash/Jay Garrick"
+        },
+        {
+          "id": "fiskheroes:the_monitor",
+          "name": "The Monitor"
+        },
+        {
+          "id": "fiskheroes:the_rival",
+          "name": "The Rival"
+        },
+        {
+          "id": "fiskheroes:the_tick",
+          "name": "The Tick"
+        },
+        {
+          "id": "fiskheroes:trajectory",
+          "name": "Trajectory"
+        },
+        {
+          "id": "fiskheroes:vision",
+          "name": "Vision"
+        },
+        {
+          "id": "fiskheroes:wild_dog",
+          "name": "Wild Dog"
+        },
+        {
+          "id": "fiskheroes:zoom",
+          "name": "Zoom"
+        }
+      ]
+    },
+    "misc": {
+      "sources": [
+        "Miscellaneous-Heropack v3.5.zip"
+      ],
+      "count": 21,
+      "heroes": [
+        {
+          "id": "misc:black_adam",
+          "name": "Black Adam"
+        },
+        {
+          "id": "misc:charles_xavier",
+          "name": "Charles Xavier"
+        },
+        {
+          "id": "misc:choso",
+          "name": "Choso"
+        },
+        {
+          "id": "misc:eren_yeager",
+          "name": "Eren Yeager"
+        },
+        {
+          "id": "misc:ezio",
+          "name": "Ezio"
+        },
+        {
+          "id": "misc:infinity_gauntlet",
+          "name": "Thanos"
+        },
+        {
+          "id": "misc:invincible",
+          "name": "Invincible"
+        },
+        {
+          "id": "misc:invincible_variants",
+          "name": "Invincible Variants"
+        },
+        {
+          "id": "misc:john_wick",
+          "name": "John Wick"
+        },
+        {
+          "id": "misc:master_chief",
+          "name": "Master Chief"
+        },
+        {
+          "id": "misc:metro_man",
+          "name": "Metro Man"
+        },
+        {
+          "id": "misc:mind_stone",
+          "name": "Mind Stone"
+        },
+        {
+          "id": "misc:power_stone",
+          "name": "Power Stone"
+        },
+        {
+          "id": "misc:powerplex",
+          "name": "Powerplex"
+        },
+        {
+          "id": "misc:punisher",
+          "name": "The Punisher"
+        },
+        {
+          "id": "misc:reality_stone",
+          "name": "Reality Stone"
+        },
+        {
+          "id": "misc:reverse_flash",
+          "name": "Reverse-Flash"
+        },
+        {
+          "id": "misc:soul_stone",
+          "name": "Soul Stone"
+        },
+        {
+          "id": "misc:space_stone",
+          "name": "Space Stone"
+        },
+        {
+          "id": "misc:sunspot",
+          "name": "Sunspot"
+        },
+        {
+          "id": "misc:time_stone",
+          "name": "Time Stone"
+        }
+      ]
+    },
+    "morningstar": {
+      "sources": [
+        "morningstar_heropack-1.0.0.zip"
+      ],
+      "count": 11,
+      "heroes": [
+        {
+          "id": "morningstar:batman_arkham",
+          "name": "Batman/Bruce Wayne"
+        },
+        {
+          "id": "morningstar:flash_earth90",
+          "name": "The Flash/Barry Allen"
+        },
+        {
+          "id": "morningstar:flash_normal",
+          "name": "The Flash/Wally West"
+        },
+        {
+          "id": "morningstar:flash_rebirth",
+          "name": "The Flash/Wally West"
+        },
+        {
+          "id": "morningstar:ghost_rider_revamped",
+          "name": "Ghost Rider/Johnny Blaze"
+        },
+        {
+          "id": "morningstar:iceman_comic",
+          "name": "Iceman/Robert Drake"
+        },
+        {
+          "id": "morningstar:omni_man",
+          "name": "Omni-Man/Nolan Grayson"
+        },
+        {
+          "id": "morningstar:punisher_comic",
+          "name": "Punisher/Frank Castle"
+        },
+        {
+          "id": "morningstar:spiderman_comic",
+          "name": "Spider-Man/Peter Parker"
+        },
+        {
+          "id": "morningstar:spiderman_merchandise",
+          "name": "Spider-Man/Peter Parker"
+        },
+        {
+          "id": "morningstar:superman_comic",
+          "name": "Superman/Clark Kent"
+        }
+      ]
+    },
+    "tgheroes": {
+      "sources": [
+        "tgheroes5.0.0.zip"
+      ],
+      "count": 69,
+      "heroes": [
+        {
+          "id": "tgheroes:abomation",
+          "name": "Abomination/Emil Blonsky"
+        },
+        {
+          "id": "tgheroes:angel",
+          "name": "Angel/Archangel"
+        },
+        {
+          "id": "tgheroes:ant_man",
+          "name": "Ant-Man/Scott Lang"
+        },
+        {
+          "id": "tgheroes:apocalypse",
+          "name": "Apocalypse/En Sabah Nur"
+        },
+        {
+          "id": "tgheroes:beast",
+          "name": "Beast/Henry McCoy"
+        },
+        {
+          "id": "tgheroes:black_panther",
+          "name": "Black Panther/T'Challa"
+        },
+        {
+          "id": "tgheroes:black_widow",
+          "name": "Black Widow/Natasha Romanoff"
+        },
+        {
+          "id": "tgheroes:bucky",
+          "name": "Winter Soldier"
+        },
+        {
+          "id": "tgheroes:bunshee",
+          "name": "Banshee/Sean Cassidy"
+        },
+        {
+          "id": "tgheroes:cable",
+          "name": "Cable/Nathan Summers"
+        },
+        {
+          "id": "tgheroes:cap",
+          "name": "Captain America"
+        },
+        {
+          "id": "tgheroes:cap_marvel",
+          "name": "Captain Marvel/Carol Danvers"
+        },
+        {
+          "id": "tgheroes:cyclops",
+          "name": "Cyclops/Scott Summers"
+        },
+        {
+          "id": "tgheroes:deadpool",
+          "name": "Deadpool/Wade Wilson"
+        },
+        {
+          "id": "tgheroes:doctor_doom",
+          "name": "Doctor Doom/Victor Von Doom"
+        },
+        {
+          "id": "tgheroes:emma_frost",
+          "name": "Emma Frost"
+        },
+        {
+          "id": "tgheroes:fff",
+          "name": "Fin Fang Foom"
+        },
+        {
+          "id": "tgheroes:galactus",
+          "name": "Galactus/Galan"
+        },
+        {
+          "id": "tgheroes:gambit",
+          "name": "Gambit/Remy LeBeau"
+        },
+        {
+          "id": "tgheroes:ghost",
+          "name": "Ghost/Ava Starr"
+        },
+        {
+          "id": "tgheroes:hawkeye",
+          "name": "Hawkeye/Clint Barton"
+        },
+        {
+          "id": "tgheroes:hela",
+          "name": "Hela"
+        },
+        {
+          "id": "tgheroes:hulk",
+          "name": "Hulk/Bruce Banner"
+        },
+        {
+          "id": "tgheroes:human_torch",
+          "name": "Human Torch"
+        },
+        {
+          "id": "tgheroes:iceman",
+          "name": "Iceman/Robert Drake"
+        },
+        {
+          "id": "tgheroes:infinity_gauntlet",
+          "name": "Infinity"
+        },
+        {
+          "id": "tgheroes:invisible_woman",
+          "name": "Invisible Woman/Susan Storm"
+        },
+        {
+          "id": "tgheroes:ironman",
+          "name": "Iron Man/Tony Stark"
+        },
+        {
+          "id": "tgheroes:jean",
+          "name": "Jean Grey"
+        },
+        {
+          "id": "tgheroes:jubilee",
+          "name": "Jubilee"
+        },
+        {
+          "id": "tgheroes:jugger",
+          "name": "Juggernaut/Cain Marko"
+        },
+        {
+          "id": "tgheroes:kang",
+          "name": "Kang the Conqueror"
+        },
+        {
+          "id": "tgheroes:kitty_pryde",
+          "name": "Kitty Pryde"
+        },
+        {
+          "id": "tgheroes:loki",
+          "name": "Loki/Loki Laufeyson"
+        },
+        {
+          "id": "tgheroes:madelyne",
+          "name": "Goblin Queen/Madelyne Pryor"
+        },
+        {
+          "id": "tgheroes:magik",
+          "name": "Magik/Illyana Rasputina"
+        },
+        {
+          "id": "tgheroes:magneto",
+          "name": "Magneto/Erik Lehnsherr"
+        },
+        {
+          "id": "tgheroes:mandarin",
+          "name": "Mandarin"
+        },
+        {
+          "id": "tgheroes:modok",
+          "name": "M.O.D.O.K. /George Tarleton"
+        },
+        {
+          "id": "tgheroes:mr_fantastic",
+          "name": "Mister Fantastic/Reed Richards"
+        },
+        {
+          "id": "tgheroes:namor",
+          "name": "Namor"
+        },
+        {
+          "id": "tgheroes:nightcrawler",
+          "name": "Nightcrawler/Kurt Wagner"
+        },
+        {
+          "id": "tgheroes:omega_red",
+          "name": "Omega Red/Arkady Rossovich"
+        },
+        {
+          "id": "tgheroes:proff_x",
+          "name": "Professor X/Charles Xavier"
+        },
+        {
+          "id": "tgheroes:psylocke",
+          "name": "Psylocke/Elizabeth Braddock"
+        },
+        {
+          "id": "tgheroes:quicksilver",
+          "name": "Quicksilver/Pietro Maximoff"
+        },
+        {
+          "id": "tgheroes:red_hulk",
+          "name": "Red Hulk/Thaddeus Ross"
+        },
+        {
+          "id": "tgheroes:red_skull",
+          "name": "Red Skull/Johann Shmidt"
+        },
+        {
+          "id": "tgheroes:rescue",
+          "name": "Rescue/Pepper Potts"
+        },
+        {
+          "id": "tgheroes:rogue",
+          "name": "Rogue/Anna Marie"
+        },
+        {
+          "id": "tgheroes:s_witch",
+          "name": "Scarlet Witch/Wanda Maximoff"
+        },
+        {
+          "id": "tgheroes:sabertooth",
+          "name": "Sabretooth/Victor Creed"
+        },
+        {
+          "id": "tgheroes:sentinel",
+          "name": "Sentinel"
+        },
+        {
+          "id": "tgheroes:sentry",
+          "name": "Sentry/Robert Reynolds"
+        },
+        {
+          "id": "tgheroes:she_hulk",
+          "name": "She-Hulk/Jennifer Walters"
+        },
+        {
+          "id": "tgheroes:silver_surfer",
+          "name": "Silver Surfer/Norrin Radd"
+        },
+        {
+          "id": "tgheroes:storm",
+          "name": "Storm/Ororo Munroe"
+        },
+        {
+          "id": "tgheroes:strange",
+          "name": "Doctor Strange/Stephen Strange"
+        },
+        {
+          "id": "tgheroes:taskmaster",
+          "name": "Taskmaster/Anthony Masters"
+        },
+        {
+          "id": "tgheroes:thanos",
+          "name": "Thanos"
+        },
+        {
+          "id": "tgheroes:thing",
+          "name": "The Thing/Ben Grimm"
+        },
+        {
+          "id": "tgheroes:thor",
+          "name": "Thor Odinson"
+        },
+        {
+          "id": "tgheroes:ultron",
+          "name": "Ultron"
+        },
+        {
+          "id": "tgheroes:vision",
+          "name": "Vision"
+        },
+        {
+          "id": "tgheroes:war_mach",
+          "name": "War Machine/James Rhodes"
+        },
+        {
+          "id": "tgheroes:wasp",
+          "name": "Wasp/Hope Van Dyne"
+        },
+        {
+          "id": "tgheroes:wolverine",
+          "name": "Wolverine/James Howlett 'Logan'"
+        },
+        {
+          "id": "tgheroes:x_23",
+          "name": "X-23/Laura Kinney"
+        },
+        {
+          "id": "tgheroes:yellow_jacket",
+          "name": "Yellowjacket/Darren Cross"
+        }
+      ]
+    },
+    "8thpack": {
+      "sources": [
+        "8thpack3.1.2.zip"
+      ],
+      "count": 7,
+      "heroes": [
+        {
+          "id": "8thpack:genji",
+          "name": "Genji"
+        },
+        {
+          "id": "8thpack:killercroc",
+          "name": "Killer Croc"
+        },
+        {
+          "id": "8thpack:nebula",
+          "name": "Nebula"
+        },
+        {
+          "id": "8thpack:phaseshifter",
+          "name": "Phase Shift Pilot"
+        },
+        {
+          "id": "8thpack:pilote",
+          "name": "Jack Cooper"
+        },
+        {
+          "id": "8thpack:spot",
+          "name": "Spot"
+        },
+        {
+          "id": "8thpack:spot_black",
+          "name": "Spot"
+        }
+      ]
+    },
+    "dhhp": {
+      "sources": [
+        "DERPZ-Heroes.zip"
+      ],
+      "count": 23,
+      "heroes": [
+        {
+          "id": "dhhp:aqualad",
+          "name": "Aquaman"
+        },
+        {
+          "id": "dhhp:atom_eve",
+          "name": "Atom Eve"
+        },
+        {
+          "id": "dhhp:blossom",
+          "name": "Blossom"
+        },
+        {
+          "id": "dhhp:bubbles",
+          "name": "Bubbles"
+        },
+        {
+          "id": "dhhp:buttercup",
+          "name": "Buttercup"
+        },
+        {
+          "id": "dhhp:doctorfate",
+          "name": "Doctor Fate"
+        },
+        {
+          "id": "dhhp:galactus",
+          "name": "Galactus"
+        },
+        {
+          "id": "dhhp:gojo",
+          "name": "Satoru Gojo"
+        },
+        {
+          "id": "dhhp:invincible",
+          "name": "Invincible"
+        },
+        {
+          "id": "dhhp:joker_comics",
+          "name": "The Joker"
+        },
+        {
+          "id": "dhhp:nightwing",
+          "name": "Nightwing"
+        },
+        {
+          "id": "dhhp:omniman",
+          "name": "Omniman"
+        },
+        {
+          "id": "dhhp:raven",
+          "name": "Raven"
+        },
+        {
+          "id": "dhhp:red_hood",
+          "name": "Red Hood"
+        },
+        {
+          "id": "dhhp:red_x",
+          "name": "Red X"
+        },
+        {
+          "id": "dhhp:rick",
+          "name": "Rick Sanchez"
+        },
+        {
+          "id": "dhhp:scarlet_spider",
+          "name": "Scarlet-Spider"
+        },
+        {
+          "id": "dhhp:starfire",
+          "name": "Starfire"
+        },
+        {
+          "id": "dhhp:superboy",
+          "name": "Superboy"
+        },
+        {
+          "id": "dhhp:superman_kc",
+          "name": "Superman"
+        },
+        {
+          "id": "dhhp:terra",
+          "name": "Terra"
+        },
+        {
+          "id": "dhhp:thor_mcu",
+          "name": "Thor"
+        },
+        {
+          "id": "dhhp:thragg",
+          "name": "Thragg"
+        }
+      ]
+    },
+    "ironmaniac": {
+      "sources": [
+        "iron_maniac_2.0.5.zip"
+      ],
+      "count": 5,
+      "heroes": [
+        {
+          "id": "ironmaniac:iron_man_mark_1",
+          "name": "Iron Man"
+        },
+        {
+          "id": "ironmaniac:iron_man_mark_2",
+          "name": "Iron Man"
+        },
+        {
+          "id": "ironmaniac:iron_man_mark_3",
+          "name": "Iron Man"
+        },
+        {
+          "id": "ironmaniac:iron_man_mark_5",
+          "name": "Iron Man"
+        },
+        {
+          "id": "ironmaniac:war_machine_mark_1",
+          "name": "War Machine"
+        }
+      ]
+    },
+    "jmctheroes": {
+      "sources": [
+        "jmcthp-v3.3.0.zip"
+      ],
+      "count": 72,
+      "heroes": [
+        {
+          "id": "jmctheroes:8ball",
+          "name": "8-Ball"
+        },
+        {
+          "id": "jmctheroes:agent_spider",
+          "name": "Agent Spider"
+        },
+        {
+          "id": "jmctheroes:allen",
+          "name": "Allen The Alien"
+        },
+        {
+          "id": "jmctheroes:anissa",
+          "name": "Anissa"
+        },
+        {
+          "id": "jmctheroes:arkham_knight",
+          "name": "Arkham Knight"
+        },
+        {
+          "id": "jmctheroes:batman_comics",
+          "name": "Batman"
+        },
+        {
+          "id": "jmctheroes:beta_ray_bill",
+          "name": "Beta Ray Bill"
+        },
+        {
+          "id": "jmctheroes:big_wheel",
+          "name": "Jackson Weele/Big Wheel"
+        },
+        {
+          "id": "jmctheroes:bizarro",
+          "name": "Bizarro"
+        },
+        {
+          "id": "jmctheroes:black_adam_dceu",
+          "name": "Black Adam"
+        },
+        {
+          "id": "jmctheroes:blue_beetle_dceu",
+          "name": "Blue Beetle"
+        },
+        {
+          "id": "jmctheroes:chainsaw_man",
+          "name": "Chainsaw Man"
+        },
+        {
+          "id": "jmctheroes:conquest",
+          "name": "Conquest"
+        },
+        {
+          "id": "jmctheroes:daredevil",
+          "name": "Daredevil"
+        },
+        {
+          "id": "jmctheroes:darkseid",
+          "name": "Darkseid"
+        },
+        {
+          "id": "jmctheroes:doctor_fate",
+          "name": "Doctor Fate"
+        },
+        {
+          "id": "jmctheroes:flash",
+          "name": "The Flash"
+        },
+        {
+          "id": "jmctheroes:flash_dceu",
+          "name": "The Flash"
+        },
+        {
+          "id": "jmctheroes:groot",
+          "name": "Groot/Guardians Of The Galaxy Vol.3"
+        },
+        {
+          "id": "jmctheroes:hellboy",
+          "name": "Hellboy"
+        },
+        {
+          "id": "jmctheroes:hit_monkey",
+          "name": "Monkey/Hit-Monkey"
+        },
+        {
+          "id": "jmctheroes:human_torch",
+          "name": "Human Torch"
+        },
+        {
+          "id": "jmctheroes:immortal",
+          "name": "The Immortal"
+        },
+        {
+          "id": "jmctheroes:invincible",
+          "name": "Invincible/Mark Grayson"
+        },
+        {
+          "id": "jmctheroes:invisible_woman",
+          "name": "Invisible Woman"
+        },
+        {
+          "id": "jmctheroes:iron_legion",
+          "name": "Iron Legion Drone"
+        },
+        {
+          "id": "jmctheroes:jay_garrick",
+          "name": "The Flash/Jay Garrick"
+        },
+        {
+          "id": "jmctheroes:katana_man",
+          "name": "Katana Man"
+        },
+        {
+          "id": "jmctheroes:killer_moth",
+          "name": "Killer Moth"
+        },
+        {
+          "id": "jmctheroes:kite_man",
+          "name": "Kite Man"
+        },
+        {
+          "id": "jmctheroes:lantern_ring_green",
+          "name": "Green Lantern Corp"
+        },
+        {
+          "id": "jmctheroes:lantern_ring_yellow",
+          "name": "Sinestro Lantern Corp"
+        },
+        {
+          "id": "jmctheroes:modok",
+          "name": "M.O.D.O.K."
+        },
+        {
+          "id": "jmctheroes:moon_knight",
+          "name": "Moon Knight"
+        },
+        {
+          "id": "jmctheroes:mr_fantastic",
+          "name": "Mr. Fantastic"
+        },
+        {
+          "id": "jmctheroes:omniman",
+          "name": "Omni-Man/Nolan Grayson"
+        },
+        {
+          "id": "jmctheroes:phantasm",
+          "name": "Phantasm"
+        },
+        {
+          "id": "jmctheroes:pork_grind",
+          "name": "Pork Grind"
+        },
+        {
+          "id": "jmctheroes:power",
+          "name": "Power"
+        },
+        {
+          "id": "jmctheroes:prowler",
+          "name": "Prowler"
+        },
+        {
+          "id": "jmctheroes:red_death",
+          "name": "Red Death/Tales of the Dark Multiverse"
+        },
+        {
+          "id": "jmctheroes:red_hood",
+          "name": "Red Hood"
+        },
+        {
+          "id": "jmctheroes:red_skull",
+          "name": "Red Skull"
+        },
+        {
+          "id": "jmctheroes:reverse_flash",
+          "name": "Reverse-Flash"
+        },
+        {
+          "id": "jmctheroes:rhino",
+          "name": "Rhino"
+        },
+        {
+          "id": "jmctheroes:scarlet_spider",
+          "name": "Scarlet Spider/Ben Reilly"
+        },
+        {
+          "id": "jmctheroes:shazam_dceu",
+          "name": "Shazam"
+        },
+        {
+          "id": "jmctheroes:spider_2099",
+          "name": "Spider-Man 2099"
+        },
+        {
+          "id": "jmctheroes:spider_ham",
+          "name": "Spider-Ham"
+        },
+        {
+          "id": "jmctheroes:spider_man",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "jmctheroes:spider_man_1610",
+          "name": "Ultimate Spider-Man/Peter Parker"
+        },
+        {
+          "id": "jmctheroes:spider_man_noir",
+          "name": "Spider-Man Noir"
+        },
+        {
+          "id": "jmctheroes:spider_man_tobey",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "jmctheroes:spider_miles",
+          "name": "Ultimate Spider-Man/Miles Morales"
+        },
+        {
+          "id": "jmctheroes:spider_punk",
+          "name": "Spider-Punk"
+        },
+        {
+          "id": "jmctheroes:star_lord",
+          "name": "Star-Lord"
+        },
+        {
+          "id": "jmctheroes:superboy",
+          "name": "Superboy"
+        },
+        {
+          "id": "jmctheroes:supergirl_dceu",
+          "name": "Supergirl"
+        },
+        {
+          "id": "jmctheroes:superior_spider_man",
+          "name": "Superior Spider-Man"
+        },
+        {
+          "id": "jmctheroes:superman_dceu",
+          "name": "Superman"
+        },
+        {
+          "id": "jmctheroes:superman_god",
+          "name": "Super-Moustache-Man"
+        },
+        {
+          "id": "jmctheroes:thing",
+          "name": "The Thing"
+        },
+        {
+          "id": "jmctheroes:ultimate_ultron",
+          "name": "Ultimate Ultron"
+        },
+        {
+          "id": "jmctheroes:ultron_mk1",
+          "name": "Ultron/Mark 1"
+        },
+        {
+          "id": "jmctheroes:ultron_prime",
+          "name": "Ultron Prime"
+        },
+        {
+          "id": "jmctheroes:venom",
+          "name": "Venom"
+        },
+        {
+          "id": "jmctheroes:viltrumite_soldier",
+          "name": "Viltrumite Soldier"
+        },
+        {
+          "id": "jmctheroes:wally_west",
+          "name": "The Flash/Wally West"
+        },
+        {
+          "id": "jmctheroes:war_machine_mk1",
+          "name": "War Machine/Mark 1"
+        },
+        {
+          "id": "jmctheroes:war_machine_mk2",
+          "name": "War Machine/Mark 2"
+        },
+        {
+          "id": "jmctheroes:war_machine_mk3",
+          "name": "War Machine/Mark 3"
+        },
+        {
+          "id": "jmctheroes:zod_dceu",
+          "name": "General Zod"
+        }
+      ]
+    },
+    "nameless": {
+      "sources": [
+        "Nameless_Heroes_4.1.2.zip"
+      ],
+      "count": 21,
+      "heroes": [
+        {
+          "id": "nameless:anti_ock",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "nameless:batman_beyond",
+          "name": "Batman Beyond"
+        },
+        {
+          "id": "nameless:big_time",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "nameless:bizarro",
+          "name": "Bizarro"
+        },
+        {
+          "id": "nameless:brightburn",
+          "name": "Brightburn"
+        },
+        {
+          "id": "nameless:doctor_octopus_ps4",
+          "name": "Doctor Octopus"
+        },
+        {
+          "id": "nameless:iron_fist",
+          "name": "Iron Fist"
+        },
+        {
+          "id": "nameless:iron_man",
+          "name": "Iron Man"
+        },
+        {
+          "id": "nameless:iron_spider",
+          "name": "Iron Spider"
+        },
+        {
+          "id": "nameless:joker",
+          "name": "The Joker"
+        },
+        {
+          "id": "nameless:kid_flash",
+          "name": "Kid Flash"
+        },
+        {
+          "id": "nameless:luke_cage",
+          "name": "Luke Cage"
+        },
+        {
+          "id": "nameless:nightwing",
+          "name": "Nightwing"
+        },
+        {
+          "id": "nameless:quasar",
+          "name": "Quasar"
+        },
+        {
+          "id": "nameless:red_hood",
+          "name": "Red Hood"
+        },
+        {
+          "id": "nameless:robin",
+          "name": "Robin"
+        },
+        {
+          "id": "nameless:spider_man_2099",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "nameless:spider_uk",
+          "name": "Spider-UK"
+        },
+        {
+          "id": "nameless:superman_dcu",
+          "name": "Superman"
+        },
+        {
+          "id": "nameless:superman_fleischer",
+          "name": "Superman"
+        },
+        {
+          "id": "nameless:venom90",
+          "name": "Venom"
+        }
+      ]
+    },
+    "ninjago": {
+      "sources": [
+        "ninjago_public_beta_1.0.03.zip"
+      ],
+      "count": 4,
+      "heroes": [
+        {
+          "id": "ninjago:cole",
+          "name": "Cole"
+        },
+        {
+          "id": "ninjago:jay",
+          "name": "Jay"
+        },
+        {
+          "id": "ninjago:kai",
+          "name": "Kai"
+        },
+        {
+          "id": "ninjago:zane",
+          "name": "Zane"
+        }
+      ]
+    },
+    "runnyhero": {
+      "sources": [
+        "RunnyHeroes-1.4.0.zip"
+      ],
+      "count": 7,
+      "heroes": [
+        {
+          "id": "runnyhero:kingpin",
+          "name": "Kingpin"
+        },
+        {
+          "id": "runnyhero:kingpin_sv",
+          "name": "Kingpin"
+        },
+        {
+          "id": "runnyhero:punisher",
+          "name": "Punisher"
+        },
+        {
+          "id": "runnyhero:shocker",
+          "name": "Shocker"
+        },
+        {
+          "id": "runnyhero:spider_man_cw",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "runnyhero:vulture",
+          "name": "Vulture"
+        },
+        {
+          "id": "runnyhero:white_tiger",
+          "name": "White Tiger"
+        }
+      ]
+    },
+    "sabri": {
+      "sources": [
+        "Sabri_Enhanced_HP_2.0.6.zip"
+      ],
+      "count": 13,
+      "heroes": [
+        {
+          "id": "sabri:black_panther",
+          "name": "Black Panther/Upgraded Habit"
+        },
+        {
+          "id": "sabri:black_widow",
+          "name": "Black Widow"
+        },
+        {
+          "id": "sabri:cyclops_xmen",
+          "name": "Cyclops"
+        },
+        {
+          "id": "sabri:doctor_doom_comics",
+          "name": "Doctor Doom"
+        },
+        {
+          "id": "sabri:doctor_doom_f4",
+          "name": "Doctor Doom"
+        },
+        {
+          "id": "sabri:kang_the_conqueror",
+          "name": "Kang the Conqueror"
+        },
+        {
+          "id": "sabri:namor",
+          "name": "Namor"
+        },
+        {
+          "id": "sabri:quicksilver_xmen",
+          "name": "Quicksilver"
+        },
+        {
+          "id": "sabri:sandman_raimi",
+          "name": "Sandman"
+        },
+        {
+          "id": "sabri:silver_surfer_f4",
+          "name": "Silver Surfer"
+        },
+        {
+          "id": "sabri:thanos",
+          "name": "Thanos"
+        },
+        {
+          "id": "sabri:thor",
+          "name": "Thor"
+        },
+        {
+          "id": "sabri:wolverine_xmen",
+          "name": "Wolverine"
+        }
+      ]
+    },
+    "secretheroes": {
+      "sources": [
+        "SecretHeroes-5.1.6.zip"
+      ],
+      "count": 16,
+      "heroes": [
+        {
+          "id": "secretheroes:ghost_spider",
+          "name": "Ghost Spider"
+        },
+        {
+          "id": "secretheroes:godspeed",
+          "name": "Godspeed"
+        },
+        {
+          "id": "secretheroes:herobrine",
+          "name": "Herobrine"
+        },
+        {
+          "id": "secretheroes:homelander",
+          "name": "Homelander"
+        },
+        {
+          "id": "secretheroes:hulk",
+          "name": "Hulk"
+        },
+        {
+          "id": "secretheroes:impulse",
+          "name": "Impulse"
+        },
+        {
+          "id": "secretheroes:mining_armor",
+          "name": "Mining Armor"
+        },
+        {
+          "id": "secretheroes:moon_knight",
+          "name": "Moon Knight"
+        },
+        {
+          "id": "secretheroes:red_death_comics",
+          "name": "Red Death Comics"
+        },
+        {
+          "id": "secretheroes:saitama",
+          "name": "Saitama"
+        },
+        {
+          "id": "secretheroes:spider_man_black_raimi",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "secretheroes:star_labs_speedster_comics",
+          "name": "S.T.A.R. Labs Speedster"
+        },
+        {
+          "id": "secretheroes:the_flash",
+          "name": "The Flash"
+        },
+        {
+          "id": "secretheroes:the_flash_iris",
+          "name": "The Flash/Iris West"
+        },
+        {
+          "id": "secretheroes:vibe",
+          "name": "Vibe"
+        },
+        {
+          "id": "secretheroes:xs",
+          "name": "XS"
+        }
+      ]
+    },
+    "shadows": {
+      "sources": [
+        "shadows-2.11.6.zip"
+      ],
+      "count": 23,
+      "heroes": [
+        {
+          "id": "shadows:aragami",
+          "name": "Aragami"
+        },
+        {
+          "id": "shadows:backpack",
+          "name": "Backpack"
+        },
+        {
+          "id": "shadows:backpack_equipment_visual",
+          "name": "Suit"
+        },
+        {
+          "id": "shadows:dipdapdoe",
+          "name": "DipDapDoe"
+        },
+        {
+          "id": "shadows:double_jump",
+          "name": "Double Jump"
+        },
+        {
+          "id": "shadows:forced_sentry",
+          "name": "Forced Sentry"
+        },
+        {
+          "id": "shadows:golem",
+          "name": "Golem"
+        },
+        {
+          "id": "shadows:hue_man",
+          "name": "Hue-Man"
+        },
+        {
+          "id": "shadows:hunter",
+          "name": "Vampire Hunter"
+        },
+        {
+          "id": "shadows:mage",
+          "name": "Mage"
+        },
+        {
+          "id": "shadows:necrosword",
+          "name": "Necrosword"
+        },
+        {
+          "id": "shadows:power_ranger_wind_blue",
+          "name": "Power Ranger Wind Blue"
+        },
+        {
+          "id": "shadows:power_ranger_wind_red",
+          "name": "Power Ranger Wind Red"
+        },
+        {
+          "id": "shadows:power_ranger_wind_yellow",
+          "name": "Power Ranger Wind Yellow"
+        },
+        {
+          "id": "shadows:random",
+          "name": "Random Suit"
+        },
+        {
+          "id": "shadows:runic_magic",
+          "name": "Runic Magic"
+        },
+        {
+          "id": "shadows:shadow",
+          "name": "Shadow"
+        },
+        {
+          "id": "shadows:silver_speed",
+          "name": "Silver Speed"
+        },
+        {
+          "id": "shadows:sorcerer",
+          "name": "Sorcerer"
+        },
+        {
+          "id": "shadows:steve",
+          "name": "Steve"
+        },
+        {
+          "id": "shadows:superior_spider",
+          "name": "Superior Spider"
+        },
+        {
+          "id": "shadows:tornado",
+          "name": "Tornado"
+        },
+        {
+          "id": "shadows:vampire",
+          "name": "Vampire"
+        }
+      ]
+    },
+    "sind": {
+      "sources": [
+        "sind2.0.2.zip"
+      ],
+      "count": 64,
+      "heroes": [
+        {
+          "id": "sind:39_jetpack",
+          "name": "Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini"
+        },
+        {
+          "id": "sind:42_1",
+          "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+        },
+        {
+          "id": "sind:42_2",
+          "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+        },
+        {
+          "id": "sind:42_3",
+          "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+        },
+        {
+          "id": "sind:42_4",
+          "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+        },
+        {
+          "id": "sind:ironlegiondrone",
+          "name": "Iron Legion Drone"
+        },
+        {
+          "id": "sind:ironspider",
+          "name": "Iron Spider/17A"
+        },
+        {
+          "id": "sind:mark1",
+          "name": "Iron Man/Mark 01 (I)"
+        },
+        {
+          "id": "sind:mark10",
+          "name": "Iron Man/Mark 10 (X)"
+        },
+        {
+          "id": "sind:mark11",
+          "name": "Iron Man/Mark 11 (XI)"
+        },
+        {
+          "id": "sind:mark12",
+          "name": "Iron Man/Mark 12 (XII)"
+        },
+        {
+          "id": "sind:mark13",
+          "name": "Iron Man/Mark 13 (XIII)"
+        },
+        {
+          "id": "sind:mark14",
+          "name": "Iron Man/Mark 14 (XIV)"
+        },
+        {
+          "id": "sind:mark15",
+          "name": "Iron Man/Mark 15 (XV) - Sneaky"
+        },
+        {
+          "id": "sind:mark16",
+          "name": "Iron Man/Mark 16 (XVI) - Nightclub"
+        },
+        {
+          "id": "sind:mark17",
+          "name": "Iron Man/Mark 17 (XVII) - Heartbreaker"
+        },
+        {
+          "id": "sind:mark18",
+          "name": "Iron Man/Mark 18 (XVIII) - Casanova"
+        },
+        {
+          "id": "sind:mark19",
+          "name": "Iron Man/Mark 19 (XIX) - Tiger"
+        },
+        {
+          "id": "sind:mark2",
+          "name": "Iron Man/Mark 02 (II)"
+        },
+        {
+          "id": "sind:mark20",
+          "name": "Iron Man/Mark 20 (XX) - Python"
+        },
+        {
+          "id": "sind:mark21",
+          "name": "Iron Man/Mark 21 (XXI) - Midas"
+        },
+        {
+          "id": "sind:mark22",
+          "name": "Iron Man/Mark 22 (XXII) - Hot Rod"
+        },
+        {
+          "id": "sind:mark23",
+          "name": "Iron Man/Mark 23 (XXIII) - Shades"
+        },
+        {
+          "id": "sind:mark24",
+          "name": "Iron Man/Mark 24 (XXIV) - Tank"
+        },
+        {
+          "id": "sind:mark25",
+          "name": "Iron Man/Mark 25 (XXV) - Striker"
+        },
+        {
+          "id": "sind:mark26",
+          "name": "Iron Man/Mark 26 (XXVI) - Gamma"
+        },
+        {
+          "id": "sind:mark27",
+          "name": "Iron Man/Mark 27 (XXVII) - Disco"
+        },
+        {
+          "id": "sind:mark28",
+          "name": "Iron Man/Mark 28 (XXVIII) - Jack"
+        },
+        {
+          "id": "sind:mark29",
+          "name": "Iron Man/Mark 29 (XXIX) - Fiddler"
+        },
+        {
+          "id": "sind:mark3",
+          "name": "Iron Man/Mark 03 (III)"
+        },
+        {
+          "id": "sind:mark30",
+          "name": "Iron Man/Mark 30 (XXX) - Blue Steel"
+        },
+        {
+          "id": "sind:mark31",
+          "name": "Iron Man/Mark 31 (XXXI) - Piston"
+        },
+        {
+          "id": "sind:mark32",
+          "name": "Iron Man/Mark 32 (XXXII) - Romeo"
+        },
+        {
+          "id": "sind:mark33",
+          "name": "Iron Man/Mark 33 (XXXIII) - Silver Centurion"
+        },
+        {
+          "id": "sind:mark34",
+          "name": "Iron Man/Mark 34 (XXXIV) - Southpaw"
+        },
+        {
+          "id": "sind:mark35",
+          "name": "Iron Man/Mark 35 (XXXV) - Red Snapper"
+        },
+        {
+          "id": "sind:mark36",
+          "name": "Iron Man/Mark 36 (XXXVI) - Peacemaker"
+        },
+        {
+          "id": "sind:mark37",
+          "name": "Iron Man/Mark 37 (XXXVII) - Hammerhead"
+        },
+        {
+          "id": "sind:mark38",
+          "name": "Iron Man/Mark 38 (XXXVIII) - Igor"
+        },
+        {
+          "id": "sind:mark39",
+          "name": "Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini"
+        },
+        {
+          "id": "sind:mark4",
+          "name": "Iron Man/Mark 04 (IV)"
+        },
+        {
+          "id": "sind:mark40",
+          "name": "Iron Man/Mark 40 (XL) - Shotgun"
+        },
+        {
+          "id": "sind:mark41",
+          "name": "Iron Man/Mark 41 (XLI) - Bones"
+        },
+        {
+          "id": "sind:mark42",
+          "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+        },
+        {
+          "id": "sind:mark43",
+          "name": "Iron Man/Mark 43 (XLIII)"
+        },
+        {
+          "id": "sind:mark44",
+          "name": "Iron Man/Mark 44 (XLIV) - Hulkbuster"
+        },
+        {
+          "id": "sind:mark45",
+          "name": "Iron Man/Mark 45 (XLV)"
+        },
+        {
+          "id": "sind:mark46",
+          "name": "Iron Man/Mark 46 (XLVI)"
+        },
+        {
+          "id": "sind:mark47",
+          "name": "Iron Man/Mark 47 (XLVII)"
+        },
+        {
+          "id": "sind:mark48",
+          "name": "Iron Man/Mark 48 (XLVIII) - Hulkbuster Mk II"
+        },
+        {
+          "id": "sind:mark49",
+          "name": "Iron Man/Mark 49 (XLIX)"
+        },
+        {
+          "id": "sind:mark5",
+          "name": "Iron Man/Mark 05 (V)"
+        },
+        {
+          "id": "sind:mark50",
+          "name": "Iron Man/Mark 50 (L)"
+        },
+        {
+          "id": "sind:mark6",
+          "name": "Iron Man/Mark 06 (VI)"
+        },
+        {
+          "id": "sind:mark7",
+          "name": "Iron Man/Mark 07 (VII)"
+        },
+        {
+          "id": "sind:mark7_bracelets",
+          "name": "Iron Man/Mark 07 (VII)"
+        },
+        {
+          "id": "sind:mark8",
+          "name": "Iron Man/Mark 08 (VIII)"
+        },
+        {
+          "id": "sind:mark9",
+          "name": "Iron Man/Mark 09 (IX)"
+        },
+        {
+          "id": "sind:tony",
+          "name": "Tony Stark"
+        },
+        {
+          "id": "sind:tony_equip",
+          "name": "Insert Suit"
+        },
+        {
+          "id": "sind:warmachine_mk1",
+          "name": "War Machine/Mark 01 (I)"
+        },
+        {
+          "id": "sind:warmachine_mk2",
+          "name": "War Machine/Mark 02 (II)"
+        },
+        {
+          "id": "sind:warmachine_mk3",
+          "name": "War Machine/Mark 03 (III)"
+        },
+        {
+          "id": "sind:warmachine_mk4",
+          "name": "War Machine/Mark 04 (IV)"
+        }
+      ]
+    },
+    "skarlet": {
+      "sources": [
+        "Skarlet 4.1.zip"
+      ],
+      "count": 24,
+      "heroes": [
+        {
+          "id": "skarlet:ash_williams",
+          "name": "Ash Williams"
+        },
+        {
+          "id": "skarlet:batman_arkham",
+          "name": "Batman"
+        },
+        {
+          "id": "skarlet:batman_comics",
+          "name": "Batman"
+        },
+        {
+          "id": "skarlet:batman_thomas",
+          "name": "Batman/Thomas Wayne"
+        },
+        {
+          "id": "skarlet:batwoman_comics",
+          "name": "Batwoman"
+        },
+        {
+          "id": "skarlet:blue_beetle_dceu",
+          "name": "Blue Beetle"
+        },
+        {
+          "id": "skarlet:green_goblin",
+          "name": "Green Goblin"
+        },
+        {
+          "id": "skarlet:gwenpool",
+          "name": "Gwenpool"
+        },
+        {
+          "id": "skarlet:gwenpool_future",
+          "name": "Gwenpool/Dark"
+        },
+        {
+          "id": "skarlet:harley_quinn",
+          "name": "Harley Quinn"
+        },
+        {
+          "id": "skarlet:human_torch",
+          "name": "Human Torch"
+        },
+        {
+          "id": "skarlet:invisible_woman",
+          "name": "Invisible Woman"
+        },
+        {
+          "id": "skarlet:miss_martian",
+          "name": "Miss Martian"
+        },
+        {
+          "id": "skarlet:mister_fantastic",
+          "name": "Mister Fantastic"
+        },
+        {
+          "id": "skarlet:silk",
+          "name": "Silk"
+        },
+        {
+          "id": "skarlet:spider_girl",
+          "name": "Spider-Girl/Mayday Parker"
+        },
+        {
+          "id": "skarlet:spider_gwen",
+          "name": "Spider-Woman/Gwen Stacy"
+        },
+        {
+          "id": "skarlet:supergirl_dceu",
+          "name": "Supergirl"
+        },
+        {
+          "id": "skarlet:superman_comics",
+          "name": "Superman"
+        },
+        {
+          "id": "skarlet:the_thing",
+          "name": "The Thing"
+        },
+        {
+          "id": "skarlet:ultron_comics",
+          "name": "Ultron"
+        },
+        {
+          "id": "skarlet:wolverine_comics",
+          "name": "Wolverine"
+        },
+        {
+          "id": "skarlet:wonder_woman_comics",
+          "name": "Wonder Woman"
+        },
+        {
+          "id": "skarlet:x23_comics",
+          "name": "Wolverine/Laura Kinney"
+        }
+      ]
+    },
+    "stellar": {
+      "sources": [
+        "StellarHeroes_2.0.5.zip"
+      ],
+      "count": 9,
+      "heroes": [
+        {
+          "id": "stellar:booster_gold",
+          "name": "Booster Gold"
+        },
+        {
+          "id": "stellar:cloak",
+          "name": "Cloak"
+        },
+        {
+          "id": "stellar:cloak_shadow",
+          "name": "Cloak Shadow"
+        },
+        {
+          "id": "stellar:danny_phantom",
+          "name": "Danny Phantom"
+        },
+        {
+          "id": "stellar:dr_manhattan",
+          "name": "Doctor Manhattan"
+        },
+        {
+          "id": "stellar:pepsi_man",
+          "name": "Pepsiman"
+        },
+        {
+          "id": "stellar:quantum_suit",
+          "name": "Quantum Realm Suit/Nanotech"
+        },
+        {
+          "id": "stellar:spawn",
+          "name": "Spawn"
+        },
+        {
+          "id": "stellar:wasp",
+          "name": "Wasp"
+        }
+      ]
+    },
+    "pwt": {
+      "sources": [
+        "ThePackWithThings_release_1.0.74.zip"
+      ],
+      "count": 15,
+      "heroes": [
+        {
+          "id": "pwt:batman_cyberpunk",
+          "name": "Batman"
+        },
+        {
+          "id": "pwt:carnage",
+          "name": "Carnage"
+        },
+        {
+          "id": "pwt:david_martinez_pre",
+          "name": "David Martinez"
+        },
+        {
+          "id": "pwt:halloween_ghost",
+          "name": "Ghost"
+        },
+        {
+          "id": "pwt:halloween_scarecrow",
+          "name": "Bob"
+        },
+        {
+          "id": "pwt:joker_cyberpunk",
+          "name": "Joker"
+        },
+        {
+          "id": "pwt:riot",
+          "name": "Riot"
+        },
+        {
+          "id": "pwt:robin_cyberpunk",
+          "name": "Robin"
+        },
+        {
+          "id": "pwt:spider_man_symbiot_webb",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "pwt:spider_man_symbiot_webb_3",
+          "name": "Spider-Man"
+        },
+        {
+          "id": "pwt:sukuna",
+          "name": "Sukuna"
+        },
+        {
+          "id": "pwt:sukuna_heian",
+          "name": "Ryomen Sukuna"
+        },
+        {
+          "id": "pwt:toxin",
+          "name": "Toxin"
+        },
+        {
+          "id": "pwt:trickster_aftermath",
+          "name": "The Trickster"
+        },
+        {
+          "id": "pwt:venom",
+          "name": "Venom"
+        }
+      ]
+    },
+    "tmf": {
+      "sources": [
+        "tmf_2.8.0.zip"
+      ],
+      "count": 23,
+      "heroes": [
+        {
+          "id": "tmf:dna_blitzwolfer_18",
+          "name": "Uncraftable Item - Blitzwolfer"
+        },
+        {
+          "id": "tmf:dna_cannonbolt_16",
+          "name": "Uncraftable Item - Cannonbolt"
+        },
+        {
+          "id": "tmf:dna_ditto_23",
+          "name": "Uncraftable Item - Ditto"
+        },
+        {
+          "id": "tmf:dna_eyeguy_24",
+          "name": "Uncraftable Item - Eyeguy"
+        },
+        {
+          "id": "tmf:dna_frankenstrike_20",
+          "name": "Uncraftable Item - Frankenstrike"
+        },
+        {
+          "id": "tmf:dna_snareoh_19",
+          "name": "Uncraftable Item - Snare-Oh"
+        },
+        {
+          "id": "tmf:dna_upchuck_22",
+          "name": "Uncraftable Item - Upchuck"
+        },
+        {
+          "id": "tmf:dna_waybig_25",
+          "name": "Uncraftable Item - Waybig"
+        },
+        {
+          "id": "tmf:dna_wildvine_17",
+          "name": "Uncraftable Item - Wildvine"
+        },
+        {
+          "id": "tmf:iron_man_mk1_aa",
+          "name": "Iron Man"
+        },
+        {
+          "id": "tmf:iron_man_mk1_aa_backpack",
+          "name": "Iron Man"
+        },
+        {
+          "id": "tmf:iron_man_silver_centurion_aa",
+          "name": "Iron Man"
+        },
+        {
+          "id": "tmf:iron_man_space_aa",
+          "name": "Iron Man"
+        },
+        {
+          "id": "tmf:iron_man_stealth_aa",
+          "name": "Iron Man"
+        },
+        {
+          "id": "tmf:not_hero_time",
+          "name": "I'm no hero"
+        },
+        {
+          "id": "tmf:omni_galvanic_modulator",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:omni_recal",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:omnitrix",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:omnitrix_grey_matter",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:omnitrix_grey_matter_crafting",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:omnitrix_upchuck",
+          "name": "Omnitrix"
+        },
+        {
+          "id": "tmf:the_deep",
+          "name": "The Deep"
+        },
+        {
+          "id": "tmf:the_mandarin_aa",
+          "name": "The Mandarin"
+        }
+      ]
+    },
+    "transformers_pack": {
+      "sources": [
+        "transformers_pack-1.0.4.zip"
+      ],
+      "count": 2,
+      "heroes": [
+        {
+          "id": "transformers_pack:g1_hook",
+          "name": "Hook"
+        },
+        {
+          "id": "transformers_pack:g1_optimus_prime",
+          "name": "Optimus Prime"
+        }
+      ]
+    },
+    "unconventional": {
+      "sources": [
+        "unconventional_2.2.5_release.zip"
+      ],
+      "count": 39,
+      "heroes": [
+        {
+          "id": "unconventional:artemis_yj",
+          "name": "Artemis"
+        },
+        {
+          "id": "unconventional:batman_dceu_tactical",
+          "name": "Batman/Tactical"
+        },
+        {
+          "id": "unconventional:batman_reeves",
+          "name": "Batman"
+        },
+        {
+          "id": "unconventional:batman_rocksteady",
+          "name": "Batman/Arkham Knight"
+        },
+        {
+          "id": "unconventional:batman_telltale",
+          "name": "Batman"
+        },
+        {
+          "id": "unconventional:black_bolt_comics",
+          "name": "Black Bolt"
+        },
+        {
+          "id": "unconventional:black_canary_e2",
+          "name": "Black Canary/Earth-2"
+        },
+        {
+          "id": "unconventional:black_cat_ps4",
+          "name": "Black Cat"
+        },
+        {
+          "id": "unconventional:captain_america_jw",
+          "name": "Captain America/John Walker"
+        },
+        {
+          "id": "unconventional:captain_carter_what_if",
+          "name": "Captain Carter"
+        },
+        {
+          "id": "unconventional:catwoman_telltale",
+          "name": "Catwoman"
+        },
+        {
+          "id": "unconventional:deadpool_xmen_origins",
+          "name": "Weapon XI"
+        },
+        {
+          "id": "unconventional:deathstroke_rocksteady",
+          "name": "Deathstroke"
+        },
+        {
+          "id": "unconventional:edith",
+          "name": "Tony Stark"
+        },
+        {
+          "id": "unconventional:electro",
+          "name": "Electro"
+        },
+        {
+          "id": "unconventional:emiko_adachi",
+          "name": "Emiko Adachi"
+        },
+        {
+          "id": "unconventional:five",
+          "name": "Five"
+        },
+        {
+          "id": "unconventional:ghost",
+          "name": "Ghost"
+        },
+        {
+          "id": "unconventional:hawkeye",
+          "name": "Hawkeye/Clint Barton"
+        },
+        {
+          "id": "unconventional:kate_bishop",
+          "name": "Hawkeye/Kate Bishop"
+        },
+        {
+          "id": "unconventional:mosquito",
+          "name": "Mosquito"
+        },
+        {
+          "id": "unconventional:nick_fury",
+          "name": "Nick Fury"
+        },
+        {
+          "id": "unconventional:pietro",
+          "name": "Pietro Maximoff"
+        },
+        {
+          "id": "unconventional:radioactive_man",
+          "name": "Radioactive Man"
+        },
+        {
+          "id": "unconventional:red_guardian",
+          "name": "Red Guardian"
+        },
+        {
+          "id": "unconventional:robin_rocksteady",
+          "name": "Robin/Arkham Knight"
+        },
+        {
+          "id": "unconventional:ronin",
+          "name": "Ronin/Clint Barton"
+        },
+        {
+          "id": "unconventional:soldier_boy",
+          "name": "Soldier Boy"
+        },
+        {
+          "id": "unconventional:spider_man_miles_ps5",
+          "name": "Spider-Man/Miles Morales"
+        },
+        {
+          "id": "unconventional:spider_man_miles_sv",
+          "name": "Spider-Man/Miles Morales"
+        },
+        {
+          "id": "unconventional:spoiler_comics",
+          "name": "Spoiler"
+        },
+        {
+          "id": "unconventional:sss_og",
+          "name": "Super Soldier/Erskine's Formula"
+        },
+        {
+          "id": "unconventional:taskmaster",
+          "name": "Taskmaster"
+        },
+        {
+          "id": "unconventional:the_signal_comics",
+          "name": "The Signal"
+        },
+        {
+          "id": "unconventional:tigress_yj",
+          "name": "Tigress"
+        },
+        {
+          "id": "unconventional:wanda",
+          "name": "Wanda Maximoff"
+        },
+        {
+          "id": "unconventional:white_wolf",
+          "name": "Bucky Barnes"
+        },
+        {
+          "id": "unconventional:winter_soldier",
+          "name": "Winter Soldier"
+        },
+        {
+          "id": "unconventional:yellow_jacket",
+          "name": "Yellow Jacket"
+        }
+      ]
+    }
+  }
+}

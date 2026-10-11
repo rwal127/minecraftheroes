@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b101b">
+  <meta name="description" content="Каталог героев и костюмов FiskHeroes: поиск по имени, ID и названию пака, копирование команды /suit одним нажатием. Работает как сайт и как Telegram Mini App.">
+  <title>Hero Atlas — Каталог героев Minecraft</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦸%3C/text%3E%3C/svg%3E">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root{--bg:#0b101b;--panel:#141d2d;--line:#2c3d57;--text:#f3f7ff;--muted:#9db0c9;--blue:#79d4ff;--shadow:0 10px 30px rgba(0,0,0,.25)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);background:radial-gradient(circle at top,#20304c 0,transparent 38%), var(--bg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+    button,input{font:inherit} button{cursor:pointer}
+    .wrap{width:min(1180px,100%);margin:auto;padding:24px 18px 80px}
+    .top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.12em;font-size:12px;text-transform:uppercase}
+    .logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#47c6ff,#8a7dff);display:grid;place-items:center;font-size:21px}
+    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:12px;background:rgba(255,255,255,.02)}
+    .hero{display:flex;justify-content:space-between;gap:24px;align-items:flex-end;flex-wrap:wrap;margin-bottom:26px}
+    h1{margin:8px 0 10px;font-size:clamp(38px,7vw,72px);line-height:1.02;letter-spacing:-.06em} h1 span{color:var(--blue)}
+    .sub{max-width:700px;color:var(--muted);font-size:15px}
+    .stats{display:flex;gap:10px;flex-wrap:wrap}
+    .stat{min-width:130px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:16px;padding:14px 15px;box-shadow:var(--shadow)}
+    .stat b{display:block;font-size:30px;line-height:1;letter-spacing:-.04em}.stat small{display:block;margin-top:7px;color:var(--muted);font-size:11px}
+    .toolbar{position:sticky;top:0;z-index:20;padding:12px 0 14px;background:linear-gradient(to bottom, rgba(11,16,27,.98), rgba(11,16,27,.9), rgba(11,16,27,0));backdrop-filter:blur(4px)}
+    .toolbar-box{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:rgba(20,29,45,.78);border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:var(--shadow)}
+    .search{flex:1;min-width:240px;display:flex;align-items:center;gap:8px;background:#0f1725;border:1px solid #30445f;border-radius:13px;padding:10px 12px}
+    .search input{width:100%;background:transparent;border:0;outline:0;color:var(--text)}
+    .tabs,.viewtabs{display:flex;gap:7px;flex-wrap:wrap}
+    .tab{border:1px solid var(--line);background:#172133;color:#bfd0e7;padding:10px 12px;border-radius:12px;font-weight:700;font-size:12px}
+    .tab.active{background:#355178;color:#fff;border-color:#4d6d99}
+    .counter{margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap}
+    .section-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:28px 0 14px}.section-title h2{margin:0;font-size:20px}.hint{color:var(--muted);font-size:12px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pack-card{background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:18px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+    .pack-card .topline{display:flex;justify-content:space-between;gap:8px;align-items:start}.pack-card h3{margin:0;font-size:18px;line-height:1.15}.pack-card .mini{font-size:12px;color:var(--muted)}
+    .count{font-size:28px;font-weight:900;line-height:1;letter-spacing:-.04em}.colorbar{height:7px;border-radius:999px}
+    .hero-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+    .item h4{margin:0 0 6px;font-size:16px;line-height:1.2}.meta{color:var(--muted);font-size:12px;word-break:break-word}
+    .cmd{margin-top:9px;background:#0f1725;border:1px solid #30445f;border-radius:10px;padding:8px 10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;word-break:break-all}
+    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{border:1px solid #39506f;background:#1b2940;color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}.btn.ghost{background:#141d2d;color:#bfd0e7}
+    .empty{padding:24px;border:1px dashed #355178;border-radius:18px;color:var(--muted);text-align:center;background:rgba(255,255,255,.02)}
+    .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#182338;border:1px solid #355178;color:#fff;border-radius:12px;padding:11px 14px;opacity:0;pointer-events:none;transition:.18s}.toast.show{opacity:1}
+    .footer{margin-top:38px;color:var(--muted);font-size:12px}
+    @media (max-width: 1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-list{grid-template-columns:1fr}}
+    @media (max-width: 760px){.wrap{padding:18px 12px 70px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.counter{width:100%;margin-left:0}.toolbar-box{padding:10px}.hero{gap:18px}.stat{min-width:110px}}
+    @media (max-width: 520px){.grid{grid-template-columns:1fr}h1{font-size:40px}.tabs{max-height:104px;overflow:auto}.pill{display:none}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><div class="brand"><div class="logo">🦸</div> Hero Atlas</div><div class="pill">Telegram Mini App · Minecraft / FiskHeroes</div></div>
+  <section class="hero">
+    <div>
+      <div style="font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-weight:900">поиск по имени героя, а не по памяти</div>
+      <h1>Найди <span>героя</span> за секунды</h1>
+      <div class="sub">Каталог всех героев и костюмов из JSON. Можно искать по имени, ID или названию пака, а затем одним нажатием копировать готовую команду <code>/suit</code>. Показываем весь список целиком.</div>
+    </div>
+    <div class="stats"><div class="stat"><b id="statHeroes">—</b><small>всего записей</small></div><div class="stat"><b id="statPacks">—</b><small>пак</small></div><div class="stat"><b id="statShown">—</b><small>сейчас показано</small></div></div>
+  </section>
+  <div class="toolbar">
+    <div class="toolbar-box">
+      <label class="search"><span>🔎</span><input id="search" placeholder="Например: Spider-Man, thor, flash, tgheroes" autocomplete="off"></label>
+      <div class="viewtabs" id="viewTabs"><button class="tab active" data-view="heroes">Герои</button><button class="tab" data-view="packs">Паки</button></div>
+      <div class="counter" id="counter">Загрузка…</div>
+    </div>
+    <div style="height:10px"></div>
+    <div class="tabs" id="packTabs"></div>
+  </div>
+  <section>
+    <div class="section-title"><h2 id="sectionHeading">Каталог героев</h2><div class="hint">Поиск работает по имени героя, ID и названию пака</div></div>
+    <div id="content"><div class="empty">Загрузка данных…</div></div>
+  </section>
+  <div class="footer">Формат команды в игре: <code>/suit packname:heroname</code> · Источник: <code>heroes_list.json</code> · Полный список команд: <a style="color:var(--blue)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a></div>
+</div>
+<div class="toast" id="toast">Скопировано</div>
+<script>
+const DISPLAY = {"fiskheroes": "FiskHeroes", "misc": "Miscellaneous", "morningstar": "Morningstar", "tgheroes": "TGHeroes", "8thpack": "8thPack", "dhhp": "DERPZ Heroes", "ironmaniac": "Iron Maniac", "jmctheroes": "JMCT Heroes", "nameless": "Nameless Heroes", "ninjago": "Ninjago", "runnyhero": "RunnyHeroes", "sabri": "Sabri Enhanced", "secretheroes": "SecretHeroes", "shadows": "Shadows", "sind": "SIND Iron Man", "skarlet": "Skarlet", "stellar": "StellarHeroes", "pwt": "The Pack With Things", "tmf": "TMF", "transformers_pack": "Transformers Pack", "unconventional": "Unconventional"};
+const PALETTE = ["#72d1fc", "#b19cff", "#8ce3bb", "#ffc584", "#ff8fae", "#86dcff", "#f8cf75", "#bcafff", "#93e4de", "#fbadac", "#b4dd7c", "#b2b5ff", "#ffb782", "#97cdf5", "#d39be1", "#ecd184", "#79ddd2", "#faa8b9", "#8cbaff", "#d6b6ff", "#e5b67b"];
+let state = {query:'', pack:'all', view:'heroes', data:null};
+function norm(v){return (v||'').toLowerCase().trim()}
+function byId(id){return document.getElementById(id)}
+function toast(msg){const t=byId('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),1500)}
+function haptic(){try{Telegram.WebApp.HapticFeedback.impactOccurred('light')}catch(e){}}
+async function copy(text){
+  try{await navigator.clipboard.writeText(text)}
+  catch(e){
+    const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.focus();ta.select();document.execCommand('copy');ta.remove();
+  }
+  haptic();toast('Скопировано: '+text);
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function attr(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
+function mapData(raw){
+  const packs = Object.entries(raw.packs).map(([key,p],idx)=>({
+    key,
+    display: DISPLAY[key] || key,
+    source: (p.sources || []).join(', '),
+    count: p.heroes.length,
+    color: PALETTE[idx % PALETTE.length],
+    heroes: p.heroes.map(h=>({id:h.id,name:h.name,pack:key,packDisplay:DISPLAY[key]||key,command:'/suit '+h.id}))
+  }));
+  return {meta:{total:packs.reduce((a,p)=>a+p.count,0),packs:packs.length},packs};
+}
+async function loadData(){
+  const res=await fetch('./heroes_list.json',{cache:'no-store'});
+  if(!res.ok) throw new Error('HTTP '+res.status);
+  return mapData(await res.json());
+}
+function flatHeroes(){return state.data.packs.flatMap(p=>p.heroes.map(h=>({...h,color:p.color})))}
+function filteredHeroes(){const q=norm(state.query);return flatHeroes().filter(h=>{const okPack = state.pack==='all' || h.pack===state.pack; if(!okPack) return false; if(!q) return true; return norm(h.name).includes(q)||norm(h.id).includes(q)||norm(h.packDisplay).includes(q)||norm(h.pack).includes(q);})}
+function filteredPacks(){const q=norm(state.query);return state.data.packs.filter(p=>{if(state.pack!=='all' && p.key!==state.pack) return false; if(!q) return true; const inPack=norm(p.display).includes(q)||norm(p.key).includes(q)||norm(p.source).includes(q); const inHeroes=p.heroes.some(h=>norm(h.name).includes(q)||norm(h.id).includes(q)); return inPack||inHeroes;})}
+function renderPackTabs(){const host=byId('packTabs');const total=state.data.packs.reduce((a,p)=>a+p.count,0);const tabs=[{key:'all',label:'Все',count:total},...state.data.packs.map(p=>({key:p.key,label:p.display,count:p.count}))];host.innerHTML=tabs.map(t=>`<button class="tab ${state.pack===t.key?'active':''}" data-pack="${t.key}">${t.label} <span style="opacity:.7">${t.count}</span></button>`).join('');host.querySelectorAll('[data-pack]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.pack;render()})}
+function renderHeroes(items){if(!items.length) return '<div class="empty">Ничего не найдено. Попробуй часть имени героя, например <b>flash</b> или <b>spider</b>.</div>';return `<div class="hero-list">${items.map(h=>`<article class="item"><h4>${escapeHtml(h.name)}</h4><div class="meta">Пак: <b>${escapeHtml(h.packDisplay)}</b> <span style="opacity:.6">(${escapeHtml(h.pack)})</span></div><div class="meta">ID: <code>${escapeHtml(h.id)}</code></div><div class="cmd">${escapeHtml(h.command)}</div><div class="actions"><button class="btn" data-copy="${attr(h.command)}">Копировать /suit</button><button class="btn ghost" data-copy="${attr(h.id)}">Копировать ID</button></div></article>`).join('')}</div>`}
+function renderPacks(items){if(!items.length) return '<div class="empty">Паки не найдены по текущему фильтру.</div>';return `<div class="grid">${items.map(p=>`<article class="pack-card"><div class="colorbar" style="background:${p.color}"></div><div class="topline"><div><h3>${escapeHtml(p.display)}</h3><div class="mini">${escapeHtml(p.key)}</div></div><div class="count" style="color:${p.color}">${p.count}</div></div><div class="mini">${escapeHtml(p.source || 'Источник не указан')}</div><div class="mini">Примеры: ${p.heroes.slice(0,3).map(h=>escapeHtml(h.name)).join(', ')}</div><div class="actions"><button class="btn" data-packjump="${p.key}">Показать героев</button></div></article>`).join('')}</div>`}
+function render(){const heroes=filteredHeroes();const packs=filteredPacks();byId('statHeroes').textContent=state.data.meta.total;byId('statPacks').textContent=state.data.packs.length;byId('statShown').textContent=state.view==='heroes'?heroes.length:packs.length;byId('counter').textContent=state.view==='heroes'?`Показано ${heroes.length} из ${state.data.meta.total} героев`:`Показано ${packs.length} из ${state.data.packs.length} паков`;byId('sectionHeading').textContent=state.view==='heroes'?'Каталог героев':'Каталог паков';renderPackTabs();const content=byId('content');content.innerHTML=state.view==='heroes'?renderHeroes(heroes):renderPacks(packs);content.querySelectorAll('[data-copy]').forEach(btn=>btn.onclick=()=>copy(btn.dataset.copy));content.querySelectorAll('[data-packjump]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.packjump;state.view='heroes';renderViewTabs();render();window.scrollTo({top:0,behavior:'smooth'})})}
+function renderViewTabs(){byId('viewTabs').querySelectorAll('[data-view]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.view===state.view);btn.onclick=()=>{state.view=btn.dataset.view;renderViewTabs();render();}})}
+function renderError(){byId('content').innerHTML='<div class="empty">Не удалось загрузить <b>heroes_list.json</b>. Проверь, что файл лежит рядом с index.html и сайт открыт по HTTPS. <button class="btn" data-retry>Повторить</button></div>';byId('content').querySelector('[data-retry]').onclick=()=>init()}
+async function init(){
+  if(window.Telegram && Telegram.WebApp){
+    try{Telegram.WebApp.ready();Telegram.WebApp.expand();}catch(e){}
+    try{Telegram.WebApp.setHeaderColor('#0b101b');Telegram.WebApp.setBackgroundColor('#0b101b');}catch(e){}
+  }
+  byId('counter').textContent='Загрузка…';
+  try{state.data=await loadData()}catch(e){console.error('heroes_list.json load failed:',e);renderError();return}
+  render();
+}
+byId('search').addEventListener('input',e=>{state.query=e.target.value;if(state.data)render()});
+renderViewTabs();
+init();
+</script>
+</body>
+</html>

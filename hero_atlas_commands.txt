@@ -1,0 +1,580 @@
+Hero Atlas Commands
+Source: heroes_list.json
+Total heroes: 535 in 21 packs
+
+[FiskHeroes] (fiskheroes) — 67
+- Agent Liberty | fiskheroes:agent_liberty | /suit fiskheroes:agent_liberty
+- Ant-Man | fiskheroes:ant_man | /suit fiskheroes:ant_man
+- Anti-Monitor | fiskheroes:anti_monitor | /suit fiskheroes:anti_monitor
+- Arrow | fiskheroes:arrow | /suit fiskheroes:arrow
+- Arsenal | fiskheroes:arsenal | /suit fiskheroes:arsenal
+- Atom | fiskheroes:atom | /suit fiskheroes:atom
+- Atom-Smasher | fiskheroes:atom_smasher | /suit fiskheroes:atom_smasher
+- August Heart | fiskheroes:august_heart_comics | /suit fiskheroes:august_heart_comics
+- Batman | fiskheroes:batman_dceu | /suit fiskheroes:batman_dceu
+- Black Canary/Laurel Lance | fiskheroes:black_canary | /suit fiskheroes:black_canary
+- Black Canary/Dinah Drake | fiskheroes:black_canary_dinah | /suit fiskheroes:black_canary_dinah
+- Black Lightning | fiskheroes:black_lightning | /suit fiskheroes:black_lightning
+- Black Manta | fiskheroes:black_manta_dceu | /suit fiskheroes:black_manta_dceu
+- Black Panther | fiskheroes:black_panther | /suit fiskheroes:black_panther
+- Captain America/Steve Rogers | fiskheroes:captain_america | /suit fiskheroes:captain_america
+- Captain America/Sam Wilson | fiskheroes:captain_america_sam | /suit fiskheroes:captain_america_sam
+- Captain Cold | fiskheroes:captain_cold | /suit fiskheroes:captain_cold
+- Chronos | fiskheroes:chronos | /suit fiskheroes:chronos
+- Citizen Steel | fiskheroes:citizen_steel | /suit fiskheroes:citizen_steel
+- Colossus | fiskheroes:colossus_xmen | /suit fiskheroes:colossus_xmen
+- Crossbones | fiskheroes:crossbones | /suit fiskheroes:crossbones
+- Dark Archer | fiskheroes:dark_archer | /suit fiskheroes:dark_archer
+- Deadpool | fiskheroes:deadpool_xmen | /suit fiskheroes:deadpool_xmen
+- Deathstroke | fiskheroes:deathstroke_dceu | /suit fiskheroes:deathstroke_dceu
+- Doctor Octopus | fiskheroes:doctor_octopus | /suit fiskheroes:doctor_octopus
+- Doctor Strange | fiskheroes:doctor_strange | /suit fiskheroes:doctor_strange
+- Falcon | fiskheroes:falcon | /suit fiskheroes:falcon
+- Firestorm/Ronnie Raymond | fiskheroes:firestorm | /suit fiskheroes:firestorm
+- Firestorm/Jax Jackson | fiskheroes:firestorm_jax | /suit fiskheroes:firestorm_jax
+- Geomancer | fiskheroes:geomancer | /suit fiskheroes:geomancer
+- Godspeed | fiskheroes:godspeed_comics | /suit fiskheroes:godspeed_comics
+- Green Arrow | fiskheroes:green_arrow | /suit fiskheroes:green_arrow
+- Guardian | fiskheroes:guardian | /suit fiskheroes:guardian
+- Harbinger | fiskheroes:harbinger | /suit fiskheroes:harbinger
+- Heatwave | fiskheroes:heatwave | /suit fiskheroes:heatwave
+- Iron Man | fiskheroes:iron_man | /suit fiskheroes:iron_man
+- Iron Man/Mark 50 | fiskheroes:iron_man_mk50 | /suit fiskheroes:iron_man_mk50
+- Iron Man/Mark 85 | fiskheroes:iron_man_mk85 | /suit fiskheroes:iron_man_mk85
+- Kid Flash | fiskheroes:kid_flash | /suit fiskheroes:kid_flash
+- Killer Frost | fiskheroes:killer_frost | /suit fiskheroes:killer_frost
+- Martian Manhunter | fiskheroes:martian_manhunter | /suit fiskheroes:martian_manhunter
+- Martian Manhunter | fiskheroes:martian_manhunter_comics | /suit fiskheroes:martian_manhunter_comics
+- Mysterio | fiskheroes:mysterio | /suit fiskheroes:mysterio
+- Obsidian | fiskheroes:obsidian | /suit fiskheroes:obsidian
+- Prometheus | fiskheroes:prometheus | /suit fiskheroes:prometheus
+- Reverse-Flash | fiskheroes:reverse_flash | /suit fiskheroes:reverse_flash
+- Rip Hunter | fiskheroes:rip_hunter | /suit fiskheroes:rip_hunter
+- Rupture | fiskheroes:rupture | /suit fiskheroes:rupture
+- Savitar | fiskheroes:savitar | /suit fiskheroes:savitar
+- Se\u00f1or Cactus | fiskheroes:senor_cactus | /suit fiskheroes:senor_cactus
+- Shazam | fiskheroes:shazam_dceu | /suit fiskheroes:shazam_dceu
+- Spectre | fiskheroes:spectre | /suit fiskheroes:spectre
+- Spider-Man | fiskheroes:spider_man | /suit fiskheroes:spider_man
+- Spider-Man | fiskheroes:spider_man_ps4 | /suit fiskheroes:spider_man_ps4
+- Spider-Man | fiskheroes:spider_man_raimi | /suit fiskheroes:spider_man_raimi
+- Spider-Man | fiskheroes:spider_man_webb | /suit fiskheroes:spider_man_webb
+- Spodermen | fiskheroes:spodermen | /suit fiskheroes:spodermen
+- The Flash/Barry Allen | fiskheroes:the_flash | /suit fiskheroes:the_flash
+- The Flash/Hunter Zolomon | fiskheroes:the_flash_hunter | /suit fiskheroes:the_flash_hunter
+- The Flash/Jay Garrick | fiskheroes:the_flash_jay | /suit fiskheroes:the_flash_jay
+- The Monitor | fiskheroes:the_monitor | /suit fiskheroes:the_monitor
+- The Rival | fiskheroes:the_rival | /suit fiskheroes:the_rival
+- The Tick | fiskheroes:the_tick | /suit fiskheroes:the_tick
+- Trajectory | fiskheroes:trajectory | /suit fiskheroes:trajectory
+- Vision | fiskheroes:vision | /suit fiskheroes:vision
+- Wild Dog | fiskheroes:wild_dog | /suit fiskheroes:wild_dog
+- Zoom | fiskheroes:zoom | /suit fiskheroes:zoom
+
+[Miscellaneous] (misc) — 21
+- Black Adam | misc:black_adam | /suit misc:black_adam
+- Charles Xavier | misc:charles_xavier | /suit misc:charles_xavier
+- Choso | misc:choso | /suit misc:choso
+- Eren Yeager | misc:eren_yeager | /suit misc:eren_yeager
+- Ezio | misc:ezio | /suit misc:ezio
+- Thanos | misc:infinity_gauntlet | /suit misc:infinity_gauntlet
+- Invincible | misc:invincible | /suit misc:invincible
+- Invincible Variants | misc:invincible_variants | /suit misc:invincible_variants
+- John Wick | misc:john_wick | /suit misc:john_wick
+- Master Chief | misc:master_chief | /suit misc:master_chief
+- Metro Man | misc:metro_man | /suit misc:metro_man
+- Mind Stone | misc:mind_stone | /suit misc:mind_stone
+- Power Stone | misc:power_stone | /suit misc:power_stone
+- Powerplex | misc:powerplex | /suit misc:powerplex
+- The Punisher | misc:punisher | /suit misc:punisher
+- Reality Stone | misc:reality_stone | /suit misc:reality_stone
+- Reverse-Flash | misc:reverse_flash | /suit misc:reverse_flash
+- Soul Stone | misc:soul_stone | /suit misc:soul_stone
+- Space Stone | misc:space_stone | /suit misc:space_stone
+- Sunspot | misc:sunspot | /suit misc:sunspot
+- Time Stone | misc:time_stone | /suit misc:time_stone
+
+[Morningstar] (morningstar) — 11
+- Batman/Bruce Wayne | morningstar:batman_arkham | /suit morningstar:batman_arkham
+- The Flash/Barry Allen | morningstar:flash_earth90 | /suit morningstar:flash_earth90
+- The Flash/Wally West | morningstar:flash_normal | /suit morningstar:flash_normal
+- The Flash/Wally West | morningstar:flash_rebirth | /suit morningstar:flash_rebirth
+- Ghost Rider/Johnny Blaze | morningstar:ghost_rider_revamped | /suit morningstar:ghost_rider_revamped
+- Iceman/Robert Drake | morningstar:iceman_comic | /suit morningstar:iceman_comic
+- Omni-Man/Nolan Grayson | morningstar:omni_man | /suit morningstar:omni_man
+- Punisher/Frank Castle | morningstar:punisher_comic | /suit morningstar:punisher_comic
+- Spider-Man/Peter Parker | morningstar:spiderman_comic | /suit morningstar:spiderman_comic
+- Spider-Man/Peter Parker | morningstar:spiderman_merchandise | /suit morningstar:spiderman_merchandise
+- Superman/Clark Kent | morningstar:superman_comic | /suit morningstar:superman_comic
+
+[TGHeroes] (tgheroes) — 69
+- Abomination/Emil Blonsky | tgheroes:abomation | /suit tgheroes:abomation
+- Angel/Archangel | tgheroes:angel | /suit tgheroes:angel
+- Ant-Man/Scott Lang | tgheroes:ant_man | /suit tgheroes:ant_man
+- Apocalypse/En Sabah Nur | tgheroes:apocalypse | /suit tgheroes:apocalypse
+- Beast/Henry McCoy | tgheroes:beast | /suit tgheroes:beast
+- Black Panther/T'Challa | tgheroes:black_panther | /suit tgheroes:black_panther
+- Black Widow/Natasha Romanoff | tgheroes:black_widow | /suit tgheroes:black_widow
+- Winter Soldier | tgheroes:bucky | /suit tgheroes:bucky
+- Banshee/Sean Cassidy | tgheroes:bunshee | /suit tgheroes:bunshee
+- Cable/Nathan Summers | tgheroes:cable | /suit tgheroes:cable
+- Captain America | tgheroes:cap | /suit tgheroes:cap
+- Captain Marvel/Carol Danvers | tgheroes:cap_marvel | /suit tgheroes:cap_marvel
+- Cyclops/Scott Summers | tgheroes:cyclops | /suit tgheroes:cyclops
+- Deadpool/Wade Wilson | tgheroes:deadpool | /suit tgheroes:deadpool
+- Doctor Doom/Victor Von Doom | tgheroes:doctor_doom | /suit tgheroes:doctor_doom
+- Emma Frost | tgheroes:emma_frost | /suit tgheroes:emma_frost
+- Fin Fang Foom | tgheroes:fff | /suit tgheroes:fff
+- Galactus/Galan | tgheroes:galactus | /suit tgheroes:galactus
+- Gambit/Remy LeBeau | tgheroes:gambit | /suit tgheroes:gambit
+- Ghost/Ava Starr | tgheroes:ghost | /suit tgheroes:ghost
+- Hawkeye/Clint Barton | tgheroes:hawkeye | /suit tgheroes:hawkeye
+- Hela | tgheroes:hela | /suit tgheroes:hela
+- Hulk/Bruce Banner | tgheroes:hulk | /suit tgheroes:hulk
+- Human Torch | tgheroes:human_torch | /suit tgheroes:human_torch
+- Iceman/Robert Drake | tgheroes:iceman | /suit tgheroes:iceman
+- Infinity | tgheroes:infinity_gauntlet | /suit tgheroes:infinity_gauntlet
+- Invisible Woman/Susan Storm | tgheroes:invisible_woman | /suit tgheroes:invisible_woman
+- Iron Man/Tony Stark | tgheroes:ironman | /suit tgheroes:ironman
+- Jean Grey | tgheroes:jean | /suit tgheroes:jean
+- Jubilee | tgheroes:jubilee | /suit tgheroes:jubilee
+- Juggernaut/Cain Marko | tgheroes:jugger | /suit tgheroes:jugger
+- Kang the Conqueror | tgheroes:kang | /suit tgheroes:kang
+- Kitty Pryde | tgheroes:kitty_pryde | /suit tgheroes:kitty_pryde
+- Loki/Loki Laufeyson | tgheroes:loki | /suit tgheroes:loki
+- Goblin Queen/Madelyne Pryor | tgheroes:madelyne | /suit tgheroes:madelyne
+- Magik/Illyana Rasputina | tgheroes:magik | /suit tgheroes:magik
+- Magneto/Erik Lehnsherr | tgheroes:magneto | /suit tgheroes:magneto
+- Mandarin | tgheroes:mandarin | /suit tgheroes:mandarin
+- M.O.D.O.K. /George Tarleton | tgheroes:modok | /suit tgheroes:modok
+- Mister Fantastic/Reed Richards | tgheroes:mr_fantastic | /suit tgheroes:mr_fantastic
+- Namor | tgheroes:namor | /suit tgheroes:namor
+- Nightcrawler/Kurt Wagner | tgheroes:nightcrawler | /suit tgheroes:nightcrawler
+- Omega Red/Arkady Rossovich | tgheroes:omega_red | /suit tgheroes:omega_red
+- Professor X/Charles Xavier | tgheroes:proff_x | /suit tgheroes:proff_x
+- Psylocke/Elizabeth Braddock | tgheroes:psylocke | /suit tgheroes:psylocke
+- Quicksilver/Pietro Maximoff | tgheroes:quicksilver | /suit tgheroes:quicksilver
+- Red Hulk/Thaddeus Ross | tgheroes:red_hulk | /suit tgheroes:red_hulk
+- Red Skull/Johann Shmidt | tgheroes:red_skull | /suit tgheroes:red_skull
+- Rescue/Pepper Potts | tgheroes:rescue | /suit tgheroes:rescue
+- Rogue/Anna Marie | tgheroes:rogue | /suit tgheroes:rogue
+- Scarlet Witch/Wanda Maximoff | tgheroes:s_witch | /suit tgheroes:s_witch
+- Sabretooth/Victor Creed | tgheroes:sabertooth | /suit tgheroes:sabertooth
+- Sentinel | tgheroes:sentinel | /suit tgheroes:sentinel
+- Sentry/Robert Reynolds | tgheroes:sentry | /suit tgheroes:sentry
+- She-Hulk/Jennifer Walters | tgheroes:she_hulk | /suit tgheroes:she_hulk
+- Silver Surfer/Norrin Radd | tgheroes:silver_surfer | /suit tgheroes:silver_surfer
+- Storm/Ororo Munroe | tgheroes:storm | /suit tgheroes:storm
+- Doctor Strange/Stephen Strange | tgheroes:strange | /suit tgheroes:strange
+- Taskmaster/Anthony Masters | tgheroes:taskmaster | /suit tgheroes:taskmaster
+- Thanos | tgheroes:thanos | /suit tgheroes:thanos
+- The Thing/Ben Grimm | tgheroes:thing | /suit tgheroes:thing
+- Thor Odinson | tgheroes:thor | /suit tgheroes:thor
+- Ultron | tgheroes:ultron | /suit tgheroes:ultron
+- Vision | tgheroes:vision | /suit tgheroes:vision
+- War Machine/James Rhodes | tgheroes:war_mach | /suit tgheroes:war_mach
+- Wasp/Hope Van Dyne | tgheroes:wasp | /suit tgheroes:wasp
+- Wolverine/James Howlett 'Logan' | tgheroes:wolverine | /suit tgheroes:wolverine
+- X-23/Laura Kinney | tgheroes:x_23 | /suit tgheroes:x_23
+- Yellowjacket/Darren Cross | tgheroes:yellow_jacket | /suit tgheroes:yellow_jacket
+
+[8thPack] (8thpack) — 7
+- Genji | 8thpack:genji | /suit 8thpack:genji
+- Killer Croc | 8thpack:killercroc | /suit 8thpack:killercroc
+- Nebula | 8thpack:nebula | /suit 8thpack:nebula
+- Phase Shift Pilot | 8thpack:phaseshifter | /suit 8thpack:phaseshifter
+- Jack Cooper | 8thpack:pilote | /suit 8thpack:pilote
+- Spot | 8thpack:spot | /suit 8thpack:spot
+- Spot | 8thpack:spot_black | /suit 8thpack:spot_black
+
+[DERPZ Heroes] (dhhp) — 23
+- Aquaman | dhhp:aqualad | /suit dhhp:aqualad
+- Atom Eve | dhhp:atom_eve | /suit dhhp:atom_eve
+- Blossom | dhhp:blossom | /suit dhhp:blossom
+- Bubbles | dhhp:bubbles | /suit dhhp:bubbles
+- Buttercup | dhhp:buttercup | /suit dhhp:buttercup
+- Doctor Fate | dhhp:doctorfate | /suit dhhp:doctorfate
+- Galactus | dhhp:galactus | /suit dhhp:galactus
+- Satoru Gojo | dhhp:gojo | /suit dhhp:gojo
+- Invincible | dhhp:invincible | /suit dhhp:invincible
+- The Joker | dhhp:joker_comics | /suit dhhp:joker_comics
+- Nightwing | dhhp:nightwing | /suit dhhp:nightwing
+- Omniman | dhhp:omniman | /suit dhhp:omniman
+- Raven | dhhp:raven | /suit dhhp:raven
+- Red Hood | dhhp:red_hood | /suit dhhp:red_hood
+- Red X | dhhp:red_x | /suit dhhp:red_x
+- Rick Sanchez | dhhp:rick | /suit dhhp:rick
+- Scarlet-Spider | dhhp:scarlet_spider | /suit dhhp:scarlet_spider
+- Starfire | dhhp:starfire | /suit dhhp:starfire
+- Superboy | dhhp:superboy | /suit dhhp:superboy
+- Superman | dhhp:superman_kc | /suit dhhp:superman_kc
+- Terra | dhhp:terra | /suit dhhp:terra
+- Thor | dhhp:thor_mcu | /suit dhhp:thor_mcu
+- Thragg | dhhp:thragg | /suit dhhp:thragg
+
+[Iron Maniac] (ironmaniac) — 5
+- Iron Man | ironmaniac:iron_man_mark_1 | /suit ironmaniac:iron_man_mark_1
+- Iron Man | ironmaniac:iron_man_mark_2 | /suit ironmaniac:iron_man_mark_2
+- Iron Man | ironmaniac:iron_man_mark_3 | /suit ironmaniac:iron_man_mark_3
+- Iron Man | ironmaniac:iron_man_mark_5 | /suit ironmaniac:iron_man_mark_5
+- War Machine | ironmaniac:war_machine_mark_1 | /suit ironmaniac:war_machine_mark_1
+
+[JMCT Heroes] (jmctheroes) — 72
+- 8-Ball | jmctheroes:8ball | /suit jmctheroes:8ball
+- Agent Spider | jmctheroes:agent_spider | /suit jmctheroes:agent_spider
+- Allen The Alien | jmctheroes:allen | /suit jmctheroes:allen
+- Anissa | jmctheroes:anissa | /suit jmctheroes:anissa
+- Arkham Knight | jmctheroes:arkham_knight | /suit jmctheroes:arkham_knight
+- Batman | jmctheroes:batman_comics | /suit jmctheroes:batman_comics
+- Beta Ray Bill | jmctheroes:beta_ray_bill | /suit jmctheroes:beta_ray_bill
+- Jackson Weele/Big Wheel | jmctheroes:big_wheel | /suit jmctheroes:big_wheel
+- Bizarro | jmctheroes:bizarro | /suit jmctheroes:bizarro
+- Black Adam | jmctheroes:black_adam_dceu | /suit jmctheroes:black_adam_dceu
+- Blue Beetle | jmctheroes:blue_beetle_dceu | /suit jmctheroes:blue_beetle_dceu
+- Chainsaw Man | jmctheroes:chainsaw_man | /suit jmctheroes:chainsaw_man
+- Conquest | jmctheroes:conquest | /suit jmctheroes:conquest
+- Daredevil | jmctheroes:daredevil | /suit jmctheroes:daredevil
+- Darkseid | jmctheroes:darkseid | /suit jmctheroes:darkseid
+- Doctor Fate | jmctheroes:doctor_fate | /suit jmctheroes:doctor_fate
+- The Flash | jmctheroes:flash | /suit jmctheroes:flash
+- The Flash | jmctheroes:flash_dceu | /suit jmctheroes:flash_dceu
+- Groot/Guardians Of The Galaxy Vol.3 | jmctheroes:groot | /suit jmctheroes:groot
+- Hellboy | jmctheroes:hellboy | /suit jmctheroes:hellboy
+- Monkey/Hit-Monkey | jmctheroes:hit_monkey | /suit jmctheroes:hit_monkey
+- Human Torch | jmctheroes:human_torch | /suit jmctheroes:human_torch
+- The Immortal | jmctheroes:immortal | /suit jmctheroes:immortal
+- Invincible/Mark Grayson | jmctheroes:invincible | /suit jmctheroes:invincible
+- Invisible Woman | jmctheroes:invisible_woman | /suit jmctheroes:invisible_woman
+- Iron Legion Drone | jmctheroes:iron_legion | /suit jmctheroes:iron_legion
+- The Flash/Jay Garrick | jmctheroes:jay_garrick | /suit jmctheroes:jay_garrick
+- Katana Man | jmctheroes:katana_man | /suit jmctheroes:katana_man
+- Killer Moth | jmctheroes:killer_moth | /suit jmctheroes:killer_moth
+- Kite Man | jmctheroes:kite_man | /suit jmctheroes:kite_man
+- Green Lantern Corp | jmctheroes:lantern_ring_green | /suit jmctheroes:lantern_ring_green
+- Sinestro Lantern Corp | jmctheroes:lantern_ring_yellow | /suit jmctheroes:lantern_ring_yellow
+- M.O.D.O.K. | jmctheroes:modok | /suit jmctheroes:modok
+- Moon Knight | jmctheroes:moon_knight | /suit jmctheroes:moon_knight
+- Mr. Fantastic | jmctheroes:mr_fantastic | /suit jmctheroes:mr_fantastic
+- Omni-Man/Nolan Grayson | jmctheroes:omniman | /suit jmctheroes:omniman
+- Phantasm | jmctheroes:phantasm | /suit jmctheroes:phantasm
+- Pork Grind | jmctheroes:pork_grind | /suit jmctheroes:pork_grind
+- Power | jmctheroes:power | /suit jmctheroes:power
+- Prowler | jmctheroes:prowler | /suit jmctheroes:prowler
+- Red Death/Tales of the Dark Multiverse | jmctheroes:red_death | /suit jmctheroes:red_death
+- Red Hood | jmctheroes:red_hood | /suit jmctheroes:red_hood
+- Red Skull | jmctheroes:red_skull | /suit jmctheroes:red_skull
+- Reverse-Flash | jmctheroes:reverse_flash | /suit jmctheroes:reverse_flash
+- Rhino | jmctheroes:rhino | /suit jmctheroes:rhino
+- Scarlet Spider/Ben Reilly | jmctheroes:scarlet_spider | /suit jmctheroes:scarlet_spider
+- Shazam | jmctheroes:shazam_dceu | /suit jmctheroes:shazam_dceu
+- Spider-Man 2099 | jmctheroes:spider_2099 | /suit jmctheroes:spider_2099
+- Spider-Ham | jmctheroes:spider_ham | /suit jmctheroes:spider_ham
+- Spider-Man | jmctheroes:spider_man | /suit jmctheroes:spider_man
+- Ultimate Spider-Man/Peter Parker | jmctheroes:spider_man_1610 | /suit jmctheroes:spider_man_1610
+- Spider-Man Noir | jmctheroes:spider_man_noir | /suit jmctheroes:spider_man_noir
+- Spider-Man | jmctheroes:spider_man_tobey | /suit jmctheroes:spider_man_tobey
+- Ultimate Spider-Man/Miles Morales | jmctheroes:spider_miles | /suit jmctheroes:spider_miles
+- Spider-Punk | jmctheroes:spider_punk | /suit jmctheroes:spider_punk
+- Star-Lord | jmctheroes:star_lord | /suit jmctheroes:star_lord
+- Superboy | jmctheroes:superboy | /suit jmctheroes:superboy
+- Supergirl | jmctheroes:supergirl_dceu | /suit jmctheroes:supergirl_dceu
+- Superior Spider-Man | jmctheroes:superior_spider_man | /suit jmctheroes:superior_spider_man
+- Superman | jmctheroes:superman_dceu | /suit jmctheroes:superman_dceu
+- Super-Moustache-Man | jmctheroes:superman_god | /suit jmctheroes:superman_god
+- The Thing | jmctheroes:thing | /suit jmctheroes:thing
+- Ultimate Ultron | jmctheroes:ultimate_ultron | /suit jmctheroes:ultimate_ultron
+- Ultron/Mark 1 | jmctheroes:ultron_mk1 | /suit jmctheroes:ultron_mk1
+- Ultron Prime | jmctheroes:ultron_prime | /suit jmctheroes:ultron_prime
+- Venom | jmctheroes:venom | /suit jmctheroes:venom
+- Viltrumite Soldier | jmctheroes:viltrumite_soldier | /suit jmctheroes:viltrumite_soldier
+- The Flash/Wally West | jmctheroes:wally_west | /suit jmctheroes:wally_west
+- War Machine/Mark 1 | jmctheroes:war_machine_mk1 | /suit jmctheroes:war_machine_mk1
+- War Machine/Mark 2 | jmctheroes:war_machine_mk2 | /suit jmctheroes:war_machine_mk2
+- War Machine/Mark 3 | jmctheroes:war_machine_mk3 | /suit jmctheroes:war_machine_mk3
+- General Zod | jmctheroes:zod_dceu | /suit jmctheroes:zod_dceu
+
+[Nameless Heroes] (nameless) — 21
+- Spider-Man | nameless:anti_ock | /suit nameless:anti_ock
+- Batman Beyond | nameless:batman_beyond | /suit nameless:batman_beyond
+- Spider-Man | nameless:big_time | /suit nameless:big_time
+- Bizarro | nameless:bizarro | /suit nameless:bizarro
+- Brightburn | nameless:brightburn | /suit nameless:brightburn
+- Doctor Octopus | nameless:doctor_octopus_ps4 | /suit nameless:doctor_octopus_ps4
+- Iron Fist | nameless:iron_fist | /suit nameless:iron_fist
+- Iron Man | nameless:iron_man | /suit nameless:iron_man
+- Iron Spider | nameless:iron_spider | /suit nameless:iron_spider
+- The Joker | nameless:joker | /suit nameless:joker
+- Kid Flash | nameless:kid_flash | /suit nameless:kid_flash
+- Luke Cage | nameless:luke_cage | /suit nameless:luke_cage
+- Nightwing | nameless:nightwing | /suit nameless:nightwing
+- Quasar | nameless:quasar | /suit nameless:quasar
+- Red Hood | nameless:red_hood | /suit nameless:red_hood
+- Robin | nameless:robin | /suit nameless:robin
+- Spider-Man | nameless:spider_man_2099 | /suit nameless:spider_man_2099
+- Spider-UK | nameless:spider_uk | /suit nameless:spider_uk
+- Superman | nameless:superman_dcu | /suit nameless:superman_dcu
+- Superman | nameless:superman_fleischer | /suit nameless:superman_fleischer
+- Venom | nameless:venom90 | /suit nameless:venom90
+
+[Ninjago] (ninjago) — 4
+- Cole | ninjago:cole | /suit ninjago:cole
+- Jay | ninjago:jay | /suit ninjago:jay
+- Kai | ninjago:kai | /suit ninjago:kai
+- Zane | ninjago:zane | /suit ninjago:zane
+
+[RunnyHeroes] (runnyhero) — 7
+- Kingpin | runnyhero:kingpin | /suit runnyhero:kingpin
+- Kingpin | runnyhero:kingpin_sv | /suit runnyhero:kingpin_sv
+- Punisher | runnyhero:punisher | /suit runnyhero:punisher
+- Shocker | runnyhero:shocker | /suit runnyhero:shocker
+- Spider-Man | runnyhero:spider_man_cw | /suit runnyhero:spider_man_cw
+- Vulture | runnyhero:vulture | /suit runnyhero:vulture
+- White Tiger | runnyhero:white_tiger | /suit runnyhero:white_tiger
+
+[Sabri Enhanced] (sabri) — 13
+- Black Panther/Upgraded Habit | sabri:black_panther | /suit sabri:black_panther
+- Black Widow | sabri:black_widow | /suit sabri:black_widow
+- Cyclops | sabri:cyclops_xmen | /suit sabri:cyclops_xmen
+- Doctor Doom | sabri:doctor_doom_comics | /suit sabri:doctor_doom_comics
+- Doctor Doom | sabri:doctor_doom_f4 | /suit sabri:doctor_doom_f4
+- Kang the Conqueror | sabri:kang_the_conqueror | /suit sabri:kang_the_conqueror
+- Namor | sabri:namor | /suit sabri:namor
+- Quicksilver | sabri:quicksilver_xmen | /suit sabri:quicksilver_xmen
+- Sandman | sabri:sandman_raimi | /suit sabri:sandman_raimi
+- Silver Surfer | sabri:silver_surfer_f4 | /suit sabri:silver_surfer_f4
+- Thanos | sabri:thanos | /suit sabri:thanos
+- Thor | sabri:thor | /suit sabri:thor
+- Wolverine | sabri:wolverine_xmen | /suit sabri:wolverine_xmen
+
+[SecretHeroes] (secretheroes) — 16
+- Ghost Spider | secretheroes:ghost_spider | /suit secretheroes:ghost_spider
+- Godspeed | secretheroes:godspeed | /suit secretheroes:godspeed
+- Herobrine | secretheroes:herobrine | /suit secretheroes:herobrine
+- Homelander | secretheroes:homelander | /suit secretheroes:homelander
+- Hulk | secretheroes:hulk | /suit secretheroes:hulk
+- Impulse | secretheroes:impulse | /suit secretheroes:impulse
+- Mining Armor | secretheroes:mining_armor | /suit secretheroes:mining_armor
+- Moon Knight | secretheroes:moon_knight | /suit secretheroes:moon_knight
+- Red Death Comics | secretheroes:red_death_comics | /suit secretheroes:red_death_comics
+- Saitama | secretheroes:saitama | /suit secretheroes:saitama
+- Spider-Man | secretheroes:spider_man_black_raimi | /suit secretheroes:spider_man_black_raimi
+- S.T.A.R. Labs Speedster | secretheroes:star_labs_speedster_comics | /suit secretheroes:star_labs_speedster_comics
+- The Flash | secretheroes:the_flash | /suit secretheroes:the_flash
+- The Flash/Iris West | secretheroes:the_flash_iris | /suit secretheroes:the_flash_iris
+- Vibe | secretheroes:vibe | /suit secretheroes:vibe
+- XS | secretheroes:xs | /suit secretheroes:xs
+
+[Shadows] (shadows) — 23
+- Aragami | shadows:aragami | /suit shadows:aragami
+- Backpack | shadows:backpack | /suit shadows:backpack
+- Suit | shadows:backpack_equipment_visual | /suit shadows:backpack_equipment_visual
+- DipDapDoe | shadows:dipdapdoe | /suit shadows:dipdapdoe
+- Double Jump | shadows:double_jump | /suit shadows:double_jump
+- Forced Sentry | shadows:forced_sentry | /suit shadows:forced_sentry
+- Golem | shadows:golem | /suit shadows:golem
+- Hue-Man | shadows:hue_man | /suit shadows:hue_man
+- Vampire Hunter | shadows:hunter | /suit shadows:hunter
+- Mage | shadows:mage | /suit shadows:mage
+- Necrosword | shadows:necrosword | /suit shadows:necrosword
+- Power Ranger Wind Blue | shadows:power_ranger_wind_blue | /suit shadows:power_ranger_wind_blue
+- Power Ranger Wind Red | shadows:power_ranger_wind_red | /suit shadows:power_ranger_wind_red
+- Power Ranger Wind Yellow | shadows:power_ranger_wind_yellow | /suit shadows:power_ranger_wind_yellow
+- Random Suit | shadows:random | /suit shadows:random
+- Runic Magic | shadows:runic_magic | /suit shadows:runic_magic
+- Shadow | shadows:shadow | /suit shadows:shadow
+- Silver Speed | shadows:silver_speed | /suit shadows:silver_speed
+- Sorcerer | shadows:sorcerer | /suit shadows:sorcerer
+- Steve | shadows:steve | /suit shadows:steve
+- Superior Spider | shadows:superior_spider | /suit shadows:superior_spider
+- Tornado | shadows:tornado | /suit shadows:tornado
+- Vampire | shadows:vampire | /suit shadows:vampire
+
+[SIND Iron Man] (sind) — 64
+- Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini | sind:39_jetpack | /suit sind:39_jetpack
+- Iron Man/Mark 42 (XLII) - Prodigal Son | sind:42_1 | /suit sind:42_1
+- Iron Man/Mark 42 (XLII) - Prodigal Son | sind:42_2 | /suit sind:42_2
+- Iron Man/Mark 42 (XLII) - Prodigal Son | sind:42_3 | /suit sind:42_3
+- Iron Man/Mark 42 (XLII) - Prodigal Son | sind:42_4 | /suit sind:42_4
+- Iron Legion Drone | sind:ironlegiondrone | /suit sind:ironlegiondrone
+- Iron Spider/17A | sind:ironspider | /suit sind:ironspider
+- Iron Man/Mark 01 (I) | sind:mark1 | /suit sind:mark1
+- Iron Man/Mark 10 (X) | sind:mark10 | /suit sind:mark10
+- Iron Man/Mark 11 (XI) | sind:mark11 | /suit sind:mark11
+- Iron Man/Mark 12 (XII) | sind:mark12 | /suit sind:mark12
+- Iron Man/Mark 13 (XIII) | sind:mark13 | /suit sind:mark13
+- Iron Man/Mark 14 (XIV) | sind:mark14 | /suit sind:mark14
+- Iron Man/Mark 15 (XV) - Sneaky | sind:mark15 | /suit sind:mark15
+- Iron Man/Mark 16 (XVI) - Nightclub | sind:mark16 | /suit sind:mark16
+- Iron Man/Mark 17 (XVII) - Heartbreaker | sind:mark17 | /suit sind:mark17
+- Iron Man/Mark 18 (XVIII) - Casanova | sind:mark18 | /suit sind:mark18
+- Iron Man/Mark 19 (XIX) - Tiger | sind:mark19 | /suit sind:mark19
+- Iron Man/Mark 02 (II) | sind:mark2 | /suit sind:mark2
+- Iron Man/Mark 20 (XX) - Python | sind:mark20 | /suit sind:mark20
+- Iron Man/Mark 21 (XXI) - Midas | sind:mark21 | /suit sind:mark21
+- Iron Man/Mark 22 (XXII) - Hot Rod | sind:mark22 | /suit sind:mark22
+- Iron Man/Mark 23 (XXIII) - Shades | sind:mark23 | /suit sind:mark23
+- Iron Man/Mark 24 (XXIV) - Tank | sind:mark24 | /suit sind:mark24
+- Iron Man/Mark 25 (XXV) - Striker | sind:mark25 | /suit sind:mark25
+- Iron Man/Mark 26 (XXVI) - Gamma | sind:mark26 | /suit sind:mark26
+- Iron Man/Mark 27 (XXVII) - Disco | sind:mark27 | /suit sind:mark27
+- Iron Man/Mark 28 (XXVIII) - Jack | sind:mark28 | /suit sind:mark28
+- Iron Man/Mark 29 (XXIX) - Fiddler | sind:mark29 | /suit sind:mark29
+- Iron Man/Mark 03 (III) | sind:mark3 | /suit sind:mark3
+- Iron Man/Mark 30 (XXX) - Blue Steel | sind:mark30 | /suit sind:mark30
+- Iron Man/Mark 31 (XXXI) - Piston | sind:mark31 | /suit sind:mark31
+- Iron Man/Mark 32 (XXXII) - Romeo | sind:mark32 | /suit sind:mark32
+- Iron Man/Mark 33 (XXXIII) - Silver Centurion | sind:mark33 | /suit sind:mark33
+- Iron Man/Mark 34 (XXXIV) - Southpaw | sind:mark34 | /suit sind:mark34
+- Iron Man/Mark 35 (XXXV) - Red Snapper | sind:mark35 | /suit sind:mark35
+- Iron Man/Mark 36 (XXXVI) - Peacemaker | sind:mark36 | /suit sind:mark36
+- Iron Man/Mark 37 (XXXVII) - Hammerhead | sind:mark37 | /suit sind:mark37
+- Iron Man/Mark 38 (XXXVIII) - Igor | sind:mark38 | /suit sind:mark38
+- Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini | sind:mark39 | /suit sind:mark39
+- Iron Man/Mark 04 (IV) | sind:mark4 | /suit sind:mark4
+- Iron Man/Mark 40 (XL) - Shotgun | sind:mark40 | /suit sind:mark40
+- Iron Man/Mark 41 (XLI) - Bones | sind:mark41 | /suit sind:mark41
+- Iron Man/Mark 42 (XLII) - Prodigal Son | sind:mark42 | /suit sind:mark42
+- Iron Man/Mark 43 (XLIII) | sind:mark43 | /suit sind:mark43
+- Iron Man/Mark 44 (XLIV) - Hulkbuster | sind:mark44 | /suit sind:mark44
+- Iron Man/Mark 45 (XLV) | sind:mark45 | /suit sind:mark45
+- Iron Man/Mark 46 (XLVI) | sind:mark46 | /suit sind:mark46
+- Iron Man/Mark 47 (XLVII) | sind:mark47 | /suit sind:mark47
+- Iron Man/Mark 48 (XLVIII) - Hulkbuster Mk II | sind:mark48 | /suit sind:mark48
+- Iron Man/Mark 49 (XLIX) | sind:mark49 | /suit sind:mark49
+- Iron Man/Mark 05 (V) | sind:mark5 | /suit sind:mark5
+- Iron Man/Mark 50 (L) | sind:mark50 | /suit sind:mark50
+- Iron Man/Mark 06 (VI) | sind:mark6 | /suit sind:mark6
+- Iron Man/Mark 07 (VII) | sind:mark7 | /suit sind:mark7
+- Iron Man/Mark 07 (VII) | sind:mark7_bracelets | /suit sind:mark7_bracelets
+- Iron Man/Mark 08 (VIII) | sind:mark8 | /suit sind:mark8
+- Iron Man/Mark 09 (IX) | sind:mark9 | /suit sind:mark9
+- Tony Stark | sind:tony | /suit sind:tony
+- Insert Suit | sind:tony_equip | /suit sind:tony_equip
+- War Machine/Mark 01 (I) | sind:warmachine_mk1 | /suit sind:warmachine_mk1
+- War Machine/Mark 02 (II) | sind:warmachine_mk2 | /suit sind:warmachine_mk2
+- War Machine/Mark 03 (III) | sind:warmachine_mk3 | /suit sind:warmachine_mk3
+- War Machine/Mark 04 (IV) | sind:warmachine_mk4 | /suit sind:warmachine_mk4
+
+[Skarlet] (skarlet) — 24
+- Ash Williams | skarlet:ash_williams | /suit skarlet:ash_williams
+- Batman | skarlet:batman_arkham | /suit skarlet:batman_arkham
+- Batman | skarlet:batman_comics | /suit skarlet:batman_comics
+- Batman/Thomas Wayne | skarlet:batman_thomas | /suit skarlet:batman_thomas
+- Batwoman | skarlet:batwoman_comics | /suit skarlet:batwoman_comics
+- Blue Beetle | skarlet:blue_beetle_dceu | /suit skarlet:blue_beetle_dceu
+- Green Goblin | skarlet:green_goblin | /suit skarlet:green_goblin
+- Gwenpool | skarlet:gwenpool | /suit skarlet:gwenpool
+- Gwenpool/Dark | skarlet:gwenpool_future | /suit skarlet:gwenpool_future
+- Harley Quinn | skarlet:harley_quinn | /suit skarlet:harley_quinn
+- Human Torch | skarlet:human_torch | /suit skarlet:human_torch
+- Invisible Woman | skarlet:invisible_woman | /suit skarlet:invisible_woman
+- Miss Martian | skarlet:miss_martian | /suit skarlet:miss_martian
+- Mister Fantastic | skarlet:mister_fantastic | /suit skarlet:mister_fantastic
+- Silk | skarlet:silk | /suit skarlet:silk
+- Spider-Girl/Mayday Parker | skarlet:spider_girl | /suit skarlet:spider_girl
+- Spider-Woman/Gwen Stacy | skarlet:spider_gwen | /suit skarlet:spider_gwen
+- Supergirl | skarlet:supergirl_dceu | /suit skarlet:supergirl_dceu
+- Superman | skarlet:superman_comics | /suit skarlet:superman_comics
+- The Thing | skarlet:the_thing | /suit skarlet:the_thing
+- Ultron | skarlet:ultron_comics | /suit skarlet:ultron_comics
+- Wolverine | skarlet:wolverine_comics | /suit skarlet:wolverine_comics
+- Wonder Woman | skarlet:wonder_woman_comics | /suit skarlet:wonder_woman_comics
+- Wolverine/Laura Kinney | skarlet:x23_comics | /suit skarlet:x23_comics
+
+[StellarHeroes] (stellar) — 9
+- Booster Gold | stellar:booster_gold | /suit stellar:booster_gold
+- Cloak | stellar:cloak | /suit stellar:cloak
+- Cloak Shadow | stellar:cloak_shadow | /suit stellar:cloak_shadow
+- Danny Phantom | stellar:danny_phantom | /suit stellar:danny_phantom
+- Doctor Manhattan | stellar:dr_manhattan | /suit stellar:dr_manhattan
+- Pepsiman | stellar:pepsi_man | /suit stellar:pepsi_man
+- Quantum Realm Suit/Nanotech | stellar:quantum_suit | /suit stellar:quantum_suit
+- Spawn | stellar:spawn | /suit stellar:spawn
+- Wasp | stellar:wasp | /suit stellar:wasp
+
+[The Pack With Things] (pwt) — 15
+- Batman | pwt:batman_cyberpunk | /suit pwt:batman_cyberpunk
+- Carnage | pwt:carnage | /suit pwt:carnage
+- David Martinez | pwt:david_martinez_pre | /suit pwt:david_martinez_pre
+- Ghost | pwt:halloween_ghost | /suit pwt:halloween_ghost
+- Bob | pwt:halloween_scarecrow | /suit pwt:halloween_scarecrow
+- Joker | pwt:joker_cyberpunk | /suit pwt:joker_cyberpunk
+- Riot | pwt:riot | /suit pwt:riot
+- Robin | pwt:robin_cyberpunk | /suit pwt:robin_cyberpunk
+- Spider-Man | pwt:spider_man_symbiot_webb | /suit pwt:spider_man_symbiot_webb
+- Spider-Man | pwt:spider_man_symbiot_webb_3 | /suit pwt:spider_man_symbiot_webb_3
+- Sukuna | pwt:sukuna | /suit pwt:sukuna
+- Ryomen Sukuna | pwt:sukuna_heian | /suit pwt:sukuna_heian
+- Toxin | pwt:toxin | /suit pwt:toxin
+- The Trickster | pwt:trickster_aftermath | /suit pwt:trickster_aftermath
+- Venom | pwt:venom | /suit pwt:venom
+
+[TMF] (tmf) — 23
+- Uncraftable Item - Blitzwolfer | tmf:dna_blitzwolfer_18 | /suit tmf:dna_blitzwolfer_18
+- Uncraftable Item - Cannonbolt | tmf:dna_cannonbolt_16 | /suit tmf:dna_cannonbolt_16
+- Uncraftable Item - Ditto | tmf:dna_ditto_23 | /suit tmf:dna_ditto_23
+- Uncraftable Item - Eyeguy | tmf:dna_eyeguy_24 | /suit tmf:dna_eyeguy_24
+- Uncraftable Item - Frankenstrike | tmf:dna_frankenstrike_20 | /suit tmf:dna_frankenstrike_20
+- Uncraftable Item - Snare-Oh | tmf:dna_snareoh_19 | /suit tmf:dna_snareoh_19
+- Uncraftable Item - Upchuck | tmf:dna_upchuck_22 | /suit tmf:dna_upchuck_22
+- Uncraftable Item - Waybig | tmf:dna_waybig_25 | /suit tmf:dna_waybig_25
+- Uncraftable Item - Wildvine | tmf:dna_wildvine_17 | /suit tmf:dna_wildvine_17
+- Iron Man | tmf:iron_man_mk1_aa | /suit tmf:iron_man_mk1_aa
+- Iron Man | tmf:iron_man_mk1_aa_backpack | /suit tmf:iron_man_mk1_aa_backpack
+- Iron Man | tmf:iron_man_silver_centurion_aa | /suit tmf:iron_man_silver_centurion_aa
+- Iron Man | tmf:iron_man_space_aa | /suit tmf:iron_man_space_aa
+- Iron Man | tmf:iron_man_stealth_aa | /suit tmf:iron_man_stealth_aa
+- I'm no hero | tmf:not_hero_time | /suit tmf:not_hero_time
+- Omnitrix | tmf:omni_galvanic_modulator | /suit tmf:omni_galvanic_modulator
+- Omnitrix | tmf:omni_recal | /suit tmf:omni_recal
+- Omnitrix | tmf:omnitrix | /suit tmf:omnitrix
+- Omnitrix | tmf:omnitrix_grey_matter | /suit tmf:omnitrix_grey_matter
+- Omnitrix | tmf:omnitrix_grey_matter_crafting | /suit tmf:omnitrix_grey_matter_crafting
+- Omnitrix | tmf:omnitrix_upchuck | /suit tmf:omnitrix_upchuck
+- The Deep | tmf:the_deep | /suit tmf:the_deep
+- The Mandarin | tmf:the_mandarin_aa | /suit tmf:the_mandarin_aa
+
+[Transformers Pack] (transformers_pack) — 2
+- Hook | transformers_pack:g1_hook | /suit transformers_pack:g1_hook
+- Optimus Prime | transformers_pack:g1_optimus_prime | /suit transformers_pack:g1_optimus_prime
+
+[Unconventional] (unconventional) — 39
+- Artemis | unconventional:artemis_yj | /suit unconventional:artemis_yj
+- Batman/Tactical | unconventional:batman_dceu_tactical | /suit unconventional:batman_dceu_tactical
+- Batman | unconventional:batman_reeves | /suit unconventional:batman_reeves
+- Batman/Arkham Knight | unconventional:batman_rocksteady | /suit unconventional:batman_rocksteady
+- Batman | unconventional:batman_telltale | /suit unconventional:batman_telltale
+- Black Bolt | unconventional:black_bolt_comics | /suit unconventional:black_bolt_comics
+- Black Canary/Earth-2 | unconventional:black_canary_e2 | /suit unconventional:black_canary_e2
+- Black Cat | unconventional:black_cat_ps4 | /suit unconventional:black_cat_ps4
+- Captain America/John Walker | unconventional:captain_america_jw | /suit unconventional:captain_america_jw
+- Captain Carter | unconventional:captain_carter_what_if | /suit unconventional:captain_carter_what_if
+- Catwoman | unconventional:catwoman_telltale | /suit unconventional:catwoman_telltale
+- Weapon XI | unconventional:deadpool_xmen_origins | /suit unconventional:deadpool_xmen_origins
+- Deathstroke | unconventional:deathstroke_rocksteady | /suit unconventional:deathstroke_rocksteady
+- Tony Stark | unconventional:edith | /suit unconventional:edith
+- Electro | unconventional:electro | /suit unconventional:electro
+- Emiko Adachi | unconventional:emiko_adachi | /suit unconventional:emiko_adachi
+- Five | unconventional:five | /suit unconventional:five
+- Ghost | unconventional:ghost | /suit unconventional:ghost
+- Hawkeye/Clint Barton | unconventional:hawkeye | /suit unconventional:hawkeye
+- Hawkeye/Kate Bishop | unconventional:kate_bishop | /suit unconventional:kate_bishop
+- Mosquito | unconventional:mosquito | /suit unconventional:mosquito
+- Nick Fury | unconventional:nick_fury | /suit unconventional:nick_fury
+- Pietro Maximoff | unconventional:pietro | /suit unconventional:pietro
+- Radioactive Man | unconventional:radioactive_man | /suit unconventional:radioactive_man
+- Red Guardian | unconventional:red_guardian | /suit unconventional:red_guardian
+- Robin/Arkham Knight | unconventional:robin_rocksteady | /suit unconventional:robin_rocksteady
+- Ronin/Clint Barton | unconventional:ronin | /suit unconventional:ronin
+- Soldier Boy | unconventional:soldier_boy | /suit unconventional:soldier_boy
+- Spider-Man/Miles Morales | unconventional:spider_man_miles_ps5 | /suit unconventional:spider_man_miles_ps5
+- Spider-Man/Miles Morales | unconventional:spider_man_miles_sv | /suit unconventional:spider_man_miles_sv
+- Spoiler | unconventional:spoiler_comics | /suit unconventional:spoiler_comics
+- Super Soldier/Erskine's Formula | unconventional:sss_og | /suit unconventional:sss_og
+- Taskmaster | unconventional:taskmaster | /suit unconventional:taskmaster
+- The Signal | unconventional:the_signal_comics | /suit unconventional:the_signal_comics
+- Tigress | unconventional:tigress_yj | /suit unconventional:tigress_yj
+- Wanda Maximoff | unconventional:wanda | /suit unconventional:wanda
+- Bucky Barnes | unconventional:white_wolf | /suit unconventional:white_wolf
+- Winter Soldier | unconventional:winter_soldier | /suit unconventional:winter_soldier
+- Yellow Jacket | unconventional:yellow_jacket | /suit unconventional:yellow_jacket
