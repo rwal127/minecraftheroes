@@ -77,6 +77,22 @@ def main() -> int:
           "wiki links point at fiskheroes.fandom.com")
     print(f"  {with_preview}/{total} heroes with a canonical preview, {len(set(imgs))} image files referenced")
 
+    try:
+        from PIL import Image
+    except ImportError:
+        print("  SKIP image decoding check (PIL is not installed)")
+    else:
+        broken = []
+        for rel in sorted(set(imgs)):
+            try:
+                with Image.open(ROOT / rel) as im:
+                    im.load()  # full decode: catches truncated/corrupt files
+                    if im.width <= 0 or im.height <= 0:
+                        broken.append(rel)
+            except Exception:
+                broken.append(rel)
+        check(not broken, f"every referenced image decodes with PIL (broken: {broken[:3]})")
+
     print(f"\n{total} heroes across {len(packs)} packs")
 
     if ALIASES.exists():

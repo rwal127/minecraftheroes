@@ -126,7 +126,10 @@ async function runSuite(){
   if (flashRow) {
     flashRow.click(); await tick(150);
     ok('клик по строке открывает модалку', !modal().hidden);
-    ok('в модалке фото героя', $('#mPhoto img') && $('#mPhoto img').src.includes('assets/heroes/wiki/the_flash'));
+    const mImg0 = $('#mPhoto img');
+    ok('в модалке фото героя', !!mImg0 && mImg0.src.includes('assets/heroes/wiki/the_flash'));
+    const mDecoded = await waitFor(() => mImg0 && mImg0.complete && mImg0.naturalWidth > 0, 10000);
+    ok('фото в модалке реально декодировано (naturalWidth > 0)', !!mDecoded);
     ok('в модалке имя и пак', $('#mName').textContent === 'The Flash/Barry Allen' && $('#mBadge').textContent === 'FiskHeroes');
     ok('в модалке чипы тира и снижения урона с вики', $('#mChips').textContent.includes('Тир 5') && $('#mChips').textContent.includes('91.2%'));
     ok('в модалке команда', $('#mCmd').textContent === '/suit fiskheroes:the_flash');
@@ -151,6 +154,49 @@ async function runSuite(){
     ok('Escape закрывает модалку', modal().hidden);
   }
   $('[data-pack="all"]').click(); await tick();
+
+  // 9c. preview images: loading, decoding, rendering style, HTTP availability
+  const fhTab = $$('#packTabs .tab').find(t => t.dataset.pack === 'fiskheroes');
+  fhTab.click(); await tick(250);
+  const fhRows = $$('#content .row');
+  ok('в паке FiskHeroes 67 строк', fhRows.length === 67);
+  const avas = $$('#content .r-ava img');
+  ok('у всех 67 героев FiskHeroes есть аватарка <img>', avas.length === 67);
+  ok('у аватарок заполнен alt', avas.every(i => i.alt && i.alt.length > 0));
+  const avaEl = d.querySelector('#content .r-ava');
+  ok('аватарки видны в строке и держат размер 36×48',
+     !!avaEl && avaEl.offsetWidth === 36 && avaEl.offsetHeight === 48 && !!avaEl.offsetParent);
+  ok('картинка аватара заполняет рамку целиком (не выпирает)',
+     (() => { const b = avaEl.getBoundingClientRect(), i = avaEl.querySelector('img').getBoundingClientRect();
+              return i.width <= b.width + 0.5 && i.height <= b.height + 0.5; })());
+  // lazy images load only near the viewport — scroll the pack in batches and require each batch to decode
+  const broken = [];
+  for (let i = 0; i < avas.length; i += 8) {
+    const batch = avas.slice(i, i + 8);
+    batch[batch.length >> 1].scrollIntoView({block: 'center'});
+    const done = await waitFor(() => batch.every(im => im.complete && im.naturalWidth > 0), 8000);
+    if (!done) broken.push(...batch.filter(im => !(im.complete && im.naturalWidth > 0)).map(im => decodeURIComponent(im.src).split('/').pop()));
+    await tick(25);
+  }
+  ok('все 67 аватарок декодируются при прокрутке (complete && naturalWidth > 0)', broken.length === 0, broken.slice(0, 3).join(', '));
+  d.defaultView.scrollTo(0, 0); await tick(300);
+  const pxImg = avas.find(i => i.classList.contains('px'));
+  const smoothImg = avas.find(i => !i.classList.contains('px'));
+  ok('игровые превью рисуются pixelated, вики-рендеры — сглаженно',
+     !!pxImg && !!smoothImg
+     && w.getComputedStyle(pxImg).imageRendering === 'pixelated'
+     && w.getComputedStyle(smoothImg).imageRendering !== 'pixelated');
+  const sampleSrcs = [...new Set(avas.map(i => i.src))].slice(0, 8);
+  const badSrcs = [];
+  for (const s of sampleSrcs) {
+    try { const r = await w.fetch(s, {cache: 'no-store'}); if (!r.ok) badSrcs.push(s + ' -> HTTP ' + r.status); }
+    catch (e) { badSrcs.push(s + ' -> ' + (e && e.message)); }
+  }
+  ok(`выборка превью отдаётся сервером с HTTP 200 (${sampleSrcs.length} шт.)`, badSrcs.length === 0, badSrcs.join('; '));
+  // lazy-загрузка: атрибут должен стоять у всех картинок списка «Все»
+  $('[data-pack="all"]').click(); await tick(250);
+  ok('в списке «Все» у всех картинок включена ленивая загрузка',
+     $$('#content .r-ava img').length > 0 && $$('#content .r-ava img').every(i => i.loading === 'lazy'));
 
   // 10. data consistency from the UI side
   ok('все отрендеренные ID уникальны', new Set($$('.row .r-id').map(e => e.textContent)).size === 535);
