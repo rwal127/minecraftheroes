@@ -1,0 +1,8 @@
+# Cloudflare Workers: раздача каталога как статических файлов.
+# Деплой из Git-интеграции: команда `npx wrangler deploy` (конфиг читается отсюда).
+name = "minecraftheroes"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./"
+# index.html отдаётся на "/", отсутствующие пути возвращают 404 (по умолчанию)
