@@ -6,14 +6,16 @@
     "total": 535,
     "packs": 21,
     "previews": {
-      "total_with_preview": 429,
+      "total_with_preview": 456,
       "wiki_renders": 56,
       "game_front_views": 429,
+      "model_renders": 27,
       "builtins_with_preview": "67/67",
       "wiki_source": "fiskheroes.fandom.com — 3D-рендеры, вики описывает только встроенные костюмы",
       "game_source": "фронтальный вид, собранный из текстур костюмов в jar/херопаках",
-      "without_preview": 106,
-      "without_preview_note": "кастомные Tabula-модели (Hulk, Thanos, MODOK, giant-персонажи), предметы-гаджеты и герои вообще без текстур костюма"
+      "model_source": "офлайн-рендер Tabula-моделей из херопаков (tools/hero_previews_models.py)",
+      "without_preview": 79,
+      "without_preview_note": "кастомные модели без превью-геометрии, предметы-гаджеты и герои вообще без текстур костюма"
     }
   },
   "packs": {
@@ -29,7 +31,8 @@
           "image": "assets/heroes/game/fiskheroes__agent_liberty.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__agent_liberty.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:ant_man",
@@ -37,7 +40,8 @@
           "image": "assets/heroes/wiki/ant_man.png",
           "image_wiki": "assets/heroes/wiki/ant_man.png",
           "image_game": "assets/heroes/game/fiskheroes__ant_man.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Ant-Man"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Ant-Man",
+          "image_model": null
         },
         {
           "id": "fiskheroes:anti_monitor",
@@ -45,7 +49,8 @@
           "image": "assets/heroes/wiki/anti_monitor.png",
           "image_wiki": "assets/heroes/wiki/anti_monitor.png",
           "image_game": "assets/heroes/game/fiskheroes__anti_monitor.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Anti-Monitor"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Anti-Monitor",
+          "image_model": null
         },
         {
           "id": "fiskheroes:arrow",
@@ -53,7 +58,8 @@
           "image": "assets/heroes/wiki/arrow.png",
           "image_wiki": "assets/heroes/wiki/arrow.png",
           "image_game": "assets/heroes/game/fiskheroes__arrow.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Arrow"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Arrow",
+          "image_model": null
         },
         {
           "id": "fiskheroes:arsenal",
@@ -61,7 +67,8 @@
           "image": "assets/heroes/wiki/arsenal.png",
           "image_wiki": "assets/heroes/wiki/arsenal.png",
           "image_game": "assets/heroes/game/fiskheroes__arsenal.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Arsenal"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Arsenal",
+          "image_model": null
         },
         {
           "id": "fiskheroes:atom",
@@ -69,7 +76,8 @@
           "image": "assets/heroes/wiki/atom.png",
           "image_wiki": "assets/heroes/wiki/atom.png",
           "image_game": "assets/heroes/game/fiskheroes__atom.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Atom"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Atom",
+          "image_model": null
         },
         {
           "id": "fiskheroes:atom_smasher",
@@ -77,7 +85,8 @@
           "image": "assets/heroes/wiki/atom_smasher.png",
           "image_wiki": "assets/heroes/wiki/atom_smasher.png",
           "image_game": "assets/heroes/game/fiskheroes__atom_smasher.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Atom-Smasher"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Atom-Smasher",
+          "image_model": null
         },
         {
           "id": "fiskheroes:august_heart_comics",
@@ -85,7 +94,8 @@
           "image": "assets/heroes/wiki/august_heart_comics.png",
           "image_wiki": "assets/heroes/wiki/august_heart_comics.png",
           "image_game": "assets/heroes/game/fiskheroes__august_heart_comics.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/August_Heart_(Comics)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/August_Heart_(Comics)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:batman_dceu",
@@ -93,7 +103,8 @@
           "image": "assets/heroes/wiki/batman_dceu.png",
           "image_wiki": "assets/heroes/wiki/batman_dceu.png",
           "image_game": "assets/heroes/game/fiskheroes__batman_dceu.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Batman_(DCEU)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Batman_(DCEU)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:black_canary",
@@ -101,7 +112,8 @@
           "image": "assets/heroes/wiki/black_canary.png",
           "image_wiki": "assets/heroes/wiki/black_canary.png",
           "image_game": "assets/heroes/game/fiskheroes__black_canary.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Canary_(Laurel_Lance)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Canary_(Laurel_Lance)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:black_canary_dinah",
@@ -109,7 +121,8 @@
           "image": "assets/heroes/wiki/black_canary_dinah.png",
           "image_wiki": "assets/heroes/wiki/black_canary_dinah.png",
           "image_game": "assets/heroes/game/fiskheroes__black_canary_dinah.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Canary"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Canary",
+          "image_model": null
         },
         {
           "id": "fiskheroes:black_lightning",
@@ -117,7 +130,8 @@
           "image": "assets/heroes/wiki/black_lightning.png",
           "image_wiki": "assets/heroes/wiki/black_lightning.png",
           "image_game": "assets/heroes/game/fiskheroes__black_lightning.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Lightning"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Black_Lightning",
+          "image_model": null
         },
         {
           "id": "fiskheroes:black_manta_dceu",
@@ -125,7 +139,8 @@
           "image": "assets/heroes/game/fiskheroes__black_manta_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__black_manta_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:black_panther",
@@ -133,7 +148,8 @@
           "image": "assets/heroes/wiki/black_panther.png",
           "image_wiki": "assets/heroes/wiki/black_panther.png",
           "image_game": "assets/heroes/game/fiskheroes__black_panther.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:captain_america",
@@ -141,7 +157,8 @@
           "image": "assets/heroes/wiki/captain_america.png",
           "image_wiki": "assets/heroes/wiki/captain_america.png",
           "image_game": "assets/heroes/game/fiskheroes__captain_america.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_America"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_America",
+          "image_model": null
         },
         {
           "id": "fiskheroes:captain_america_sam",
@@ -149,7 +166,8 @@
           "image": "assets/heroes/wiki/captain_america_sam.png",
           "image_wiki": "assets/heroes/wiki/captain_america_sam.png",
           "image_game": "assets/heroes/game/fiskheroes__captain_america_sam.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_America_(Sam_Wilson)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_America_(Sam_Wilson)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:captain_cold",
@@ -157,7 +175,8 @@
           "image": "assets/heroes/wiki/captain_cold.png",
           "image_wiki": "assets/heroes/wiki/captain_cold.png",
           "image_game": "assets/heroes/game/fiskheroes__captain_cold.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_Cold"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Captain_Cold",
+          "image_model": null
         },
         {
           "id": "fiskheroes:chronos",
@@ -165,7 +184,8 @@
           "image": "assets/heroes/wiki/chronos.png",
           "image_wiki": "assets/heroes/wiki/chronos.png",
           "image_game": "assets/heroes/game/fiskheroes__chronos.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Chronos"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Chronos",
+          "image_model": null
         },
         {
           "id": "fiskheroes:citizen_steel",
@@ -173,7 +193,8 @@
           "image": "assets/heroes/wiki/citizen_steel.png",
           "image_wiki": "assets/heroes/wiki/citizen_steel.png",
           "image_game": "assets/heroes/game/fiskheroes__citizen_steel.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Citizen_Steel"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Citizen_Steel",
+          "image_model": null
         },
         {
           "id": "fiskheroes:colossus_xmen",
@@ -181,7 +202,8 @@
           "image": "assets/heroes/wiki/colossus_xmen.png",
           "image_wiki": "assets/heroes/wiki/colossus_xmen.png",
           "image_game": "assets/heroes/game/fiskheroes__colossus_xmen.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Colossus"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Colossus",
+          "image_model": null
         },
         {
           "id": "fiskheroes:crossbones",
@@ -189,7 +211,8 @@
           "image": "assets/heroes/game/fiskheroes__crossbones.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__crossbones.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:dark_archer",
@@ -197,7 +220,8 @@
           "image": "assets/heroes/wiki/dark_archer.png",
           "image_wiki": "assets/heroes/wiki/dark_archer.png",
           "image_game": "assets/heroes/game/fiskheroes__dark_archer.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Dark_Archer"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Dark_Archer",
+          "image_model": null
         },
         {
           "id": "fiskheroes:deadpool_xmen",
@@ -205,7 +229,8 @@
           "image": "assets/heroes/wiki/deadpool_xmen.png",
           "image_wiki": "assets/heroes/wiki/deadpool_xmen.png",
           "image_game": "assets/heroes/game/fiskheroes__deadpool_xmen.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Deadpool"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Deadpool",
+          "image_model": null
         },
         {
           "id": "fiskheroes:deathstroke_dceu",
@@ -213,7 +238,8 @@
           "image": "assets/heroes/game/fiskheroes__deathstroke_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__deathstroke_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:doctor_octopus",
@@ -221,7 +247,8 @@
           "image": "assets/heroes/wiki/doctor_octopus.png",
           "image_wiki": "assets/heroes/wiki/doctor_octopus.png",
           "image_game": "assets/heroes/game/fiskheroes__doctor_octopus.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Doctor_Octupus"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Doctor_Octupus",
+          "image_model": null
         },
         {
           "id": "fiskheroes:doctor_strange",
@@ -229,7 +256,8 @@
           "image": "assets/heroes/wiki/doctor_strange.png",
           "image_wiki": "assets/heroes/wiki/doctor_strange.png",
           "image_game": "assets/heroes/game/fiskheroes__doctor_strange.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Doctor_Strange"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Doctor_Strange",
+          "image_model": null
         },
         {
           "id": "fiskheroes:falcon",
@@ -237,7 +265,8 @@
           "image": "assets/heroes/wiki/falcon.png",
           "image_wiki": "assets/heroes/wiki/falcon.png",
           "image_game": "assets/heroes/game/fiskheroes__falcon.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Falcon"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Falcon",
+          "image_model": null
         },
         {
           "id": "fiskheroes:firestorm",
@@ -245,7 +274,8 @@
           "image": "assets/heroes/wiki/firestorm.png",
           "image_wiki": "assets/heroes/wiki/firestorm.png",
           "image_game": "assets/heroes/game/fiskheroes__firestorm.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Firestorm_(Ronnie_Raymond)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Firestorm_(Ronnie_Raymond)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:firestorm_jax",
@@ -253,7 +283,8 @@
           "image": "assets/heroes/wiki/firestorm_jax.png",
           "image_wiki": "assets/heroes/wiki/firestorm_jax.png",
           "image_game": "assets/heroes/game/fiskheroes__firestorm_jax.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Firestorm_(Jax_Jackson)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Firestorm_(Jax_Jackson)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:geomancer",
@@ -261,7 +292,8 @@
           "image": "assets/heroes/wiki/geomancer.png",
           "image_wiki": "assets/heroes/wiki/geomancer.png",
           "image_game": "assets/heroes/game/fiskheroes__geomancer.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Geomancer"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Geomancer",
+          "image_model": null
         },
         {
           "id": "fiskheroes:godspeed_comics",
@@ -269,7 +301,8 @@
           "image": "assets/heroes/wiki/godspeed_comics.png",
           "image_wiki": "assets/heroes/wiki/godspeed_comics.png",
           "image_game": "assets/heroes/game/fiskheroes__godspeed_comics.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Godspeed"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Godspeed",
+          "image_model": null
         },
         {
           "id": "fiskheroes:green_arrow",
@@ -277,7 +310,8 @@
           "image": "assets/heroes/wiki/green_arrow.png",
           "image_wiki": "assets/heroes/wiki/green_arrow.png",
           "image_game": "assets/heroes/game/fiskheroes__green_arrow.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Green_Arrow"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Green_Arrow",
+          "image_model": null
         },
         {
           "id": "fiskheroes:guardian",
@@ -285,7 +319,8 @@
           "image": "assets/heroes/wiki/guardian.png",
           "image_wiki": "assets/heroes/wiki/guardian.png",
           "image_game": "assets/heroes/game/fiskheroes__guardian.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Guardian"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Guardian",
+          "image_model": null
         },
         {
           "id": "fiskheroes:harbinger",
@@ -293,7 +328,8 @@
           "image": "assets/heroes/wiki/harbinger.png",
           "image_wiki": "assets/heroes/wiki/harbinger.png",
           "image_game": "assets/heroes/game/fiskheroes__harbinger.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Harbinger"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Harbinger",
+          "image_model": null
         },
         {
           "id": "fiskheroes:heatwave",
@@ -301,7 +337,8 @@
           "image": "assets/heroes/wiki/heatwave.png",
           "image_wiki": "assets/heroes/wiki/heatwave.png",
           "image_game": "assets/heroes/game/fiskheroes__heatwave.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Heatwave"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Heatwave",
+          "image_model": null
         },
         {
           "id": "fiskheroes:iron_man",
@@ -309,7 +346,8 @@
           "image": "assets/heroes/wiki/iron_man.png",
           "image_wiki": "assets/heroes/wiki/iron_man.png",
           "image_game": "assets/heroes/game/fiskheroes__iron_man.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Iron_Man"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Iron_Man",
+          "image_model": null
         },
         {
           "id": "fiskheroes:iron_man_mk50",
@@ -317,7 +355,8 @@
           "image": "assets/heroes/wiki/iron_man_mk50.png",
           "image_wiki": "assets/heroes/wiki/iron_man_mk50.png",
           "image_game": "assets/heroes/game/fiskheroes__iron_man_mk50.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Iron_Man_(Mark_50)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Iron_Man_(Mark_50)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:iron_man_mk85",
@@ -325,7 +364,8 @@
           "image": "assets/heroes/game/fiskheroes__iron_man_mk85.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__iron_man_mk85.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:kid_flash",
@@ -333,7 +373,8 @@
           "image": "assets/heroes/wiki/kid_flash.png",
           "image_wiki": "assets/heroes/wiki/kid_flash.png",
           "image_game": "assets/heroes/game/fiskheroes__kid_flash.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Kid_Flash"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Kid_Flash",
+          "image_model": null
         },
         {
           "id": "fiskheroes:killer_frost",
@@ -341,7 +382,8 @@
           "image": "assets/heroes/wiki/killer_frost.png",
           "image_wiki": "assets/heroes/wiki/killer_frost.png",
           "image_game": "assets/heroes/game/fiskheroes__killer_frost.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Killer_Frost"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Killer_Frost",
+          "image_model": null
         },
         {
           "id": "fiskheroes:martian_manhunter",
@@ -349,7 +391,8 @@
           "image": "assets/heroes/wiki/martian_manhunter.png",
           "image_wiki": "assets/heroes/wiki/martian_manhunter.png",
           "image_game": "assets/heroes/game/fiskheroes__martian_manhunter.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Martian_Manhunter"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Martian_Manhunter",
+          "image_model": null
         },
         {
           "id": "fiskheroes:martian_manhunter_comics",
@@ -357,7 +400,8 @@
           "image": "assets/heroes/wiki/martian_manhunter_comics.png",
           "image_wiki": "assets/heroes/wiki/martian_manhunter_comics.png",
           "image_game": "assets/heroes/game/fiskheroes__martian_manhunter_comics.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Martian_Manhunter_(Comics)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Martian_Manhunter_(Comics)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:mysterio",
@@ -365,7 +409,8 @@
           "image": "assets/heroes/wiki/mysterio.png",
           "image_wiki": "assets/heroes/wiki/mysterio.png",
           "image_game": "assets/heroes/game/fiskheroes__mysterio.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Mysterio"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Mysterio",
+          "image_model": null
         },
         {
           "id": "fiskheroes:obsidian",
@@ -373,7 +418,8 @@
           "image": "assets/heroes/wiki/obsidian.png",
           "image_wiki": "assets/heroes/wiki/obsidian.png",
           "image_game": "assets/heroes/game/fiskheroes__obsidian.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Obsidian"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Obsidian",
+          "image_model": null
         },
         {
           "id": "fiskheroes:prometheus",
@@ -381,7 +427,8 @@
           "image": "assets/heroes/wiki/prometheus.png",
           "image_wiki": "assets/heroes/wiki/prometheus.png",
           "image_game": "assets/heroes/game/fiskheroes__prometheus.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Prometheus"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Prometheus",
+          "image_model": null
         },
         {
           "id": "fiskheroes:reverse_flash",
@@ -389,7 +436,8 @@
           "image": "assets/heroes/wiki/reverse_flash.png",
           "image_wiki": "assets/heroes/wiki/reverse_flash.png",
           "image_game": "assets/heroes/game/fiskheroes__reverse_flash.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Reverse-Flash"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Reverse-Flash",
+          "image_model": null
         },
         {
           "id": "fiskheroes:rip_hunter",
@@ -397,7 +445,8 @@
           "image": "assets/heroes/wiki/rip_hunter.png",
           "image_wiki": "assets/heroes/wiki/rip_hunter.png",
           "image_game": "assets/heroes/game/fiskheroes__rip_hunter.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Rip_Hunter"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Rip_Hunter",
+          "image_model": null
         },
         {
           "id": "fiskheroes:rupture",
@@ -405,7 +454,8 @@
           "image": "assets/heroes/wiki/rupture.png",
           "image_wiki": "assets/heroes/wiki/rupture.png",
           "image_game": "assets/heroes/game/fiskheroes__rupture.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Rupture"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Rupture",
+          "image_model": null
         },
         {
           "id": "fiskheroes:savitar",
@@ -413,7 +463,8 @@
           "image": "assets/heroes/wiki/savitar.png",
           "image_wiki": "assets/heroes/wiki/savitar.png",
           "image_game": "assets/heroes/game/fiskheroes__savitar.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:senor_cactus",
@@ -421,7 +472,8 @@
           "image": "assets/heroes/wiki/senor_cactus.png",
           "image_wiki": "assets/heroes/wiki/senor_cactus.png",
           "image_game": "assets/heroes/game/fiskheroes__senor_cactus.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Señor_Cactus"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Señor_Cactus",
+          "image_model": null
         },
         {
           "id": "fiskheroes:shazam_dceu",
@@ -429,7 +481,8 @@
           "image": "assets/heroes/wiki/shazam_dceu.png",
           "image_wiki": "assets/heroes/wiki/shazam_dceu.png",
           "image_game": "assets/heroes/game/fiskheroes__shazam_dceu.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Shazam_(DCEU)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Shazam_(DCEU)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:spectre",
@@ -437,7 +490,8 @@
           "image": "assets/heroes/wiki/spectre.png",
           "image_wiki": "assets/heroes/wiki/spectre.png",
           "image_game": "assets/heroes/game/fiskheroes__spectre.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Spectre"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Spectre",
+          "image_model": null
         },
         {
           "id": "fiskheroes:spider_man",
@@ -445,7 +499,8 @@
           "image": "assets/heroes/game/fiskheroes__spider_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__spider_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:spider_man_ps4",
@@ -453,7 +508,8 @@
           "image": "assets/heroes/game/fiskheroes__spider_man_ps4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__spider_man_ps4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:spider_man_raimi",
@@ -461,7 +517,8 @@
           "image": "assets/heroes/game/fiskheroes__spider_man_raimi.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__spider_man_raimi.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:spider_man_webb",
@@ -469,7 +526,8 @@
           "image": "assets/heroes/game/fiskheroes__spider_man_webb.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__spider_man_webb.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:spodermen",
@@ -477,7 +535,8 @@
           "image": "assets/heroes/game/fiskheroes__spodermen.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__spodermen.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_flash",
@@ -485,7 +544,8 @@
           "image": "assets/heroes/wiki/the_flash.jpg",
           "image_wiki": "assets/heroes/wiki/the_flash.jpg",
           "image_game": "assets/heroes/game/fiskheroes__the_flash.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash",
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_flash_hunter",
@@ -493,7 +553,8 @@
           "image": "assets/heroes/wiki/the_flash_hunter.png",
           "image_wiki": "assets/heroes/wiki/the_flash_hunter.png",
           "image_game": "assets/heroes/game/fiskheroes__the_flash_hunter.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash_(Hunter_Zolomon)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash_(Hunter_Zolomon)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_flash_jay",
@@ -501,7 +562,8 @@
           "image": "assets/heroes/wiki/the_flash_jay.png",
           "image_wiki": "assets/heroes/wiki/the_flash_jay.png",
           "image_game": "assets/heroes/game/fiskheroes__the_flash_jay.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash_(Jay_Garrick)"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Flash_(Jay_Garrick)",
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_monitor",
@@ -509,7 +571,8 @@
           "image": "assets/heroes/wiki/the_monitor.png",
           "image_wiki": "assets/heroes/wiki/the_monitor.png",
           "image_game": "assets/heroes/game/fiskheroes__the_monitor.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Monitor"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Monitor",
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_rival",
@@ -517,7 +580,8 @@
           "image": "assets/heroes/wiki/the_rival.png",
           "image_wiki": "assets/heroes/wiki/the_rival.png",
           "image_game": "assets/heroes/game/fiskheroes__the_rival.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Rival"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Rival",
+          "image_model": null
         },
         {
           "id": "fiskheroes:the_tick",
@@ -525,7 +589,8 @@
           "image": "assets/heroes/wiki/the_tick.png",
           "image_wiki": "assets/heroes/wiki/the_tick.png",
           "image_game": "assets/heroes/game/fiskheroes__the_tick.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/The_Tick"
+          "wiki": "https://fiskheroes.fandom.com/wiki/The_Tick",
+          "image_model": null
         },
         {
           "id": "fiskheroes:trajectory",
@@ -533,7 +598,8 @@
           "image": "assets/heroes/wiki/trajectory.png",
           "image_wiki": "assets/heroes/wiki/trajectory.png",
           "image_game": "assets/heroes/game/fiskheroes__trajectory.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Trajectory"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Trajectory",
+          "image_model": null
         },
         {
           "id": "fiskheroes:vision",
@@ -541,7 +607,8 @@
           "image": "assets/heroes/wiki/vision.png",
           "image_wiki": "assets/heroes/wiki/vision.png",
           "image_game": "assets/heroes/game/fiskheroes__vision.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Vision"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Vision",
+          "image_model": null
         },
         {
           "id": "fiskheroes:wild_dog",
@@ -549,7 +616,8 @@
           "image": "assets/heroes/game/fiskheroes__wild_dog.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/fiskheroes__wild_dog.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "fiskheroes:zoom",
@@ -557,7 +625,8 @@
           "image": "assets/heroes/wiki/zoom.png",
           "image_wiki": "assets/heroes/wiki/zoom.png",
           "image_game": "assets/heroes/game/fiskheroes__zoom.png",
-          "wiki": "https://fiskheroes.fandom.com/wiki/Zoom"
+          "wiki": "https://fiskheroes.fandom.com/wiki/Zoom",
+          "image_model": null
         }
       ]
     },
@@ -573,7 +642,8 @@
           "image": "assets/heroes/game/misc__black_adam.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__black_adam.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:charles_xavier",
@@ -581,7 +651,8 @@
           "image": "assets/heroes/game/misc__charles_xavier.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__charles_xavier.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:choso",
@@ -589,7 +660,8 @@
           "image": "assets/heroes/game/misc__choso.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__choso.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:eren_yeager",
@@ -597,7 +669,8 @@
           "image": "assets/heroes/game/misc__eren_yeager.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__eren_yeager.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:ezio",
@@ -605,7 +678,8 @@
           "image": "assets/heroes/game/misc__ezio.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__ezio.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:infinity_gauntlet",
@@ -613,7 +687,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:invincible",
@@ -621,7 +696,8 @@
           "image": "assets/heroes/game/misc__invincible.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__invincible.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:invincible_variants",
@@ -629,7 +705,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:john_wick",
@@ -637,7 +714,8 @@
           "image": "assets/heroes/game/misc__john_wick.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__john_wick.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:master_chief",
@@ -645,7 +723,8 @@
           "image": "assets/heroes/game/misc__master_chief.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__master_chief.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:metro_man",
@@ -653,7 +732,8 @@
           "image": "assets/heroes/game/misc__metro_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__metro_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:mind_stone",
@@ -661,7 +741,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:power_stone",
@@ -669,7 +750,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:powerplex",
@@ -677,7 +759,8 @@
           "image": "assets/heroes/game/misc__powerplex.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__powerplex.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:punisher",
@@ -685,7 +768,8 @@
           "image": "assets/heroes/game/misc__punisher.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__punisher.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:reality_stone",
@@ -693,7 +777,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:reverse_flash",
@@ -701,7 +786,8 @@
           "image": "assets/heroes/game/misc__reverse_flash.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__reverse_flash.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:soul_stone",
@@ -709,7 +795,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:space_stone",
@@ -717,7 +804,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:sunspot",
@@ -725,7 +813,8 @@
           "image": "assets/heroes/game/misc__sunspot.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/misc__sunspot.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "misc:time_stone",
@@ -733,7 +822,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -749,7 +839,8 @@
           "image": "assets/heroes/game/morningstar__batman_arkham.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__batman_arkham.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:flash_earth90",
@@ -757,7 +848,8 @@
           "image": "assets/heroes/game/morningstar__flash_earth90.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__flash_earth90.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:flash_normal",
@@ -765,7 +857,8 @@
           "image": "assets/heroes/game/morningstar__flash_normal.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__flash_normal.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:flash_rebirth",
@@ -773,7 +866,8 @@
           "image": "assets/heroes/game/morningstar__flash_rebirth.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__flash_rebirth.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:ghost_rider_revamped",
@@ -781,7 +875,8 @@
           "image": "assets/heroes/game/morningstar__ghost_rider_revamped.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__ghost_rider_revamped.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:iceman_comic",
@@ -789,7 +884,8 @@
           "image": "assets/heroes/game/morningstar__iceman_comic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__iceman_comic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:omni_man",
@@ -797,7 +893,8 @@
           "image": "assets/heroes/game/morningstar__omni_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__omni_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:punisher_comic",
@@ -805,7 +902,8 @@
           "image": "assets/heroes/game/morningstar__punisher_comic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__punisher_comic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:spiderman_comic",
@@ -813,7 +911,8 @@
           "image": "assets/heroes/game/morningstar__spiderman_comic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__spiderman_comic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:spiderman_merchandise",
@@ -821,7 +920,8 @@
           "image": "assets/heroes/game/morningstar__spiderman_merchandise.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__spiderman_merchandise.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "morningstar:superman_comic",
@@ -829,7 +929,8 @@
           "image": "assets/heroes/game/morningstar__superman_comic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/morningstar__superman_comic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -842,10 +943,11 @@
         {
           "id": "tgheroes:abomation",
           "name": "Abomination/Emil Blonsky",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__abomation.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__abomation.png"
         },
         {
           "id": "tgheroes:angel",
@@ -853,7 +955,8 @@
           "image": "assets/heroes/game/tgheroes__angel.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__angel.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:ant_man",
@@ -861,7 +964,8 @@
           "image": "assets/heroes/game/tgheroes__ant_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__ant_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:apocalypse",
@@ -869,7 +973,8 @@
           "image": "assets/heroes/game/tgheroes__apocalypse.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__apocalypse.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:beast",
@@ -877,7 +982,8 @@
           "image": "assets/heroes/game/tgheroes__beast.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__beast.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:black_panther",
@@ -885,7 +991,8 @@
           "image": "assets/heroes/game/tgheroes__black_panther.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__black_panther.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:black_widow",
@@ -893,7 +1000,8 @@
           "image": "assets/heroes/game/tgheroes__black_widow.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__black_widow.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:bucky",
@@ -901,7 +1009,8 @@
           "image": "assets/heroes/game/tgheroes__bucky.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__bucky.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:bunshee",
@@ -909,7 +1018,8 @@
           "image": "assets/heroes/game/tgheroes__bunshee.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__bunshee.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:cable",
@@ -917,7 +1027,8 @@
           "image": "assets/heroes/game/tgheroes__cable.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__cable.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:cap",
@@ -925,7 +1036,8 @@
           "image": "assets/heroes/game/tgheroes__cap.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__cap.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:cap_marvel",
@@ -933,7 +1045,8 @@
           "image": "assets/heroes/game/tgheroes__cap_marvel.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__cap_marvel.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:cyclops",
@@ -941,7 +1054,8 @@
           "image": "assets/heroes/game/tgheroes__cyclops.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__cyclops.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:deadpool",
@@ -949,7 +1063,8 @@
           "image": "assets/heroes/game/tgheroes__deadpool.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__deadpool.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:doctor_doom",
@@ -957,15 +1072,17 @@
           "image": "assets/heroes/game/tgheroes__doctor_doom.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__doctor_doom.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:emma_frost",
           "name": "Emma Frost",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__emma_frost.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__emma_frost.png"
         },
         {
           "id": "tgheroes:fff",
@@ -973,7 +1090,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:galactus",
@@ -981,7 +1099,8 @@
           "image": "assets/heroes/game/tgheroes__galactus.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__galactus.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:gambit",
@@ -989,7 +1108,8 @@
           "image": "assets/heroes/game/tgheroes__gambit.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__gambit.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:ghost",
@@ -997,7 +1117,8 @@
           "image": "assets/heroes/game/tgheroes__ghost.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__ghost.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:hawkeye",
@@ -1005,7 +1126,8 @@
           "image": "assets/heroes/game/tgheroes__hawkeye.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__hawkeye.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:hela",
@@ -1013,15 +1135,17 @@
           "image": "assets/heroes/game/tgheroes__hela.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__hela.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:hulk",
           "name": "Hulk/Bruce Banner",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__hulk.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__hulk.png"
         },
         {
           "id": "tgheroes:human_torch",
@@ -1029,7 +1153,8 @@
           "image": "assets/heroes/game/tgheroes__human_torch.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__human_torch.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:iceman",
@@ -1037,7 +1162,8 @@
           "image": "assets/heroes/game/tgheroes__iceman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__iceman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:infinity_gauntlet",
@@ -1045,7 +1171,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:invisible_woman",
@@ -1053,7 +1180,8 @@
           "image": "assets/heroes/game/tgheroes__invisible_woman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__invisible_woman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:ironman",
@@ -1061,15 +1189,17 @@
           "image": "assets/heroes/game/tgheroes__ironman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__ironman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:jean",
           "name": "Jean Grey",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__jean.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__jean.png"
         },
         {
           "id": "tgheroes:jubilee",
@@ -1077,15 +1207,17 @@
           "image": "assets/heroes/game/tgheroes__jubilee.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__jubilee.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:jugger",
           "name": "Juggernaut/Cain Marko",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__jugger.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__jugger.png"
         },
         {
           "id": "tgheroes:kang",
@@ -1093,7 +1225,8 @@
           "image": "assets/heroes/game/tgheroes__kang.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__kang.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:kitty_pryde",
@@ -1101,7 +1234,8 @@
           "image": "assets/heroes/game/tgheroes__kitty_pryde.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__kitty_pryde.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:loki",
@@ -1109,7 +1243,8 @@
           "image": "assets/heroes/game/tgheroes__loki.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__loki.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:madelyne",
@@ -1117,15 +1252,17 @@
           "image": "assets/heroes/game/tgheroes__madelyne.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__madelyne.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:magik",
           "name": "Magik/Illyana Rasputina",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__magik.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__magik.png"
         },
         {
           "id": "tgheroes:magneto",
@@ -1133,7 +1270,8 @@
           "image": "assets/heroes/game/tgheroes__magneto.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__magneto.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:mandarin",
@@ -1141,23 +1279,26 @@
           "image": "assets/heroes/game/tgheroes__mandarin.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__mandarin.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:modok",
           "name": "M.O.D.O.K. /George Tarleton",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__modok.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__modok.png"
         },
         {
           "id": "tgheroes:mr_fantastic",
           "name": "Mister Fantastic/Reed Richards",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__mr_fantastic.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__mr_fantastic.png"
         },
         {
           "id": "tgheroes:namor",
@@ -1165,7 +1306,8 @@
           "image": "assets/heroes/game/tgheroes__namor.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__namor.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:nightcrawler",
@@ -1173,7 +1315,8 @@
           "image": "assets/heroes/game/tgheroes__nightcrawler.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__nightcrawler.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:omega_red",
@@ -1181,7 +1324,8 @@
           "image": "assets/heroes/game/tgheroes__omega_red.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__omega_red.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:proff_x",
@@ -1189,15 +1333,17 @@
           "image": "assets/heroes/game/tgheroes__proff_x.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__proff_x.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:psylocke",
           "name": "Psylocke/Elizabeth Braddock",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__psylocke.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__psylocke.png"
         },
         {
           "id": "tgheroes:quicksilver",
@@ -1205,15 +1351,17 @@
           "image": "assets/heroes/game/tgheroes__quicksilver.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__quicksilver.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:red_hulk",
           "name": "Red Hulk/Thaddeus Ross",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__red_hulk.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__red_hulk.png"
         },
         {
           "id": "tgheroes:red_skull",
@@ -1221,7 +1369,8 @@
           "image": "assets/heroes/game/tgheroes__red_skull.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__red_skull.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:rescue",
@@ -1229,7 +1378,8 @@
           "image": "assets/heroes/game/tgheroes__rescue.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__rescue.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:rogue",
@@ -1237,7 +1387,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:s_witch",
@@ -1245,7 +1396,8 @@
           "image": "assets/heroes/game/tgheroes__s_witch.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__s_witch.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:sabertooth",
@@ -1253,7 +1405,8 @@
           "image": "assets/heroes/game/tgheroes__sabertooth.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__sabertooth.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:sentinel",
@@ -1261,7 +1414,8 @@
           "image": "assets/heroes/game/tgheroes__sentinel.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__sentinel.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:sentry",
@@ -1269,15 +1423,17 @@
           "image": "assets/heroes/game/tgheroes__sentry.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__sentry.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:she_hulk",
           "name": "She-Hulk/Jennifer Walters",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__she_hulk.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__she_hulk.png"
         },
         {
           "id": "tgheroes:silver_surfer",
@@ -1285,7 +1441,8 @@
           "image": "assets/heroes/game/tgheroes__silver_surfer.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__silver_surfer.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:storm",
@@ -1293,7 +1450,8 @@
           "image": "assets/heroes/game/tgheroes__storm.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__storm.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:strange",
@@ -1301,7 +1459,8 @@
           "image": "assets/heroes/game/tgheroes__strange.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__strange.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:taskmaster",
@@ -1309,23 +1468,26 @@
           "image": "assets/heroes/game/tgheroes__taskmaster.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__taskmaster.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:thanos",
           "name": "Thanos",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__thanos.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__thanos.png"
         },
         {
           "id": "tgheroes:thing",
           "name": "The Thing/Ben Grimm",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__thing.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/tgheroes__thing.png"
         },
         {
           "id": "tgheroes:thor",
@@ -1333,7 +1495,8 @@
           "image": "assets/heroes/game/tgheroes__thor.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__thor.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:ultron",
@@ -1341,7 +1504,8 @@
           "image": "assets/heroes/game/tgheroes__ultron.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__ultron.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:vision",
@@ -1349,7 +1513,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:war_mach",
@@ -1357,7 +1522,8 @@
           "image": "assets/heroes/game/tgheroes__war_mach.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__war_mach.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:wasp",
@@ -1365,7 +1531,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:wolverine",
@@ -1373,7 +1540,8 @@
           "image": "assets/heroes/game/tgheroes__wolverine.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__wolverine.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:x_23",
@@ -1381,7 +1549,8 @@
           "image": "assets/heroes/game/tgheroes__x_23.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__x_23.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tgheroes:yellow_jacket",
@@ -1389,7 +1558,8 @@
           "image": "assets/heroes/game/tgheroes__yellow_jacket.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tgheroes__yellow_jacket.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -1405,7 +1575,8 @@
           "image": "assets/heroes/game/8thpack__genji.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__genji.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:killercroc",
@@ -1413,7 +1584,8 @@
           "image": "assets/heroes/game/8thpack__killercroc.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__killercroc.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:nebula",
@@ -1421,7 +1593,8 @@
           "image": "assets/heroes/game/8thpack__nebula.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__nebula.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:phaseshifter",
@@ -1429,7 +1602,8 @@
           "image": "assets/heroes/game/8thpack__phaseshifter.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__phaseshifter.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:pilote",
@@ -1437,7 +1611,8 @@
           "image": "assets/heroes/game/8thpack__pilote.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__pilote.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:spot",
@@ -1445,7 +1620,8 @@
           "image": "assets/heroes/game/8thpack__spot.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__spot.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "8thpack:spot_black",
@@ -1453,7 +1629,8 @@
           "image": "assets/heroes/game/8thpack__spot_black.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/8thpack__spot_black.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -1469,7 +1646,8 @@
           "image": "assets/heroes/game/dhhp__aqualad.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__aqualad.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:atom_eve",
@@ -1477,7 +1655,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:blossom",
@@ -1485,7 +1664,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:bubbles",
@@ -1493,7 +1673,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:buttercup",
@@ -1501,7 +1682,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:doctorfate",
@@ -1509,7 +1691,8 @@
           "image": "assets/heroes/game/dhhp__doctorfate.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__doctorfate.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:galactus",
@@ -1517,7 +1700,8 @@
           "image": "assets/heroes/game/dhhp__galactus.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__galactus.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:gojo",
@@ -1525,7 +1709,8 @@
           "image": "assets/heroes/game/dhhp__gojo.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__gojo.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:invincible",
@@ -1533,7 +1718,8 @@
           "image": "assets/heroes/game/dhhp__invincible.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__invincible.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:joker_comics",
@@ -1541,7 +1727,8 @@
           "image": "assets/heroes/game/dhhp__joker_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__joker_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:nightwing",
@@ -1549,7 +1736,8 @@
           "image": "assets/heroes/game/dhhp__nightwing.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__nightwing.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:omniman",
@@ -1557,7 +1745,8 @@
           "image": "assets/heroes/game/dhhp__omniman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__omniman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:raven",
@@ -1565,7 +1754,8 @@
           "image": "assets/heroes/game/dhhp__raven.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__raven.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:red_hood",
@@ -1573,7 +1763,8 @@
           "image": "assets/heroes/game/dhhp__red_hood.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__red_hood.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:red_x",
@@ -1581,7 +1772,8 @@
           "image": "assets/heroes/game/dhhp__red_x.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__red_x.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:rick",
@@ -1589,7 +1781,8 @@
           "image": "assets/heroes/game/dhhp__rick.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__rick.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:scarlet_spider",
@@ -1597,7 +1790,8 @@
           "image": "assets/heroes/game/dhhp__scarlet_spider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__scarlet_spider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:starfire",
@@ -1605,7 +1799,8 @@
           "image": "assets/heroes/game/dhhp__starfire.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__starfire.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:superboy",
@@ -1613,7 +1808,8 @@
           "image": "assets/heroes/game/dhhp__superboy.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__superboy.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:superman_kc",
@@ -1621,7 +1817,8 @@
           "image": "assets/heroes/game/dhhp__superman_kc.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__superman_kc.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:terra",
@@ -1629,7 +1826,8 @@
           "image": "assets/heroes/game/dhhp__terra.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__terra.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:thor_mcu",
@@ -1637,7 +1835,8 @@
           "image": "assets/heroes/game/dhhp__thor_mcu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__thor_mcu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "dhhp:thragg",
@@ -1645,7 +1844,8 @@
           "image": "assets/heroes/game/dhhp__thragg.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/dhhp__thragg.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -1661,7 +1861,8 @@
           "image": "assets/heroes/game/ironmaniac__iron_man_mark_1.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ironmaniac__iron_man_mark_1.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ironmaniac:iron_man_mark_2",
@@ -1669,7 +1870,8 @@
           "image": "assets/heroes/game/ironmaniac__iron_man_mark_2.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ironmaniac__iron_man_mark_2.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ironmaniac:iron_man_mark_3",
@@ -1677,7 +1879,8 @@
           "image": "assets/heroes/game/ironmaniac__iron_man_mark_3.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ironmaniac__iron_man_mark_3.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ironmaniac:iron_man_mark_5",
@@ -1685,7 +1888,8 @@
           "image": "assets/heroes/game/ironmaniac__iron_man_mark_5.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ironmaniac__iron_man_mark_5.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ironmaniac:war_machine_mark_1",
@@ -1693,7 +1897,8 @@
           "image": "assets/heroes/game/ironmaniac__war_machine_mark_1.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ironmaniac__war_machine_mark_1.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -1709,7 +1914,8 @@
           "image": "assets/heroes/game/jmctheroes__8ball.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__8ball.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:agent_spider",
@@ -1717,7 +1923,8 @@
           "image": "assets/heroes/game/jmctheroes__agent_spider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__agent_spider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:allen",
@@ -1725,7 +1932,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:anissa",
@@ -1733,7 +1941,8 @@
           "image": "assets/heroes/game/jmctheroes__anissa.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__anissa.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:arkham_knight",
@@ -1741,7 +1950,8 @@
           "image": "assets/heroes/game/jmctheroes__arkham_knight.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__arkham_knight.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:batman_comics",
@@ -1749,7 +1959,8 @@
           "image": "assets/heroes/game/jmctheroes__batman_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__batman_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:beta_ray_bill",
@@ -1757,7 +1968,8 @@
           "image": "assets/heroes/game/jmctheroes__beta_ray_bill.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__beta_ray_bill.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:big_wheel",
@@ -1765,7 +1977,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:bizarro",
@@ -1773,7 +1986,8 @@
           "image": "assets/heroes/game/jmctheroes__bizarro.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__bizarro.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:black_adam_dceu",
@@ -1781,7 +1995,8 @@
           "image": "assets/heroes/game/jmctheroes__black_adam_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__black_adam_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:blue_beetle_dceu",
@@ -1789,7 +2004,8 @@
           "image": "assets/heroes/game/jmctheroes__blue_beetle_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__blue_beetle_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:chainsaw_man",
@@ -1797,7 +2013,8 @@
           "image": "assets/heroes/game/jmctheroes__chainsaw_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__chainsaw_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:conquest",
@@ -1805,7 +2022,8 @@
           "image": "assets/heroes/game/jmctheroes__conquest.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__conquest.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:daredevil",
@@ -1813,7 +2031,8 @@
           "image": "assets/heroes/game/jmctheroes__daredevil.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__daredevil.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:darkseid",
@@ -1821,7 +2040,8 @@
           "image": "assets/heroes/game/jmctheroes__darkseid.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__darkseid.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:doctor_fate",
@@ -1829,7 +2049,8 @@
           "image": "assets/heroes/game/jmctheroes__doctor_fate.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__doctor_fate.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:flash",
@@ -1837,7 +2058,8 @@
           "image": "assets/heroes/game/jmctheroes__flash.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__flash.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:flash_dceu",
@@ -1845,15 +2067,17 @@
           "image": "assets/heroes/game/jmctheroes__flash_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__flash_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:groot",
           "name": "Groot/Guardians Of The Galaxy Vol.3",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__groot.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__groot.png"
         },
         {
           "id": "jmctheroes:hellboy",
@@ -1861,15 +2085,17 @@
           "image": "assets/heroes/game/jmctheroes__hellboy.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__hellboy.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:hit_monkey",
           "name": "Monkey/Hit-Monkey",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__hit_monkey.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__hit_monkey.png"
         },
         {
           "id": "jmctheroes:human_torch",
@@ -1877,7 +2103,8 @@
           "image": "assets/heroes/game/jmctheroes__human_torch.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__human_torch.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:immortal",
@@ -1885,7 +2112,8 @@
           "image": "assets/heroes/game/jmctheroes__immortal.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__immortal.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:invincible",
@@ -1893,7 +2121,8 @@
           "image": "assets/heroes/game/jmctheroes__invincible.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__invincible.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:invisible_woman",
@@ -1901,7 +2130,8 @@
           "image": "assets/heroes/game/jmctheroes__invisible_woman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__invisible_woman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:iron_legion",
@@ -1909,7 +2139,8 @@
           "image": "assets/heroes/game/jmctheroes__iron_legion.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__iron_legion.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:jay_garrick",
@@ -1917,7 +2148,8 @@
           "image": "assets/heroes/game/jmctheroes__jay_garrick.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__jay_garrick.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:katana_man",
@@ -1925,7 +2157,8 @@
           "image": "assets/heroes/game/jmctheroes__katana_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__katana_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:killer_moth",
@@ -1933,7 +2166,8 @@
           "image": "assets/heroes/game/jmctheroes__killer_moth.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__killer_moth.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:kite_man",
@@ -1941,7 +2175,8 @@
           "image": "assets/heroes/game/jmctheroes__kite_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__kite_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:lantern_ring_green",
@@ -1949,7 +2184,8 @@
           "image": "assets/heroes/game/jmctheroes__lantern_ring_green.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__lantern_ring_green.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:lantern_ring_yellow",
@@ -1957,23 +2193,26 @@
           "image": "assets/heroes/game/jmctheroes__lantern_ring_yellow.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__lantern_ring_yellow.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:modok",
           "name": "M.O.D.O.K.",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__modok.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__modok.png"
         },
         {
           "id": "jmctheroes:moon_knight",
           "name": "Moon Knight",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__moon_knight.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__moon_knight.png"
         },
         {
           "id": "jmctheroes:mr_fantastic",
@@ -1981,7 +2220,8 @@
           "image": "assets/heroes/game/jmctheroes__mr_fantastic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__mr_fantastic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:omniman",
@@ -1989,7 +2229,8 @@
           "image": "assets/heroes/game/jmctheroes__omniman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__omniman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:phantasm",
@@ -1997,15 +2238,17 @@
           "image": "assets/heroes/game/jmctheroes__phantasm.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__phantasm.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:pork_grind",
           "name": "Pork Grind",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__pork_grind.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__pork_grind.png"
         },
         {
           "id": "jmctheroes:power",
@@ -2013,7 +2256,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:prowler",
@@ -2021,7 +2265,8 @@
           "image": "assets/heroes/game/jmctheroes__prowler.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__prowler.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:red_death",
@@ -2029,7 +2274,8 @@
           "image": "assets/heroes/game/jmctheroes__red_death.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__red_death.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:red_hood",
@@ -2037,7 +2283,8 @@
           "image": "assets/heroes/game/jmctheroes__red_hood.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__red_hood.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:red_skull",
@@ -2045,7 +2292,8 @@
           "image": "assets/heroes/game/jmctheroes__red_skull.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__red_skull.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:reverse_flash",
@@ -2053,7 +2301,8 @@
           "image": "assets/heroes/game/jmctheroes__reverse_flash.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__reverse_flash.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:rhino",
@@ -2061,7 +2310,8 @@
           "image": "assets/heroes/game/jmctheroes__rhino.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__rhino.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:scarlet_spider",
@@ -2069,7 +2319,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:shazam_dceu",
@@ -2077,7 +2328,8 @@
           "image": "assets/heroes/game/jmctheroes__shazam_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__shazam_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_2099",
@@ -2085,15 +2337,17 @@
           "image": "assets/heroes/game/jmctheroes__spider_2099.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_2099.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_ham",
           "name": "Spider-Ham",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__spider_ham.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__spider_ham.png"
         },
         {
           "id": "jmctheroes:spider_man",
@@ -2101,7 +2355,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_man_1610",
@@ -2109,7 +2364,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_man_1610.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_man_1610.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_man_noir",
@@ -2117,7 +2373,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_man_noir.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_man_noir.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_man_tobey",
@@ -2125,7 +2382,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_man_tobey.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_man_tobey.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_miles",
@@ -2133,7 +2391,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_miles.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_miles.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:spider_punk",
@@ -2141,7 +2400,8 @@
           "image": "assets/heroes/game/jmctheroes__spider_punk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__spider_punk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:star_lord",
@@ -2149,7 +2409,8 @@
           "image": "assets/heroes/game/jmctheroes__star_lord.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__star_lord.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:superboy",
@@ -2157,7 +2418,8 @@
           "image": "assets/heroes/game/jmctheroes__superboy.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__superboy.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:supergirl_dceu",
@@ -2165,7 +2427,8 @@
           "image": "assets/heroes/game/jmctheroes__supergirl_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__supergirl_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:superior_spider_man",
@@ -2173,7 +2436,8 @@
           "image": "assets/heroes/game/jmctheroes__superior_spider_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__superior_spider_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:superman_dceu",
@@ -2181,7 +2445,8 @@
           "image": "assets/heroes/game/jmctheroes__superman_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__superman_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:superman_god",
@@ -2189,7 +2454,8 @@
           "image": "assets/heroes/game/jmctheroes__superman_god.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__superman_god.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:thing",
@@ -2197,7 +2463,8 @@
           "image": "assets/heroes/game/jmctheroes__thing.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__thing.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:ultimate_ultron",
@@ -2205,15 +2472,17 @@
           "image": "assets/heroes/game/jmctheroes__ultimate_ultron.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__ultimate_ultron.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:ultron_mk1",
           "name": "Ultron/Mark 1",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__ultron_mk1.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/jmctheroes__ultron_mk1.png"
         },
         {
           "id": "jmctheroes:ultron_prime",
@@ -2221,7 +2490,8 @@
           "image": "assets/heroes/game/jmctheroes__ultron_prime.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__ultron_prime.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:venom",
@@ -2229,7 +2499,8 @@
           "image": "assets/heroes/game/jmctheroes__venom.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__venom.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:viltrumite_soldier",
@@ -2237,7 +2508,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:wally_west",
@@ -2245,7 +2517,8 @@
           "image": "assets/heroes/game/jmctheroes__wally_west.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__wally_west.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:war_machine_mk1",
@@ -2253,7 +2526,8 @@
           "image": "assets/heroes/game/jmctheroes__war_machine_mk1.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__war_machine_mk1.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:war_machine_mk2",
@@ -2261,7 +2535,8 @@
           "image": "assets/heroes/game/jmctheroes__war_machine_mk2.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__war_machine_mk2.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:war_machine_mk3",
@@ -2269,7 +2544,8 @@
           "image": "assets/heroes/game/jmctheroes__war_machine_mk3.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__war_machine_mk3.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "jmctheroes:zod_dceu",
@@ -2277,7 +2553,8 @@
           "image": "assets/heroes/game/jmctheroes__zod_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/jmctheroes__zod_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2293,7 +2570,8 @@
           "image": "assets/heroes/game/nameless__anti_ock.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__anti_ock.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:batman_beyond",
@@ -2301,7 +2579,8 @@
           "image": "assets/heroes/game/nameless__batman_beyond.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__batman_beyond.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:big_time",
@@ -2309,7 +2588,8 @@
           "image": "assets/heroes/game/nameless__big_time.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__big_time.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:bizarro",
@@ -2317,7 +2597,8 @@
           "image": "assets/heroes/game/nameless__bizarro.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__bizarro.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:brightburn",
@@ -2325,7 +2606,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:doctor_octopus_ps4",
@@ -2333,7 +2615,8 @@
           "image": "assets/heroes/game/nameless__doctor_octopus_ps4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__doctor_octopus_ps4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:iron_fist",
@@ -2341,7 +2624,8 @@
           "image": "assets/heroes/game/nameless__iron_fist.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__iron_fist.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:iron_man",
@@ -2349,7 +2633,8 @@
           "image": "assets/heroes/game/nameless__iron_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__iron_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:iron_spider",
@@ -2357,7 +2642,8 @@
           "image": "assets/heroes/game/nameless__iron_spider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__iron_spider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:joker",
@@ -2365,7 +2651,8 @@
           "image": "assets/heroes/game/nameless__joker.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__joker.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:kid_flash",
@@ -2373,7 +2660,8 @@
           "image": "assets/heroes/game/nameless__kid_flash.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__kid_flash.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:luke_cage",
@@ -2381,7 +2669,8 @@
           "image": "assets/heroes/game/nameless__luke_cage.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__luke_cage.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:nightwing",
@@ -2389,7 +2678,8 @@
           "image": "assets/heroes/game/nameless__nightwing.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__nightwing.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:quasar",
@@ -2397,7 +2687,8 @@
           "image": "assets/heroes/game/nameless__quasar.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__quasar.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:red_hood",
@@ -2405,7 +2696,8 @@
           "image": "assets/heroes/game/nameless__red_hood.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__red_hood.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:robin",
@@ -2413,7 +2705,8 @@
           "image": "assets/heroes/game/nameless__robin.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__robin.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:spider_man_2099",
@@ -2421,7 +2714,8 @@
           "image": "assets/heroes/game/nameless__spider_man_2099.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__spider_man_2099.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:spider_uk",
@@ -2429,7 +2723,8 @@
           "image": "assets/heroes/game/nameless__spider_uk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__spider_uk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:superman_dcu",
@@ -2437,7 +2732,8 @@
           "image": "assets/heroes/game/nameless__superman_dcu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__superman_dcu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:superman_fleischer",
@@ -2445,7 +2741,8 @@
           "image": "assets/heroes/game/nameless__superman_fleischer.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__superman_fleischer.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "nameless:venom90",
@@ -2453,7 +2750,8 @@
           "image": "assets/heroes/game/nameless__venom90.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/nameless__venom90.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2469,7 +2767,8 @@
           "image": "assets/heroes/game/ninjago__cole.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ninjago__cole.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ninjago:jay",
@@ -2477,7 +2776,8 @@
           "image": "assets/heroes/game/ninjago__jay.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ninjago__jay.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ninjago:kai",
@@ -2485,7 +2785,8 @@
           "image": "assets/heroes/game/ninjago__kai.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ninjago__kai.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "ninjago:zane",
@@ -2493,7 +2794,8 @@
           "image": "assets/heroes/game/ninjago__zane.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/ninjago__zane.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2509,7 +2811,8 @@
           "image": "assets/heroes/game/runnyhero__kingpin.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__kingpin.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:kingpin_sv",
@@ -2517,7 +2820,8 @@
           "image": "assets/heroes/game/runnyhero__kingpin_sv.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__kingpin_sv.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:punisher",
@@ -2525,7 +2829,8 @@
           "image": "assets/heroes/game/runnyhero__punisher.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__punisher.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:shocker",
@@ -2533,7 +2838,8 @@
           "image": "assets/heroes/game/runnyhero__shocker.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__shocker.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:spider_man_cw",
@@ -2541,7 +2847,8 @@
           "image": "assets/heroes/game/runnyhero__spider_man_cw.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__spider_man_cw.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:vulture",
@@ -2549,7 +2856,8 @@
           "image": "assets/heroes/game/runnyhero__vulture.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__vulture.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "runnyhero:white_tiger",
@@ -2557,7 +2865,8 @@
           "image": "assets/heroes/game/runnyhero__white_tiger.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/runnyhero__white_tiger.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2573,15 +2882,17 @@
           "image": "assets/heroes/game/sabri__black_panther.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__black_panther.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:black_widow",
           "name": "Black Widow",
-          "image": null,
+          "image": "assets/heroes/models/sabri__black_widow.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/sabri__black_widow.png"
         },
         {
           "id": "sabri:cyclops_xmen",
@@ -2589,15 +2900,17 @@
           "image": "assets/heroes/game/sabri__cyclops_xmen.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__cyclops_xmen.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:doctor_doom_comics",
           "name": "Doctor Doom",
-          "image": null,
+          "image": "assets/heroes/models/sabri__doctor_doom_comics.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/sabri__doctor_doom_comics.png"
         },
         {
           "id": "sabri:doctor_doom_f4",
@@ -2605,7 +2918,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:kang_the_conqueror",
@@ -2613,7 +2927,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:namor",
@@ -2621,7 +2936,8 @@
           "image": "assets/heroes/game/sabri__namor.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__namor.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:quicksilver_xmen",
@@ -2629,7 +2945,8 @@
           "image": "assets/heroes/game/sabri__quicksilver_xmen.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__quicksilver_xmen.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:sandman_raimi",
@@ -2637,7 +2954,8 @@
           "image": "assets/heroes/game/sabri__sandman_raimi.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__sandman_raimi.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:silver_surfer_f4",
@@ -2645,7 +2963,8 @@
           "image": "assets/heroes/game/sabri__silver_surfer_f4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__silver_surfer_f4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:thanos",
@@ -2653,7 +2972,8 @@
           "image": "assets/heroes/game/sabri__thanos.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__thanos.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:thor",
@@ -2661,7 +2981,8 @@
           "image": "assets/heroes/game/sabri__thor.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__thor.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sabri:wolverine_xmen",
@@ -2669,7 +2990,8 @@
           "image": "assets/heroes/game/sabri__wolverine_xmen.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sabri__wolverine_xmen.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2685,7 +3007,8 @@
           "image": "assets/heroes/game/secretheroes__ghost_spider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__ghost_spider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:godspeed",
@@ -2693,7 +3016,8 @@
           "image": "assets/heroes/game/secretheroes__godspeed.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__godspeed.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:herobrine",
@@ -2701,7 +3025,8 @@
           "image": "assets/heroes/game/secretheroes__herobrine.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__herobrine.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:homelander",
@@ -2709,7 +3034,8 @@
           "image": "assets/heroes/game/secretheroes__homelander.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__homelander.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:hulk",
@@ -2717,7 +3043,8 @@
           "image": "assets/heroes/game/secretheroes__hulk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__hulk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:impulse",
@@ -2725,7 +3052,8 @@
           "image": "assets/heroes/game/secretheroes__impulse.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__impulse.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:mining_armor",
@@ -2733,7 +3061,8 @@
           "image": "assets/heroes/game/secretheroes__mining_armor.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__mining_armor.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:moon_knight",
@@ -2741,7 +3070,8 @@
           "image": "assets/heroes/game/secretheroes__moon_knight.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__moon_knight.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:red_death_comics",
@@ -2749,7 +3079,8 @@
           "image": "assets/heroes/game/secretheroes__red_death_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__red_death_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:saitama",
@@ -2757,7 +3088,8 @@
           "image": "assets/heroes/game/secretheroes__saitama.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__saitama.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:spider_man_black_raimi",
@@ -2765,7 +3097,8 @@
           "image": "assets/heroes/game/secretheroes__spider_man_black_raimi.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__spider_man_black_raimi.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:star_labs_speedster_comics",
@@ -2773,7 +3106,8 @@
           "image": "assets/heroes/game/secretheroes__star_labs_speedster_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__star_labs_speedster_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:the_flash",
@@ -2781,7 +3115,8 @@
           "image": "assets/heroes/game/secretheroes__the_flash.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__the_flash.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:the_flash_iris",
@@ -2789,7 +3124,8 @@
           "image": "assets/heroes/game/secretheroes__the_flash_iris.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__the_flash_iris.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:vibe",
@@ -2797,7 +3133,8 @@
           "image": "assets/heroes/game/secretheroes__vibe.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__vibe.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "secretheroes:xs",
@@ -2805,7 +3142,8 @@
           "image": "assets/heroes/game/secretheroes__xs.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/secretheroes__xs.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -2821,7 +3159,8 @@
           "image": "assets/heroes/game/shadows__aragami.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__aragami.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:backpack",
@@ -2829,7 +3168,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:backpack_equipment_visual",
@@ -2837,7 +3177,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:dipdapdoe",
@@ -2845,7 +3186,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:double_jump",
@@ -2853,7 +3195,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:forced_sentry",
@@ -2861,7 +3204,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:golem",
@@ -2869,7 +3213,8 @@
           "image": "assets/heroes/game/shadows__golem.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__golem.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:hue_man",
@@ -2877,7 +3222,8 @@
           "image": "assets/heroes/game/shadows__hue_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__hue_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:hunter",
@@ -2885,7 +3231,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:mage",
@@ -2893,7 +3240,8 @@
           "image": "assets/heroes/game/shadows__mage.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__mage.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:necrosword",
@@ -2901,7 +3249,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:power_ranger_wind_blue",
@@ -2909,7 +3258,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:power_ranger_wind_red",
@@ -2917,7 +3267,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:power_ranger_wind_yellow",
@@ -2925,7 +3276,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:random",
@@ -2933,7 +3285,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:runic_magic",
@@ -2941,7 +3294,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:shadow",
@@ -2949,7 +3303,8 @@
           "image": "assets/heroes/game/shadows__shadow.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__shadow.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:silver_speed",
@@ -2957,7 +3312,8 @@
           "image": "assets/heroes/game/shadows__silver_speed.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__silver_speed.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:sorcerer",
@@ -2965,7 +3321,8 @@
           "image": "assets/heroes/game/shadows__sorcerer.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__sorcerer.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:steve",
@@ -2973,7 +3330,8 @@
           "image": "assets/heroes/game/shadows__steve.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__steve.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:superior_spider",
@@ -2981,7 +3339,8 @@
           "image": "assets/heroes/game/shadows__superior_spider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__superior_spider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:tornado",
@@ -2989,7 +3348,8 @@
           "image": "assets/heroes/game/shadows__tornado.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/shadows__tornado.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "shadows:vampire",
@@ -2997,7 +3357,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -3013,7 +3374,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:42_1",
@@ -3021,7 +3383,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:42_2",
@@ -3029,7 +3392,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:42_3",
@@ -3037,7 +3401,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:42_4",
@@ -3045,7 +3410,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:ironlegiondrone",
@@ -3053,7 +3419,8 @@
           "image": "assets/heroes/game/sind__ironlegiondrone.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__ironlegiondrone.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:ironspider",
@@ -3061,7 +3428,8 @@
           "image": "assets/heroes/game/sind__ironspider.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__ironspider.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark1",
@@ -3069,7 +3437,8 @@
           "image": "assets/heroes/game/sind__mark1.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark1.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark10",
@@ -3077,7 +3446,8 @@
           "image": "assets/heroes/game/sind__mark10.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark10.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark11",
@@ -3085,7 +3455,8 @@
           "image": "assets/heroes/game/sind__mark11.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark11.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark12",
@@ -3093,7 +3464,8 @@
           "image": "assets/heroes/game/sind__mark12.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark12.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark13",
@@ -3101,7 +3473,8 @@
           "image": "assets/heroes/game/sind__mark13.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark13.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark14",
@@ -3109,7 +3482,8 @@
           "image": "assets/heroes/game/sind__mark14.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark14.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark15",
@@ -3117,7 +3491,8 @@
           "image": "assets/heroes/game/sind__mark15.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark15.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark16",
@@ -3125,7 +3500,8 @@
           "image": "assets/heroes/game/sind__mark16.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark16.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark17",
@@ -3133,7 +3509,8 @@
           "image": "assets/heroes/game/sind__mark17.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark17.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark18",
@@ -3141,7 +3518,8 @@
           "image": "assets/heroes/game/sind__mark18.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark18.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark19",
@@ -3149,7 +3527,8 @@
           "image": "assets/heroes/game/sind__mark19.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark19.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark2",
@@ -3157,7 +3536,8 @@
           "image": "assets/heroes/game/sind__mark2.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark2.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark20",
@@ -3165,7 +3545,8 @@
           "image": "assets/heroes/game/sind__mark20.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark20.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark21",
@@ -3173,7 +3554,8 @@
           "image": "assets/heroes/game/sind__mark21.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark21.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark22",
@@ -3181,7 +3563,8 @@
           "image": "assets/heroes/game/sind__mark22.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark22.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark23",
@@ -3189,7 +3572,8 @@
           "image": "assets/heroes/game/sind__mark23.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark23.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark24",
@@ -3197,7 +3581,8 @@
           "image": "assets/heroes/game/sind__mark24.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark24.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark25",
@@ -3205,7 +3590,8 @@
           "image": "assets/heroes/game/sind__mark25.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark25.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark26",
@@ -3213,7 +3599,8 @@
           "image": "assets/heroes/game/sind__mark26.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark26.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark27",
@@ -3221,7 +3608,8 @@
           "image": "assets/heroes/game/sind__mark27.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark27.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark28",
@@ -3229,7 +3617,8 @@
           "image": "assets/heroes/game/sind__mark28.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark28.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark29",
@@ -3237,7 +3626,8 @@
           "image": "assets/heroes/game/sind__mark29.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark29.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark3",
@@ -3245,7 +3635,8 @@
           "image": "assets/heroes/game/sind__mark3.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark3.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark30",
@@ -3253,7 +3644,8 @@
           "image": "assets/heroes/game/sind__mark30.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark30.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark31",
@@ -3261,7 +3653,8 @@
           "image": "assets/heroes/game/sind__mark31.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark31.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark32",
@@ -3269,7 +3662,8 @@
           "image": "assets/heroes/game/sind__mark32.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark32.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark33",
@@ -3277,7 +3671,8 @@
           "image": "assets/heroes/game/sind__mark33.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark33.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark34",
@@ -3285,7 +3680,8 @@
           "image": "assets/heroes/game/sind__mark34.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark34.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark35",
@@ -3293,7 +3689,8 @@
           "image": "assets/heroes/game/sind__mark35.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark35.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark36",
@@ -3301,7 +3698,8 @@
           "image": "assets/heroes/game/sind__mark36.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark36.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark37",
@@ -3309,7 +3707,8 @@
           "image": "assets/heroes/game/sind__mark37.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark37.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark38",
@@ -3317,7 +3716,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark39",
@@ -3325,7 +3725,8 @@
           "image": "assets/heroes/game/sind__mark39.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark39.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark4",
@@ -3333,7 +3734,8 @@
           "image": "assets/heroes/game/sind__mark4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark40",
@@ -3341,7 +3743,8 @@
           "image": "assets/heroes/game/sind__mark40.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark40.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark41",
@@ -3349,7 +3752,8 @@
           "image": "assets/heroes/game/sind__mark41.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark41.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark42",
@@ -3357,7 +3761,8 @@
           "image": "assets/heroes/game/sind__mark42.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark42.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark43",
@@ -3365,7 +3770,8 @@
           "image": "assets/heroes/game/sind__mark43.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark43.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark44",
@@ -3373,7 +3779,8 @@
           "image": "assets/heroes/game/sind__mark44.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark44.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark45",
@@ -3381,7 +3788,8 @@
           "image": "assets/heroes/game/sind__mark45.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark45.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark46",
@@ -3389,7 +3797,8 @@
           "image": "assets/heroes/game/sind__mark46.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark46.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark47",
@@ -3397,7 +3806,8 @@
           "image": "assets/heroes/game/sind__mark47.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark47.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark48",
@@ -3405,7 +3815,8 @@
           "image": "assets/heroes/game/sind__mark48.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark48.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark49",
@@ -3413,7 +3824,8 @@
           "image": "assets/heroes/game/sind__mark49.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark49.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark5",
@@ -3421,7 +3833,8 @@
           "image": "assets/heroes/game/sind__mark5.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark5.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark50",
@@ -3429,7 +3842,8 @@
           "image": "assets/heroes/game/sind__mark50.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark50.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark6",
@@ -3437,7 +3851,8 @@
           "image": "assets/heroes/game/sind__mark6.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark6.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark7",
@@ -3445,7 +3860,8 @@
           "image": "assets/heroes/game/sind__mark7.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark7.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark7_bracelets",
@@ -3453,7 +3869,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark8",
@@ -3461,7 +3878,8 @@
           "image": "assets/heroes/game/sind__mark8.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark8.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:mark9",
@@ -3469,7 +3887,8 @@
           "image": "assets/heroes/game/sind__mark9.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__mark9.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:tony",
@@ -3477,7 +3896,8 @@
           "image": "assets/heroes/game/sind__tony.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__tony.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:tony_equip",
@@ -3485,7 +3905,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:warmachine_mk1",
@@ -3493,7 +3914,8 @@
           "image": "assets/heroes/game/sind__warmachine_mk1.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__warmachine_mk1.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:warmachine_mk2",
@@ -3501,7 +3923,8 @@
           "image": "assets/heroes/game/sind__warmachine_mk2.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__warmachine_mk2.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:warmachine_mk3",
@@ -3509,7 +3932,8 @@
           "image": "assets/heroes/game/sind__warmachine_mk3.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__warmachine_mk3.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "sind:warmachine_mk4",
@@ -3517,7 +3941,8 @@
           "image": "assets/heroes/game/sind__warmachine_mk4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/sind__warmachine_mk4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -3533,7 +3958,8 @@
           "image": "assets/heroes/game/skarlet__ash_williams.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__ash_williams.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:batman_arkham",
@@ -3541,7 +3967,8 @@
           "image": "assets/heroes/game/skarlet__batman_arkham.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__batman_arkham.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:batman_comics",
@@ -3549,7 +3976,8 @@
           "image": "assets/heroes/game/skarlet__batman_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__batman_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:batman_thomas",
@@ -3557,7 +3985,8 @@
           "image": "assets/heroes/game/skarlet__batman_thomas.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__batman_thomas.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:batwoman_comics",
@@ -3565,7 +3994,8 @@
           "image": "assets/heroes/game/skarlet__batwoman_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__batwoman_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:blue_beetle_dceu",
@@ -3573,7 +4003,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:green_goblin",
@@ -3581,7 +4012,8 @@
           "image": "assets/heroes/game/skarlet__green_goblin.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__green_goblin.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:gwenpool",
@@ -3589,7 +4021,8 @@
           "image": "assets/heroes/game/skarlet__gwenpool.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__gwenpool.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:gwenpool_future",
@@ -3597,7 +4030,8 @@
           "image": "assets/heroes/game/skarlet__gwenpool_future.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__gwenpool_future.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:harley_quinn",
@@ -3605,7 +4039,8 @@
           "image": "assets/heroes/game/skarlet__harley_quinn.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__harley_quinn.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:human_torch",
@@ -3613,7 +4048,8 @@
           "image": "assets/heroes/game/skarlet__human_torch.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__human_torch.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:invisible_woman",
@@ -3621,7 +4057,8 @@
           "image": "assets/heroes/game/skarlet__invisible_woman.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__invisible_woman.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:miss_martian",
@@ -3629,7 +4066,8 @@
           "image": "assets/heroes/game/skarlet__miss_martian.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__miss_martian.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:mister_fantastic",
@@ -3637,7 +4075,8 @@
           "image": "assets/heroes/game/skarlet__mister_fantastic.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__mister_fantastic.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:silk",
@@ -3645,7 +4084,8 @@
           "image": "assets/heroes/game/skarlet__silk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__silk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:spider_girl",
@@ -3653,7 +4093,8 @@
           "image": "assets/heroes/game/skarlet__spider_girl.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__spider_girl.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:spider_gwen",
@@ -3661,7 +4102,8 @@
           "image": "assets/heroes/game/skarlet__spider_gwen.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__spider_gwen.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:supergirl_dceu",
@@ -3669,7 +4111,8 @@
           "image": "assets/heroes/game/skarlet__supergirl_dceu.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__supergirl_dceu.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:superman_comics",
@@ -3677,15 +4120,17 @@
           "image": "assets/heroes/game/skarlet__superman_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__superman_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:the_thing",
           "name": "The Thing",
-          "image": null,
+          "image": "assets/heroes/models/skarlet__the_thing.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/skarlet__the_thing.png"
         },
         {
           "id": "skarlet:ultron_comics",
@@ -3693,7 +4138,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:wolverine_comics",
@@ -3701,7 +4147,8 @@
           "image": "assets/heroes/game/skarlet__wolverine_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__wolverine_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:wonder_woman_comics",
@@ -3709,7 +4156,8 @@
           "image": "assets/heroes/game/skarlet__wonder_woman_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__wonder_woman_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "skarlet:x23_comics",
@@ -3717,7 +4165,8 @@
           "image": "assets/heroes/game/skarlet__x23_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/skarlet__x23_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -3733,7 +4182,8 @@
           "image": "assets/heroes/game/stellar__booster_gold.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__booster_gold.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:cloak",
@@ -3741,7 +4191,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:cloak_shadow",
@@ -3749,7 +4200,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:danny_phantom",
@@ -3757,7 +4209,8 @@
           "image": "assets/heroes/game/stellar__danny_phantom.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__danny_phantom.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:dr_manhattan",
@@ -3765,7 +4218,8 @@
           "image": "assets/heroes/game/stellar__dr_manhattan.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__dr_manhattan.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:pepsi_man",
@@ -3773,7 +4227,8 @@
           "image": "assets/heroes/game/stellar__pepsi_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__pepsi_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:quantum_suit",
@@ -3781,7 +4236,8 @@
           "image": "assets/heroes/game/stellar__quantum_suit.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__quantum_suit.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:spawn",
@@ -3789,7 +4245,8 @@
           "image": "assets/heroes/game/stellar__spawn.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__spawn.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "stellar:wasp",
@@ -3797,7 +4254,8 @@
           "image": "assets/heroes/game/stellar__wasp.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/stellar__wasp.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -3813,7 +4271,8 @@
           "image": "assets/heroes/game/pwt__batman_cyberpunk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__batman_cyberpunk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:carnage",
@@ -3821,7 +4280,8 @@
           "image": "assets/heroes/game/pwt__carnage.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__carnage.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:david_martinez_pre",
@@ -3829,31 +4289,35 @@
           "image": "assets/heroes/game/pwt__david_martinez_pre.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__david_martinez_pre.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:halloween_ghost",
           "name": "Ghost",
-          "image": null,
+          "image": "assets/heroes/models/pwt__halloween_ghost.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/pwt__halloween_ghost.png"
         },
         {
           "id": "pwt:halloween_scarecrow",
           "name": "Bob",
-          "image": null,
+          "image": "assets/heroes/models/pwt__halloween_scarecrow.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/pwt__halloween_scarecrow.png"
         },
         {
           "id": "pwt:joker_cyberpunk",
           "name": "Joker",
-          "image": null,
+          "image": "assets/heroes/models/pwt__joker_cyberpunk.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/pwt__joker_cyberpunk.png"
         },
         {
           "id": "pwt:riot",
@@ -3861,7 +4325,8 @@
           "image": "assets/heroes/game/pwt__riot.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__riot.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:robin_cyberpunk",
@@ -3869,7 +4334,8 @@
           "image": "assets/heroes/game/pwt__robin_cyberpunk.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__robin_cyberpunk.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:spider_man_symbiot_webb",
@@ -3877,7 +4343,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:spider_man_symbiot_webb_3",
@@ -3885,7 +4352,8 @@
           "image": "assets/heroes/game/pwt__spider_man_symbiot_webb_3.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__spider_man_symbiot_webb_3.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:sukuna",
@@ -3893,7 +4361,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:sukuna_heian",
@@ -3901,15 +4370,17 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:toxin",
           "name": "Toxin",
-          "image": null,
+          "image": "assets/heroes/models/pwt__toxin.png",
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": "assets/heroes/models/pwt__toxin.png"
         },
         {
           "id": "pwt:trickster_aftermath",
@@ -3917,7 +4388,8 @@
           "image": "assets/heroes/game/pwt__trickster_aftermath.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__trickster_aftermath.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "pwt:venom",
@@ -3925,7 +4397,8 @@
           "image": "assets/heroes/game/pwt__venom.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/pwt__venom.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -3941,7 +4414,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_cannonbolt_16",
@@ -3949,7 +4423,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_ditto_23",
@@ -3957,7 +4432,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_eyeguy_24",
@@ -3965,7 +4441,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_frankenstrike_20",
@@ -3973,7 +4450,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_snareoh_19",
@@ -3981,7 +4459,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_upchuck_22",
@@ -3989,7 +4468,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_waybig_25",
@@ -3997,7 +4477,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:dna_wildvine_17",
@@ -4005,7 +4486,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:iron_man_mk1_aa",
@@ -4013,7 +4495,8 @@
           "image": "assets/heroes/game/tmf__iron_man_mk1_aa.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tmf__iron_man_mk1_aa.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:iron_man_mk1_aa_backpack",
@@ -4021,7 +4504,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:iron_man_silver_centurion_aa",
@@ -4029,7 +4513,8 @@
           "image": "assets/heroes/game/tmf__iron_man_silver_centurion_aa.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tmf__iron_man_silver_centurion_aa.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:iron_man_space_aa",
@@ -4037,7 +4522,8 @@
           "image": "assets/heroes/game/tmf__iron_man_space_aa.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tmf__iron_man_space_aa.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:iron_man_stealth_aa",
@@ -4045,7 +4531,8 @@
           "image": "assets/heroes/game/tmf__iron_man_stealth_aa.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tmf__iron_man_stealth_aa.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:not_hero_time",
@@ -4053,7 +4540,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omni_galvanic_modulator",
@@ -4061,7 +4549,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omni_recal",
@@ -4069,7 +4558,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omnitrix",
@@ -4077,7 +4567,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omnitrix_grey_matter",
@@ -4085,7 +4576,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omnitrix_grey_matter_crafting",
@@ -4093,7 +4585,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:omnitrix_upchuck",
@@ -4101,7 +4594,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:the_deep",
@@ -4109,7 +4603,8 @@
           "image": "assets/heroes/game/tmf__the_deep.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/tmf__the_deep.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "tmf:the_mandarin_aa",
@@ -4117,7 +4612,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -4133,7 +4629,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "transformers_pack:g1_optimus_prime",
@@ -4141,7 +4638,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     },
@@ -4157,7 +4655,8 @@
           "image": "assets/heroes/game/unconventional__artemis_yj.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__artemis_yj.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:batman_dceu_tactical",
@@ -4165,7 +4664,8 @@
           "image": "assets/heroes/game/unconventional__batman_dceu_tactical.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__batman_dceu_tactical.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:batman_reeves",
@@ -4173,7 +4673,8 @@
           "image": "assets/heroes/game/unconventional__batman_reeves.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__batman_reeves.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:batman_rocksteady",
@@ -4181,7 +4682,8 @@
           "image": "assets/heroes/game/unconventional__batman_rocksteady.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__batman_rocksteady.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:batman_telltale",
@@ -4189,7 +4691,8 @@
           "image": "assets/heroes/game/unconventional__batman_telltale.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__batman_telltale.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:black_bolt_comics",
@@ -4197,7 +4700,8 @@
           "image": "assets/heroes/game/unconventional__black_bolt_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__black_bolt_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:black_canary_e2",
@@ -4205,7 +4709,8 @@
           "image": "assets/heroes/game/unconventional__black_canary_e2.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__black_canary_e2.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:black_cat_ps4",
@@ -4213,7 +4718,8 @@
           "image": "assets/heroes/game/unconventional__black_cat_ps4.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__black_cat_ps4.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:captain_america_jw",
@@ -4221,7 +4727,8 @@
           "image": "assets/heroes/game/unconventional__captain_america_jw.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__captain_america_jw.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:captain_carter_what_if",
@@ -4229,7 +4736,8 @@
           "image": "assets/heroes/game/unconventional__captain_carter_what_if.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__captain_carter_what_if.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:catwoman_telltale",
@@ -4237,7 +4745,8 @@
           "image": "assets/heroes/game/unconventional__catwoman_telltale.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__catwoman_telltale.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:deadpool_xmen_origins",
@@ -4245,7 +4754,8 @@
           "image": "assets/heroes/game/unconventional__deadpool_xmen_origins.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__deadpool_xmen_origins.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:deathstroke_rocksteady",
@@ -4253,7 +4763,8 @@
           "image": "assets/heroes/game/unconventional__deathstroke_rocksteady.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__deathstroke_rocksteady.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:edith",
@@ -4261,7 +4772,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:electro",
@@ -4269,7 +4781,8 @@
           "image": "assets/heroes/game/unconventional__electro.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__electro.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:emiko_adachi",
@@ -4277,7 +4790,8 @@
           "image": "assets/heroes/game/unconventional__emiko_adachi.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__emiko_adachi.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:five",
@@ -4285,7 +4799,8 @@
           "image": "assets/heroes/game/unconventional__five.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__five.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:ghost",
@@ -4293,7 +4808,8 @@
           "image": "assets/heroes/game/unconventional__ghost.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__ghost.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:hawkeye",
@@ -4301,7 +4817,8 @@
           "image": "assets/heroes/game/unconventional__hawkeye.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__hawkeye.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:kate_bishop",
@@ -4309,7 +4826,8 @@
           "image": "assets/heroes/game/unconventional__kate_bishop.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__kate_bishop.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:mosquito",
@@ -4317,7 +4835,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:nick_fury",
@@ -4325,7 +4844,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:pietro",
@@ -4333,7 +4853,8 @@
           "image": "assets/heroes/game/unconventional__pietro.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__pietro.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:radioactive_man",
@@ -4341,7 +4862,8 @@
           "image": "assets/heroes/game/unconventional__radioactive_man.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__radioactive_man.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:red_guardian",
@@ -4349,7 +4871,8 @@
           "image": "assets/heroes/game/unconventional__red_guardian.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__red_guardian.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:robin_rocksteady",
@@ -4357,7 +4880,8 @@
           "image": "assets/heroes/game/unconventional__robin_rocksteady.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__robin_rocksteady.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:ronin",
@@ -4365,7 +4889,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:soldier_boy",
@@ -4373,7 +4898,8 @@
           "image": "assets/heroes/game/unconventional__soldier_boy.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__soldier_boy.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:spider_man_miles_ps5",
@@ -4381,7 +4907,8 @@
           "image": "assets/heroes/game/unconventional__spider_man_miles_ps5.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__spider_man_miles_ps5.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:spider_man_miles_sv",
@@ -4389,7 +4916,8 @@
           "image": "assets/heroes/game/unconventional__spider_man_miles_sv.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__spider_man_miles_sv.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:spoiler_comics",
@@ -4397,7 +4925,8 @@
           "image": "assets/heroes/game/unconventional__spoiler_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__spoiler_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:sss_og",
@@ -4405,7 +4934,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:taskmaster",
@@ -4413,7 +4943,8 @@
           "image": "assets/heroes/game/unconventional__taskmaster.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__taskmaster.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:the_signal_comics",
@@ -4421,7 +4952,8 @@
           "image": "assets/heroes/game/unconventional__the_signal_comics.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__the_signal_comics.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:tigress_yj",
@@ -4429,7 +4961,8 @@
           "image": "assets/heroes/game/unconventional__tigress_yj.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__tigress_yj.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:wanda",
@@ -4437,7 +4970,8 @@
           "image": null,
           "image_wiki": null,
           "image_game": null,
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:white_wolf",
@@ -4445,7 +4979,8 @@
           "image": "assets/heroes/game/unconventional__white_wolf.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__white_wolf.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:winter_soldier",
@@ -4453,7 +4988,8 @@
           "image": "assets/heroes/game/unconventional__winter_soldier.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__winter_soldier.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         },
         {
           "id": "unconventional:yellow_jacket",
@@ -4461,7 +4997,8 @@
           "image": "assets/heroes/game/unconventional__yellow_jacket.png",
           "image_wiki": null,
           "image_game": "assets/heroes/game/unconventional__yellow_jacket.png",
-          "wiki": null
+          "wiki": null,
+          "image_model": null
         }
       ]
     }

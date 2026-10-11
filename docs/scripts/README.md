@@ -15,11 +15,12 @@ pip install requests Pillow
 ## Пайплайн превью (порядок важен)
 
 ```
-1. hero_previews_game.py   → assets/heroes/game/*.png
-2. wiki_previews.py        → assets/heroes/wiki/*.png + мерж полей в heroes_list.json
-3. fetch_descriptions.py   → descriptions.json
-4. make_sheets.py          → research/out/sheets/*.png (QA, в git не хранится)
-5. tests/validate_data.py  → проверка целостности всего выше
+1. hero_previews_game.py    → assets/heroes/game/*.png
+2. hero_previews_models.py  → assets/heroes/models/*.png
+3. wiki_previews.py         → assets/heroes/wiki/*.png + мерж полей в heroes_list.json
+4. fetch_descriptions.py    → descriptions.json
+5. make_sheets.py           → research/out/sheets/*.png (QA, в git не хранится)
+6. tests/validate_data.py   → проверка целостности всего выше
 ```
 
 ---
@@ -45,9 +46,29 @@ python tools/hero_previews_game.py --mc-root "C:\Games\Minecraft" the_flash,zoom
 Выходы: `assets/heroes/game/<pack>__<hero>.png`, `research/out/no_texture_heroes.json` (список героев без превью).
 Отладка: env `PREVIEW_DEBUG=1` печатает покрытие UV-областей по каждому герою.
 
+## tools/hero_previews_models.py — рендер кастомных Tabula-моделей
+
+Герои, чей костюм — не скин-раскладка, а кастомная геометрия (Hulk, Thanos, MODOK, Hulkbuster…), заданы в херопаках Tabula-файлами (`.tbl` — ZIP с `model.json` кубов и `texture.png`). Скрипт статически парсит JS-рендерер каждого героя, находит все модели-эффекты, их текстуры из `loadTextures` и собирает фронтальный вид софтверным рендером (ортографическая проекция, painter's algorithm, NEAREST) — **без запуска игры**.
+
+Композиция пробуется в двух режимах: «identity» (части уже автораны в общих координатах — типичный случай) и «anchors» (части расставляются по слотам ModelBiped из JS-якорей). Побеждает режим с более компактной композицией; гейты отсекают пустые и «сценовые» рендеры (армии, порталы).
+
+```bash
+python tools/hero_previews_models.py --mc-root "C:\Games\Minecraft"
+python tools/hero_previews_models.py --mc-root "C:\Games\Minecraft" tgheroes:hulk --sheet qa.png  # точечно + контакт-лист
+```
+
+| Параметр | Описание |
+|---|---|
+| `sample` (позиционный) | ID героев через запятую (с неймспейсом) — перерендерить только их |
+| `--mc-root` | **обязателен** (или env `MC_ROOT`): путь к клиенту игры с херопаками |
+| `--repo` | корень каталога |
+| `--sheet` | сохранить QA-контакт-лист отрендеренного по этому пути |
+
+Выход: `assets/heroes/models/<pack>__<hero>.png`. Спорные случаи правятся таблицей `OVERRIDES` внутри скрипта: список моделей по подстроке имени либо `[]` — осознанный скип (предметы, скин-герои с обрезками). Пропущенные герои печатаются с причиной.
+
 ## tools/wiki_previews.py — вики-рендеры + мерж данных
 
-Докачивает 3D-рендеры встроенных костюмов с fiskheroes.fandom.com (страница → файл превью берётся из кэша ресёрча) и переписывает `heroes_list.json`: поля `image` / `image_wiki` / `image_game` / `wiki` у каждого героя + блок статистики `meta.previews`. Каноническое превью: вики-рендер, если есть, иначе игровой вид.
+Докачивает 3D-рендеры встроенных костюмов с fiskheroes.fandom.com (страница → файл превью берётся из кэша ресёрча) и переписывает `heroes_list.json`: поля `image` / `image_wiki` / `image_game` / `wiki` у каждого героя + блок статистики `meta.previews`. Каноническое превью: вики-рендер → игровой вид из текстур → рендер Tabula-модели.
 
 ```bash
 python tools/wiki_previews.py --mc-root "C:\Games\Minecraft"

@@ -15,7 +15,7 @@ ALIASES = ROOT / "aliases.json"
 DESCRIPTIONS = ROOT / "descriptions.json"
 ID_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_]+$")
 FORBIDDEN_KEYS = {"status", "active_total", "marketplace_total", "note", "all_ids"}
-HERO_KEYS = {"id", "name", "image", "image_wiki", "image_game", "wiki"}
+HERO_KEYS = {"id", "name", "image", "image_wiki", "image_game", "image_model", "wiki"}
 DESC_KEYS = {"tier", "dr", "cost", "powers", "note"}
 
 errors = []
@@ -64,7 +64,7 @@ def main() -> int:
           f"heroes have exactly {sorted(HERO_KEYS)} and non-empty names")
 
     print("\npreview image checks:")
-    imgs = [h[k] for p in packs.values() for h in p["heroes"] for k in ("image", "image_wiki", "image_game") if h[k]]
+    imgs = [h[k] for p in packs.values() for h in p["heroes"] for k in ("image", "image_wiki", "image_game", "image_model") if h[k]]
     bad = [p for p in imgs if not p.startswith("assets/heroes/")]
     check(not bad, f"all image paths live under assets/heroes/ (bad: {bad[:3]})")
     missing = [p for p in set(imgs) if not (ROOT / p).is_file()]

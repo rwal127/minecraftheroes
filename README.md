@@ -5,7 +5,7 @@
 **Что умеет:**
 
 - **интерфейс на 8 языках** — русский, English, українська, español, 한국어, 日本語, français, deutsch (кнопка-иконка Lucide `languages` в шапке: текста нет, клик открывает нативный выпадающий список; выбор запоминается, язык автоопределяется из браузера/Telegram);
-- **превью у каждого героя в списке** — 429 из 535 (все 67 встроенных): 56 3D-рендеров с [fiskheroes.fandom.com](https://fiskheroes.fandom.com) и 373 фронтальных вида, собранных из текстур костюмов в jar/херопаках; у героев без превью — заглушка 🦸;
+- **превью у каждого героя в списке** — 456 из 535 (все 67 встроенных): 56 3D-рендеров с [fiskheroes.fandom.com](https://fiskheroes.fandom.com), 373 фронтальных вида из текстур костюмов в jar/херопаках и 27 офлайн-рендеров кастомных Tabula-моделей; у героев без превью — заглушка 🦸;
 - **карточка героя по клику на строку**: большое фото, пак, тир, % снижения урона, цена в Tutridium, способности и описание со страницы вики (для встроенных костюмов), команда и ID с копированием, ссылка на вики; листинг ‹ › по текущему отфильтрованному списку, Esc/клик мимо — закрыть;
 - глобальный поиск по имени героя, части имени, ID и названию пака — показывает все совпадающие варианты во всех паках;
 - поиск учитывает **алиасы**: русские и английские названия, транслит и акронимы (`one punch man` → Saitama и Sukuna, `человек-паук` → все Spider-Man, `оптимус прайм` → Optimus Prime);
@@ -26,13 +26,15 @@
 ├── assets/
 │   ├── hero_atlas_map.png        # карта всех паков и героев
 │   ├── hero_atlas_overview.png   # компактный обзор паков
-│   └── heroes/                   # превью героев (~485 PNG, ≈10 МБ)
+│   └── heroes/                   # превью героев (~512 PNG, ≈11 МБ)
 │       ├── wiki/                 #   3D-рендеры с fiskheroes.fandom.com (56 шт., 640px)
-│       └── game/                 #   фронтальные виды из текстур костюмов (429 шт., 72×136)
+│       ├── game/                 #   фронтальные виды из текстур костюмов (429 шт., 72×136)
+│       └── models/               #   рендеры кастомных Tabula-моделей (27 шт.)
 ├── docs/DEPLOYMENT.md        # пошагово: Cloudflare + Telegram BotFather
 ├── docs/scripts/README.md    # описания всех скриптов: параметры, входы/выходы, грабли
 ├── tools/
 │   ├── hero_previews_game.py   # фронтальные превью из текстур (--mc-root — путь к клиенту игры)
+│   ├── hero_previews_models.py # офлайн-рендер кастомных Tabula-моделей (.tbl) без запуска игры
 │   ├── wiki_previews.py        # докачка вики-рендеров + мерж полей image/wiki в heroes_list.json
 │   ├── fetch_descriptions.py   # сбор описаний со страниц костюмов вики → descriptions.json
 │   ├── make_sheets.py          # QA-контакт-листы превью → research/out/sheets/ (в git не хранятся)
@@ -61,15 +63,16 @@
 
 ```bash
 python tools/hero_previews_game.py --mc-root "C:\Games\Minecraft"   # 1) assets/heroes/game/*.png из текстур jar/херопаков
-python tools/wiki_previews.py --mc-root "C:\Games\Minecraft"        # 2) assets/heroes/wiki/*.png + мерж полей в heroes_list.json
-python tools/fetch_descriptions.py                                  # 3) descriptions.json со страниц костюмов вики (--refresh — перекачать)
-python tools/make_sheets.py                                         # 4) QA-контакт-листы → research/out/sheets/
-python tests/validate_data.py                                       # 5) проверить целостность
+python tools/hero_previews_models.py --mc-root "C:\Games\Minecraft" # 2) assets/heroes/models/*.png — рендер Tabula-моделей
+python tools/wiki_previews.py --mc-root "C:\Games\Minecraft"        # 3) assets/heroes/wiki/*.png + мерж всех полей в heroes_list.json
+python tools/fetch_descriptions.py                                  # 4) descriptions.json со страниц костюмов вики (--refresh — перекачать)
+python tools/make_sheets.py                                         # 5) QA-контакт-листы → research/out/sheets/
+python tests/validate_data.py                                       # 6) проверить целостность
 ```
 
 Подробно про каждый скрипт — параметры, входы/выходы, грабли вики и гейт качества — в [docs/scripts/README.md](docs/scripts/README.md).
 
-Превью есть у 429/535 героев (все 67 встроенных). Остальные 106 — кастомные Tabula-модели (Hulk, Thanos, MODOK, гиганты), предметы-гаджеты и герои вообще без текстуры костюма: для них гейт качества в `hero_previews_game.py` осознанно не даёт мусорные картинки (голова при этом не проверяется — у героев без шлема она прозрачна намеренно).
+Превью есть у 456/535 героев (все 67 встроенных). Кастомные Tabula-модели (Hulk, Thanos, MODOK…), которые нельзя собрать из скин-раскладки, рендерит `hero_previews_models.py` прямо из геометрии `.tbl`-файлов. Остальные 79 — герои, чей вид целиком составлен из скина игрока и эффектов, предметы-гаджеты и герои без какой-либо геометрии: превью для них физически не из чего собрать (гейт качества в обоих генераторах осознанно не пропускает мусор; голова при этом не проверяется — у героев без шлема она прозрачна намеренно).
 
 ## Локальный запуск
 

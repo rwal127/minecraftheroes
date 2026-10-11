@@ -171,6 +171,7 @@ def main():
             h["image"] = None
             h["image_wiki"] = None
             h["image_game"] = None
+            h["image_model"] = None
             h["wiki"] = None
             if ns != "fiskheroes":
                 continue
@@ -214,9 +215,10 @@ def main():
             h["wiki"] = wiki_url(page_title) if page_title else None
             ok += 1
 
-    # game-texture front views: the fallback canonical image for everyone who has one
+    # game-texture front views + custom Tabula model renders: fallback canonical images
     game_dir = repo / "assets" / "heroes" / "game"
-    game_ok = 0
+    model_dir = repo / "assets" / "heroes" / "models"
+    game_ok = model_ok = 0
     for pack in heroes["packs"].values():
         for h in pack["heroes"]:
             ns, hid = h["id"].split(":", 1)
@@ -224,10 +226,16 @@ def main():
             if game.exists():
                 h["image_game"] = game.relative_to(repo).as_posix()
                 game_ok += 1
-            if h["image_wiki"] is None and h["image_game"]:
-                h["image"] = h["image_game"]
-            elif h["image_wiki"]:
+            model = model_dir / f"{ns}__{hid}.png"
+            if model.exists():
+                h["image_model"] = model.relative_to(repo).as_posix()
+                model_ok += 1
+            if h["image_wiki"]:
                 h["image"] = h["image_wiki"]
+            elif h["image_game"]:
+                h["image"] = h["image_game"]
+            elif h.get("image_model"):
+                h["image"] = h["image_model"]
 
     with_preview = sum(1 for p in heroes["packs"].values() for h in p["heroes"] if h["image"])
     wiki_only_count = sum(1 for p in heroes["packs"].values()
@@ -238,20 +246,22 @@ def main():
         "total_with_preview": with_preview,
         "wiki_renders": ok,
         "game_front_views": game_ok,
+        "model_renders": model_ok,
         "builtins_with_preview": f"{sum(1 for h in heroes['packs']['fiskheroes']['heroes'] if h['image'])}"
                                  f"/{len(heroes['packs']['fiskheroes']['heroes'])}",
         "wiki_source": "fiskheroes.fandom.com — 3D-рендеры, вики описывает только встроенные костюмы",
         "game_source": "фронтальный вид, собранный из текстур костюмов в jar/херопаках",
+        "model_source": "офлайн-рендер Tabula-моделей из херопаков (tools/hero_previews_models.py)",
         "without_preview": heroes["meta"]["total"] - with_preview,
-        "without_preview_note": "кастомные Tabula-модели (Hulk, Thanos, MODOK, giant-персонажи), "
-                                "предметы-гаджеты и герои вообще без текстур костюма",
+        "without_preview_note": "кастомные модели без превью-геометрии, предметы-гаджеты и герои "
+                                "вообще без текстур костюма",
     }
 
     (repo / "heroes_list.json").write_text(
         json.dumps(heroes, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"wiki renders: {ok} ({wiki_only_count} wiki-only), game views: {game_ok} "
-          f"({game_only_count} game-only), wiki without image: {missing}")
+          f"({game_only_count} game-only), model renders: {model_ok}, wiki without image: {missing}")
     print(f"previews: {with_preview}/{heroes['meta']['total']} -> heroes_list.json")
     return ok, missing
 
