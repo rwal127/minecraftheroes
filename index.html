@@ -9,9 +9,9 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦸%3C/text%3E%3C/svg%3E">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
-    :root{--bg:#0b101b;--panel:#141d2d;--line:#2c3d57;--text:#f3f7ff;--muted:#9db0c9;--blue:#79d4ff;--shadow:0 10px 30px rgba(0,0,0,.25)}
+    :root{--bg:#0b101b;--panel:#141d2d;--line:#2c3d57;--text:#f3f7ff;--muted:#9db0c9;--blue:#79d4ff;--shadow:0 10px 30px rgba(0,0,0,.25);--hdrH:57px}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);background:radial-gradient(circle at top,#20304c 0,transparent 38%), var(--bg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-    button,input{font:inherit} button{cursor:pointer}
+    button,input,code{font:inherit} button{cursor:pointer}
     .hdr{position:sticky;top:0;z-index:30;background:rgba(11,16,27,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
     .hdr-in{width:min(1180px,100%);margin:auto;padding:10px 18px;display:flex;align-items:center;gap:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.12em;font-size:12px;text-transform:uppercase;white-space:nowrap}
@@ -19,41 +19,49 @@
     .search{flex:1;display:flex;align-items:center;gap:10px;background:#0f1725;border:1px solid #30445f;border-radius:999px;padding:11px 18px;transition:border-color .15s, box-shadow .15s}
     .search:focus-within{border-color:#4d7fb5;box-shadow:0 0 0 3px rgba(121,212,255,.15)}
     .search span{font-size:16px}
-    .search input{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:15px}
+    .search input{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:15px;min-width:0}
     .search input::placeholder{color:#7288a5}
     .clear{display:none;border:0;background:transparent;color:var(--muted);font-size:15px;padding:0 2px}
     .search.has-q .clear{display:block}
     .wrap{width:min(1180px,100%);margin:auto;padding:0 18px 70px}
-    .landing{text-align:center;padding:52px 0 10px}
+    .landing{text-align:center;padding:52px 0 6px}
     .landing h1{margin:0 0 12px;font-size:clamp(34px,6.5vw,64px);line-height:1.05;letter-spacing:-.05em} .landing h1 span{color:var(--blue)}
     .landing .sub{color:var(--muted);font-size:15px;margin:0 0 22px}
     .landing .sub b{color:var(--text)}
     .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
     .chip{border:1px solid var(--line);background:#141d2d;color:#bfd0e7;padding:9px 14px;border-radius:999px;font-size:13px;font-weight:600;transition:border-color .15s,color .15s}
     .chip:hover{border-color:#4d7fb5;color:#fff}
-    .toolbar{padding:20px 0 6px}
-    .toolbar-box{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-    .tabs,.viewtabs{display:flex;gap:7px;flex-wrap:wrap}
-    .tab{border:1px solid var(--line);background:#172133;color:#bfd0e7;padding:9px 12px;border-radius:12px;font-weight:700;font-size:12px}
+    .toolbar{position:sticky;top:var(--hdrH);z-index:25;padding:10px 0 10px;background:linear-gradient(to bottom, rgba(11,16,27,.98) 70%, rgba(11,16,27,.85) 88%, rgba(11,16,27,0));}
+    .toolbar-box{display:flex;gap:10px;align-items:center}
+    .tabs{display:flex;gap:7px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:2px}
+    .tabs::-webkit-scrollbar{display:none}
+    .tab{border:1px solid var(--line);background:#172133;color:#bfd0e7;padding:9px 12px;border-radius:12px;font-weight:700;font-size:12px;white-space:nowrap;flex:0 0 auto}
     .tab.active{background:#355178;color:#fff;border-color:#4d6d99}
-    .counter{margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap}
+    .counter{margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap;padding-right:2px}
     .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pack-card{background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:18px;padding:16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
     .pack-card .topline{display:flex;justify-content:space-between;gap:8px;align-items:start}.pack-card h3{margin:0;font-size:18px;line-height:1.15}.pack-card .mini{font-size:12px;color:var(--muted)}
     .count{font-size:28px;font-weight:900;line-height:1;letter-spacing:-.04em}.colorbar{height:7px;border-radius:999px}
-    .hero-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:16px;padding:14px;box-shadow:var(--shadow)}
-    .item h4{margin:0 0 6px;font-size:16px;line-height:1.2}.meta{color:var(--muted);font-size:12px;word-break:break-word}
-    .cmd{margin-top:9px;background:#0f1725;border:1px solid #30445f;border-radius:10px;padding:8px 10px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;word-break:break-all}
-    .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.btn{border:1px solid #39506f;background:#1b2940;color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}.btn.ghost{background:#141d2d;color:#bfd0e7}
+    .rows{display:flex;flex-direction:column;gap:6px}
+    .row{display:flex;align-items:center;gap:10px;padding:7px 12px;background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:12px;transition:border-color .12s}
+    .row:hover{border-color:#3f5a80}
+    .r-name{flex:1;min-width:140px;display:flex;align-items:center;gap:8px;font-size:14px}
+    .badge{font-size:11px;font-weight:700;border:1px solid;border-radius:999px;padding:2px 8px;white-space:nowrap;opacity:.95}
+    .r-id,.r-cmd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#7f96b5;white-space:nowrap;cursor:pointer;flex:0 0 auto}
+    .r-id:hover,.r-cmd:hover{color:var(--blue)}
+    .r-cmd{color:#9fc9e8}
+    .r-btn{padding:7px 11px;font-size:11px;border-radius:9px;flex:0 0 auto}
+    .btn{border:1px solid #39506f;background:#1b2940;color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}
     .empty{padding:24px;border:1px dashed #355178;border-radius:18px;color:var(--muted);text-align:center;background:rgba(255,255,255,.02)}
     .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#182338;border:1px solid #355178;color:#fff;border-radius:12px;padding:11px 14px;opacity:0;pointer-events:none;transition:.18s;z-index:40}.toast.show{opacity:1}
     .footer{width:min(1180px,100%);margin:0 auto;padding:26px 18px 34px;color:var(--muted);font-size:12px}
-    @media (max-width: 1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero-list{grid-template-columns:1fr}}
-    @media (max-width: 760px){.wrap{padding:0 12px 60px}.footer{padding:20px 12px 28px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.counter{width:100%;margin-left:0}.landing{padding:36px 0 6px}}
-    @media (max-width: 560px){.grid{grid-template-columns:1fr}.hdr-in{flex-wrap:wrap;gap:8px;padding:10px 12px}.search{order:2;flex-basis:100%;padding:10px 14px}.brand{order:1}.landing h1{font-size:34px}.tabs{max-height:96px;overflow:auto}}
+    @media (max-width: 1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media (max-width: 760px){.wrap{padding:0 12px 60px}.footer{padding:20px 12px 28px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.landing{padding:36px 0 6px}}
+    @media (max-width: 640px){.grid{grid-template-columns:1fr}.row{flex-wrap:wrap;padding:9px 12px;gap:6px 10px}.r-name{flex-basis:100%}.r-id{display:none}.r-cmd{flex:1;white-space:normal;word-break:break-all}.r-btn{margin-left:auto}.landing h1{font-size:34px}}
+    @media (max-width: 560px){.hdr-in{flex-wrap:wrap;gap:8px;padding:10px 12px}.search{order:2;flex-basis:100%;padding:10px 14px}.brand{order:1}}
   </style>
 </head>
 <body>
-<header class="hdr">
+<header class="hdr" id="hdr">
   <div class="hdr-in">
     <div class="brand"><div class="logo">🦸</div> Hero Atlas</div>
     <label class="search" id="searchBox"><span>🔎</span><input id="search" placeholder="Поиск героя: имя, ID или пак — например, flash" autocomplete="off"><button class="clear" id="clearBtn" type="button" title="Очистить">✕</button></label>
@@ -73,11 +81,9 @@
   </section>
   <div class="toolbar">
     <div class="toolbar-box">
-      <div class="viewtabs" id="viewTabs"><button class="tab active" data-view="heroes">Герои</button><button class="tab" data-view="packs">Паки</button></div>
+      <div class="tabs" id="packTabs"></div>
       <div class="counter" id="counter">Загрузка…</div>
     </div>
-    <div style="height:10px"></div>
-    <div class="tabs" id="packTabs"></div>
   </div>
   <section><div id="content"><div class="empty">Загрузка данных…</div></div></section>
 </main>
@@ -120,8 +126,21 @@ async function loadData(){
 function flatHeroes(){return state.data.packs.flatMap(p=>p.heroes.map(h=>({...h,color:p.color})))}
 function filteredHeroes(){const q=norm(state.query);return flatHeroes().filter(h=>{const okPack = state.pack==='all' || h.pack===state.pack; if(!okPack) return false; if(!q) return true; return norm(h.name).includes(q)||norm(h.id).includes(q)||norm(h.packDisplay).includes(q)||norm(h.pack).includes(q);})}
 function filteredPacks(){const q=norm(state.query);return state.data.packs.filter(p=>{if(state.pack!=='all' && p.key!==state.pack) return false; if(!q) return true; const inPack=norm(p.display).includes(q)||norm(p.key).includes(q)||norm(p.source).includes(q); const inHeroes=p.heroes.some(h=>norm(h.name).includes(q)||norm(h.id).includes(q)); return inPack||inHeroes;})}
-function renderPackTabs(){const host=byId('packTabs');const total=state.data.packs.reduce((a,p)=>a+p.count,0);const tabs=[{key:'all',label:'Все',count:total},...state.data.packs.map(p=>({key:p.key,label:p.display,count:p.count}))];host.innerHTML=tabs.map(t=>`<button class="tab ${state.pack===t.key?'active':''}" data-pack="${t.key}">${t.label} <span style="opacity:.7">${t.count}</span></button>`).join('');host.querySelectorAll('[data-pack]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.pack;render()})}
-function renderHeroes(items){if(!items.length) return '<div class="empty">Ничего не найдено. Попробуй часть имени героя, например <b>flash</b> или <b>spider</b>.</div>';return `<div class="hero-list">${items.map(h=>`<article class="item"><h4>${escapeHtml(h.name)}</h4><div class="meta">Пак: <b>${escapeHtml(h.packDisplay)}</b> <span style="opacity:.6">(${escapeHtml(h.pack)})</span></div><div class="meta">ID: <code>${escapeHtml(h.id)}</code></div><div class="cmd">${escapeHtml(h.command)}</div><div class="actions"><button class="btn" data-copy="${attr(h.command)}">Копировать /suit</button><button class="btn ghost" data-copy="${attr(h.id)}">Копировать ID</button></div></article>`).join('')}</div>`}
+function renderPackTabs(){
+  const host=byId('packTabs');
+  const total=state.data.packs.reduce((a,p)=>a+p.count,0);
+  const tabs=[{key:'all',label:'Все',count:total},...state.data.packs.map(p=>({key:p.key,label:p.display,count:p.count})),{key:'__packs__',label:'📦 Паки'}];
+  host.innerHTML=tabs.map(t=>{
+    const active = t.key==='__packs__' ? state.view==='packs' : (state.view==='heroes' && state.pack===t.key);
+    return `<button class="tab ${active?'active':''}" data-pack="${t.key}">${t.label}${t.count!==undefined?` <span style="opacity:.7">${t.count}</span>`:''}</button>`;
+  }).join('');
+  host.querySelectorAll('[data-pack]').forEach(btn=>btn.onclick=()=>{
+    if(btn.dataset.pack==='__packs__'){state.view='packs'}
+    else{state.view='heroes';state.pack=btn.dataset.pack}
+    render();
+  });
+}
+function renderHeroes(items){if(!items.length) return '<div class="empty">Ничего не найдено. Попробуй часть имени героя, например <b>flash</b> или <b>spider</b>.</div>';return `<div class="rows">${items.map(h=>`<div class="row"><div class="r-name"><b>${escapeHtml(h.name)}</b><span class="badge" style="border-color:${h.color}66;color:${h.color}">${escapeHtml(h.packDisplay)}</span></div><code class="r-id" data-copy="${attr(h.id)}" title="Нажми, чтобы скопировать ID">${escapeHtml(h.id)}</code><code class="r-cmd" data-copy="${attr(h.command)}" title="Нажми, чтобы скопировать команду">${escapeHtml(h.command)}</code><button class="btn r-btn" data-copy="${attr(h.command)}">Копировать</button></div>`).join('')}</div>`}
 function renderPacks(items){if(!items.length) return '<div class="empty">Паки не найдены по текущему фильтру.</div>';return `<div class="grid">${items.map(p=>`<article class="pack-card"><div class="colorbar" style="background:${p.color}"></div><div class="topline"><div><h3>${escapeHtml(p.display)}</h3><div class="mini">${escapeHtml(p.key)}</div></div><div class="count" style="color:${p.color}">${p.count}</div></div><div class="mini">${escapeHtml(p.source || 'Источник не указан')}</div><div class="mini">Примеры: ${p.heroes.slice(0,3).map(h=>escapeHtml(h.name)).join(', ')}</div><div class="actions"><button class="btn" data-packjump="${p.key}">Показать героев</button></div></article>`).join('')}</div>`}
 function render(){
   const searching = !!norm(state.query);
@@ -132,8 +151,12 @@ function render(){
   byId('counter').textContent = searching
     ? `Найдено: ${state.view==='heroes'?heroes.length:packs.length}`
     : (state.view==='heroes'?`Показано ${heroes.length} из ${state.data.meta.total} героев`:`Показано ${packs.length} из ${state.data.packs.length} паков`);
-  renderPackTabs();const content=byId('content');content.innerHTML=state.view==='heroes'?renderHeroes(heroes):renderPacks(packs);content.querySelectorAll('[data-copy]').forEach(btn=>btn.onclick=()=>copy(btn.dataset.copy));content.querySelectorAll('[data-packjump]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.packjump;state.view='heroes';renderViewTabs();render();window.scrollTo({top:0,behavior:'smooth'})})}
-function renderViewTabs(){byId('viewTabs').querySelectorAll('[data-view]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.view===state.view);btn.onclick=()=>{state.view=btn.dataset.view;renderViewTabs();render();}})}
+  renderPackTabs();
+  const content=byId('content');
+  content.innerHTML=state.view==='heroes'?renderHeroes(heroes):renderPacks(packs);
+  content.querySelectorAll('[data-copy]').forEach(btn=>btn.onclick=()=>copy(btn.dataset.copy));
+  content.querySelectorAll('[data-packjump]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.packjump;state.view='heroes';render();window.scrollTo({top:0,behavior:'smooth'})});
+}
 function renderError(){byId('content').innerHTML='<div class="empty">Не удалось загрузить <b>heroes_list.json</b>. Проверь, что файл лежит рядом с index.html и сайт открыт по HTTPS. <button class="btn" data-retry>Повторить</button></div>';byId('content').querySelector('[data-retry]').onclick=()=>init()}
 async function init(){
   if(window.Telegram && Telegram.WebApp){
@@ -150,9 +173,10 @@ document.getElementById('chips').addEventListener('click',e=>{
   const chip=e.target.closest('[data-chip]');if(!chip)return;
   byId('search').value=chip.dataset.chip;state.query=chip.dataset.chip;render();byId('search').focus();
 });
+// keep the sticky toolbar right below the header on any screen size
+new ResizeObserver(()=>document.documentElement.style.setProperty('--hdrH', byId('hdr').offsetHeight+'px')).observe(byId('hdr'));
 // autofocus only in a normal browser — in Telegram WebView it would force the keyboard open
 if(!(window.Telegram && Telegram.WebApp && Telegram.WebApp.initData)){byId('search').focus()}
-renderViewTabs();
 init();
 </script>
 </body>
