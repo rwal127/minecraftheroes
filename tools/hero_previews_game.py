@@ -1,10 +1,12 @@
 # Generates front-view suit previews for every hero (built-in + heropacks) from the
 # textures inside the mod jar / heropack zips. Suit textures use the Minecraft skin
 # layout (64x64 or 64x32, scaled variants too); the hero's model json tells which
-# textures stack onto which render layer. Output: assets/heroes/game/<ns>__<id>.png
+# textures stack onto which render layer. Output: <repo>/assets/heroes/game/<ns>__<id>.png
 #
-# Needs the local game install (jar + heropacks are not committed). Point MC_ROOT
-# at it if it is not G:\Games\Minecraft:  set MC_ROOT=D:\Games\Minecraft
+# Usage:
+#   python tools/hero_previews_game.py --mc-root "C:\Games\Minecraft"
+# The game install (mod jar + heropacks) is not committed; pass --mc-root or set MC_ROOT.
+import argparse
 import collections
 import io
 import json
@@ -16,10 +18,6 @@ from pathlib import Path
 from PIL import Image
 
 REPO = Path(__file__).resolve().parent.parent
-MC_ROOT = Path(os.environ.get("MC_ROOT", r"G:\Games\Minecraft"))
-OUT = REPO / "assets" / "heroes" / "game"
-JAR = MC_ROOT / "versions/SuperHERO/mods/FiskHeroes-1.7.10-2.4.0.jar"
-PACKS = MC_ROOT / "versions/SuperHERO/fiskheroes"
 
 # front-view regions in a 64x64 skin layout: (x, y, w, h)
 REG64 = {
@@ -33,6 +31,23 @@ REG64 = {
 SCALE = 4  # pixels per texture pixel in the output preview
 
 texture_index = {}  # open ZipFile -> {texture basename: [full paths]}
+
+
+def parse_args():
+    ap = argparse.ArgumentParser(
+        description="Generate front-view suit previews from the textures inside the mod jar / heropacks.")
+    ap.add_argument("sample", nargs="?", default=None,
+                    help="optional comma-separated hero ids (without namespace) to regenerate; default: all")
+    ap.add_argument("--mc-root", default=os.environ.get("MC_ROOT"),
+                    help="path to the local game install holding the mod jar and heropacks (env: MC_ROOT)")
+    ap.add_argument("--repo", type=Path, default=REPO,
+                    help=f"catalog repo root (default: {REPO})")
+    args = ap.parse_args()
+    if not args.mc_root:
+        ap.error("--mc-root (or the MC_ROOT env var) is required: path to the game install "
+                 "with versions/SuperHERO/mods and versions/SuperHERO/fiskheroes")
+    args.mc_root = Path(args.mc_root)
+    return args
 
 
 def load_rgba(data):
@@ -146,9 +161,9 @@ def composite_suit(archive, ns: str, hid: str):
     def coverage(part):
         x, y, w, h = (int(v * s) for v in REG64[part])
         region = canvas.crop((x, y, x + w, y + h))
-        px = list(region.getdata())
-        filled = sum(1 for r, g, b, a in px if a > 16)
-        return filled / len(px)
+        hist = region.getchannel("A").histogram()
+        filled = sum(hist[17:])  # pixels with alpha > 16
+        return filled / (w * h)
 
     cov = {p: coverage(p) for p in ("head", "body", "arm_r", "leg_r")}
     if os.environ.get("PREVIEW_DEBUG"):
@@ -181,9 +196,16 @@ def composite_suit(archive, ns: str, hid: str):
     return out
 
 
-def main(sample_only=None):
-    OUT.mkdir(parents=True, exist_ok=True)
-    sources = {"fiskheroes": zipfile.ZipFile(JAR)}
+def main():
+    args = parse_args()
+    out = args.repo / "assets" / "heroes" / "game"
+    jar = args.mc_root / "versions/SuperHERO/mods/FiskHeroes-1.7.10-2.4.0.jar"
+    packs = args.mc_root / "versions/SuperHERO/fiskheroes"
+    if not jar.is_file():
+        raise SystemExit(f"mod jar not found: {jar}")
+
+    out.mkdir(parents=True, exist_ok=True)
+    sources = {"fiskheroes": zipfile.ZipFile(jar)}
 
     def register(zpath: Path):
         zf = zipfile.ZipFile(zpath)  # stays open for the whole run
@@ -197,13 +219,16 @@ def main(sample_only=None):
                     texture_index[zf].setdefault(n.split("/")[-1], []).append(n)
 
     texture_index.clear()
-    register(JAR)
-    for z in sorted(PACKS.glob("*.zip")):
+    register(jar)
+    for z in sorted(packs.glob("*.zip")):
         register(z)
-    for z in sorted((PACKS / ".marketplace").glob("*.zip")):
-        register(z)
+    marketplace = packs / ".marketplace"
+    if marketplace.is_dir():
+        for z in sorted(marketplace.glob("*.zip")):
+            register(z)
 
-    heroes = json.load(open(REPO / "heroes_list.json", encoding="utf-8"))
+    heroes = json.load(open(args.repo / "heroes_list.json", encoding="utf-8"))
+    sample = set(args.sample.split(",")) if args.sample else None
     stats = collections.Counter()
     no_texture = []
     for ns, pack in heroes["packs"].items():
@@ -212,7 +237,7 @@ def main(sample_only=None):
             continue
         for h in pack["heroes"]:
             hid = h["id"].split(":", 1)[1]
-            if sample_only and hid not in sample_only:
+            if sample and hid not in sample:
                 continue
             try:
                 preview = composite_suit(archive, ns, hid)
@@ -222,25 +247,22 @@ def main(sample_only=None):
             if preview is None:
                 no_texture.append(h["id"])
                 continue
-            dest = OUT / f"{ns}__{hid}.png"
-            preview.save(dest)
+            preview.save(out / f"{ns}__{hid}.png")
             stats[ns] += 1
     for zf in set(sources.values()):
         zf.close()
 
     total = sum(stats.values())
-    print(f"generated {total} previews -> {OUT.relative_to(REPO)}/")
+    print(f"generated {total} previews -> {out.relative_to(args.repo)}/")
     for ns, c in stats.most_common():
         print(f"  {ns:20s} {c}")
     print(f"heroes without suit texture: {len(no_texture)}")
     for x in no_texture[:40]:
         print("   -", x)
-    dump = REPO / "research" / "out" / "no_texture_heroes.json"
+    dump = args.repo / "research" / "out" / "no_texture_heroes.json"
     dump.parent.mkdir(parents=True, exist_ok=True)
     json.dump(no_texture, open(dump, "w"), indent=1)
 
 
 if __name__ == "__main__":
-    import sys
-    sample = set(sys.argv[1].split(",")) if len(sys.argv) > 1 else None
-    main(sample_only=sample)
+    main()

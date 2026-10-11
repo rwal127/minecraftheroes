@@ -3,11 +3,13 @@
 # power groups). Only built-in suits have wiki pages; heropack heroes get a localized
 # template description in the UI instead.
 #
-# Page wikitext is cached in research/out/wiki_suit_pages.json, so re-runs don't hit the
-# wiki again (pass --refresh to re-fetch).
+# Usage:
+#   python tools/fetch_descriptions.py [--repo PATH] [--refresh]
+# Page wikitext is cached in <repo>/research/out/wiki_suit_pages.json, so re-runs don't
+# hit the wiki again (pass --refresh to re-fetch).
+import argparse
 import json
 import re
-import sys
 import time
 from pathlib import Path
 
@@ -16,7 +18,6 @@ import requests
 from wiki_previews import WIKI_PAGE, UA, WIKI
 
 REPO = Path(__file__).resolve().parent.parent
-CACHE = REPO / "research" / "out" / "wiki_suit_pages.json"
 
 # Suits page: tier -> damage reduction (a tier is a damage-reduction band)
 TIER_DR = {1: 75.0, 2: 80.8, 3: 85.2, 4: 88.6, 5: 91.2, 6: 93.3, 7: 94.8, 8: 96.0, 9: 96.9, 10: 97.6}
@@ -93,12 +94,13 @@ def parse_suit_page(wt: str) -> dict | None:
     return desc or None
 
 
-def main(refresh=False):
-    heroes = json.load(open(REPO / "heroes_list.json", encoding="utf-8"))
+def main(refresh=False, repo=REPO):
+    heroes = json.load(open(repo / "heroes_list.json", encoding="utf-8"))
     builtins = {h["id"].split(":", 1)[1] for h in heroes["packs"]["fiskheroes"]["heroes"]}
 
-    CACHE.parent.mkdir(parents=True, exist_ok=True)
-    cache = json.load(open(CACHE, encoding="utf-8")) if CACHE.exists() else {}
+    cache_path = repo / "research" / "out" / "wiki_suit_pages.json"
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache = json.load(open(cache_path, encoding="utf-8")) if cache_path.exists() else {}
 
     out = {}
     for hid in sorted(builtins):
@@ -114,11 +116,18 @@ def main(refresh=False):
         else:
             print(f"  !! nothing parsed: {ref}")
 
-    (CACHE).write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
-    (REPO / "descriptions.json").write_text(
+    cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    (repo / "descriptions.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"descriptions: {len(out)}/{len(builtins)} built-in heroes -> descriptions.json")
 
 
 if __name__ == "__main__":
-    main(refresh="--refresh" in sys.argv)
+    ap = argparse.ArgumentParser(
+        description="Build descriptions.json from the FiskHeroes wiki suit pages.")
+    ap.add_argument("--repo", type=Path, default=REPO,
+                    help=f"catalog repo root (default: {REPO})")
+    ap.add_argument("--refresh", action="store_true",
+                    help="re-fetch page wikitext even if cached")
+    a = ap.parse_args()
+    main(refresh=a.refresh, repo=a.repo)

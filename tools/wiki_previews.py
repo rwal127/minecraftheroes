@@ -1,16 +1,19 @@
 # Adds preview images to heroes_list.json using the FiskHeroes wiki
 # (https://fiskheroes.fandom.com). The wiki covers only the built-in mod suits; heropack
-# heroes keep image: null. Wiki renders are downloaded to assets/heroes/wiki/ (scaled to
-# 640px wide); game-texture front views from tools/hero_previews_game.py fill the rest.
+# heroes keep image: null. Wiki renders are downloaded to <repo>/assets/heroes/wiki/
+# (scaled to 640px wide); game-texture front views from tools/hero_previews_game.py fill
+# the rest. After the run heroes_list.json holds the image/image_wiki/image_game/wiki
+# fields and meta.previews stats.
 #
-# Needs the MediaWiki research cache (wiki_research/*.json) from the machine that did the
-# one-time wiki research; point WIKI_RESEARCH (or MC_ROOT) at it if not G:\Games\Minecraft.
-import csv
+# Usage:
+#   python tools/wiki_previews.py --mc-root "C:\Games\Minecraft"
+# The MediaWiki research cache (wiki_research/*.json) was produced by a one-time wiki
+# crawl; it defaults to <mc-root>/wiki_research and can be overridden with --wiki-research.
+import argparse
 import io
 import json
 import os
 import re
-import sys
 import time
 from pathlib import Path
 
@@ -18,9 +21,6 @@ import requests
 from PIL import Image
 
 REPO = Path(__file__).resolve().parent.parent
-MC_ROOT = Path(os.environ.get("MC_ROOT", r"G:\Games\Minecraft"))
-RESEARCH = Path(os.environ.get("WIKI_RESEARCH", MC_ROOT / "wiki_research"))
-OUT_IMG = REPO / "assets" / "heroes"
 WIKI = "https://fiskheroes.fandom.com"
 UA = {"User-Agent": "Mozilla/5.0"}  # the CDN 403s longer bot-looking UA strings
 
@@ -99,8 +99,35 @@ WIKI_PAGE = {
 PREVIEW_WIDTH = 640
 
 
-def load_json(name):
-    return json.load(open(RESEARCH / name, encoding="utf-8"))
+def parse_args():
+    ap = argparse.ArgumentParser(
+        description="Download wiki suit renders and merge preview fields into heroes_list.json.")
+    ap.add_argument("--mc-root", default=None,
+                    help="path to the local game install; only used to locate the wiki research "
+                         "cache (env: MC_ROOT)")
+    ap.add_argument("--wiki-research", type=Path, default=None,
+                    help=f"path to the wiki research cache dir with allimages.json / wiki_pages.json "
+                         f"(env: WIKI_RESEARCH; default: <mc-root>/wiki_research)")
+    ap.add_argument("--repo", type=Path, default=REPO,
+                    help=f"catalog repo root (default: {REPO})")
+    ap.add_argument("--redownload", action="store_true",
+                    help="re-download renders even if the files already exist")
+    args = ap.parse_args()
+
+    mc_root = args.mc_root or os.environ.get("MC_ROOT")
+    if args.wiki_research:
+        args.research = args.wiki_research
+    else:
+        env = os.environ.get("WIKI_RESEARCH")
+        if env:
+            args.research = Path(env)
+        elif mc_root:
+            args.research = Path(mc_root) / "wiki_research"
+        else:
+            ap.error("the wiki research cache is required: pass --wiki-research, set WIKI_RESEARCH, "
+                     "or point --mc-root/MC_ROOT at the game install containing wiki_research/")
+    args.research = Path(args.research)
+    return args
 
 
 def wiki_url(title):
@@ -127,12 +154,14 @@ def download(url, dest: Path) -> bool:
     return False
 
 
-def main(redownload=False):
-    heroes = json.load(open(REPO / "heroes_list.json", encoding="utf-8"))
-    pages = load_json("wiki_pages.json")          # page title -> preview file, gallery, ...
-    all_images = load_json("allimages.json")      # [title, url, w, h]
+def main():
+    args = parse_args()
+    repo, research = args.repo, args.research
+    heroes = json.load(open(repo / "heroes_list.json", encoding="utf-8"))
+    pages = json.load(open(research / "wiki_pages.json", encoding="utf-8"))   # page title -> preview file, ...
+    all_images = json.load(open(research / "allimages.json", encoding="utf-8"))  # [title, url, w, h]
 
-    wiki_dir = OUT_IMG / "wiki"
+    wiki_dir = repo / "assets" / "heroes" / "wiki"
     wiki_dir.mkdir(parents=True, exist_ok=True)
 
     ok = missing = 0
@@ -175,25 +204,25 @@ def main(redownload=False):
 
             ext = canonical.rsplit(".", 1)[-1].lower()
             dest = wiki_dir / f"{hid}.{ext}"
-            if redownload or not dest.exists():
+            if args.redownload or not dest.exists():
                 scaled = re.sub(r"/revision/latest", f"/revision/latest/scale-to-width-down/{PREVIEW_WIDTH}", url, count=1)
                 if not download(scaled, dest):
                     print(f"  !! download failed: {scaled}")
                     missing += 1
                     continue
-            h["image_wiki"] = dest.relative_to(REPO).as_posix()
+            h["image_wiki"] = dest.relative_to(repo).as_posix()
             h["wiki"] = wiki_url(page_title) if page_title else None
             ok += 1
 
     # game-texture front views: the fallback canonical image for everyone who has one
-    game_dir = OUT_IMG / "game"
+    game_dir = repo / "assets" / "heroes" / "game"
     game_ok = 0
     for pack in heroes["packs"].values():
         for h in pack["heroes"]:
             ns, hid = h["id"].split(":", 1)
             game = game_dir / f"{ns}__{hid}.png"
             if game.exists():
-                h["image_game"] = game.relative_to(REPO).as_posix()
+                h["image_game"] = game.relative_to(repo).as_posix()
                 game_ok += 1
             if h["image_wiki"] is None and h["image_game"]:
                 h["image"] = h["image_game"]
@@ -218,7 +247,7 @@ def main(redownload=False):
                                 "предметы-гаджеты и герои вообще без текстур костюма",
     }
 
-    (REPO / "heroes_list.json").write_text(
+    (repo / "heroes_list.json").write_text(
         json.dumps(heroes, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"wiki renders: {ok} ({wiki_only_count} wiki-only), game views: {game_ok} "
@@ -228,4 +257,4 @@ def main(redownload=False):
 
 
 if __name__ == "__main__":
-    main(redownload="--redownload" in sys.argv)
+    main()
