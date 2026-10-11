@@ -43,6 +43,8 @@ async function runSuite(){
 
   // stub toast before copy tests
   w.toast = msg => { w.__lastToast = msg; };
+  // counter texts are asserted in Russian
+  w.__setLang('ru'); await tick();
 
   // 1. initial state
   ok('статистика: 535 героев / 21 пак', $('#statHeroes').textContent === '535' && $('#statPacks').textContent === '21');
@@ -121,6 +123,21 @@ async function runSuite(){
   // 10. data consistency from the UI side
   ok('все отрендеренные ID уникальны', new Set($$('.row .r-id').map(e => e.textContent)).size === 535);
   ok('команды = "/suit " + ID', $$('.row .r-cmd').every((c, i) => c.textContent === '/suit ' + $$('.row .r-id')[i].textContent));
+
+  // 11. language switcher (8 languages)
+  const langOptions = $$('#lang option').map(o => o.value);
+  ok('в переключателе 8 языков', langOptions.length === 8 && ['ru','en','uk','es','ko','ja','fr','de'].every(l => langOptions.includes(l)));
+  w.__setLang('en'); await tick(150);
+  ok('EN: счётчик на английском', $('#counter').textContent.startsWith('Showing 535 of 535 heroes'));
+  ok('EN: заголовок вкладки переведён', d.title.includes('Minecraft Hero Search'));
+  ok('EN: кнопка копирования переведена', ($('.r-btn')||{textContent:''}).textContent === 'Copy');
+  ok('EN: плейсхолдер поиска переведён', $('#search').placeholder.includes('Search a hero'));
+  w.__setLang('uk'); await tick(150);
+  ok('UK: счётчик на украинском', $('#counter').textContent.startsWith('Показано 535 зі 535'));
+  w.__setLang('ja'); await tick(150);
+  ok('JA: счётчик на японском', $('#counter').textContent.includes('ヒーロー 535/535'));
+  w.__setLang('ru'); await tick(150);
+  ok('переключатель: возврат на RU', $('#counter').textContent.startsWith('Показано 535 из 535'));
 
   // render results
   resultsEl.innerHTML = results.map(r =>
