@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hero Atlas — автотесты</title>
 <style>
-  body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#0b101b;color:#f3f7ff;padding:24px}
-  h1{margin:0 0 6px;font-size:22px} .sub{color:#9db0c9;margin:0 0 18px;font-size:13px}
-  #app{width:100%;height:640px;border:1px solid #2c3d57;border-radius:12px;background:#0b101b}
+  body{margin:0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#1e1e1e;color:#d4d4d4;padding:24px}
+  h1{margin:0 0 6px;font-size:22px} .sub{color:#8a8a8a;margin:0 0 18px;font-size:13px}
+  #app{width:100%;height:640px;border:1px solid #3c3c3c;border-radius:12px;background:#1e1e1e}
   ol{padding-left:22px} li{margin:4px 0} li b{font-family:ui-monospace,Consolas,monospace;font-size:12px}
-  .pass{color:#8ce3bb} .fail{color:#ff8fae}
-  #summary{margin-top:14px;padding:12px 14px;border-radius:12px;border:1px solid #2c3d57;display:none}
-  .ok{border-color:#3f7d5f}.bad{border-color:#a34}
+  .pass{color:#4ec9b0} .fail{color:#d16969}
+  #summary{margin-top:14px;padding:12px 14px;border-radius:12px;border:1px solid #3c3c3c;display:none}
+  .ok{border-color:#4ec9b0}.bad{border-color:#d16969}
 </style>
 </head>
 <body>
@@ -144,7 +144,7 @@ async function runSuite(){
 
   // render results
   resultsEl.innerHTML = results.map(r =>
-    `<li class="${r.pass?'pass':'fail'}"><b>${r.pass?'PASS':'FAIL'}</b> ${r.name}${r.detail?` — <span style="color:#9db0c9">${r.detail}</span>`:''}</li>`).join('');
+    `<li class="${r.pass?'pass':'fail'}"><b>${r.pass?'PASS':'FAIL'}</b> ${r.name}${r.detail?` — <span style="color:#8a8a8a">${r.detail}</span>`:''}</li>`).join('');
   const pass = results.filter(r => r.pass).length;
   const allPass = pass === results.length;
   summaryEl.style.display = 'block';

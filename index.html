@@ -3,62 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0b101b">
+  <meta name="theme-color" content="#1e1e1e">
   <meta name="description" content="Поиск героев и костюмов FiskHeroes по имени, ID и паку. Копируй команду /suit одним нажатием. Работает как сайт и как Telegram Mini App.">
   <title>Hero Atlas — поиск героев Minecraft</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦸%3C/text%3E%3C/svg%3E">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
-    :root{--bg:#0b101b;--panel:#141d2d;--line:#2c3d57;--text:#f3f7ff;--muted:#9db0c9;--blue:#79d4ff;--shadow:0 10px 30px rgba(0,0,0,.25);--hdrH:57px;--gx:18px;--cardPad:16px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);background:radial-gradient(circle at top,#20304c 0,transparent 38%), var(--bg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+    :root{--bg:#1e1e1e;--panel:#252526;--panel2:#2d2d2d;--line:#3c3c3c;--text:#d4d4d4;--muted:#8a8a8a;--accent:#007acc;--link:#3794ff;--sel:#094771;--btn:#0e639c;--shadow:0 10px 30px rgba(0,0,0,.45);--hdrH:57px;--gx:18px;--cardPad:16px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);background:radial-gradient(circle at top,#252526 0,transparent 38%), var(--bg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
     button,input,code{font:inherit} button{cursor:pointer}
-    .hdr{position:sticky;top:0;z-index:30;background:rgba(11,16,27,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+    .hdr{position:sticky;top:0;z-index:30;background:rgba(30,30,30,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
     .hdr-in{width:min(1180px,100%);margin:auto;padding:10px var(--gx);display:flex;align-items:center;gap:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.12em;font-size:12px;text-transform:uppercase;white-space:nowrap}
-    .langwrap{position:relative;display:flex;align-items:center;justify-content:center;background:#141d2d;border:1px solid var(--line);border-radius:10px;padding:8px;margin-left:auto;flex:0 0 auto;transition:border-color .15s}
-    .langwrap:hover{border-color:#4d7fb5}
-    .langwrap svg{width:17px;height:17px;color:var(--blue);flex:0 0 auto;pointer-events:none}
+    .langwrap{position:relative;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;margin-left:auto;flex:0 0 auto;transition:border-color .15s}
+    .langwrap:hover{border-color:var(--accent)}
+    .langwrap svg{width:17px;height:17px;color:var(--accent);flex:0 0 auto;pointer-events:none}
     /* invisible native select overlays the pill: icon-only face, native dropdown */
     .langsel{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;background:transparent;cursor:pointer;outline:0;-webkit-appearance:none;appearance:none}
-    .logo{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#47c6ff,#8a7dff);display:grid;place-items:center;font-size:19px}
-    .search{flex:1;display:flex;align-items:center;gap:10px;background:#0f1725;border:1px solid #30445f;border-radius:999px;padding:11px 18px;transition:border-color .15s, box-shadow .15s}
-    .search:focus-within{border-color:#4d7fb5;box-shadow:0 0 0 3px rgba(121,212,255,.15)}
+    .logo{width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#007acc,#3794ff);display:grid;place-items:center;font-size:19px}
+    .search{flex:1;display:flex;align-items:center;gap:10px;background:#3c3c3c;border:1px solid #464646;border-radius:999px;padding:11px 18px;transition:border-color .15s, box-shadow .15s}
+    .search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,122,204,.25)}
     .search span{font-size:16px}
     .search input{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:15px;min-width:0}
-    .search input::placeholder{color:#7288a5}
+    .search input::placeholder{color:#7a7a7a}
     .clear{display:none;border:0;background:transparent;color:var(--muted);font-size:15px;padding:0 2px}
     .search.has-q .clear{display:block}
     .wrap{width:min(1180px,100%);margin:auto;padding:0 var(--gx) 64px}
     .landing{text-align:center;padding:44px 0 4px}
-    .landing h1{margin:0 0 12px;font-size:clamp(34px,6.5vw,64px);line-height:1.05;letter-spacing:-.05em} .landing h1 span{color:var(--blue)}
+    .landing h1{margin:0 0 12px;font-size:clamp(34px,6.5vw,64px);line-height:1.05;letter-spacing:-.05em} .landing h1 span{color:var(--link)}
     .landing .sub{color:var(--muted);font-size:15px;margin:0 0 20px}
     .landing .sub b{color:var(--text)}
     .chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-    .chip{border:1px solid var(--line);background:#141d2d;color:#bfd0e7;padding:9px 14px;border-radius:999px;font-size:13px;font-weight:600;transition:border-color .15s,color .15s}
-    .chip:hover{border-color:#4d7fb5;color:#fff}
+    .chip{border:1px solid var(--line);background:var(--panel);color:#cccccc;padding:9px 14px;border-radius:999px;font-size:13px;font-weight:600;transition:border-color .15s,color .15s}
+    .chip:hover{border-color:var(--accent);color:#fff}
     .home-grid{margin-top:28px;text-align:left}
-    .toolbar{position:sticky;top:var(--hdrH);z-index:25;padding:12px 0 10px;background:linear-gradient(to bottom, rgba(11,16,27,.98) 70%, rgba(11,16,27,.85) 88%, rgba(11,16,27,0));}
+    .toolbar{position:sticky;top:var(--hdrH);z-index:25;padding:12px 0 10px;background:linear-gradient(to bottom, rgba(30,30,30,.98) 70%, rgba(30,30,30,.85) 88%, rgba(30,30,30,0));}
     .toolbar-box{display:flex;gap:10px;align-items:center}
     .tabs{display:flex;gap:7px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:2px}
     .tabs::-webkit-scrollbar{display:none}
-    .tab{border:1px solid var(--line);background:#172133;color:#bfd0e7;padding:9px 12px;border-radius:12px;font-weight:700;font-size:12px;white-space:nowrap;flex:0 0 auto}
-    .tab.active{background:#355178;color:#fff;border-color:#4d6d99}
+    .tab{border:1px solid var(--line);background:var(--panel2);color:#cccccc;padding:9px 12px;border-radius:12px;font-weight:700;font-size:12px;white-space:nowrap;flex:0 0 auto}
+    .tab.active{background:var(--sel);color:#fff;border-color:var(--sel)}
     .counter{margin-left:auto;color:var(--muted);font-size:12px;white-space:nowrap;padding-right:2px}
-    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pack-card{background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:18px;padding:var(--cardPad);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
+    .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pack-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:var(--cardPad);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
     .pack-card .topline{display:flex;justify-content:space-between;gap:8px;align-items:start}.pack-card h3{margin:0;font-size:18px;line-height:1.15}.pack-card .mini{font-size:12px;color:var(--muted)}
     .count{font-size:28px;font-weight:900;line-height:1;letter-spacing:-.04em}.colorbar{height:7px;border-radius:999px}
     .rows{display:flex;flex-direction:column;gap:8px}
-    .row{display:flex;align-items:center;gap:10px;padding:9px 14px;background:linear-gradient(180deg,#162234,#111927);border:1px solid #30445f;border-radius:12px;transition:border-color .12s}
-    .row:hover{border-color:#3f5a80}
+    .row{display:flex;align-items:center;gap:10px;padding:9px 14px;background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:12px;transition:border-color .12s}
+    .row:hover{border-color:var(--accent)}
     .r-name{flex:1;min-width:140px;display:flex;align-items:center;gap:8px;font-size:14px}
     .badge{font-size:11px;font-weight:700;border:1px solid;border-radius:999px;padding:2px 8px;white-space:nowrap;opacity:.95}
-    .r-id,.r-cmd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#7f96b5;white-space:nowrap;cursor:pointer;flex:0 0 auto}
-    .r-id:hover,.r-cmd:hover{color:var(--blue)}
-    .r-cmd{color:#9fc9e8}
+    .r-id,.r-cmd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#9cdcfe;white-space:nowrap;cursor:pointer;flex:0 0 auto}
+    .r-id:hover,.r-cmd:hover{color:var(--link)}
+    .r-cmd{color:#ce9178}
     .r-btn{padding:7px 11px;font-size:11px;border-radius:9px;flex:0 0 auto}
-    .btn{border:1px solid #39506f;background:#1b2940;color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}
-    .empty{padding:24px;border:1px dashed #355178;border-radius:18px;color:var(--muted);text-align:center;background:rgba(255,255,255,.02)}
-    .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#182338;border:1px solid #355178;color:#fff;border-radius:12px;padding:11px 14px;opacity:0;pointer-events:none;transition:.18s;z-index:40}.toast.show{opacity:1}
+    .btn{border:1px solid var(--btn);background:var(--btn);color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}
+    .empty{padding:24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);text-align:center;background:rgba(255,255,255,.02)}
+    .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--accent);color:#fff;border-radius:12px;padding:11px 14px;opacity:0;pointer-events:none;transition:.18s;z-index:40}.toast.show{opacity:1}
     .footer{width:min(1180px,100%);margin:0 auto;padding:24px var(--gx) 36px;color:var(--muted);font-size:12px}
     @media (max-width: 1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     @media (max-width: 760px){:root{--gx:12px}.wrap{padding-bottom:56px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.landing{padding:32px 0 2px}}
@@ -96,11 +96,11 @@
   </div>
   <section><div id="content"><div class="empty">Загрузка данных…</div></div></section>
 </main>
-<footer class="footer"><span id="fCmd">Команда в игре:</span> <code>/suit packname:heroname</code> · <span id="fData">Данные:</span> <code>heroes_list.json</code> · <span id="fList">Полный список:</span> <a style="color:var(--blue)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a> · <a style="color:var(--blue)" href="tests.html" id="fTests">автотесты</a></footer>
+<footer class="footer"><span id="fCmd">Команда в игре:</span> <code>/suit packname:heroname</code> · <span id="fData">Данные:</span> <code>heroes_list.json</code> · <span id="fList">Полный список:</span> <a style="color:var(--link)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a> · <a style="color:var(--link)" href="tests.html" id="fTests">автотесты</a></footer>
 <div class="toast" id="toast">Скопировано</div>
 <script>
 const DISPLAY = {"fiskheroes": "FiskHeroes", "misc": "Miscellaneous", "morningstar": "Morningstar", "tgheroes": "TGHeroes", "8thpack": "8thPack", "dhhp": "DERPZ Heroes", "ironmaniac": "Iron Maniac", "jmctheroes": "JMCT Heroes", "nameless": "Nameless Heroes", "ninjago": "Ninjago", "runnyhero": "RunnyHeroes", "sabri": "Sabri Enhanced", "secretheroes": "SecretHeroes", "shadows": "Shadows", "sind": "SIND Iron Man", "skarlet": "Skarlet", "stellar": "StellarHeroes", "pwt": "The Pack With Things", "tmf": "TMF", "transformers_pack": "Transformers Pack", "unconventional": "Unconventional"};
-const PALETTE = ["#72d1fc", "#b19cff", "#8ce3bb", "#ffc584", "#ff8fae", "#86dcff", "#f8cf75", "#bcafff", "#93e4de", "#fbadac", "#b4dd7c", "#b2b5ff", "#ffb782", "#97cdf5", "#d39be1", "#ecd184", "#79ddd2", "#faa8b9", "#8cbaff", "#d6b6ff", "#e5b67b"];
+const PALETTE = ["#569cd6", "#4ec9b0", "#c586c0", "#ce9178", "#dcdcaa", "#b5cea8", "#9cdcfe", "#d7ba7d", "#4fc1ff", "#d16969", "#6a9955", "#3794ff"];
 const I18N = {
 ru:{title:"Hero Atlas — поиск героев Minecraft",placeholder:"Поиск героя: имя, ID или пак — например, flash",h1:"Найди {hero} за секунды",hero_noun:"героя",sub:"{h} записей в {p} паках FiskHeroes · поиск по имени, ID, паку и алиасам",tab_all:"Все",tab_packs:"📦 Паки",found:"Найдено: {n}",showing_heroes:"Показано {a} из {b} героев",showing_packs:"Показано {a} из {b} паков",copy_btn:"Копировать",copied:"Скопировано: {x}",empty:"Ничего не найдено. Попробуй часть имени, например flash, spider или человек-паук.",error:"Не удалось загрузить heroes_list.json. Проверь, что файл лежит рядом с index.html и сайт открыт по HTTPS.",retry:"Повторить",aka:"Также ищется как: {a}",show_heroes_btn:"Показать героев",examples:"Примеры:",no_source:"Источник не указан",loading:"Загрузка…",f_cmd:"Команда в игре:",f_data:"Данные:",f_list:"Полный список:",f_tests:"автотесты"},
 en:{title:"Hero Atlas — Minecraft Hero Search",placeholder:"Search a hero: name, ID or pack — e.g. flash",h1:"Find your {hero} in seconds",hero_noun:"hero",sub:"{h} entries in {p} FiskHeroes packs · search by name, ID, pack and aliases",tab_all:"All",tab_packs:"📦 Packs",found:"Found: {n}",showing_heroes:"Showing {a} of {b} heroes",showing_packs:"Showing {a} of {b} packs",copy_btn:"Copy",copied:"Copied: {x}",empty:"Nothing found. Try part of a name: flash, spider, one punch man…",error:"Failed to load heroes_list.json. Make sure the file sits next to index.html and the site is served over HTTPS.",retry:"Retry",aka:"Also searchable as: {a}",show_heroes_btn:"Show heroes",examples:"Examples:",no_source:"No source listed",loading:"Loading…",f_cmd:"In-game command:",f_data:"Data:",f_list:"Full list:",f_tests:"self-tests"},
@@ -225,7 +225,7 @@ async function init(){
   applyLang(LANG);
   if(window.Telegram && Telegram.WebApp){
     try{Telegram.WebApp.ready();Telegram.WebApp.expand();}catch(e){}
-    try{Telegram.WebApp.setHeaderColor('#0b101b');Telegram.WebApp.setBackgroundColor('#0b101b');}catch(e){}
+    try{Telegram.WebApp.setHeaderColor('#1e1e1e');Telegram.WebApp.setBackgroundColor('#1e1e1e');}catch(e){}
   }
   byId('counter').textContent=t('loading');
   try{
