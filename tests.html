@@ -127,6 +127,7 @@ async function runSuite(){
   // 11. language switcher (8 languages)
   const langOptions = $$('#lang option').map(o => o.value);
   ok('в переключателе 8 языков', langOptions.length === 8 && ['ru','en','uk','es','ko','ja','fr','de'].every(l => langOptions.includes(l)));
+  ok('у переключателя языков есть иконка (lucide languages)', $$('.langwrap svg').length === 1 && $$('.langwrap svg path').length === 6);
   w.__setLang('en'); await tick(150);
   ok('EN: счётчик на английском', $('#counter').textContent.startsWith('Showing 535 of 535 heroes'));
   ok('EN: заголовок вкладки переведён', d.title.includes('Minecraft Hero Search'));
