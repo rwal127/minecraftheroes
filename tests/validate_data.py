@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "heroes_list.json"
+ALIASES = ROOT / "aliases.json"
 ID_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_]+$")
 FORBIDDEN_KEYS = {"status", "active_total", "marketplace_total", "note", "all_ids"}
 
@@ -59,6 +60,21 @@ def main() -> int:
           "heroes have exactly {id, name} and non-empty names")
 
     print(f"\n{total} heroes across {len(packs)} packs")
+
+    if ALIASES.exists():
+        print("aliases.json checks:")
+        alias_map = json.loads(ALIASES.read_text(encoding="utf-8"))
+        unknown = sorted(set(alias_map) - set(ids))
+        check(not unknown, f"all alias keys are known hero IDs (unknown: {unknown[:5]})")
+        check(set(ids) == set(alias_map), "every hero has an alias entry (possibly empty)")
+        non_lower = [(k, a) for k, v in alias_map.items() for a in v if a != a.lower()]
+        check(not non_lower, f"all aliases are lowercase (bad: {non_lower[:3]})")
+        check(all(isinstance(v, list) and all(isinstance(a, str) for a in v) for v in alias_map.values()),
+              "alias values are lists of strings")
+        print(f"  {sum(len(v) for v in alias_map.values())} aliases for {sum(1 for v in alias_map.values() if v)}/{len(alias_map)} heroes")
+    else:
+        print("aliases.json: not found (optional)")
+
     if errors:
         print(f"FAILED: {len(errors)} error(s)")
         return 1

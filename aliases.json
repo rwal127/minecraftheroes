@@ -1,0 +1,3505 @@
+{
+ "8thpack:genji": [
+  "гэндзи",
+  "гендзи",
+  "overwatch",
+  "овервотч",
+  "шимада"
+ ],
+ "8thpack:killercroc": [
+  "киллер крок",
+  "убийца крок",
+  "крок",
+  "бэтмен",
+  "аркхем"
+ ],
+ "8thpack:nebula": [
+  "небула",
+  "стражи галактики",
+  "guardians of the galaxy",
+  "мстители"
+ ],
+ "8thpack:phaseshifter": [
+  "титанфолл",
+  "пилот",
+  "titanfall",
+  "фазовый сдвиг",
+  "фазовый пилот"
+ ],
+ "8thpack:pilote": [
+  "титанфолл",
+  "джек купер",
+  "bt",
+  "titanfall",
+  "bt-7274"
+ ],
+ "8thpack:spot": [
+  "спот",
+  "человек-паук",
+  "spider verse",
+  "паутина вселенных",
+  "джонатан онн"
+ ],
+ "8thpack:spot_black": [
+  "спот",
+  "человек-паук",
+  "spider verse",
+  "паутина вселенных",
+  "чёрный спот"
+ ],
+ "dhhp:aqualad": [
+  "аквамен",
+  "аквалад",
+  "артур карри",
+  "arthur curry",
+  "лига справедливости",
+  "justice league"
+ ],
+ "dhhp:atom_eve": [
+  "атом ив",
+  "атом ева",
+  "непобедимый",
+  "invincible",
+  "саманта вилкинс",
+  "eve wilkins"
+ ],
+ "dhhp:blossom": [
+  "блоссом",
+  "суперкрошки",
+  "powerpuff girls",
+  "ppg"
+ ],
+ "dhhp:bubbles": [
+  "бабблс",
+  "пузырёк",
+  "суперкрошки",
+  "powerpuff girls",
+  "ppg"
+ ],
+ "dhhp:buttercup": [
+  "баттеркап",
+  "травка",
+  "суперкрошки",
+  "powerpuff girls",
+  "ppg"
+ ],
+ "dhhp:doctorfate": [
+  "доктор фейт",
+  "доктор фэйт",
+  "доктор судьбы",
+  "кент нельсон",
+  "kent nelson"
+ ],
+ "dhhp:galactus": [
+  "галактус",
+  "пожиратель миров",
+  "devourer of worlds",
+  "марвел",
+  "marvel"
+ ],
+ "dhhp:gojo": [
+  "годжо",
+  "годжо сатору",
+  "сатору",
+  "магическая битва",
+  "jujutsu kaisen",
+  "jjk"
+ ],
+ "dhhp:invincible": [
+  "непобедимый",
+  "инвинсибл",
+  "марк грейсон",
+  "mark grayson",
+  "вилтрум"
+ ],
+ "dhhp:joker_comics": [
+  "джокер",
+  "бэтмен",
+  "dc",
+  "clown prince of crime",
+  "клоун принц преступного мира"
+ ],
+ "dhhp:nightwing": [
+  "найтвинг",
+  "дик грейсон",
+  "dick grayson",
+  "бэтмен",
+  "dc"
+ ],
+ "dhhp:omniman": [
+  "омни-мен",
+  "омни мэн",
+  "omni-man",
+  "нолан грейсон",
+  "nolan grayson",
+  "непобедимый"
+ ],
+ "dhhp:raven": [
+  "рейвен",
+  "рейчел рот",
+  "дочь тригона",
+  "юные титаны",
+  "teen titans",
+  "титаны"
+ ],
+ "dhhp:red_hood": [
+  "красный колпак",
+  "красный капюшон",
+  "джейсон тодд",
+  "jason todd",
+  "бэтмен",
+  "dc"
+ ],
+ "dhhp:red_x": [
+  "ред икс",
+  "красный икс",
+  "юные титаны",
+  "teen titans"
+ ],
+ "dhhp:rick": [
+  "рик",
+  "рик санчез",
+  "рик с-137",
+  "c-137",
+  "рик и морти",
+  "rick and morty",
+  "морти и рик"
+ ],
+ "dhhp:scarlet_spider": [
+  "алый паук",
+  "скарлет спайдер",
+  "клин паркер",
+  "бен рейли",
+  "ben reilly",
+  "человек-паук"
+ ],
+ "dhhp:starfire": [
+  "старфаер",
+  "старфайр",
+  "корианд'р",
+  "koriand'r",
+  "юные титаны",
+  "teen titans"
+ ],
+ "dhhp:superboy": [
+  "супербой",
+  "кон-эл",
+  "коннор кент",
+  "conner kent",
+  "юные титаны",
+  "dc"
+ ],
+ "dhhp:superman_kc": [
+  "супермен",
+  "кларк кент",
+  "clark kent",
+  "кал-эл",
+  "kingdom come",
+  "dc"
+ ],
+ "dhhp:terra": [
+  "терра",
+  "тара маркова",
+  "tara markov",
+  "юные титаны",
+  "teen titans"
+ ],
+ "dhhp:thor_mcu": [
+  "тор",
+  "мьёльнир",
+  "бог грома",
+  "god of thunder",
+  "марвел",
+  "mcu"
+ ],
+ "dhhp:thragg": [
+  "трагг",
+  "вилтрум",
+  "непобедимый",
+  "инвинсибл",
+  "invincible"
+ ],
+ "fiskheroes:agent_liberty": [
+  "агент свободы",
+  "агент либерти"
+ ],
+ "fiskheroes:ant_man": [
+  "человек-муравей",
+  "antman",
+  "скотт лэнг",
+  "scott lang"
+ ],
+ "fiskheroes:anti_monitor": [
+  "анти-монитор",
+  "анти монитор",
+  "antimonitor",
+  "кризис на бесконечных землях"
+ ],
+ "fiskheroes:arrow": [
+  "стрела",
+  "оливер квин",
+  "oliver queen",
+  "стрела сериал"
+ ],
+ "fiskheroes:arsenal": [
+  "арсенал",
+  "рой харпер",
+  "roy harper",
+  "красная стрела"
+ ],
+ "fiskheroes:atom": [
+  "атом",
+  "рей палмер",
+  "ray palmer"
+ ],
+ "fiskheroes:atom_smasher": [
+  "атом крушитель",
+  "атом-крушитель",
+  "альберт ротштейн",
+  "atom smasher"
+ ],
+ "fiskheroes:august_heart_comics": [
+  "годспид",
+  "godspeed",
+  "аугуст харт",
+  "комикс"
+ ],
+ "fiskheroes:batman_dceu": [
+  "бэтмен",
+  "батмен",
+  "темный рыцарь",
+  "тёмный рыцарь",
+  "брюс уэйн",
+  "bruce wayne"
+ ],
+ "fiskheroes:black_canary": [
+  "черная канарейка",
+  "чёрная канарейка",
+  "канарейка",
+  "лорел ланс",
+  "лорел лэнс"
+ ],
+ "fiskheroes:black_canary_dinah": [
+  "черная канарейка",
+  "чёрная канарейка",
+  "канарейка",
+  "дина дрейк"
+ ],
+ "fiskheroes:black_lightning": [
+  "черная молния",
+  "чёрная молния",
+  "джефферсон пирс",
+  "jefferson pierce"
+ ],
+ "fiskheroes:black_manta_dceu": [
+  "черная манта",
+  "чёрная манта",
+  "дэвид хайд",
+  "david hyde",
+  "аквамен"
+ ],
+ "fiskheroes:black_panther": [
+  "черная пантера",
+  "чёрная пантера",
+  "т'чалла",
+  "тчалла",
+  "т чалла",
+  "ваканда"
+ ],
+ "fiskheroes:captain_america": [
+  "капитан америка",
+  "стив роджерс",
+  "первый мститель",
+  "кап"
+ ],
+ "fiskheroes:captain_america_sam": [
+  "капитан америка",
+  "сэм уилсон",
+  "сокол",
+  "первый мститель"
+ ],
+ "fiskheroes:captain_cold": [
+  "капитан холод",
+  "капитан стужа",
+  "леонард снарт",
+  "снарт",
+  "leonard snart"
+ ],
+ "fiskheroes:chronos": [
+  "хронос",
+  "легенды завтрашнего дня",
+  "legends of tomorrow"
+ ],
+ "fiskheroes:citizen_steel": [
+  "гражданин сталь",
+  "хэнк хейвуд",
+  "hank heywood",
+  "легенды завтрашнего дня"
+ ],
+ "fiskheroes:colossus_xmen": [
+  "колосс",
+  "пётр распутин",
+  "питер распутин",
+  "люди икс",
+  "x men",
+  "xmen"
+ ],
+ "fiskheroes:crossbones": [
+  "кроссбонс",
+  "кроссбоунс",
+  "костолом",
+  "брок рамлоу",
+  "brock rumlow"
+ ],
+ "fiskheroes:dark_archer": [
+  "темный лучник",
+  "тёмный лучник",
+  "малькольм мерлин",
+  "malcolm merlyn"
+ ],
+ "fiskheroes:deadpool_xmen": [
+  "дэдпул",
+  "дедпул",
+  "уэйд уилсон",
+  "wade wilson",
+  "люди икс"
+ ],
+ "fiskheroes:deathstroke_dceu": [
+  "дэдстроук",
+  "дэтстроук",
+  "слэйд уилсон",
+  "слейд уилсон",
+  "slade wilson"
+ ],
+ "fiskheroes:doctor_octopus": [
+  "доктор осьминог",
+  "доктор октавиус",
+  "отто октавиус",
+  "doc ock",
+  "док ось",
+  "док ок"
+ ],
+ "fiskheroes:doctor_strange": [
+  "доктор стрэндж",
+  "доктор стрендж",
+  "стивен стрэндж",
+  "stephen strange",
+  "док стрэндж"
+ ],
+ "fiskheroes:falcon": [
+  "сокол",
+  "сэм уилсон",
+  "sam wilson"
+ ],
+ "fiskheroes:firestorm": [
+  "огненный шторм",
+  "рони реймонд",
+  "файршторм",
+  "легенды завтрашнего дня"
+ ],
+ "fiskheroes:firestorm_jax": [
+  "огненный шторм",
+  "джакс джексон",
+  "джакс",
+  "легенды завтрашнего дня"
+ ],
+ "fiskheroes:geomancer": [
+  "геомант",
+  "адам феллс",
+  "adam fells"
+ ],
+ "fiskheroes:godspeed_comics": [
+  "годспид",
+  "аугуст харт",
+  "august heart",
+  "комикс"
+ ],
+ "fiskheroes:green_arrow": [
+  "зеленая стрела",
+  "зелёная стрела",
+  "оливер квин",
+  "oliver queen"
+ ],
+ "fiskheroes:guardian": [
+  "страж",
+  "гардиан",
+  "джон дигл",
+  "john diggle"
+ ],
+ "fiskheroes:harbinger": [
+  "вестник",
+  "харбинджер",
+  "харбингер",
+  "лайла майклс",
+  "lyla michaels"
+ ],
+ "fiskheroes:heatwave": [
+  "хитвейв",
+  "мик рори",
+  "mick rory",
+  "тепловая волна"
+ ],
+ "fiskheroes:iron_man": [
+  "железный человек",
+  "тони старк",
+  "tony stark",
+  "старк"
+ ],
+ "fiskheroes:iron_man_mk50": [
+  "железный человек марк 50",
+  "марк 50",
+  "мк50",
+  "mk50",
+  "наноброня"
+ ],
+ "fiskheroes:iron_man_mk85": [
+  "железный человек марк 85",
+  "марк 85",
+  "мк85",
+  "mk85",
+  "эндшпиль"
+ ],
+ "fiskheroes:kid_flash": [
+  "кид флэш",
+  "кид флеш",
+  "уолли уэст",
+  "wally west"
+ ],
+ "fiskheroes:killer_frost": [
+  "киллер фрост",
+  "кейтлин сноу",
+  "caitlin snow",
+  "ледяной убийца"
+ ],
+ "fiskheroes:martian_manhunter": [
+  "марсианский охотник",
+  "джонн джонз",
+  "jonn jonzz",
+  "марсианин"
+ ],
+ "fiskheroes:martian_manhunter_comics": [
+  "марсианский охотник",
+  "джонн джонз",
+  "jonn jonzz",
+  "комикс"
+ ],
+ "fiskheroes:mysterio": [
+  "мистерио",
+  "квентин бек",
+  "quentin beck",
+  "вдали от дома"
+ ],
+ "fiskheroes:obsidian": [
+  "обсидиан",
+  "тодд райс",
+  "todd rice"
+ ],
+ "fiskheroes:prometheus": [
+  "прометей",
+  "адриан чейс",
+  "adrian chase"
+ ],
+ "fiskheroes:reverse_flash": [
+  "обратный флэш",
+  "обратный флеш",
+  "реверс флэш",
+  "эобард тоун",
+  "eobard thawne"
+ ],
+ "fiskheroes:rip_hunter": [
+  "рип хантер",
+  "рипп хантер",
+  "легенды завтрашнего дня",
+  "legends of tomorrow"
+ ],
+ "fiskheroes:rupture": [
+  "разрыв",
+  "данте рамон",
+  "dante ramon",
+  "вайб"
+ ],
+ "fiskheroes:savitar": [
+  "савитар",
+  "бог скорости",
+  "god of speed"
+ ],
+ "fiskheroes:senor_cactus": [
+  "сеньор кактус",
+  "синьор кактус",
+  "кактус",
+  "senor cactus"
+ ],
+ "fiskheroes:shazam_dceu": [
+  "шазам",
+  "билли батсон",
+  "billy batson",
+  "dceu"
+ ],
+ "fiskheroes:spectre": [
+  "спектр",
+  "спектор",
+  "кризис на бесконечных землях",
+  "crisis on infinite earths"
+ ],
+ "fiskheroes:spider_man": [
+  "человек-паук",
+  "человек паук",
+  "спайдермен",
+  "спайдер-мен",
+  "peter parker",
+  "питер паркер",
+  "spiderman"
+ ],
+ "fiskheroes:spider_man_ps4": [
+  "человек паук ps4",
+  "спайдермен ps4",
+  "spiderman ps4",
+  "insomniac",
+  "инсомниак"
+ ],
+ "fiskheroes:spider_man_raimi": [
+  "человек паук раими",
+  "спайдермен раими",
+  "raimi",
+  "тоби магуайр",
+  "tobey maguire",
+  "spiderman raimi"
+ ],
+ "fiskheroes:spider_man_webb": [
+  "человек паук уэбб",
+  "спайдермен уэбб",
+  "webb",
+  "эндрю гарфилд",
+  "andrew garfield",
+  "новый человек паук",
+  "новый человек-паук"
+ ],
+ "fiskheroes:spodermen": [
+  "сподермен",
+  "сподерман",
+  "спудермен",
+  "spoderman",
+  "spooderman",
+  "долан"
+ ],
+ "fiskheroes:the_flash": [
+  "флэш",
+  "флеш",
+  "барри аллен",
+  "барри"
+ ],
+ "fiskheroes:the_flash_hunter": [
+  "хантер золомон",
+  "золомон",
+  "хантер"
+ ],
+ "fiskheroes:the_flash_jay": [
+  "джей гаррик",
+  "джэй гаррик",
+  "гаррик",
+  "первый флэш"
+ ],
+ "fiskheroes:the_monitor": [
+  "монитор",
+  "мар нову",
+  "mar novu",
+  "кризис на бесконечных землях"
+ ],
+ "fiskheroes:the_rival": [
+  "соперник",
+  "эдвард кларисс",
+  "edward clariss"
+ ],
+ "fiskheroes:the_tick": [
+  "тик",
+  "клещ",
+  "супергерой тик"
+ ],
+ "fiskheroes:trajectory": [
+  "траектория",
+  "элайза хармон",
+  "eliza harmon"
+ ],
+ "fiskheroes:vision": [
+  "вижн",
+  "видение",
+  "мстители"
+ ],
+ "fiskheroes:wild_dog": [
+  "дикий пес",
+  "дикий пёс",
+  "рене рамирез",
+  "rene ramirez"
+ ],
+ "fiskheroes:zoom": [
+  "зум",
+  "хантер золомон",
+  "золомон"
+ ],
+ "ironmaniac:iron_man_mark_1": [
+  "железный человек марк 1",
+  "марк 1",
+  "mark 1",
+  "железный человек",
+  "тонни старк"
+ ],
+ "ironmaniac:iron_man_mark_2": [
+  "железный человек марк 2",
+  "марк 2",
+  "mark 2",
+  "железный человек",
+  "тонни старк"
+ ],
+ "ironmaniac:iron_man_mark_3": [
+  "железный человек марк 3",
+  "марк 3",
+  "mark 3",
+  "железный человек",
+  "тонни старк"
+ ],
+ "ironmaniac:iron_man_mark_5": [
+  "железный человек марк 5",
+  "марк 5",
+  "mark 5",
+  "железный человек",
+  "тонни старк"
+ ],
+ "ironmaniac:war_machine_mark_1": [
+  "военная машина",
+  "военная машина марк 1",
+  "марк 1",
+  "джеймс родс",
+  "james rhodes",
+  "роди"
+ ],
+ "jmctheroes:8ball": [
+  "8 ball",
+  "eight ball",
+  "восьмерка",
+  "бильярдный шар"
+ ],
+ "jmctheroes:agent_spider": [
+  "агент паук",
+  "spider agent",
+  "паук-агент"
+ ],
+ "jmctheroes:allen": [
+  "аллен пришелец",
+  "unopan",
+  "коалиция планет",
+  "coalition of planets",
+  "invincible"
+ ],
+ "jmctheroes:anissa": [
+  "анисса",
+  "viltrumite",
+  "вилтрумитка",
+  "invincible"
+ ],
+ "jmctheroes:arkham_knight": [
+  "рыцарь аркхема",
+  "jason todd",
+  "джейсон тодд",
+  "аркхем",
+  "batman arkham"
+ ],
+ "jmctheroes:batman_comics": [
+  "бэтмен",
+  "bruce wayne",
+  "брюс уэйн",
+  "dark knight",
+  "темный рыцарь"
+ ],
+ "jmctheroes:beta_ray_bill": [
+  "бета рей билл",
+  "корбинит",
+  "korbinite",
+  "stormbreaker",
+  "громсекира"
+ ],
+ "jmctheroes:big_wheel": [
+  "большое колесо",
+  "джексон вил",
+  "джексон уил",
+  "spider-man villain"
+ ],
+ "jmctheroes:bizarro": [
+  "бизарро",
+  "клон супермена",
+  "superman clone",
+  "несовершенный супермен"
+ ],
+ "jmctheroes:black_adam_dceu": [
+  "черный адам",
+  "дуэйн джонсон",
+  "dwayne johnson",
+  "кахндак",
+  "тет адам",
+  "teth adam",
+  "dceu"
+ ],
+ "jmctheroes:blue_beetle_dceu": [
+  "синий жук",
+  "хайме рейес",
+  "jaime reyes",
+  "скарабей",
+  "dceu"
+ ],
+ "jmctheroes:chainsaw_man": [
+  "человек-бензопила",
+  "дэндзи",
+  "denji",
+  "почита",
+  "pochita"
+ ],
+ "jmctheroes:conquest": [
+  "конквест",
+  "завоеватель",
+  "вилтрумитец",
+  "viltrumite",
+  "invincible"
+ ],
+ "jmctheroes:daredevil": [
+  "сорвиголова",
+  "мэтт мёрдок",
+  "matt murdock",
+  "человек без страха",
+  "man without fear"
+ ],
+ "jmctheroes:darkseid": [
+  "дарксайд",
+  "даркзейд",
+  "апоколипс",
+  "apokolips"
+ ],
+ "jmctheroes:doctor_fate": [
+  "доктор фэйт",
+  "доктор судьба",
+  "кент нельсон",
+  "kent nelson",
+  "шлем судьбы"
+ ],
+ "jmctheroes:flash": [
+  "барри аллен",
+  "берри аллен",
+  "barry allen",
+  "флэш",
+  "спидстер"
+ ],
+ "jmctheroes:flash_dceu": [
+  "эзра миллер",
+  "ezra miller",
+  "барри аллен",
+  "dceu"
+ ],
+ "jmctheroes:groot": [
+  "грут",
+  "я есть грут",
+  "i am groot",
+  "стражи галактики",
+  "gotg",
+  "baby groot"
+ ],
+ "jmctheroes:hellboy": [
+  "хеллбой",
+  "bprd",
+  "анунг ун рама",
+  "anung un rama",
+  "dark horse"
+ ],
+ "jmctheroes:hit_monkey": [
+  "хит-манки",
+  "hit monkey",
+  "убийца-обезьяна"
+ ],
+ "jmctheroes:human_torch": [
+  "человек-факел",
+  "джонни шторм",
+  "johnny storm",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "jmctheroes:immortal": [
+  "бессмертный",
+  "invincible"
+ ],
+ "jmctheroes:invincible": [
+  "непобедимый",
+  "марк грейсон",
+  "вилтрумитец",
+  "viltrumite",
+  "сын омнимена"
+ ],
+ "jmctheroes:invisible_woman": [
+  "женщина-невидимка",
+  "сью шторм",
+  "sue storm",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "jmctheroes:iron_legion": [
+  "железный легион",
+  "дрон железного легиона",
+  "легион железного человека",
+  "iron man drone"
+ ],
+ "jmctheroes:jay_garrick": [
+  "джей гаррик",
+  "флэш золотого века",
+  "golden age flash"
+ ],
+ "jmctheroes:katana_man": [
+  "человек-катана",
+  "самурайский меч",
+  "samurai sword",
+  "chainsaw man"
+ ],
+ "jmctheroes:killer_moth": [
+  "убийца-мотылёк",
+  "мотылек убийца",
+  "drury walker"
+ ],
+ "jmctheroes:kite_man": [
+  "человек-воздушный змей",
+  "воздушный змей",
+  "чак браун",
+  "chuck brown",
+  "hell yeah"
+ ],
+ "jmctheroes:lantern_ring_green": [
+  "зеленый фонарь",
+  "кольцо фонаря",
+  "green lantern corps",
+  "корпус зеленых фонарей",
+  "зелёный фонарь"
+ ],
+ "jmctheroes:lantern_ring_yellow": [
+  "желтый фонарь",
+  "кольцо фонаря",
+  "sinestro corps",
+  "синестро",
+  "корпус синестро",
+  "жёлтый фонарь"
+ ],
+ "jmctheroes:modok": [
+  "модок",
+  "modok",
+  "джордж тарлтон",
+  "george tarleton"
+ ],
+ "jmctheroes:moon_knight": [
+  "лунный рыцарь",
+  "марк спектор",
+  "marc spector",
+  "кхоншу",
+  "khonshu"
+ ],
+ "jmctheroes:mr_fantastic": [
+  "мистер фантастик",
+  "рид ричардс",
+  "reed richards",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "jmctheroes:omniman": [
+  "омнимен",
+  "нолан грейсон",
+  "вилтрумитец",
+  "viltrumite",
+  "invincible"
+ ],
+ "jmctheroes:phantasm": [
+  "фантазм",
+  "маска фантазма",
+  "андреа бомонт",
+  "andrea beaumont"
+ ],
+ "jmctheroes:pork_grind": [
+  "свиная отбивная",
+  "свин-веном",
+  "spider-ham villain",
+  "spider-verse",
+  "porkgrind"
+ ],
+ "jmctheroes:power": [
+  "пауэр",
+  "blood fiend",
+  "кровавое чудовище",
+  "chainsaw man",
+  "человек-бензопила"
+ ],
+ "jmctheroes:prowler": [
+  "странник",
+  "хоби браун",
+  "hobie brown",
+  "аарон дэвис",
+  "aaron davis"
+ ],
+ "jmctheroes:red_death": [
+  "красная смерть",
+  "бэтмен-флэш",
+  "batman flash",
+  "dark nights metal",
+  "темные ночи металл"
+ ],
+ "jmctheroes:red_hood": [
+  "красный колпак",
+  "джейсон тодд",
+  "jason todd",
+  "второй робин"
+ ],
+ "jmctheroes:red_skull": [
+  "красный череп",
+  "йоханн шмидт",
+  "johann schmidt",
+  "гидра",
+  "hydra",
+  "captain america"
+ ],
+ "jmctheroes:reverse_flash": [
+  "обратный флэш",
+  "эобард тоу",
+  "eobard thawne",
+  "профессор зум",
+  "professor zoom"
+ ],
+ "jmctheroes:rhino": [
+  "носорог",
+  "алексей сицевич",
+  "aleksei sytsevich",
+  "spider-man villain"
+ ],
+ "jmctheroes:scarlet_spider": [
+  "бен рейли",
+  "алый паук",
+  "клон паука",
+  "spider clone"
+ ],
+ "jmctheroes:shazam_dceu": [
+  "шазам",
+  "билли батсон",
+  "billy batson",
+  "капитан марвел",
+  "dceu"
+ ],
+ "jmctheroes:spider_2099": [
+  "паук 2099",
+  "мигель охара",
+  "miguel o'hara",
+  "miguel ohara",
+  "spider-verse"
+ ],
+ "jmctheroes:spider_ham": [
+  "паук-хам",
+  "питер поркер",
+  "peter porker",
+  "spider-verse",
+  "свин-паук"
+ ],
+ "jmctheroes:spider_man": [
+  "человек-паук",
+  "питер паркер",
+  "peter parker",
+  "spiderman",
+  "паучок"
+ ],
+ "jmctheroes:spider_man_1610": [
+  "ультимативный человек-паук",
+  "питер паркер",
+  "1610",
+  "ultimate universe"
+ ],
+ "jmctheroes:spider_man_noir": [
+  "паук-нуар",
+  "нуар",
+  "spider-verse",
+  "человек-паук нуар"
+ ],
+ "jmctheroes:spider_man_tobey": [
+  "тоби магуайр",
+  "tobey maguire",
+  "человек-паук",
+  "трилогия рейми",
+  "raimi"
+ ],
+ "jmctheroes:spider_miles": [
+  "майлз моралес",
+  "майлз",
+  "черный паук",
+  "black spider-man",
+  "spider-verse",
+  "1610"
+ ],
+ "jmctheroes:spider_punk": [
+  "спайдер-панк",
+  "панк-паук",
+  "хоби браун",
+  "hobie brown",
+  "spider-verse"
+ ],
+ "jmctheroes:star_lord": [
+  "звездный лорд",
+  "питер квилл",
+  "peter quill",
+  "стражи галактики",
+  "guardians of the galaxy"
+ ],
+ "jmctheroes:superboy": [
+  "супербой",
+  "коннор кент",
+  "conner kent",
+  "кон-эл",
+  "клон супермена"
+ ],
+ "jmctheroes:supergirl_dceu": [
+  "супергерл",
+  "кара зор-эл",
+  "kara zor-el",
+  "dceu",
+  "sasha calle"
+ ],
+ "jmctheroes:superior_spider_man": [
+  "превосходный человек-паук",
+  "отто октавиус",
+  "otto octavius",
+  "док ок",
+  "doc ock"
+ ],
+ "jmctheroes:superman_dceu": [
+  "супермен",
+  "кларк кент",
+  "clark kent",
+  "кал-эл",
+  "генри кавилл",
+  "henry cavill",
+  "dceu"
+ ],
+ "jmctheroes:superman_god": [
+  "усатый человек",
+  "супер усач",
+  "усач",
+  "усы",
+  "moustache man"
+ ],
+ "jmctheroes:thing": [
+  "существо",
+  "бен гримм",
+  "ben grimm",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "jmctheroes:ultimate_ultron": [
+  "ультрон",
+  "ультимативный ультрон",
+  "ультиматум ультрон"
+ ],
+ "jmctheroes:ultron_mk1": [
+  "ультрон",
+  "марк 1",
+  "первый ультрон",
+  "ultron mk1",
+  "марк один"
+ ],
+ "jmctheroes:ultron_prime": [
+  "ультрон",
+  "прайм",
+  "ультрон прайм"
+ ],
+ "jmctheroes:venom": [
+  "веном",
+  "эдди брок",
+  "eddie brock",
+  "симбиот",
+  "symbiote"
+ ],
+ "jmctheroes:viltrumite_soldier": [
+  "вилтрум",
+  "солдат вилтрума",
+  "вилтрумит",
+  "invincible",
+  "invincible universe"
+ ],
+ "jmctheroes:wally_west": [
+  "уолли вест",
+  "кид флэш",
+  "kid flash",
+  "флэш"
+ ],
+ "jmctheroes:war_machine_mk1": [
+  "военная машина",
+  "джеймс родес",
+  "james rhodes",
+  "роди",
+  "марк 1"
+ ],
+ "jmctheroes:war_machine_mk2": [
+  "военная машина",
+  "джеймс родес",
+  "james rhodes",
+  "роди",
+  "марк 2",
+  "iron patriot",
+  "железный патриот"
+ ],
+ "jmctheroes:war_machine_mk3": [
+  "военная машина",
+  "джеймс родес",
+  "james rhodes",
+  "роди",
+  "марк 3",
+  "iron patriot",
+  "железный патриот"
+ ],
+ "jmctheroes:zod_dceu": [
+  "генерал зод",
+  "майкл шеннон",
+  "michael shannon",
+  "dceu",
+  "криптон"
+ ],
+ "misc:black_adam": [
+  "черный адам",
+  "чёрный адам",
+  "тет адам",
+  "дуэйн джонсон",
+  "dc"
+ ],
+ "misc:charles_xavier": [
+  "профессор икс",
+  "чарльз ксавьер",
+  "professor x",
+  "люди икс",
+  "икс-мен"
+ ],
+ "misc:choso": [
+  "чосо",
+  "чозо",
+  "магическая битва",
+  "jujutsu kaisen",
+  "jjk"
+ ],
+ "misc:eren_yeager": [
+  "эрен йегер",
+  "эрен егер",
+  "атака титанов",
+  "attack on titan",
+  "aot",
+  "шингеки но кёдзин"
+ ],
+ "misc:ezio": [
+  "эцио",
+  "эцио аудиторе",
+  "ezio auditore",
+  "assassin's creed",
+  "кредо ассасина"
+ ],
+ "misc:infinity_gauntlet": [
+  "танос",
+  "перчатка бесконечности",
+  "перчатка таноса",
+  "infinity gauntlet",
+  "мстители",
+  "avengers"
+ ],
+ "misc:invincible": [
+  "инвинсибл",
+  "непобедимый",
+  "марк грейсон",
+  "mark grayson"
+ ],
+ "misc:invincible_variants": [
+  "инвинсибл",
+  "непобедимый",
+  "марк грейсон",
+  "варианты инвинсибла",
+  "злой марк"
+ ],
+ "misc:john_wick": [
+  "джон уик",
+  "джон вик",
+  "баба яга",
+  "baba yaga",
+  "киану ривз"
+ ],
+ "misc:master_chief": [
+  "мастер чиф",
+  "хало",
+  "halo",
+  "джон 117",
+  "спартан 117"
+ ],
+ "misc:metro_man": [
+  "метро мен",
+  "мегамозг",
+  "megamind",
+  "metro city"
+ ],
+ "misc:mind_stone": [
+  "камень разума",
+  "камень бесконечности",
+  "скипетр локи",
+  "infinity stone"
+ ],
+ "misc:power_stone": [
+  "камень силы",
+  "камень бесконечности",
+  "орб",
+  "guardians of the galaxy"
+ ],
+ "misc:powerplex": [
+  "пауэрплекс",
+  "пауэр плекс",
+  "инвинсибл"
+ ],
+ "misc:punisher": [
+  "каратель",
+  "фрэнк кастл",
+  "marvel",
+  "джон бернтал"
+ ],
+ "misc:reality_stone": [
+  "камень реальности",
+  "камень бесконечности",
+  "эфир",
+  "infinity stone"
+ ],
+ "misc:reverse_flash": [
+  "реверс флэш",
+  "обратный флэш",
+  "эобард тоун",
+  "профессор зум",
+  "zoom"
+ ],
+ "misc:soul_stone": [
+  "камень души",
+  "камень бесконечности",
+  "вормир",
+  "infinity stone"
+ ],
+ "misc:space_stone": [
+  "камень пространства",
+  "камень бесконечности",
+  "тессеракт",
+  "infinity stone"
+ ],
+ "misc:sunspot": [
+  "санспот",
+  "роберто да коста",
+  "люди икс",
+  "x-men"
+ ],
+ "misc:time_stone": [
+  "камень времени",
+  "камень бесконечности",
+  "око агамотто",
+  "агамотто",
+  "infinity stone"
+ ],
+ "morningstar:batman_arkham": [
+  "бэтмен аркхем",
+  "аркхем",
+  "arkham",
+  "batman arkham",
+  "брюс уэйн"
+ ],
+ "morningstar:flash_earth90": [
+  "барри аллен",
+  "флэш",
+  "флеш",
+  "earth 90",
+  "земля 90"
+ ],
+ "morningstar:flash_normal": [
+  "уолли уэст",
+  "уолли",
+  "флэш",
+  "флеш",
+  "dc"
+ ],
+ "morningstar:flash_rebirth": [
+  "уолли уэст",
+  "уолли",
+  "флэш",
+  "флеш",
+  "rebirth"
+ ],
+ "morningstar:ghost_rider_revamped": [
+  "призрачный гонщик",
+  "джонни блейз",
+  "ник кейдж",
+  "дух возмездия"
+ ],
+ "morningstar:iceman_comic": [
+  "айкмен",
+  "айсман",
+  "человек-лед",
+  "бобби дрейк",
+  "люди икс"
+ ],
+ "morningstar:omni_man": [
+  "омнимен",
+  "омни мэн",
+  "нолан грейсон",
+  "omni man",
+  "инвинсибл"
+ ],
+ "morningstar:punisher_comic": [
+  "каратель",
+  "фрэнк кастл",
+  "marvel",
+  "джон бернтал"
+ ],
+ "morningstar:spiderman_comic": [
+  "человек-паук",
+  "человек паук",
+  "питер паркер",
+  "spider man",
+  "марвел"
+ ],
+ "morningstar:spiderman_merchandise": [
+  "человек-паук",
+  "человек паук",
+  "питер паркер",
+  "spider man",
+  "марвел"
+ ],
+ "morningstar:superman_comic": [
+  "супермен",
+  "кларк кент",
+  "кал эл",
+  "dc"
+ ],
+ "nameless:anti_ock": [
+  "человек-паук",
+  "антинок",
+  "anti-ock",
+  "питер паркер",
+  "паучок"
+ ],
+ "nameless:batman_beyond": [
+  "бэтмен будущего",
+  "бэтмен бейонд",
+  "терри макгиннис",
+  "terry mcginnis",
+  "dc"
+ ],
+ "nameless:big_time": [
+  "человек-паук",
+  "биг тайм",
+  "big time",
+  "питер паркер",
+  "паучок"
+ ],
+ "nameless:bizarro": [
+  "бизарро",
+  "бизаро",
+  "супермен",
+  "superman",
+  "dc"
+ ],
+ "nameless:brightburn": [
+  "брайтберн",
+  "брайтбёрн",
+  "злой супермен",
+  "evil superman",
+  "брэндон брейер"
+ ],
+ "nameless:doctor_octopus_ps4": [
+  "доктор осьминог",
+  "доктор октопус",
+  "док ок",
+  "отто октавиус",
+  "otto octavius",
+  "doc ock"
+ ],
+ "nameless:iron_fist": [
+  "железный кулак",
+  "дэнни рэнд",
+  "danny rand",
+  "марвел",
+  "netflix"
+ ],
+ "nameless:iron_man": [
+  "железный человек",
+  "тонни старк",
+  "tony stark",
+  "марвел",
+  "мстители",
+  "avengers"
+ ],
+ "nameless:iron_spider": [
+  "железный паук",
+  "человек-паук",
+  "паучок",
+  "peter parker",
+  "ps4"
+ ],
+ "nameless:joker": [
+  "джокер",
+  "бэтмен",
+  "dc",
+  "джек нипер",
+  "jack napier",
+  "клоун принц преступного мира"
+ ],
+ "nameless:kid_flash": [
+  "кид флэш",
+  "кид флеш",
+  "уолли вест",
+  "wally west",
+  "барт аллен",
+  "bart allen"
+ ],
+ "nameless:luke_cage": [
+  "люк кейдж",
+  "пауэр мэн",
+  "power man",
+  "carl lucas",
+  "защитники",
+  "defenders"
+ ],
+ "nameless:nightwing": [
+  "найтвинг",
+  "дик грейсон",
+  "dick grayson",
+  "бэтмен",
+  "dc"
+ ],
+ "nameless:quasar": [
+  "квазар",
+  "уэнделл вон",
+  "wendell vaughn",
+  "марвел",
+  "marvel"
+ ],
+ "nameless:red_hood": [
+  "красный колпак",
+  "красный капюшон",
+  "джейсон тодд",
+  "jason todd",
+  "бэтмен",
+  "dc"
+ ],
+ "nameless:robin": [
+  "робин",
+  "бэтмен",
+  "dc",
+  "юные титаны",
+  "дик грейсон"
+ ],
+ "nameless:spider_man_2099": [
+  "человек-паук 2099",
+  "spider man 2099",
+  "мигель о'хара",
+  "miguel o'hara",
+  "2099"
+ ],
+ "nameless:spider_uk": [
+  "человек-паук из британии",
+  "билли бриджес",
+  "billy braddock",
+  "капитан британия",
+  "captain britain",
+  "spider verse"
+ ],
+ "nameless:superman_dcu": [
+  "супермен",
+  "кларк кент",
+  "clark kent",
+  "кал-эл",
+  "dcu",
+  "dc"
+ ],
+ "nameless:superman_fleischer": [
+  "супермен",
+  "кларк кент",
+  "кал-эл",
+  "fleischer",
+  "флейшер"
+ ],
+ "nameless:venom90": [
+  "веном",
+  "эдди брок",
+  "eddie brock",
+  "симбиот",
+  "symbiote",
+  "человек-паук"
+ ],
+ "ninjago:cole": [
+  "коул",
+  "ниндзяго",
+  "ninjago",
+  "земля",
+  "мастер земли"
+ ],
+ "ninjago:jay": [
+  "джей",
+  "ниндзяго",
+  "ninjago",
+  "молния",
+  "мастер молний",
+  "lightning"
+ ],
+ "ninjago:kai": [
+  "кай",
+  "ниндзяго",
+  "ninjago",
+  "огонь",
+  "мастер огня",
+  "fire"
+ ],
+ "ninjago:zane": [
+  "зейн",
+  "ниндзяго",
+  "ninjago",
+  "лёд",
+  "лед",
+  "мастер льда",
+  "ice"
+ ],
+ "pwt:batman_cyberpunk": [
+  "бэтмен",
+  "киберпанк",
+  "cyberpunk",
+  "бэтмен киберпанк",
+  "dc"
+ ],
+ "pwt:carnage": [
+  "карнаж",
+  "симбиот",
+  "клетус кэседи",
+  "venom",
+  "venom 2"
+ ],
+ "pwt:david_martinez_pre": [
+  "дэвид мартинес",
+  "киберпанк",
+  "cyberpunk",
+  "edgerunners",
+  "изгнанники"
+ ],
+ "pwt:halloween_ghost": [
+  "призрак",
+  "хэллоуин",
+  "halloween",
+  "дух"
+ ],
+ "pwt:halloween_scarecrow": [
+  "боб",
+  "пугало",
+  "хэллоуин",
+  "halloween",
+  "scarecrow"
+ ],
+ "pwt:joker_cyberpunk": [
+  "джокер",
+  "киберпанк",
+  "cyberpunk",
+  "джокер киберпанк",
+  "dc"
+ ],
+ "pwt:riot": [
+  "риот",
+  "симбиот",
+  "venom",
+  "веном"
+ ],
+ "pwt:robin_cyberpunk": [
+  "робин",
+  "киберпанк",
+  "cyberpunk",
+  "дик грейсон",
+  "dc"
+ ],
+ "pwt:spider_man_symbiot_webb": [
+  "человек-паук",
+  "человек паук",
+  "симбиот",
+  "spider man",
+  "чёрный костюм"
+ ],
+ "pwt:spider_man_symbiot_webb_3": [
+  "человек-паук",
+  "человек паук",
+  "симбиот",
+  "spider man",
+  "чёрный костюм"
+ ],
+ "pwt:sukuna": [
+  "one punch man",
+  "опм",
+  "сукуна",
+  "рёмен сукуна",
+  "хэйан",
+  "магическая битва",
+  "jjk"
+ ],
+ "pwt:sukuna_heian": [
+  "сукуна",
+  "рёмен сукуна",
+  "хэйан",
+  "магическая битва",
+  "jjk",
+  "jujutsu kaisen"
+ ],
+ "pwt:toxin": [
+  "токсин",
+  "симбиот",
+  "venom",
+  "веном",
+  "патрик муллиган"
+ ],
+ "pwt:trickster_aftermath": [
+  "трикстер",
+  "флэш",
+  "dc",
+  "марк хэмилл"
+ ],
+ "pwt:venom": [
+  "веном",
+  "эдди брок",
+  "eddie brock",
+  "симбиот"
+ ],
+ "runnyhero:kingpin": [
+  "кинпин",
+  "кингпин",
+  "уилсон фиск",
+  "wilson fisk",
+  "человек-паук",
+  "марвел"
+ ],
+ "runnyhero:kingpin_sv": [
+  "кинпин",
+  "кингпин",
+  "уилсон фиск",
+  "spider verse",
+  "паутина вселенных"
+ ],
+ "runnyhero:punisher": [
+  "каратель",
+  "фрэнк кассл",
+  "frank castle",
+  "марвел",
+  "череп"
+ ],
+ "runnyhero:shocker": [
+  "шокер",
+  "человек-паук",
+  "херман шульц",
+  "herman schultz",
+  "марвел"
+ ],
+ "runnyhero:spider_man_cw": [
+  "человек-паук",
+  "гражданская война",
+  "civil war",
+  "питер паркер",
+  "паучок"
+ ],
+ "runnyhero:vulture": [
+  "стервятник",
+  "адриан тумс",
+  "adrian toomes",
+  "человек-паук",
+  "марвел"
+ ],
+ "runnyhero:white_tiger": [
+  "белый тигр",
+  "ава аяла",
+  "ava ayala",
+  "ultimate spider man",
+  "марвел"
+ ],
+ "sabri:black_panther": [
+  "t'challa",
+  "т'чалла",
+  "черная пантера",
+  "ваканда",
+  "wakanda"
+ ],
+ "sabri:black_widow": [
+  "черная вдова",
+  "наташа романофф",
+  "наташа романова",
+  "natasha romanoff",
+  "scarlett johansson"
+ ],
+ "sabri:cyclops_xmen": [
+  "циклоп",
+  "скотт саммерс",
+  "scott summers",
+  "люди икс",
+  "x-men",
+  "xmen"
+ ],
+ "sabri:doctor_doom_comics": [
+  "доктор дум",
+  "дум",
+  "виктор фон дум",
+  "victor von doom",
+  "фантастическая четверка",
+  "комиксы"
+ ],
+ "sabri:doctor_doom_f4": [
+  "доктор дум",
+  "дум",
+  "виктор фон дум",
+  "victor von doom",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "sabri:kang_the_conqueror": [
+  "канг завоеватель",
+  "канг",
+  "he who remains",
+  "тот кто остается",
+  "династия канга"
+ ],
+ "sabri:namor": [
+  "намор",
+  "sub-mariner",
+  "саб маринер",
+  "атлантида",
+  "atlantis"
+ ],
+ "sabri:quicksilver_xmen": [
+  "квиксильвер",
+  "пьетро максимов",
+  "pietro maximoff",
+  "пьетро",
+  "люди икс",
+  "x-men"
+ ],
+ "sabri:sandman_raimi": [
+  "песочный человек",
+  "человек-песок",
+  "флинт марко",
+  "flint marko",
+  "spider-man 3"
+ ],
+ "sabri:silver_surfer_f4": [
+  "серебряный серфер",
+  "сильвер серфер",
+  "норрин радд",
+  "norrin radd",
+  "галактус",
+  "galactus"
+ ],
+ "sabri:thanos": [
+  "танос",
+  "мад титан",
+  "mad titan",
+  "мстители",
+  "avengers"
+ ],
+ "sabri:thor": [
+  "тор",
+  "бог грома",
+  "god of thunder",
+  "мьольнир",
+  "mjolnir",
+  "асгард"
+ ],
+ "sabri:wolverine_xmen": [
+  "росомаха",
+  "логан",
+  "logan",
+  "люди икс",
+  "x-men",
+  "джеймс хоулетт"
+ ],
+ "secretheroes:ghost_spider": [
+  "spider-gwen",
+  "спайдер гвен",
+  "гвен стейси",
+  "gwen stacy",
+  "призрачный паук"
+ ],
+ "secretheroes:godspeed": [
+  "годспид",
+  "огаст харт",
+  "august heart",
+  "флэш",
+  "флеш"
+ ],
+ "secretheroes:herobrine": [
+  "херобрин",
+  "геробрин",
+  "minecraft",
+  "майнкрафт",
+  "белые глаза"
+ ],
+ "secretheroes:homelander": [
+  "хоумлендер",
+  "хомерлендер",
+  "пацаны",
+  "the boys",
+  "john gillman"
+ ],
+ "secretheroes:hulk": [
+  "халк",
+  "брюс баннер",
+  "bruce banner",
+  "мстители",
+  "avengers"
+ ],
+ "secretheroes:impulse": [
+  "импульс",
+  "барт аллен",
+  "bart allen",
+  "флэш",
+  "young justice"
+ ],
+ "secretheroes:mining_armor": [
+  "шахтерская броня",
+  "шахтер",
+  "miner",
+  "горняк",
+  "броня шахтера"
+ ],
+ "secretheroes:moon_knight": [
+  "лунный рыцарь",
+  "марк спектор",
+  "marc spector",
+  "коншу",
+  "khonshu",
+  "мистер рыцарь"
+ ],
+ "secretheroes:red_death_comics": [
+  "красная смерть",
+  "бэтмен",
+  "batman",
+  "dark nights metal",
+  "bruce wayne"
+ ],
+ "secretheroes:saitama": [
+  "one punch man",
+  "опм",
+  "сайтама",
+  "ван панч мен",
+  "ванпанчмен",
+  "opm"
+ ],
+ "secretheroes:spider_man_black_raimi": [
+  "человек паук",
+  "симбиот",
+  "symbiote",
+  "черный костюм",
+  "raimi",
+  "тоби магуайр"
+ ],
+ "secretheroes:star_labs_speedster_comics": [
+  "спидстер",
+  "флэш",
+  "the flash",
+  "dc comics"
+ ],
+ "secretheroes:the_flash": [
+  "флэш",
+  "флеш",
+  "барри аллен",
+  "barry allen",
+  "dc"
+ ],
+ "secretheroes:the_flash_iris": [
+  "флэш",
+  "айрис вест",
+  "барри аллен",
+  "barry allen",
+  "флеш"
+ ],
+ "secretheroes:vibe": [
+  "вайб",
+  "сиско рамон",
+  "cisco ramon",
+  "флэш",
+  "dc"
+ ],
+ "secretheroes:xs": [
+  "икс эс",
+  "дженни огнатс",
+  "jenni ognats",
+  "легион супергероев",
+  "флэш"
+ ],
+ "shadows:aragami": [
+  "арагами",
+  "ниндзя",
+  "shadow ninja",
+  "тень"
+ ],
+ "shadows:backpack": [
+  "рюкзак",
+  "back pack",
+  "ранец"
+ ],
+ "shadows:backpack_equipment_visual": [
+  "костюм",
+  "экипировка",
+  "equipment"
+ ],
+ "shadows:dipdapdoe": [
+  "дипдапду",
+  "дип дап ду",
+  "dip dap doe"
+ ],
+ "shadows:double_jump": [
+  "двойной прыжок",
+  "дабл джамп",
+  "doublejump"
+ ],
+ "shadows:forced_sentry": [
+  "турель",
+  "страж",
+  "туррель",
+  "стражник"
+ ],
+ "shadows:golem": [
+  "голем",
+  "iron golem",
+  "железный голем",
+  "minecraft",
+  "майнкрафт"
+ ],
+ "shadows:hue_man": [
+  "хьюмен",
+  "human",
+  "цветной человек"
+ ],
+ "shadows:hunter": [
+  "охотник на вампиров",
+  "охотник",
+  "van helsing",
+  "ван хельсинг"
+ ],
+ "shadows:mage": [
+  "маг",
+  "волшебник",
+  "wizard",
+  "чародей"
+ ],
+ "shadows:necrosword": [
+  "некромеч",
+  "горр",
+  "gorr",
+  "all black",
+  "меч горра"
+ ],
+ "shadows:power_ranger_wind_blue": [
+  "пауэр рейнджер",
+  "рейнджер",
+  "синий",
+  "синий рейнджер",
+  "ninja storm",
+  "ниндзя шторм"
+ ],
+ "shadows:power_ranger_wind_red": [
+  "пауэр рейнджер",
+  "рейнджер",
+  "красный",
+  "красный рейнджер",
+  "ninja storm",
+  "ниндзя шторм"
+ ],
+ "shadows:power_ranger_wind_yellow": [
+  "пауэр рейнджер",
+  "рейнджер",
+  "желтый",
+  "желтый рейнджер",
+  "ninja storm",
+  "ниндзя шторм"
+ ],
+ "shadows:random": [
+  "случайный костюм",
+  "рандом",
+  "рандомный костюм"
+ ],
+ "shadows:runic_magic": [
+  "рунная магия",
+  "руны",
+  "runes",
+  "руническая магия",
+  "магия"
+ ],
+ "shadows:shadow": [
+  "тень",
+  "темный",
+  "dark",
+  "тени"
+ ],
+ "shadows:silver_speed": [
+  "серебряная скорость",
+  "серебристый спидстер",
+  "спидстер",
+  "серебряный"
+ ],
+ "shadows:sorcerer": [
+  "чародей",
+  "колдун",
+  "заклинатель",
+  "sorcery"
+ ],
+ "shadows:steve": [
+  "стив",
+  "стиф",
+  "minecraft",
+  "майнкрафт"
+ ],
+ "shadows:superior_spider": [
+  "супериор",
+  "док ок",
+  "doc ock",
+  "отто октавиус",
+  "превосходный паук"
+ ],
+ "shadows:tornado": [
+  "торнадо",
+  "смерч",
+  "ураган"
+ ],
+ "shadows:vampire": [
+  "вампир",
+  "дракула",
+  "dracula",
+  "кровосос"
+ ],
+ "sind:39_jetpack": [
+  "железный человек марк 39",
+  "марк 39",
+  "starboost",
+  "gemini"
+ ],
+ "sind:42_1": [
+  "железный человек марк 42",
+  "марк 42",
+  "prodigal son"
+ ],
+ "sind:42_2": [
+  "железный человек марк 42",
+  "марк 42",
+  "prodigal son"
+ ],
+ "sind:42_3": [
+  "железный человек марк 42",
+  "марк 42",
+  "prodigal son"
+ ],
+ "sind:42_4": [
+  "железный человек марк 42",
+  "марк 42",
+  "prodigal son"
+ ],
+ "sind:ironlegiondrone": [
+  "дрон железного легиона",
+  "легион"
+ ],
+ "sind:ironspider": [
+  "железный паук",
+  "железный человек паук"
+ ],
+ "sind:mark1": [
+  "железный человек марк 01",
+  "марк 01",
+  "железный человек марк 1",
+  "марк 1"
+ ],
+ "sind:mark10": [
+  "железный человек марк 10",
+  "марк 10"
+ ],
+ "sind:mark11": [
+  "железный человек марк 11",
+  "марк 11"
+ ],
+ "sind:mark12": [
+  "железный человек марк 12",
+  "марк 12"
+ ],
+ "sind:mark13": [
+  "железный человек марк 13",
+  "марк 13"
+ ],
+ "sind:mark14": [
+  "железный человек марк 14",
+  "марк 14"
+ ],
+ "sind:mark15": [
+  "железный человек марк 15",
+  "марк 15",
+  "sneaky"
+ ],
+ "sind:mark16": [
+  "железный человек марк 16",
+  "марк 16",
+  "nightclub"
+ ],
+ "sind:mark17": [
+  "железный человек марк 17",
+  "марк 17",
+  "heartbreaker"
+ ],
+ "sind:mark18": [
+  "железный человек марк 18",
+  "марк 18",
+  "casanova"
+ ],
+ "sind:mark19": [
+  "железный человек марк 19",
+  "марк 19",
+  "tiger"
+ ],
+ "sind:mark2": [
+  "железный человек марк 02",
+  "марк 02",
+  "железный человек марк 2",
+  "марк 2"
+ ],
+ "sind:mark20": [
+  "железный человек марк 20",
+  "марк 20",
+  "python"
+ ],
+ "sind:mark21": [
+  "железный человек марк 21",
+  "марк 21",
+  "midas"
+ ],
+ "sind:mark22": [
+  "железный человек марк 22",
+  "марк 22",
+  "hot rod"
+ ],
+ "sind:mark23": [
+  "железный человек марк 23",
+  "марк 23",
+  "shades"
+ ],
+ "sind:mark24": [
+  "железный человек марк 24",
+  "марк 24",
+  "tank"
+ ],
+ "sind:mark25": [
+  "железный человек марк 25",
+  "марк 25",
+  "striker"
+ ],
+ "sind:mark26": [
+  "железный человек марк 26",
+  "марк 26",
+  "gamma"
+ ],
+ "sind:mark27": [
+  "железный человек марк 27",
+  "марк 27",
+  "disco"
+ ],
+ "sind:mark28": [
+  "железный человек марк 28",
+  "марк 28",
+  "jack"
+ ],
+ "sind:mark29": [
+  "железный человек марк 29",
+  "марк 29",
+  "fiddler"
+ ],
+ "sind:mark3": [
+  "железный человек марк 03",
+  "марк 03",
+  "железный человек марк 3",
+  "марк 3"
+ ],
+ "sind:mark30": [
+  "железный человек марк 30",
+  "марк 30",
+  "blue steel"
+ ],
+ "sind:mark31": [
+  "железный человек марк 31",
+  "марк 31",
+  "piston"
+ ],
+ "sind:mark32": [
+  "железный человек марк 32",
+  "марк 32",
+  "romeo"
+ ],
+ "sind:mark33": [
+  "железный человек марк 33",
+  "марк 33",
+  "silver centurion"
+ ],
+ "sind:mark34": [
+  "железный человек марк 34",
+  "марк 34",
+  "southpaw"
+ ],
+ "sind:mark35": [
+  "железный человек марк 35",
+  "марк 35",
+  "red snapper"
+ ],
+ "sind:mark36": [
+  "железный человек марк 36",
+  "марк 36",
+  "peacemaker"
+ ],
+ "sind:mark37": [
+  "железный человек марк 37",
+  "марк 37",
+  "hammerhead"
+ ],
+ "sind:mark38": [
+  "железный человек марк 38",
+  "марк 38",
+  "igor"
+ ],
+ "sind:mark39": [
+  "железный человек марк 39",
+  "марк 39",
+  "starboost",
+  "gemini"
+ ],
+ "sind:mark4": [
+  "железный человек марк 04",
+  "марк 04",
+  "железный человек марк 4",
+  "марк 4"
+ ],
+ "sind:mark40": [
+  "железный человек марк 40",
+  "марк 40",
+  "shotgun"
+ ],
+ "sind:mark41": [
+  "железный человек марк 41",
+  "марк 41",
+  "bones"
+ ],
+ "sind:mark42": [
+  "железный человек марк 42",
+  "марк 42",
+  "prodigal son"
+ ],
+ "sind:mark43": [
+  "железный человек марк 43",
+  "марк 43"
+ ],
+ "sind:mark44": [
+  "железный человек марк 44",
+  "марк 44",
+  "hulkbuster"
+ ],
+ "sind:mark45": [
+  "железный человек марк 45",
+  "марк 45"
+ ],
+ "sind:mark46": [
+  "железный человек марк 46",
+  "марк 46"
+ ],
+ "sind:mark47": [
+  "железный человек марк 47",
+  "марк 47"
+ ],
+ "sind:mark48": [
+  "железный человек марк 48",
+  "марк 48",
+  "hulkbuster"
+ ],
+ "sind:mark49": [
+  "железный человек марк 49",
+  "марк 49"
+ ],
+ "sind:mark5": [
+  "железный человек марк 05",
+  "марк 05",
+  "железный человек марк 5",
+  "марк 5"
+ ],
+ "sind:mark50": [
+  "железный человек марк 50",
+  "марк 50"
+ ],
+ "sind:mark6": [
+  "железный человек марк 06",
+  "марк 06",
+  "железный человек марк 6",
+  "марк 6"
+ ],
+ "sind:mark7": [
+  "железный человек марк 07",
+  "марк 07",
+  "железный человек марк 7",
+  "марк 7"
+ ],
+ "sind:mark7_bracelets": [
+  "железный человек марк 07",
+  "марк 07",
+  "железный человек марк 7",
+  "марк 7"
+ ],
+ "sind:mark8": [
+  "железный человек марк 08",
+  "марк 08",
+  "железный человек марк 8",
+  "марк 8"
+ ],
+ "sind:mark9": [
+  "железный человек марк 09",
+  "марк 09",
+  "железный человек марк 9",
+  "марк 9"
+ ],
+ "sind:tony": [
+  "тони старк",
+  "старк"
+ ],
+ "sind:tony_equip": [
+  "вставить костюм",
+  "equip"
+ ],
+ "sind:warmachine_mk1": [
+  "военная машина",
+  "война машина",
+  "war machine марк 01",
+  "war machine марк 1"
+ ],
+ "sind:warmachine_mk2": [
+  "военная машина",
+  "война машина",
+  "war machine марк 02",
+  "war machine марк 2"
+ ],
+ "sind:warmachine_mk3": [
+  "военная машина",
+  "война машина",
+  "war machine марк 03",
+  "war machine марк 3"
+ ],
+ "sind:warmachine_mk4": [
+  "военная машина",
+  "война машина",
+  "war machine марк 04",
+  "war machine марк 4"
+ ],
+ "skarlet:ash_williams": [
+  "эш",
+  "эш уильямс",
+  "зловещие мертвецы",
+  "evil dead",
+  "армия тьмы",
+  "army of darkness"
+ ],
+ "skarlet:batman_arkham": [
+  "бэтмен",
+  "бэтмен аркхем",
+  "аркхем",
+  "arkham",
+  "брюс уэйн",
+  "bruce wayne",
+  "dc"
+ ],
+ "skarlet:batman_comics": [
+  "бэтмен",
+  "брюс уэйн",
+  "bruce wayne",
+  "темный рыцарь",
+  "dark knight",
+  "dc"
+ ],
+ "skarlet:batman_thomas": [
+  "томас уэйн",
+  "бэтмен флэшпоинт",
+  "флэшпоинт",
+  "flashpoint batman",
+  "dc"
+ ],
+ "skarlet:batwoman_comics": [
+  "бэтвумен",
+  "кейт кейн",
+  "kate kane",
+  "dc"
+ ],
+ "skarlet:blue_beetle_dceu": [
+  "синий жук",
+  "хайме рейес",
+  "jaime reyes",
+  "dc"
+ ],
+ "skarlet:green_goblin": [
+  "зеленый гоблин",
+  "зелёный гоблин",
+  "норман осборн",
+  "norman osborn",
+  "marvel"
+ ],
+ "skarlet:gwenpool": [
+  "гвенпул",
+  "гвен пул",
+  "gwen poole",
+  "marvel"
+ ],
+ "skarlet:gwenpool_future": [
+  "гвенпул",
+  "гвенпул тьма",
+  "dark gwenpool",
+  "marvel"
+ ],
+ "skarlet:harley_quinn": [
+  "харли квинн",
+  "харли квин",
+  "харлин квинзель",
+  "harleen quinzel",
+  "dc"
+ ],
+ "skarlet:human_torch": [
+  "человек факел",
+  "джонни шторм",
+  "johnny storm",
+  "фантастическая четверка",
+  "fantastic four",
+  "marvel"
+ ],
+ "skarlet:invisible_woman": [
+  "женщина невидимка",
+  "су шторм",
+  "sue storm",
+  "фантастическая четверка",
+  "fantastic four",
+  "marvel"
+ ],
+ "skarlet:miss_martian": [
+  "мисс мартианка",
+  "меган морз",
+  "юная справедливость",
+  "young justice",
+  "dc"
+ ],
+ "skarlet:mister_fantastic": [
+  "мистер фантастик",
+  "рид ричардс",
+  "reed richards",
+  "фантастическая четверка",
+  "fantastic four",
+  "marvel"
+ ],
+ "skarlet:silk": [
+  "шелк",
+  "шёлк",
+  "синди мун",
+  "cindy moon",
+  "человек паук",
+  "marvel"
+ ],
+ "skarlet:spider_girl": [
+  "мэйди паркер",
+  "мэй паркер",
+  "спайдер герл",
+  "spider girl",
+  "человек паук",
+  "marvel"
+ ],
+ "skarlet:spider_gwen": [
+  "гвен стейси",
+  "спайдер гвен",
+  "spider gwen",
+  "гвен",
+  "человек паук",
+  "marvel"
+ ],
+ "skarlet:supergirl_dceu": [
+  "супергерл",
+  "супергёрл",
+  "кара кент",
+  "кара зон-эл",
+  "dc"
+ ],
+ "skarlet:superman_comics": [
+  "супермен",
+  "кларк кент",
+  "clark kent",
+  "кал эл",
+  "dc"
+ ],
+ "skarlet:the_thing": [
+  "существо",
+  "бен гримм",
+  "ben grimm",
+  "фантастическая четверка",
+  "fantastic four",
+  "marvel"
+ ],
+ "skarlet:ultron_comics": [
+  "ультрон",
+  "марвел",
+  "marvel",
+  "мстители",
+  "avengers"
+ ],
+ "skarlet:wolverine_comics": [
+  "росомаха",
+  "логан",
+  "logan",
+  "джеймс хоулетт",
+  "люди икс",
+  "x men",
+  "marvel"
+ ],
+ "skarlet:wonder_woman_comics": [
+  "чудо-женщина",
+  "чудо женщина",
+  "диана принс",
+  "diana prince",
+  "dc"
+ ],
+ "skarlet:x23_comics": [
+  "икс-23",
+  "икс 23",
+  "лора кинни",
+  "x-23",
+  "люди икс"
+ ],
+ "stellar:booster_gold": [
+  "бустер голд",
+  "майкл картер",
+  "michael jon carter",
+  "dc comics",
+  "герой из будущего"
+ ],
+ "stellar:cloak": [
+  "плащ",
+  "клоак",
+  "плащ и кинжал",
+  "мантия",
+  "marvel"
+ ],
+ "stellar:cloak_shadow": [
+  "темный плащ",
+  "плащ тени",
+  "клоак",
+  "теневой плащ"
+ ],
+ "stellar:danny_phantom": [
+  "дэнни призрак",
+  "дэнни фантом",
+  "призрак",
+  "никелодеон",
+  "nickelodeon"
+ ],
+ "stellar:dr_manhattan": [
+  "доктор манхэттен",
+  "манхэттен",
+  "watchmen",
+  "хранители",
+  "джон остерман",
+  "jon osterman"
+ ],
+ "stellar:pepsi_man": [
+  "пепсимен",
+  "pepsi man",
+  "пепси",
+  "пепси мен"
+ ],
+ "stellar:quantum_suit": [
+  "квантовый костюм",
+  "квантовый мир",
+  "нанокостюм",
+  "ant-man",
+  "человек муравей"
+ ],
+ "stellar:spawn": [
+  "спаун",
+  "эл симмонс",
+  "al simmons",
+  "image comics",
+  "макфарлейн"
+ ],
+ "stellar:wasp": [
+  "оса",
+  "хоуп ван дайн",
+  "hope van dyne",
+  "джанет ван дайн",
+  "ant-man",
+  "человек муравей"
+ ],
+ "tgheroes:abomation": [
+  "громила",
+  "абоминация",
+  "эмил блонски"
+ ],
+ "tgheroes:angel": [
+  "ангел",
+  "архангел",
+  "уоррен уортингтон",
+  "warren worthington",
+  "x-men"
+ ],
+ "tgheroes:ant_man": [
+  "человек-муравей",
+  "скотт лэнг",
+  "antman",
+  "мстители"
+ ],
+ "tgheroes:apocalypse": [
+  "апокалипсис",
+  "эн сабах нур",
+  "первый мутант",
+  "x-men"
+ ],
+ "tgheroes:beast": [
+  "зверь",
+  "генри маккой",
+  "hank mccoy",
+  "x-men"
+ ],
+ "tgheroes:black_panther": [
+  "чёрная пантера",
+  "черная пантера",
+  "тчалла",
+  "tchalla",
+  "ваканда"
+ ],
+ "tgheroes:black_widow": [
+  "чёрная вдова",
+  "черная вдова",
+  "наташа романова",
+  "avengers"
+ ],
+ "tgheroes:bucky": [
+  "зимний солдат",
+  "баки",
+  "bucky",
+  "bucky barnes",
+  "мстители"
+ ],
+ "tgheroes:bunshee": [
+  "банши",
+  "шон кэссиди",
+  "x-men"
+ ],
+ "tgheroes:cable": [
+  "кейбл",
+  "кабель",
+  "нейтан саммерс",
+  "x-men"
+ ],
+ "tgheroes:cap": [
+  "капитан америка",
+  "стив роджерс",
+  "steve rogers",
+  "первый мститель",
+  "мстители"
+ ],
+ "tgheroes:cap_marvel": [
+  "капитан марвел",
+  "кэрол данверс",
+  "мисс марвел",
+  "ms marvel",
+  "мстители"
+ ],
+ "tgheroes:cyclops": [
+  "циклоп",
+  "скотт саммерс",
+  "x-men",
+  "люди икс"
+ ],
+ "tgheroes:deadpool": [
+  "дэдпул",
+  "дедпул",
+  "уэйд уилсон",
+  "x-force"
+ ],
+ "tgheroes:doctor_doom": [
+  "доктор дум",
+  "dr doom",
+  "виктор фон дум",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:emma_frost": [
+  "эмма фрост",
+  "белая королева",
+  "white queen",
+  "x-men"
+ ],
+ "tgheroes:fff": [
+  "фин фан фум",
+  "дракон",
+  "dragon"
+ ],
+ "tgheroes:galactus": [
+  "галактус",
+  "пожиратель миров",
+  "галан",
+  "devourer of worlds"
+ ],
+ "tgheroes:gambit": [
+  "гамбит",
+  "реми лебо",
+  "x-men"
+ ],
+ "tgheroes:ghost": [
+  "призрак",
+  "ава старр",
+  "ghost marvel"
+ ],
+ "tgheroes:hawkeye": [
+  "соколиный глаз",
+  "клинт бартон",
+  "ronin",
+  "мстители"
+ ],
+ "tgheroes:hela": [
+  "хела",
+  "богиня смерти",
+  "thor ragnarok"
+ ],
+ "tgheroes:hulk": [
+  "халк",
+  "брюс баннер",
+  "мстители",
+  "avengers"
+ ],
+ "tgheroes:human_torch": [
+  "человек-факел",
+  "джонни шторм",
+  "johnny storm",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:iceman": [
+  "человек-лёд",
+  "человек-лед",
+  "бобби дрейк",
+  "bobby drake",
+  "x-men"
+ ],
+ "tgheroes:infinity_gauntlet": [
+  "перчатка бесконечности",
+  "перчатка",
+  "infinity gauntlet",
+  "бесконечность",
+  "камни бесконечности"
+ ],
+ "tgheroes:invisible_woman": [
+  "невидимая леди",
+  "невидимая девушка",
+  "сью шторм",
+  "sue storm",
+  "invisible girl",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:ironman": [
+  "железный человек",
+  "тони старк",
+  "ironman",
+  "мстители",
+  "avengers"
+ ],
+ "tgheroes:jean": [
+  "джин грей",
+  "феникс",
+  "phoenix",
+  "джин феникс",
+  "тёмный феникс",
+  "темный феникс"
+ ],
+ "tgheroes:jubilee": [
+  "джубили",
+  "фейерверк",
+  "x-men"
+ ],
+ "tgheroes:jugger": [
+  "джаггернаут",
+  "джагернаут",
+  "кейн марко",
+  "x-men"
+ ],
+ "tgheroes:kang": [
+  "канг",
+  "канг завоеватель",
+  "мстители",
+  "quantumania"
+ ],
+ "tgheroes:kitty_pryde": [
+  "китти прайд",
+  "shadowcat",
+  "x-men"
+ ],
+ "tgheroes:loki": [
+  "локи",
+  "бог обмана",
+  "god of mischief",
+  "мстители"
+ ],
+ "tgheroes:madelyne": [
+  "королева гоблинов",
+  "мадлен прайор",
+  "x-men"
+ ],
+ "tgheroes:magik": [
+  "маджик",
+  "ильяна распутина",
+  "иллиана",
+  "x-men"
+ ],
+ "tgheroes:magneto": [
+  "магнето",
+  "магнито",
+  "эрик леншерр",
+  "max eisenhardt",
+  "x-men",
+  "люди икс"
+ ],
+ "tgheroes:mandarin": [
+  "мандарин",
+  "десять колец",
+  "ten rings"
+ ],
+ "tgheroes:modok": [
+  "модок",
+  "modok",
+  "big head"
+ ],
+ "tgheroes:mr_fantastic": [
+  "мистер фантастик",
+  "рид ричардс",
+  "mr fantastic",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:namor": [
+  "намор",
+  "кукулькан",
+  "атлантида",
+  "atlantis"
+ ],
+ "tgheroes:nightcrawler": [
+  "ночной змей",
+  "курт вагнер",
+  "bamf",
+  "x-men"
+ ],
+ "tgheroes:omega_red": [
+  "омега рэд",
+  "омега ред",
+  "аркадий россович",
+  "x-men"
+ ],
+ "tgheroes:proff_x": [
+  "профессор икс",
+  "чарльз ксавье",
+  "professor xavier",
+  "x-men",
+  "люди икс"
+ ],
+ "tgheroes:psylocke": [
+  "псайлок",
+  "бэтси брэддок",
+  "betsy braddock",
+  "x-men"
+ ],
+ "tgheroes:quicksilver": [
+  "ртуть",
+  "пьетро максимов",
+  "мстители",
+  "x-men"
+ ],
+ "tgheroes:red_hulk": [
+  "красный халк",
+  "таддеус росс",
+  "генерал росс",
+  "rulk"
+ ],
+ "tgheroes:red_skull": [
+  "красный череп",
+  "йоханн шмидт",
+  "гидра",
+  "hydra"
+ ],
+ "tgheroes:rescue": [
+  "спасательница",
+  "пеппер поттс",
+  "мисс поттс"
+ ],
+ "tgheroes:rogue": [
+  "шельма",
+  "анна мари",
+  "x-men"
+ ],
+ "tgheroes:s_witch": [
+  "алая ведьма",
+  "ведьма",
+  "ванда максимова",
+  "мстители",
+  "avengers"
+ ],
+ "tgheroes:sabertooth": [
+  "саблезуб",
+  "sabertooth",
+  "виктор крид",
+  "x-men"
+ ],
+ "tgheroes:sentinel": [
+  "страж",
+  "стражи",
+  "x-men"
+ ],
+ "tgheroes:sentry": [
+  "сентри",
+  "роберт рейнольдс",
+  "void",
+  "мстители"
+ ],
+ "tgheroes:she_hulk": [
+  "женщина-халк",
+  "дженнифер уолтерс",
+  "jen walters"
+ ],
+ "tgheroes:silver_surfer": [
+  "серебряный серфер",
+  "норрин радд",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:storm": [
+  "шторм",
+  "ороро монро",
+  "x-men",
+  "люди икс"
+ ],
+ "tgheroes:strange": [
+  "доктор стрэндж",
+  "доктор стрендж",
+  "dr strange",
+  "стивен стрэндж",
+  "мстители"
+ ],
+ "tgheroes:taskmaster": [
+  "таскмастер",
+  "tony masters",
+  "мстители"
+ ],
+ "tgheroes:thanos": [
+  "танос",
+  "безумный титан",
+  "титан",
+  "mad titan"
+ ],
+ "tgheroes:thing": [
+  "существо",
+  "бен гримм",
+  "фантастическая четверка",
+  "fantastic four"
+ ],
+ "tgheroes:thor": [
+  "тор",
+  "бог грома",
+  "god of thunder",
+  "молот тора",
+  "мстители"
+ ],
+ "tgheroes:ultron": [
+  "ультрон",
+  "мстители",
+  "avengers"
+ ],
+ "tgheroes:vision": [
+  "вижн",
+  "видение",
+  "мстители",
+  "avengers"
+ ],
+ "tgheroes:war_mach": [
+  "военная машина",
+  "джеймс родс",
+  "rhodey",
+  "warmachine",
+  "мстители"
+ ],
+ "tgheroes:wasp": [
+  "оса",
+  "хоуп ван дайн",
+  "человек-муравей и оса",
+  "ant-man and the wasp"
+ ],
+ "tgheroes:wolverine": [
+  "росомаха",
+  "логан",
+  "оружие икс",
+  "weapon x",
+  "x-men",
+  "люди икс"
+ ],
+ "tgheroes:x_23": [
+  "икс-23",
+  "х-23",
+  "x23",
+  "лаура кинни",
+  "x-men"
+ ],
+ "tgheroes:yellow_jacket": [
+  "жёлтый шершень",
+  "желтый шершень",
+  "даррен кросс",
+  "yellow jacket"
+ ],
+ "tmf:dna_blitzwolfer_18": [
+  "бен 10",
+  "бен тен",
+  "блицвульфер",
+  "блицвольфер",
+  "днк блицвульфер"
+ ],
+ "tmf:dna_cannonbolt_16": [
+  "бен 10",
+  "бен тен",
+  "канонболт",
+  "кэннонболт",
+  "днк канонболт"
+ ],
+ "tmf:dna_ditto_23": [
+  "бен 10",
+  "бен тен",
+  "дитто",
+  "днк дитто"
+ ],
+ "tmf:dna_eyeguy_24": [
+  "бен 10",
+  "бен тен",
+  "ай гай",
+  "глазастик",
+  "днк ай гай"
+ ],
+ "tmf:dna_frankenstrike_20": [
+  "бен 10",
+  "бен тен",
+  "франкеншрайк",
+  "франкенштрайк",
+  "днк франкеншрайк"
+ ],
+ "tmf:dna_snareoh_19": [
+  "бен 10",
+  "бен тен",
+  "снейр о",
+  "снейр-о",
+  "мумия",
+  "днк снейр о"
+ ],
+ "tmf:dna_upchuck_22": [
+  "бен 10",
+  "бен тен",
+  "апчак",
+  "апчук",
+  "днк апчак"
+ ],
+ "tmf:dna_waybig_25": [
+  "бен 10",
+  "бен тен",
+  "вейбиг",
+  "вей биг",
+  "днк вейбиг"
+ ],
+ "tmf:dna_wildvine_17": [
+  "бен 10",
+  "бен тен",
+  "вайлдвайн",
+  "дикая лоза",
+  "днк вайлдвайн"
+ ],
+ "tmf:iron_man_mk1_aa": [
+  "железный человек",
+  "марк 1",
+  "мк1",
+  "mark 1",
+  "marvel"
+ ],
+ "tmf:iron_man_mk1_aa_backpack": [
+  "железный человек",
+  "марк 1",
+  "мк1",
+  "рюкзак",
+  "marvel"
+ ],
+ "tmf:iron_man_silver_centurion_aa": [
+  "железный человек",
+  "серебряный центурион",
+  "silver centurion",
+  "marvel"
+ ],
+ "tmf:iron_man_space_aa": [
+  "железный человек",
+  "космическая броня",
+  "space",
+  "marvel"
+ ],
+ "tmf:iron_man_stealth_aa": [
+  "железный человек",
+  "стелс броня",
+  "stealth",
+  "marvel"
+ ],
+ "tmf:not_hero_time": [
+  "бен 10",
+  "бен тен",
+  "я не герой",
+  "it's hero time",
+  "время героя",
+  "бен теннисон"
+ ],
+ "tmf:omni_galvanic_modulator": [
+  "омнитрикс",
+  "бен 10",
+  "галванический модулятор",
+  "galvanic modulator"
+ ],
+ "tmf:omni_recal": [
+  "омнитрикс",
+  "бен 10",
+  "бен тен",
+  "рекалибровка",
+  "рекалиброванный омнитрикс"
+ ],
+ "tmf:omnitrix": [
+  "омнитрикс",
+  "бен 10",
+  "бен тен",
+  "часы",
+  "бен теннисон"
+ ],
+ "tmf:omnitrix_grey_matter": [
+  "омнитрикс",
+  "бен 10",
+  "серая материя",
+  "грей маттер",
+  "grey matter"
+ ],
+ "tmf:omnitrix_grey_matter_crafting": [
+  "омнитрикс",
+  "бен 10",
+  "серая материя",
+  "грей маттер",
+  "крафт"
+ ],
+ "tmf:omnitrix_upchuck": [
+  "омнитрикс",
+  "бен 10",
+  "апчак",
+  "апчук"
+ ],
+ "tmf:the_deep": [
+  "дип",
+  "глубина",
+  "пацаны",
+  "the boys"
+ ],
+ "tmf:the_mandarin_aa": [
+  "мандарин",
+  "железный человек",
+  "марвел",
+  "marvel",
+  "armored adventures"
+ ],
+ "transformers_pack:g1_hook": [
+  "хук",
+  "трансформеры",
+  "конструктиконы",
+  "constructicons",
+  "g1"
+ ],
+ "transformers_pack:g1_optimus_prime": [
+  "оптимус прайм",
+  "оптимус",
+  "трансформеры",
+  "автоботы",
+  "autobots",
+  "g1"
+ ],
+ "unconventional:artemis_yj": [
+  "артемис",
+  "артемис крок",
+  "artemis crock",
+  "юная справедливость",
+  "young justice",
+  "dc"
+ ],
+ "unconventional:batman_dceu_tactical": [
+  "тактический бэтмен",
+  "бэтмен тактический",
+  "dceu",
+  "dc"
+ ],
+ "unconventional:batman_reeves": [
+  "бэтмен 2022",
+  "роберт паттинсон",
+  "the batman",
+  "брюс уэйн",
+  "dc"
+ ],
+ "unconventional:batman_rocksteady": [
+  "бэтмен аркхем",
+  "рыцарь аркхема",
+  "аркхем",
+  "аркхем найт",
+  "dc"
+ ],
+ "unconventional:batman_telltale": [
+  "бэтмен теллтейл",
+  "теллтейл",
+  "telltale",
+  "dc"
+ ],
+ "unconventional:black_bolt_comics": [
+  "черный гром",
+  "чёрный гром",
+  "нелюди",
+  "inhumans",
+  "marvel"
+ ],
+ "unconventional:black_canary_e2": [
+  "черная канарейка",
+  "чёрная канарейка",
+  "земля 2",
+  "earth 2",
+  "dc"
+ ],
+ "unconventional:black_cat_ps4": [
+  "черная кошка",
+  "чёрная кошка",
+  "фелиция харди",
+  "felicia hardy",
+  "человек паук",
+  "marvel"
+ ],
+ "unconventional:captain_america_jw": [
+  "джон уокер",
+  "капитан америка",
+  "us agent",
+  "громовержцы",
+  "thunderbolts",
+  "marvel"
+ ],
+ "unconventional:captain_carter_what_if": [
+  "капитан картер",
+  "что если",
+  "what if",
+  "пегги картер",
+  "peggy carter",
+  "marvel"
+ ],
+ "unconventional:catwoman_telltale": [
+  "женщина кошка",
+  "селина кайл",
+  "selina kyle",
+  "теллтейл",
+  "telltale",
+  "dc"
+ ],
+ "unconventional:deadpool_xmen_origins": [
+  "дэдпул",
+  "deadpool",
+  "оружие 11",
+  "люди икс",
+  "x men origins",
+  "росомаха"
+ ],
+ "unconventional:deathstroke_rocksteady": [
+  "дэтстроук",
+  "слейд уилсон",
+  "slade wilson",
+  "аркхем",
+  "arkham",
+  "dc"
+ ],
+ "unconventional:edith": [
+  "эдит",
+  "edith",
+  "эдит очки",
+  "очки эдит",
+  "очки старка",
+  "старк"
+ ],
+ "unconventional:electro": [
+  "электро",
+  "макс диллон",
+  "max dillon",
+  "человек паук",
+  "marvel"
+ ],
+ "unconventional:emiko_adachi": [
+  "эмико",
+  "эмико адачи",
+  "эмико адати",
+  "зеленая стрела",
+  "green arrow",
+  "dc"
+ ],
+ "unconventional:five": [
+  "номер пять",
+  "номер 5",
+  "академия амбрелла",
+  "umbrella academy",
+  "амбрелла"
+ ],
+ "unconventional:ghost": [
+  "призрак",
+  "ава старр",
+  "ava starr",
+  "человек муравей",
+  "ant man",
+  "marvel"
+ ],
+ "unconventional:hawkeye": [
+  "соколиный глаз",
+  "клинт бартон",
+  "мстители",
+  "avengers",
+  "marvel"
+ ],
+ "unconventional:kate_bishop": [
+  "кейт бишоп",
+  "соколиный глаз",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:mosquito": [
+  "комар",
+  "москито",
+  "комарик",
+  "малярия"
+ ],
+ "unconventional:nick_fury": [
+  "ник фьюри",
+  "ник фюри",
+  "щит",
+  "s.h.i.e.l.d.",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:pietro": [
+  "пьетро",
+  "пьетро максимофф",
+  "ртуть",
+  "quicksilver",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:radioactive_man": [
+  "радиоактивный человек",
+  "чен лу",
+  "радиоактивный",
+  "marvel"
+ ],
+ "unconventional:red_guardian": [
+  "красный страж",
+  "алексей шостаков",
+  "alexei shostakov",
+  "черная вдова",
+  "marvel"
+ ],
+ "unconventional:robin_rocksteady": [
+  "робин",
+  "тим дрейк",
+  "tim drake",
+  "аркхем",
+  "dc"
+ ],
+ "unconventional:ronin": [
+  "ронин",
+  "клинт бартон",
+  "мстители",
+  "avengers",
+  "marvel"
+ ],
+ "unconventional:soldier_boy": [
+  "солдатик",
+  "пацаны",
+  "the boys",
+  "дженсен эклс",
+  "jensen ackles"
+ ],
+ "unconventional:spider_man_miles_ps5": [
+  "майлз моралес",
+  "майлз",
+  "человек паук",
+  "ps5",
+  "marvel"
+ ],
+ "unconventional:spider_man_miles_sv": [
+  "майлз моралес",
+  "майлз",
+  "паучий стих",
+  "spider verse",
+  "человек паук",
+  "marvel"
+ ],
+ "unconventional:spoiler_comics": [
+  "спойлер",
+  "стефани браун",
+  "stephanie brown",
+  "бэтмен",
+  "dc"
+ ],
+ "unconventional:sss_og": [
+  "сыворотка суперсолдата",
+  "суперсолдат",
+  "эрскин",
+  "сыворотка эрскина",
+  "капитан америка",
+  "marvel"
+ ],
+ "unconventional:taskmaster": [
+  "таскмастер",
+  "черная вдова",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:the_signal_comics": [
+  "сигнал",
+  "дюк томас",
+  "duke thomas",
+  "бэтмен",
+  "dc"
+ ],
+ "unconventional:tigress_yj": [
+  "тигриса",
+  "артемис",
+  "юная справедливость",
+  "young justice",
+  "dc"
+ ],
+ "unconventional:wanda": [
+  "алая ведьма",
+  "scarlet witch",
+  "ванда максимофф",
+  "ванда",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:white_wolf": [
+  "зимний солдат",
+  "баки барнс",
+  "winter soldier",
+  "белый волк",
+  "marvel"
+ ],
+ "unconventional:winter_soldier": [
+  "зимний солдат",
+  "баки барнс",
+  "bucky",
+  "мстители",
+  "marvel"
+ ],
+ "unconventional:yellow_jacket": [
+  "желтый шершень",
+  "жёлтый шершень",
+  "даррен кросс",
+  "darren cross",
+  "человек муравей",
+  "marvel"
+ ]
+}

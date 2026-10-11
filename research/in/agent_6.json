@@ -1,0 +1,252 @@
+{
+ "dhhp": [
+  {
+   "id": "aqualad",
+   "name": "Aquaman"
+  },
+  {
+   "id": "atom_eve",
+   "name": "Atom Eve"
+  },
+  {
+   "id": "blossom",
+   "name": "Blossom"
+  },
+  {
+   "id": "bubbles",
+   "name": "Bubbles"
+  },
+  {
+   "id": "buttercup",
+   "name": "Buttercup"
+  },
+  {
+   "id": "doctorfate",
+   "name": "Doctor Fate"
+  },
+  {
+   "id": "galactus",
+   "name": "Galactus"
+  },
+  {
+   "id": "gojo",
+   "name": "Satoru Gojo"
+  },
+  {
+   "id": "invincible",
+   "name": "Invincible"
+  },
+  {
+   "id": "joker_comics",
+   "name": "The Joker"
+  },
+  {
+   "id": "nightwing",
+   "name": "Nightwing"
+  },
+  {
+   "id": "omniman",
+   "name": "Omniman"
+  },
+  {
+   "id": "raven",
+   "name": "Raven"
+  },
+  {
+   "id": "red_hood",
+   "name": "Red Hood"
+  },
+  {
+   "id": "red_x",
+   "name": "Red X"
+  },
+  {
+   "id": "rick",
+   "name": "Rick Sanchez"
+  },
+  {
+   "id": "scarlet_spider",
+   "name": "Scarlet-Spider"
+  },
+  {
+   "id": "starfire",
+   "name": "Starfire"
+  },
+  {
+   "id": "superboy",
+   "name": "Superboy"
+  },
+  {
+   "id": "superman_kc",
+   "name": "Superman"
+  },
+  {
+   "id": "terra",
+   "name": "Terra"
+  },
+  {
+   "id": "thor_mcu",
+   "name": "Thor"
+  },
+  {
+   "id": "thragg",
+   "name": "Thragg"
+  }
+ ],
+ "ironmaniac": [
+  {
+   "id": "iron_man_mark_1",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_mark_2",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_mark_3",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_mark_5",
+   "name": "Iron Man"
+  },
+  {
+   "id": "war_machine_mark_1",
+   "name": "War Machine"
+  }
+ ],
+ "nameless": [
+  {
+   "id": "anti_ock",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "batman_beyond",
+   "name": "Batman Beyond"
+  },
+  {
+   "id": "big_time",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "bizarro",
+   "name": "Bizarro"
+  },
+  {
+   "id": "brightburn",
+   "name": "Brightburn"
+  },
+  {
+   "id": "doctor_octopus_ps4",
+   "name": "Doctor Octopus"
+  },
+  {
+   "id": "iron_fist",
+   "name": "Iron Fist"
+  },
+  {
+   "id": "iron_man",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_spider",
+   "name": "Iron Spider"
+  },
+  {
+   "id": "joker",
+   "name": "The Joker"
+  },
+  {
+   "id": "kid_flash",
+   "name": "Kid Flash"
+  },
+  {
+   "id": "luke_cage",
+   "name": "Luke Cage"
+  },
+  {
+   "id": "nightwing",
+   "name": "Nightwing"
+  },
+  {
+   "id": "quasar",
+   "name": "Quasar"
+  },
+  {
+   "id": "red_hood",
+   "name": "Red Hood"
+  },
+  {
+   "id": "robin",
+   "name": "Robin"
+  },
+  {
+   "id": "spider_man_2099",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_uk",
+   "name": "Spider-UK"
+  },
+  {
+   "id": "superman_dcu",
+   "name": "Superman"
+  },
+  {
+   "id": "superman_fleischer",
+   "name": "Superman"
+  },
+  {
+   "id": "venom90",
+   "name": "Venom"
+  }
+ ],
+ "ninjago": [
+  {
+   "id": "cole",
+   "name": "Cole"
+  },
+  {
+   "id": "jay",
+   "name": "Jay"
+  },
+  {
+   "id": "kai",
+   "name": "Kai"
+  },
+  {
+   "id": "zane",
+   "name": "Zane"
+  }
+ ],
+ "runnyhero": [
+  {
+   "id": "kingpin",
+   "name": "Kingpin"
+  },
+  {
+   "id": "kingpin_sv",
+   "name": "Kingpin"
+  },
+  {
+   "id": "punisher",
+   "name": "Punisher"
+  },
+  {
+   "id": "shocker",
+   "name": "Shocker"
+  },
+  {
+   "id": "spider_man_cw",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "vulture",
+   "name": "Vulture"
+  },
+  {
+   "id": "white_tiger",
+   "name": "White Tiger"
+  }
+ ]
+}

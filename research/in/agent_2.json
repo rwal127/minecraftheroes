@@ -1,0 +1,280 @@
+{
+ "tgheroes": [
+  {
+   "id": "abomation",
+   "name": "Abomination/Emil Blonsky"
+  },
+  {
+   "id": "angel",
+   "name": "Angel/Archangel"
+  },
+  {
+   "id": "ant_man",
+   "name": "Ant-Man/Scott Lang"
+  },
+  {
+   "id": "apocalypse",
+   "name": "Apocalypse/En Sabah Nur"
+  },
+  {
+   "id": "beast",
+   "name": "Beast/Henry McCoy"
+  },
+  {
+   "id": "black_panther",
+   "name": "Black Panther/T'Challa"
+  },
+  {
+   "id": "black_widow",
+   "name": "Black Widow/Natasha Romanoff"
+  },
+  {
+   "id": "bucky",
+   "name": "Winter Soldier"
+  },
+  {
+   "id": "bunshee",
+   "name": "Banshee/Sean Cassidy"
+  },
+  {
+   "id": "cable",
+   "name": "Cable/Nathan Summers"
+  },
+  {
+   "id": "cap",
+   "name": "Captain America"
+  },
+  {
+   "id": "cap_marvel",
+   "name": "Captain Marvel/Carol Danvers"
+  },
+  {
+   "id": "cyclops",
+   "name": "Cyclops/Scott Summers"
+  },
+  {
+   "id": "deadpool",
+   "name": "Deadpool/Wade Wilson"
+  },
+  {
+   "id": "doctor_doom",
+   "name": "Doctor Doom/Victor Von Doom"
+  },
+  {
+   "id": "emma_frost",
+   "name": "Emma Frost"
+  },
+  {
+   "id": "fff",
+   "name": "Fin Fang Foom"
+  },
+  {
+   "id": "galactus",
+   "name": "Galactus/Galan"
+  },
+  {
+   "id": "gambit",
+   "name": "Gambit/Remy LeBeau"
+  },
+  {
+   "id": "ghost",
+   "name": "Ghost/Ava Starr"
+  },
+  {
+   "id": "hawkeye",
+   "name": "Hawkeye/Clint Barton"
+  },
+  {
+   "id": "hela",
+   "name": "Hela"
+  },
+  {
+   "id": "hulk",
+   "name": "Hulk/Bruce Banner"
+  },
+  {
+   "id": "human_torch",
+   "name": "Human Torch"
+  },
+  {
+   "id": "iceman",
+   "name": "Iceman/Robert Drake"
+  },
+  {
+   "id": "infinity_gauntlet",
+   "name": "Infinity"
+  },
+  {
+   "id": "invisible_woman",
+   "name": "Invisible Woman/Susan Storm"
+  },
+  {
+   "id": "ironman",
+   "name": "Iron Man/Tony Stark"
+  },
+  {
+   "id": "jean",
+   "name": "Jean Grey"
+  },
+  {
+   "id": "jubilee",
+   "name": "Jubilee"
+  },
+  {
+   "id": "jugger",
+   "name": "Juggernaut/Cain Marko"
+  },
+  {
+   "id": "kang",
+   "name": "Kang the Conqueror"
+  },
+  {
+   "id": "kitty_pryde",
+   "name": "Kitty Pryde"
+  },
+  {
+   "id": "loki",
+   "name": "Loki/Loki Laufeyson"
+  },
+  {
+   "id": "madelyne",
+   "name": "Goblin Queen/Madelyne Pryor"
+  },
+  {
+   "id": "magik",
+   "name": "Magik/Illyana Rasputina"
+  },
+  {
+   "id": "magneto",
+   "name": "Magneto/Erik Lehnsherr"
+  },
+  {
+   "id": "mandarin",
+   "name": "Mandarin"
+  },
+  {
+   "id": "modok",
+   "name": "M.O.D.O.K. /George Tarleton"
+  },
+  {
+   "id": "mr_fantastic",
+   "name": "Mister Fantastic/Reed Richards"
+  },
+  {
+   "id": "namor",
+   "name": "Namor"
+  },
+  {
+   "id": "nightcrawler",
+   "name": "Nightcrawler/Kurt Wagner"
+  },
+  {
+   "id": "omega_red",
+   "name": "Omega Red/Arkady Rossovich"
+  },
+  {
+   "id": "proff_x",
+   "name": "Professor X/Charles Xavier"
+  },
+  {
+   "id": "psylocke",
+   "name": "Psylocke/Elizabeth Braddock"
+  },
+  {
+   "id": "quicksilver",
+   "name": "Quicksilver/Pietro Maximoff"
+  },
+  {
+   "id": "red_hulk",
+   "name": "Red Hulk/Thaddeus Ross"
+  },
+  {
+   "id": "red_skull",
+   "name": "Red Skull/Johann Shmidt"
+  },
+  {
+   "id": "rescue",
+   "name": "Rescue/Pepper Potts"
+  },
+  {
+   "id": "rogue",
+   "name": "Rogue/Anna Marie"
+  },
+  {
+   "id": "s_witch",
+   "name": "Scarlet Witch/Wanda Maximoff"
+  },
+  {
+   "id": "sabertooth",
+   "name": "Sabretooth/Victor Creed"
+  },
+  {
+   "id": "sentinel",
+   "name": "Sentinel"
+  },
+  {
+   "id": "sentry",
+   "name": "Sentry/Robert Reynolds"
+  },
+  {
+   "id": "she_hulk",
+   "name": "She-Hulk/Jennifer Walters"
+  },
+  {
+   "id": "silver_surfer",
+   "name": "Silver Surfer/Norrin Radd"
+  },
+  {
+   "id": "storm",
+   "name": "Storm/Ororo Munroe"
+  },
+  {
+   "id": "strange",
+   "name": "Doctor Strange/Stephen Strange"
+  },
+  {
+   "id": "taskmaster",
+   "name": "Taskmaster/Anthony Masters"
+  },
+  {
+   "id": "thanos",
+   "name": "Thanos"
+  },
+  {
+   "id": "thing",
+   "name": "The Thing/Ben Grimm"
+  },
+  {
+   "id": "thor",
+   "name": "Thor Odinson"
+  },
+  {
+   "id": "ultron",
+   "name": "Ultron"
+  },
+  {
+   "id": "vision",
+   "name": "Vision"
+  },
+  {
+   "id": "war_mach",
+   "name": "War Machine/James Rhodes"
+  },
+  {
+   "id": "wasp",
+   "name": "Wasp/Hope Van Dyne"
+  },
+  {
+   "id": "wolverine",
+   "name": "Wolverine/James Howlett 'Logan'"
+  },
+  {
+   "id": "x_23",
+   "name": "X-23/Laura Kinney"
+  },
+  {
+   "id": "yellow_jacket",
+   "name": "Yellowjacket/Darren Cross"
+  }
+ ]
+}

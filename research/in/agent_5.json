@@ -1,0 +1,226 @@
+{
+ "misc": [
+  {
+   "id": "black_adam",
+   "name": "Black Adam"
+  },
+  {
+   "id": "charles_xavier",
+   "name": "Charles Xavier"
+  },
+  {
+   "id": "choso",
+   "name": "Choso"
+  },
+  {
+   "id": "eren_yeager",
+   "name": "Eren Yeager"
+  },
+  {
+   "id": "ezio",
+   "name": "Ezio"
+  },
+  {
+   "id": "infinity_gauntlet",
+   "name": "Thanos"
+  },
+  {
+   "id": "invincible",
+   "name": "Invincible"
+  },
+  {
+   "id": "invincible_variants",
+   "name": "Invincible Variants"
+  },
+  {
+   "id": "john_wick",
+   "name": "John Wick"
+  },
+  {
+   "id": "master_chief",
+   "name": "Master Chief"
+  },
+  {
+   "id": "metro_man",
+   "name": "Metro Man"
+  },
+  {
+   "id": "mind_stone",
+   "name": "Mind Stone"
+  },
+  {
+   "id": "power_stone",
+   "name": "Power Stone"
+  },
+  {
+   "id": "powerplex",
+   "name": "Powerplex"
+  },
+  {
+   "id": "punisher",
+   "name": "The Punisher"
+  },
+  {
+   "id": "reality_stone",
+   "name": "Reality Stone"
+  },
+  {
+   "id": "reverse_flash",
+   "name": "Reverse-Flash"
+  },
+  {
+   "id": "soul_stone",
+   "name": "Soul Stone"
+  },
+  {
+   "id": "space_stone",
+   "name": "Space Stone"
+  },
+  {
+   "id": "sunspot",
+   "name": "Sunspot"
+  },
+  {
+   "id": "time_stone",
+   "name": "Time Stone"
+  }
+ ],
+ "morningstar": [
+  {
+   "id": "batman_arkham",
+   "name": "Batman/Bruce Wayne"
+  },
+  {
+   "id": "flash_earth90",
+   "name": "The Flash/Barry Allen"
+  },
+  {
+   "id": "flash_normal",
+   "name": "The Flash/Wally West"
+  },
+  {
+   "id": "flash_rebirth",
+   "name": "The Flash/Wally West"
+  },
+  {
+   "id": "ghost_rider_revamped",
+   "name": "Ghost Rider/Johnny Blaze"
+  },
+  {
+   "id": "iceman_comic",
+   "name": "Iceman/Robert Drake"
+  },
+  {
+   "id": "omni_man",
+   "name": "Omni-Man/Nolan Grayson"
+  },
+  {
+   "id": "punisher_comic",
+   "name": "Punisher/Frank Castle"
+  },
+  {
+   "id": "spiderman_comic",
+   "name": "Spider-Man/Peter Parker"
+  },
+  {
+   "id": "spiderman_merchandise",
+   "name": "Spider-Man/Peter Parker"
+  },
+  {
+   "id": "superman_comic",
+   "name": "Superman/Clark Kent"
+  }
+ ],
+ "pwt": [
+  {
+   "id": "batman_cyberpunk",
+   "name": "Batman"
+  },
+  {
+   "id": "carnage",
+   "name": "Carnage"
+  },
+  {
+   "id": "david_martinez_pre",
+   "name": "David Martinez"
+  },
+  {
+   "id": "halloween_ghost",
+   "name": "Ghost"
+  },
+  {
+   "id": "halloween_scarecrow",
+   "name": "Bob"
+  },
+  {
+   "id": "joker_cyberpunk",
+   "name": "Joker"
+  },
+  {
+   "id": "riot",
+   "name": "Riot"
+  },
+  {
+   "id": "robin_cyberpunk",
+   "name": "Robin"
+  },
+  {
+   "id": "spider_man_symbiot_webb",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_man_symbiot_webb_3",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "sukuna",
+   "name": "Sukuna"
+  },
+  {
+   "id": "sukuna_heian",
+   "name": "Ryomen Sukuna"
+  },
+  {
+   "id": "toxin",
+   "name": "Toxin"
+  },
+  {
+   "id": "trickster_aftermath",
+   "name": "The Trickster"
+  },
+  {
+   "id": "venom",
+   "name": "Venom"
+  }
+ ],
+ "8thpack": [
+  {
+   "id": "genji",
+   "name": "Genji"
+  },
+  {
+   "id": "killercroc",
+   "name": "Killer Croc"
+  },
+  {
+   "id": "nebula",
+   "name": "Nebula"
+  },
+  {
+   "id": "phaseshifter",
+   "name": "Phase Shift Pilot"
+  },
+  {
+   "id": "pilote",
+   "name": "Jack Cooper"
+  },
+  {
+   "id": "spot",
+   "name": "Spot"
+  },
+  {
+   "id": "spot_black",
+   "name": "Spot"
+  }
+ ]
+}

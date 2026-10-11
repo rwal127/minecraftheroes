@@ -1,0 +1,260 @@
+{
+ "sind": [
+  {
+   "id": "39_jetpack",
+   "name": "Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini"
+  },
+  {
+   "id": "42_1",
+   "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+  },
+  {
+   "id": "42_2",
+   "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+  },
+  {
+   "id": "42_3",
+   "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+  },
+  {
+   "id": "42_4",
+   "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+  },
+  {
+   "id": "ironlegiondrone",
+   "name": "Iron Legion Drone"
+  },
+  {
+   "id": "ironspider",
+   "name": "Iron Spider/17A"
+  },
+  {
+   "id": "mark1",
+   "name": "Iron Man/Mark 01 (I)"
+  },
+  {
+   "id": "mark10",
+   "name": "Iron Man/Mark 10 (X)"
+  },
+  {
+   "id": "mark11",
+   "name": "Iron Man/Mark 11 (XI)"
+  },
+  {
+   "id": "mark12",
+   "name": "Iron Man/Mark 12 (XII)"
+  },
+  {
+   "id": "mark13",
+   "name": "Iron Man/Mark 13 (XIII)"
+  },
+  {
+   "id": "mark14",
+   "name": "Iron Man/Mark 14 (XIV)"
+  },
+  {
+   "id": "mark15",
+   "name": "Iron Man/Mark 15 (XV) - Sneaky"
+  },
+  {
+   "id": "mark16",
+   "name": "Iron Man/Mark 16 (XVI) - Nightclub"
+  },
+  {
+   "id": "mark17",
+   "name": "Iron Man/Mark 17 (XVII) - Heartbreaker"
+  },
+  {
+   "id": "mark18",
+   "name": "Iron Man/Mark 18 (XVIII) - Casanova"
+  },
+  {
+   "id": "mark19",
+   "name": "Iron Man/Mark 19 (XIX) - Tiger"
+  },
+  {
+   "id": "mark2",
+   "name": "Iron Man/Mark 02 (II)"
+  },
+  {
+   "id": "mark20",
+   "name": "Iron Man/Mark 20 (XX) - Python"
+  },
+  {
+   "id": "mark21",
+   "name": "Iron Man/Mark 21 (XXI) - Midas"
+  },
+  {
+   "id": "mark22",
+   "name": "Iron Man/Mark 22 (XXII) - Hot Rod"
+  },
+  {
+   "id": "mark23",
+   "name": "Iron Man/Mark 23 (XXIII) - Shades"
+  },
+  {
+   "id": "mark24",
+   "name": "Iron Man/Mark 24 (XXIV) - Tank"
+  },
+  {
+   "id": "mark25",
+   "name": "Iron Man/Mark 25 (XXV) - Striker"
+  },
+  {
+   "id": "mark26",
+   "name": "Iron Man/Mark 26 (XXVI) - Gamma"
+  },
+  {
+   "id": "mark27",
+   "name": "Iron Man/Mark 27 (XXVII) - Disco"
+  },
+  {
+   "id": "mark28",
+   "name": "Iron Man/Mark 28 (XXVIII) - Jack"
+  },
+  {
+   "id": "mark29",
+   "name": "Iron Man/Mark 29 (XXIX) - Fiddler"
+  },
+  {
+   "id": "mark3",
+   "name": "Iron Man/Mark 03 (III)"
+  },
+  {
+   "id": "mark30",
+   "name": "Iron Man/Mark 30 (XXX) - Blue Steel"
+  },
+  {
+   "id": "mark31",
+   "name": "Iron Man/Mark 31 (XXXI) - Piston"
+  },
+  {
+   "id": "mark32",
+   "name": "Iron Man/Mark 32 (XXXII) - Romeo"
+  },
+  {
+   "id": "mark33",
+   "name": "Iron Man/Mark 33 (XXXIII) - Silver Centurion"
+  },
+  {
+   "id": "mark34",
+   "name": "Iron Man/Mark 34 (XXXIV) - Southpaw"
+  },
+  {
+   "id": "mark35",
+   "name": "Iron Man/Mark 35 (XXXV) - Red Snapper"
+  },
+  {
+   "id": "mark36",
+   "name": "Iron Man/Mark 36 (XXXVI) - Peacemaker"
+  },
+  {
+   "id": "mark37",
+   "name": "Iron Man/Mark 37 (XXXVII) - Hammerhead"
+  },
+  {
+   "id": "mark38",
+   "name": "Iron Man/Mark 38 (XXXVIII) - Igor"
+  },
+  {
+   "id": "mark39",
+   "name": "Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini"
+  },
+  {
+   "id": "mark4",
+   "name": "Iron Man/Mark 04 (IV)"
+  },
+  {
+   "id": "mark40",
+   "name": "Iron Man/Mark 40 (XL) - Shotgun"
+  },
+  {
+   "id": "mark41",
+   "name": "Iron Man/Mark 41 (XLI) - Bones"
+  },
+  {
+   "id": "mark42",
+   "name": "Iron Man/Mark 42 (XLII) - Prodigal Son"
+  },
+  {
+   "id": "mark43",
+   "name": "Iron Man/Mark 43 (XLIII)"
+  },
+  {
+   "id": "mark44",
+   "name": "Iron Man/Mark 44 (XLIV) - Hulkbuster"
+  },
+  {
+   "id": "mark45",
+   "name": "Iron Man/Mark 45 (XLV)"
+  },
+  {
+   "id": "mark46",
+   "name": "Iron Man/Mark 46 (XLVI)"
+  },
+  {
+   "id": "mark47",
+   "name": "Iron Man/Mark 47 (XLVII)"
+  },
+  {
+   "id": "mark48",
+   "name": "Iron Man/Mark 48 (XLVIII) - Hulkbuster Mk II"
+  },
+  {
+   "id": "mark49",
+   "name": "Iron Man/Mark 49 (XLIX)"
+  },
+  {
+   "id": "mark5",
+   "name": "Iron Man/Mark 05 (V)"
+  },
+  {
+   "id": "mark50",
+   "name": "Iron Man/Mark 50 (L)"
+  },
+  {
+   "id": "mark6",
+   "name": "Iron Man/Mark 06 (VI)"
+  },
+  {
+   "id": "mark7",
+   "name": "Iron Man/Mark 07 (VII)"
+  },
+  {
+   "id": "mark7_bracelets",
+   "name": "Iron Man/Mark 07 (VII)"
+  },
+  {
+   "id": "mark8",
+   "name": "Iron Man/Mark 08 (VIII)"
+  },
+  {
+   "id": "mark9",
+   "name": "Iron Man/Mark 09 (IX)"
+  },
+  {
+   "id": "tony",
+   "name": "Tony Stark"
+  },
+  {
+   "id": "tony_equip",
+   "name": "Insert Suit"
+  },
+  {
+   "id": "warmachine_mk1",
+   "name": "War Machine/Mark 01 (I)"
+  },
+  {
+   "id": "warmachine_mk2",
+   "name": "War Machine/Mark 02 (II)"
+  },
+  {
+   "id": "warmachine_mk3",
+   "name": "War Machine/Mark 03 (III)"
+  },
+  {
+   "id": "warmachine_mk4",
+   "name": "War Machine/Mark 04 (IV)"
+  }
+ ]
+}

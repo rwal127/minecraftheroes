@@ -1,0 +1,362 @@
+{
+ "skarlet": [
+  {
+   "id": "ash_williams",
+   "name": "Ash Williams"
+  },
+  {
+   "id": "batman_arkham",
+   "name": "Batman"
+  },
+  {
+   "id": "batman_comics",
+   "name": "Batman"
+  },
+  {
+   "id": "batman_thomas",
+   "name": "Batman/Thomas Wayne"
+  },
+  {
+   "id": "batwoman_comics",
+   "name": "Batwoman"
+  },
+  {
+   "id": "blue_beetle_dceu",
+   "name": "Blue Beetle"
+  },
+  {
+   "id": "green_goblin",
+   "name": "Green Goblin"
+  },
+  {
+   "id": "gwenpool",
+   "name": "Gwenpool"
+  },
+  {
+   "id": "gwenpool_future",
+   "name": "Gwenpool/Dark"
+  },
+  {
+   "id": "harley_quinn",
+   "name": "Harley Quinn"
+  },
+  {
+   "id": "human_torch",
+   "name": "Human Torch"
+  },
+  {
+   "id": "invisible_woman",
+   "name": "Invisible Woman"
+  },
+  {
+   "id": "miss_martian",
+   "name": "Miss Martian"
+  },
+  {
+   "id": "mister_fantastic",
+   "name": "Mister Fantastic"
+  },
+  {
+   "id": "silk",
+   "name": "Silk"
+  },
+  {
+   "id": "spider_girl",
+   "name": "Spider-Girl/Mayday Parker"
+  },
+  {
+   "id": "spider_gwen",
+   "name": "Spider-Woman/Gwen Stacy"
+  },
+  {
+   "id": "supergirl_dceu",
+   "name": "Supergirl"
+  },
+  {
+   "id": "superman_comics",
+   "name": "Superman"
+  },
+  {
+   "id": "the_thing",
+   "name": "The Thing"
+  },
+  {
+   "id": "ultron_comics",
+   "name": "Ultron"
+  },
+  {
+   "id": "wolverine_comics",
+   "name": "Wolverine"
+  },
+  {
+   "id": "wonder_woman_comics",
+   "name": "Wonder Woman"
+  },
+  {
+   "id": "x23_comics",
+   "name": "Wolverine/Laura Kinney"
+  }
+ ],
+ "tmf": [
+  {
+   "id": "dna_blitzwolfer_18",
+   "name": "Uncraftable Item - Blitzwolfer"
+  },
+  {
+   "id": "dna_cannonbolt_16",
+   "name": "Uncraftable Item - Cannonbolt"
+  },
+  {
+   "id": "dna_ditto_23",
+   "name": "Uncraftable Item - Ditto"
+  },
+  {
+   "id": "dna_eyeguy_24",
+   "name": "Uncraftable Item - Eyeguy"
+  },
+  {
+   "id": "dna_frankenstrike_20",
+   "name": "Uncraftable Item - Frankenstrike"
+  },
+  {
+   "id": "dna_snareoh_19",
+   "name": "Uncraftable Item - Snare-Oh"
+  },
+  {
+   "id": "dna_upchuck_22",
+   "name": "Uncraftable Item - Upchuck"
+  },
+  {
+   "id": "dna_waybig_25",
+   "name": "Uncraftable Item - Waybig"
+  },
+  {
+   "id": "dna_wildvine_17",
+   "name": "Uncraftable Item - Wildvine"
+  },
+  {
+   "id": "iron_man_mk1_aa",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_mk1_aa_backpack",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_silver_centurion_aa",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_space_aa",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_stealth_aa",
+   "name": "Iron Man"
+  },
+  {
+   "id": "not_hero_time",
+   "name": "I'm no hero"
+  },
+  {
+   "id": "omni_galvanic_modulator",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "omni_recal",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "omnitrix",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "omnitrix_grey_matter",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "omnitrix_grey_matter_crafting",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "omnitrix_upchuck",
+   "name": "Omnitrix"
+  },
+  {
+   "id": "the_deep",
+   "name": "The Deep"
+  },
+  {
+   "id": "the_mandarin_aa",
+   "name": "The Mandarin"
+  }
+ ],
+ "transformers_pack": [
+  {
+   "id": "g1_hook",
+   "name": "Hook"
+  },
+  {
+   "id": "g1_optimus_prime",
+   "name": "Optimus Prime"
+  }
+ ],
+ "unconventional": [
+  {
+   "id": "artemis_yj",
+   "name": "Artemis"
+  },
+  {
+   "id": "batman_dceu_tactical",
+   "name": "Batman/Tactical"
+  },
+  {
+   "id": "batman_reeves",
+   "name": "Batman"
+  },
+  {
+   "id": "batman_rocksteady",
+   "name": "Batman/Arkham Knight"
+  },
+  {
+   "id": "batman_telltale",
+   "name": "Batman"
+  },
+  {
+   "id": "black_bolt_comics",
+   "name": "Black Bolt"
+  },
+  {
+   "id": "black_canary_e2",
+   "name": "Black Canary/Earth-2"
+  },
+  {
+   "id": "black_cat_ps4",
+   "name": "Black Cat"
+  },
+  {
+   "id": "captain_america_jw",
+   "name": "Captain America/John Walker"
+  },
+  {
+   "id": "captain_carter_what_if",
+   "name": "Captain Carter"
+  },
+  {
+   "id": "catwoman_telltale",
+   "name": "Catwoman"
+  },
+  {
+   "id": "deadpool_xmen_origins",
+   "name": "Weapon XI"
+  },
+  {
+   "id": "deathstroke_rocksteady",
+   "name": "Deathstroke"
+  },
+  {
+   "id": "edith",
+   "name": "Tony Stark"
+  },
+  {
+   "id": "electro",
+   "name": "Electro"
+  },
+  {
+   "id": "emiko_adachi",
+   "name": "Emiko Adachi"
+  },
+  {
+   "id": "five",
+   "name": "Five"
+  },
+  {
+   "id": "ghost",
+   "name": "Ghost"
+  },
+  {
+   "id": "hawkeye",
+   "name": "Hawkeye/Clint Barton"
+  },
+  {
+   "id": "kate_bishop",
+   "name": "Hawkeye/Kate Bishop"
+  },
+  {
+   "id": "mosquito",
+   "name": "Mosquito"
+  },
+  {
+   "id": "nick_fury",
+   "name": "Nick Fury"
+  },
+  {
+   "id": "pietro",
+   "name": "Pietro Maximoff"
+  },
+  {
+   "id": "radioactive_man",
+   "name": "Radioactive Man"
+  },
+  {
+   "id": "red_guardian",
+   "name": "Red Guardian"
+  },
+  {
+   "id": "robin_rocksteady",
+   "name": "Robin/Arkham Knight"
+  },
+  {
+   "id": "ronin",
+   "name": "Ronin/Clint Barton"
+  },
+  {
+   "id": "soldier_boy",
+   "name": "Soldier Boy"
+  },
+  {
+   "id": "spider_man_miles_ps5",
+   "name": "Spider-Man/Miles Morales"
+  },
+  {
+   "id": "spider_man_miles_sv",
+   "name": "Spider-Man/Miles Morales"
+  },
+  {
+   "id": "spoiler_comics",
+   "name": "Spoiler"
+  },
+  {
+   "id": "sss_og",
+   "name": "Super Soldier/Erskine's Formula"
+  },
+  {
+   "id": "taskmaster",
+   "name": "Taskmaster"
+  },
+  {
+   "id": "the_signal_comics",
+   "name": "The Signal"
+  },
+  {
+   "id": "tigress_yj",
+   "name": "Tigress"
+  },
+  {
+   "id": "wanda",
+   "name": "Wanda Maximoff"
+  },
+  {
+   "id": "white_wolf",
+   "name": "Bucky Barnes"
+  },
+  {
+   "id": "winter_soldier",
+   "name": "Winter Soldier"
+  },
+  {
+   "id": "yellow_jacket",
+   "name": "Yellow Jacket"
+  }
+ ]
+}

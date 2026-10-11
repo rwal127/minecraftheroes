@@ -1,0 +1,254 @@
+{
+ "sabri": [
+  {
+   "id": "black_panther",
+   "name": "Black Panther/Upgraded Habit"
+  },
+  {
+   "id": "black_widow",
+   "name": "Black Widow"
+  },
+  {
+   "id": "cyclops_xmen",
+   "name": "Cyclops"
+  },
+  {
+   "id": "doctor_doom_comics",
+   "name": "Doctor Doom"
+  },
+  {
+   "id": "doctor_doom_f4",
+   "name": "Doctor Doom"
+  },
+  {
+   "id": "kang_the_conqueror",
+   "name": "Kang the Conqueror"
+  },
+  {
+   "id": "namor",
+   "name": "Namor"
+  },
+  {
+   "id": "quicksilver_xmen",
+   "name": "Quicksilver"
+  },
+  {
+   "id": "sandman_raimi",
+   "name": "Sandman"
+  },
+  {
+   "id": "silver_surfer_f4",
+   "name": "Silver Surfer"
+  },
+  {
+   "id": "thanos",
+   "name": "Thanos"
+  },
+  {
+   "id": "thor",
+   "name": "Thor"
+  },
+  {
+   "id": "wolverine_xmen",
+   "name": "Wolverine"
+  }
+ ],
+ "secretheroes": [
+  {
+   "id": "ghost_spider",
+   "name": "Ghost Spider"
+  },
+  {
+   "id": "godspeed",
+   "name": "Godspeed"
+  },
+  {
+   "id": "herobrine",
+   "name": "Herobrine"
+  },
+  {
+   "id": "homelander",
+   "name": "Homelander"
+  },
+  {
+   "id": "hulk",
+   "name": "Hulk"
+  },
+  {
+   "id": "impulse",
+   "name": "Impulse"
+  },
+  {
+   "id": "mining_armor",
+   "name": "Mining Armor"
+  },
+  {
+   "id": "moon_knight",
+   "name": "Moon Knight"
+  },
+  {
+   "id": "red_death_comics",
+   "name": "Red Death Comics"
+  },
+  {
+   "id": "saitama",
+   "name": "Saitama"
+  },
+  {
+   "id": "spider_man_black_raimi",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "star_labs_speedster_comics",
+   "name": "S.T.A.R. Labs Speedster"
+  },
+  {
+   "id": "the_flash",
+   "name": "The Flash"
+  },
+  {
+   "id": "the_flash_iris",
+   "name": "The Flash/Iris West"
+  },
+  {
+   "id": "vibe",
+   "name": "Vibe"
+  },
+  {
+   "id": "xs",
+   "name": "XS"
+  }
+ ],
+ "shadows": [
+  {
+   "id": "aragami",
+   "name": "Aragami"
+  },
+  {
+   "id": "backpack",
+   "name": "Backpack"
+  },
+  {
+   "id": "backpack_equipment_visual",
+   "name": "Suit"
+  },
+  {
+   "id": "dipdapdoe",
+   "name": "DipDapDoe"
+  },
+  {
+   "id": "double_jump",
+   "name": "Double Jump"
+  },
+  {
+   "id": "forced_sentry",
+   "name": "Forced Sentry"
+  },
+  {
+   "id": "golem",
+   "name": "Golem"
+  },
+  {
+   "id": "hue_man",
+   "name": "Hue-Man"
+  },
+  {
+   "id": "hunter",
+   "name": "Vampire Hunter"
+  },
+  {
+   "id": "mage",
+   "name": "Mage"
+  },
+  {
+   "id": "necrosword",
+   "name": "Necrosword"
+  },
+  {
+   "id": "power_ranger_wind_blue",
+   "name": "Power Ranger Wind Blue"
+  },
+  {
+   "id": "power_ranger_wind_red",
+   "name": "Power Ranger Wind Red"
+  },
+  {
+   "id": "power_ranger_wind_yellow",
+   "name": "Power Ranger Wind Yellow"
+  },
+  {
+   "id": "random",
+   "name": "Random Suit"
+  },
+  {
+   "id": "runic_magic",
+   "name": "Runic Magic"
+  },
+  {
+   "id": "shadow",
+   "name": "Shadow"
+  },
+  {
+   "id": "silver_speed",
+   "name": "Silver Speed"
+  },
+  {
+   "id": "sorcerer",
+   "name": "Sorcerer"
+  },
+  {
+   "id": "steve",
+   "name": "Steve"
+  },
+  {
+   "id": "superior_spider",
+   "name": "Superior Spider"
+  },
+  {
+   "id": "tornado",
+   "name": "Tornado"
+  },
+  {
+   "id": "vampire",
+   "name": "Vampire"
+  }
+ ],
+ "stellar": [
+  {
+   "id": "booster_gold",
+   "name": "Booster Gold"
+  },
+  {
+   "id": "cloak",
+   "name": "Cloak"
+  },
+  {
+   "id": "cloak_shadow",
+   "name": "Cloak Shadow"
+  },
+  {
+   "id": "danny_phantom",
+   "name": "Danny Phantom"
+  },
+  {
+   "id": "dr_manhattan",
+   "name": "Doctor Manhattan"
+  },
+  {
+   "id": "pepsi_man",
+   "name": "Pepsiman"
+  },
+  {
+   "id": "quantum_suit",
+   "name": "Quantum Realm Suit/Nanotech"
+  },
+  {
+   "id": "spawn",
+   "name": "Spawn"
+  },
+  {
+   "id": "wasp",
+   "name": "Wasp"
+  }
+ ]
+}

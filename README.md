@@ -15,13 +15,17 @@
 ```
 ├── index.html                # всё приложение (HTML+CSS+JS, без зависимостей и сборки)
 ├── heroes_list.json          # ЕДИНСТВЕННЫЙ источник данных (все герои, ID, паки)
+├── aliases.json              # алиасы поиска для каждого героя (RU + EN + акронимы)
 ├── hero_atlas_commands.txt   # плоский текстовый список всех команд /suit
 ├── assets/
 │   ├── hero_atlas_map.png        # карта всех паков и героев
 │   └── hero_atlas_overview.png   # компактный обзор паков
 ├── docs/DEPLOYMENT.md        # пошагово: Cloudflare Pages + Telegram BotFather
-├── tools/generate_commands.py  # перегенерация hero_atlas_commands.txt из JSON
-├── tests/validate_data.py      # автотесты целостности данных
+├── tools/
+│   ├── generate_commands.py    # перегенерация hero_atlas_commands.txt из JSON
+│   └── merge_aliases.py        # сборка aliases.json из research/out/agent_*.json
+├── research/                 # задания и выдача субагентов-ресёрчеров алиасов
+├── tests/validate_data.py      # автотесты целостности данных и алиасов
 └── .nojekyll
 ```
 

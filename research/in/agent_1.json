@@ -1,0 +1,272 @@
+{
+ "fiskheroes": [
+  {
+   "id": "agent_liberty",
+   "name": "Agent Liberty"
+  },
+  {
+   "id": "ant_man",
+   "name": "Ant-Man"
+  },
+  {
+   "id": "anti_monitor",
+   "name": "Anti-Monitor"
+  },
+  {
+   "id": "arrow",
+   "name": "Arrow"
+  },
+  {
+   "id": "arsenal",
+   "name": "Arsenal"
+  },
+  {
+   "id": "atom",
+   "name": "Atom"
+  },
+  {
+   "id": "atom_smasher",
+   "name": "Atom-Smasher"
+  },
+  {
+   "id": "august_heart_comics",
+   "name": "August Heart"
+  },
+  {
+   "id": "batman_dceu",
+   "name": "Batman"
+  },
+  {
+   "id": "black_canary",
+   "name": "Black Canary/Laurel Lance"
+  },
+  {
+   "id": "black_canary_dinah",
+   "name": "Black Canary/Dinah Drake"
+  },
+  {
+   "id": "black_lightning",
+   "name": "Black Lightning"
+  },
+  {
+   "id": "black_manta_dceu",
+   "name": "Black Manta"
+  },
+  {
+   "id": "black_panther",
+   "name": "Black Panther"
+  },
+  {
+   "id": "captain_america",
+   "name": "Captain America/Steve Rogers"
+  },
+  {
+   "id": "captain_america_sam",
+   "name": "Captain America/Sam Wilson"
+  },
+  {
+   "id": "captain_cold",
+   "name": "Captain Cold"
+  },
+  {
+   "id": "chronos",
+   "name": "Chronos"
+  },
+  {
+   "id": "citizen_steel",
+   "name": "Citizen Steel"
+  },
+  {
+   "id": "colossus_xmen",
+   "name": "Colossus"
+  },
+  {
+   "id": "crossbones",
+   "name": "Crossbones"
+  },
+  {
+   "id": "dark_archer",
+   "name": "Dark Archer"
+  },
+  {
+   "id": "deadpool_xmen",
+   "name": "Deadpool"
+  },
+  {
+   "id": "deathstroke_dceu",
+   "name": "Deathstroke"
+  },
+  {
+   "id": "doctor_octopus",
+   "name": "Doctor Octopus"
+  },
+  {
+   "id": "doctor_strange",
+   "name": "Doctor Strange"
+  },
+  {
+   "id": "falcon",
+   "name": "Falcon"
+  },
+  {
+   "id": "firestorm",
+   "name": "Firestorm/Ronnie Raymond"
+  },
+  {
+   "id": "firestorm_jax",
+   "name": "Firestorm/Jax Jackson"
+  },
+  {
+   "id": "geomancer",
+   "name": "Geomancer"
+  },
+  {
+   "id": "godspeed_comics",
+   "name": "Godspeed"
+  },
+  {
+   "id": "green_arrow",
+   "name": "Green Arrow"
+  },
+  {
+   "id": "guardian",
+   "name": "Guardian"
+  },
+  {
+   "id": "harbinger",
+   "name": "Harbinger"
+  },
+  {
+   "id": "heatwave",
+   "name": "Heatwave"
+  },
+  {
+   "id": "iron_man",
+   "name": "Iron Man"
+  },
+  {
+   "id": "iron_man_mk50",
+   "name": "Iron Man/Mark 50"
+  },
+  {
+   "id": "iron_man_mk85",
+   "name": "Iron Man/Mark 85"
+  },
+  {
+   "id": "kid_flash",
+   "name": "Kid Flash"
+  },
+  {
+   "id": "killer_frost",
+   "name": "Killer Frost"
+  },
+  {
+   "id": "martian_manhunter",
+   "name": "Martian Manhunter"
+  },
+  {
+   "id": "martian_manhunter_comics",
+   "name": "Martian Manhunter"
+  },
+  {
+   "id": "mysterio",
+   "name": "Mysterio"
+  },
+  {
+   "id": "obsidian",
+   "name": "Obsidian"
+  },
+  {
+   "id": "prometheus",
+   "name": "Prometheus"
+  },
+  {
+   "id": "reverse_flash",
+   "name": "Reverse-Flash"
+  },
+  {
+   "id": "rip_hunter",
+   "name": "Rip Hunter"
+  },
+  {
+   "id": "rupture",
+   "name": "Rupture"
+  },
+  {
+   "id": "savitar",
+   "name": "Savitar"
+  },
+  {
+   "id": "senor_cactus",
+   "name": "Se\\u00f1or Cactus"
+  },
+  {
+   "id": "shazam_dceu",
+   "name": "Shazam"
+  },
+  {
+   "id": "spectre",
+   "name": "Spectre"
+  },
+  {
+   "id": "spider_man",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_man_ps4",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_man_raimi",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_man_webb",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spodermen",
+   "name": "Spodermen"
+  },
+  {
+   "id": "the_flash",
+   "name": "The Flash/Barry Allen"
+  },
+  {
+   "id": "the_flash_hunter",
+   "name": "The Flash/Hunter Zolomon"
+  },
+  {
+   "id": "the_flash_jay",
+   "name": "The Flash/Jay Garrick"
+  },
+  {
+   "id": "the_monitor",
+   "name": "The Monitor"
+  },
+  {
+   "id": "the_rival",
+   "name": "The Rival"
+  },
+  {
+   "id": "the_tick",
+   "name": "The Tick"
+  },
+  {
+   "id": "trajectory",
+   "name": "Trajectory"
+  },
+  {
+   "id": "vision",
+   "name": "Vision"
+  },
+  {
+   "id": "wild_dog",
+   "name": "Wild Dog"
+  },
+  {
+   "id": "zoom",
+   "name": "Zoom"
+  }
+ ]
+}

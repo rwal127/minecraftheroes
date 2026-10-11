@@ -1,0 +1,292 @@
+{
+ "jmctheroes": [
+  {
+   "id": "8ball",
+   "name": "8-Ball"
+  },
+  {
+   "id": "agent_spider",
+   "name": "Agent Spider"
+  },
+  {
+   "id": "allen",
+   "name": "Allen The Alien"
+  },
+  {
+   "id": "anissa",
+   "name": "Anissa"
+  },
+  {
+   "id": "arkham_knight",
+   "name": "Arkham Knight"
+  },
+  {
+   "id": "batman_comics",
+   "name": "Batman"
+  },
+  {
+   "id": "beta_ray_bill",
+   "name": "Beta Ray Bill"
+  },
+  {
+   "id": "big_wheel",
+   "name": "Jackson Weele/Big Wheel"
+  },
+  {
+   "id": "bizarro",
+   "name": "Bizarro"
+  },
+  {
+   "id": "black_adam_dceu",
+   "name": "Black Adam"
+  },
+  {
+   "id": "blue_beetle_dceu",
+   "name": "Blue Beetle"
+  },
+  {
+   "id": "chainsaw_man",
+   "name": "Chainsaw Man"
+  },
+  {
+   "id": "conquest",
+   "name": "Conquest"
+  },
+  {
+   "id": "daredevil",
+   "name": "Daredevil"
+  },
+  {
+   "id": "darkseid",
+   "name": "Darkseid"
+  },
+  {
+   "id": "doctor_fate",
+   "name": "Doctor Fate"
+  },
+  {
+   "id": "flash",
+   "name": "The Flash"
+  },
+  {
+   "id": "flash_dceu",
+   "name": "The Flash"
+  },
+  {
+   "id": "groot",
+   "name": "Groot/Guardians Of The Galaxy Vol.3"
+  },
+  {
+   "id": "hellboy",
+   "name": "Hellboy"
+  },
+  {
+   "id": "hit_monkey",
+   "name": "Monkey/Hit-Monkey"
+  },
+  {
+   "id": "human_torch",
+   "name": "Human Torch"
+  },
+  {
+   "id": "immortal",
+   "name": "The Immortal"
+  },
+  {
+   "id": "invincible",
+   "name": "Invincible/Mark Grayson"
+  },
+  {
+   "id": "invisible_woman",
+   "name": "Invisible Woman"
+  },
+  {
+   "id": "iron_legion",
+   "name": "Iron Legion Drone"
+  },
+  {
+   "id": "jay_garrick",
+   "name": "The Flash/Jay Garrick"
+  },
+  {
+   "id": "katana_man",
+   "name": "Katana Man"
+  },
+  {
+   "id": "killer_moth",
+   "name": "Killer Moth"
+  },
+  {
+   "id": "kite_man",
+   "name": "Kite Man"
+  },
+  {
+   "id": "lantern_ring_green",
+   "name": "Green Lantern Corp"
+  },
+  {
+   "id": "lantern_ring_yellow",
+   "name": "Sinestro Lantern Corp"
+  },
+  {
+   "id": "modok",
+   "name": "M.O.D.O.K."
+  },
+  {
+   "id": "moon_knight",
+   "name": "Moon Knight"
+  },
+  {
+   "id": "mr_fantastic",
+   "name": "Mr. Fantastic"
+  },
+  {
+   "id": "omniman",
+   "name": "Omni-Man/Nolan Grayson"
+  },
+  {
+   "id": "phantasm",
+   "name": "Phantasm"
+  },
+  {
+   "id": "pork_grind",
+   "name": "Pork Grind"
+  },
+  {
+   "id": "power",
+   "name": "Power"
+  },
+  {
+   "id": "prowler",
+   "name": "Prowler"
+  },
+  {
+   "id": "red_death",
+   "name": "Red Death/Tales of the Dark Multiverse"
+  },
+  {
+   "id": "red_hood",
+   "name": "Red Hood"
+  },
+  {
+   "id": "red_skull",
+   "name": "Red Skull"
+  },
+  {
+   "id": "reverse_flash",
+   "name": "Reverse-Flash"
+  },
+  {
+   "id": "rhino",
+   "name": "Rhino"
+  },
+  {
+   "id": "scarlet_spider",
+   "name": "Scarlet Spider/Ben Reilly"
+  },
+  {
+   "id": "shazam_dceu",
+   "name": "Shazam"
+  },
+  {
+   "id": "spider_2099",
+   "name": "Spider-Man 2099"
+  },
+  {
+   "id": "spider_ham",
+   "name": "Spider-Ham"
+  },
+  {
+   "id": "spider_man",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_man_1610",
+   "name": "Ultimate Spider-Man/Peter Parker"
+  },
+  {
+   "id": "spider_man_noir",
+   "name": "Spider-Man Noir"
+  },
+  {
+   "id": "spider_man_tobey",
+   "name": "Spider-Man"
+  },
+  {
+   "id": "spider_miles",
+   "name": "Ultimate Spider-Man/Miles Morales"
+  },
+  {
+   "id": "spider_punk",
+   "name": "Spider-Punk"
+  },
+  {
+   "id": "star_lord",
+   "name": "Star-Lord"
+  },
+  {
+   "id": "superboy",
+   "name": "Superboy"
+  },
+  {
+   "id": "supergirl_dceu",
+   "name": "Supergirl"
+  },
+  {
+   "id": "superior_spider_man",
+   "name": "Superior Spider-Man"
+  },
+  {
+   "id": "superman_dceu",
+   "name": "Superman"
+  },
+  {
+   "id": "superman_god",
+   "name": "Super-Moustache-Man"
+  },
+  {
+   "id": "thing",
+   "name": "The Thing"
+  },
+  {
+   "id": "ultimate_ultron",
+   "name": "Ultimate Ultron"
+  },
+  {
+   "id": "ultron_mk1",
+   "name": "Ultron/Mark 1"
+  },
+  {
+   "id": "ultron_prime",
+   "name": "Ultron Prime"
+  },
+  {
+   "id": "venom",
+   "name": "Venom"
+  },
+  {
+   "id": "viltrumite_soldier",
+   "name": "Viltrumite Soldier"
+  },
+  {
+   "id": "wally_west",
+   "name": "The Flash/Wally West"
+  },
+  {
+   "id": "war_machine_mk1",
+   "name": "War Machine/Mark 1"
+  },
+  {
+   "id": "war_machine_mk2",
+   "name": "War Machine/Mark 2"
+  },
+  {
+   "id": "war_machine_mk3",
+   "name": "War Machine/Mark 3"
+  },
+  {
+   "id": "zod_dceu",
+   "name": "General Zod"
+  }
+ ]
+}
