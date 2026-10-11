@@ -11,7 +11,9 @@
   <style>
     :root{--bg:#1e1e1e;--panel:#252526;--panel2:#2d2d2d;--line:#3c3c3c;--text:#d4d4d4;--muted:#8a8a8a;--accent:#007acc;--link:#3794ff;--sel:#094771;--btn:#0e639c;--shadow:0 10px 30px rgba(0,0,0,.45);--hdrH:57px;--gx:18px;--cardPad:16px;--ctlH:44px;color-scheme:dark}
     *{box-sizing:border-box} html{scroll-behavior:smooth;background:var(--bg)} body{margin:0;color:var(--text);background:radial-gradient(circle at top,#252526 0,transparent 38%), var(--bg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
-    button,input,code{font:inherit} button{cursor:pointer}
+    button,input,select,textarea,code{font:inherit} button{cursor:pointer}
+    /* iOS Safari auto-zooms the page when focusing a form control with font-size under 16px */
+    input,select,textarea{font-size:16px}
     .hdr{position:sticky;top:0;z-index:30;background:rgba(30,30,30,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
     .hdr-in{width:min(1180px,100%);margin:auto;padding:10px var(--gx);display:flex;align-items:center;gap:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.12em;font-size:12px;text-transform:uppercase;white-space:nowrap}
@@ -25,7 +27,7 @@
     .search{flex:1;display:flex;align-items:center;gap:10px;background:#3c3c3c;border:1px solid #464646;border-radius:999px;height:var(--ctlH);padding:0 18px;transition:border-color .15s, box-shadow .15s}
     .search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,122,204,.25)}
     .search span{font-size:16px}
-    .search input{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:15px;min-width:0}
+    .search input{flex:1;background:transparent;border:0;outline:0;color:var(--text);font-size:16px;min-width:0}
     .search input::placeholder{color:#7a7a7a}
     .clear{display:none;border:0;background:transparent;color:var(--muted);font-size:15px;padding:0 2px}
     .search.has-q .clear{display:block}
@@ -58,12 +60,51 @@
     .r-cmd{color:#ce9178}
     .r-btn{padding:7px 11px;font-size:11px;border-radius:9px;flex:0 0 auto}
     .btn{border:1px solid var(--btn);background:var(--btn);color:#fff;padding:9px 11px;border-radius:10px;font-weight:700;font-size:12px}
+    .rows .row{cursor:pointer}
+    .r-ava{width:36px;height:48px;flex:0 0 auto;border-radius:8px;border:1px solid var(--line);background:#1b1b1b;display:grid;place-items:center;overflow:hidden}
+    .r-ava img{width:100%;height:100%;object-fit:contain}
+    .r-ava img.px,.m-photo img.px{image-rendering:pixelated}
+    .r-ava .ph,.m-photo .ph{font-size:20px;opacity:.5}
+    /* hero details modal */
+    .modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:18px}
+    .modal[hidden]{display:none}
+    .m-panel [hidden]{display:none!important} /* flex/grid author styles must not resurrect hidden nodes */
+    .m-back{position:absolute;inset:0;background:rgba(0,0,0,.62);border:0;padding:0}
+    .m-panel{position:relative;width:min(860px,100%);max-height:min(88vh,780px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .m-body{display:flex;gap:18px;padding:18px}
+    .m-photo{flex:0 0 300px;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#2d2d2d,#1b1b1b);border:1px solid var(--line);border-radius:14px;min-height:300px;padding:10px}
+    .m-photo img{max-width:100%;max-height:52vh;object-fit:contain}
+    .m-photo .ph{font-size:64px;opacity:.5}
+    .m-info{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+    .m-name{margin:0;font-size:22px;letter-spacing:-.02em;padding-right:34px}
+    .m-badge{font-size:11px;font-weight:700;border:1px solid;border-radius:999px;padding:2px 8px;white-space:nowrap;align-self:flex-start}
+    .m-chips{display:flex;gap:6px;flex-wrap:wrap}
+    .m-chip{border:1px solid var(--line);background:var(--panel2);color:#cccccc;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700}
+    .m-chip b{color:#fff}
+    .m-sec{color:var(--muted);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin:2px 0 0}
+    .m-note{color:var(--text);font-size:13px;line-height:1.5;margin:0}
+    .m-muted{color:var(--muted);font-size:12px;margin:0}
+    .m-powers{display:flex;flex-wrap:wrap;gap:6px}
+    .m-powers span{border:1px solid var(--line);background:var(--panel2);color:#9cdcfe;border-radius:999px;padding:3px 10px;font-size:12px}
+    .m-ids{display:flex;flex-direction:column;gap:6px}
+    .m-idrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .m-idrow code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:#9cdcfe;cursor:pointer;background:#1b1b1b;border:1px solid var(--line);border-radius:8px;padding:6px 9px;word-break:break-all}
+    .m-idrow code.cmd{color:#ce9178}
+    .m-idrow code:hover{color:var(--link)}
+    .m-idrow .btn{padding:6px 10px;font-size:11px}
+    .m-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;align-items:center}
+    .m-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding:10px 14px}
+    .m-nav .btn{min-width:64px}
+    .m-pos{color:var(--muted);font-size:12px;white-space:nowrap}
+    .m-close{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font-size:14px;z-index:2}
+    .m-close:hover{border-color:var(--accent);color:#fff}
     .empty{padding:24px;border:1px dashed var(--line);border-radius:18px;color:var(--muted);text-align:center;background:rgba(255,255,255,.02)}
     .toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--panel);border:1px solid var(--accent);color:#fff;border-radius:12px;padding:11px 14px;opacity:0;pointer-events:none;transition:.18s;z-index:40}.toast.show{opacity:1}
     .footer{width:min(1180px,100%);margin:0 auto;padding:24px var(--gx) 36px;color:var(--muted);font-size:12px}
     @media (max-width: 1024px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     @media (max-width: 760px){:root{--gx:12px}.wrap{padding-bottom:56px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.landing{padding:32px 0 2px}}
     @media (max-width: 640px){.grid{grid-template-columns:1fr}.row{flex-wrap:wrap;padding:9px 12px;gap:6px 10px}.r-name{flex-basis:100%}.r-id{display:none}.r-cmd{flex:1;white-space:normal;word-break:break-all}.r-btn{margin-left:auto}.landing h1{font-size:34px}}
+    @media (max-width: 720px){.m-body{flex-direction:column}.m-photo{flex:none;min-height:0}.m-photo img{max-height:36vh}}
     @media (max-width: 560px){.hdr-in{flex-wrap:wrap;gap:8px}.search{order:2;flex-basis:100%;padding:0 14px}.brand{order:1}.langwrap{order:1;margin-left:auto}}
   </style>
 </head>
@@ -99,18 +140,46 @@
 </main>
 <footer class="footer"><span id="fCmd">Команда в игре:</span> <code>/suit packname:heroname</code> · <span id="fData">Данные:</span> <code>heroes_list.json</code> · <span id="fList">Полный список:</span> <a style="color:var(--link)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a> · <a style="color:var(--link)" href="tests.html" id="fTests">автотесты</a></footer>
 <div class="toast" id="toast">Скопировано</div>
+<div class="modal" id="modal" hidden>
+  <button class="m-back" id="mBack" type="button" tabindex="-1" aria-hidden="true"></button>
+  <div class="m-panel" role="dialog" aria-modal="true" aria-labelledby="mName">
+    <button class="m-close" id="mClose" type="button" title="✕">✕</button>
+    <div class="m-body">
+      <div class="m-photo" id="mPhoto"></div>
+      <div class="m-info">
+        <span class="m-badge" id="mBadge" hidden></span>
+        <h3 class="m-name" id="mName"></h3>
+        <div class="m-chips" id="mChips"></div>
+        <div class="m-sec" id="mPowersSec" hidden></div>
+        <div class="m-powers" id="mPowers" hidden></div>
+        <p class="m-note" id="mNote" hidden></p>
+        <p class="m-muted" id="mSrc" hidden></p>
+        <div class="m-ids">
+          <div class="m-idrow"><code id="mId" title="ID"></code><button class="btn" id="mIdCopy" type="button"></button></div>
+          <div class="m-idrow"><code class="cmd" id="mCmd"></code><button class="btn" id="mCmdCopy" type="button"></button></div>
+        </div>
+        <div class="m-actions"><a class="btn" id="mWiki" target="_blank" rel="noopener" hidden></a></div>
+      </div>
+    </div>
+    <div class="m-nav">
+      <button class="btn" id="mPrev" type="button">‹</button>
+      <span class="m-pos" id="mPos"></span>
+      <button class="btn" id="mNext" type="button">›</button>
+    </div>
+  </div>
+</div>
 <script>
 const DISPLAY = {"fiskheroes": "FiskHeroes", "misc": "Miscellaneous", "morningstar": "Morningstar", "tgheroes": "TGHeroes", "8thpack": "8thPack", "dhhp": "DERPZ Heroes", "ironmaniac": "Iron Maniac", "jmctheroes": "JMCT Heroes", "nameless": "Nameless Heroes", "ninjago": "Ninjago", "runnyhero": "RunnyHeroes", "sabri": "Sabri Enhanced", "secretheroes": "SecretHeroes", "shadows": "Shadows", "sind": "SIND Iron Man", "skarlet": "Skarlet", "stellar": "StellarHeroes", "pwt": "The Pack With Things", "tmf": "TMF", "transformers_pack": "Transformers Pack", "unconventional": "Unconventional"};
 const PALETTE = ["#569cd6", "#4ec9b0", "#c586c0", "#ce9178", "#dcdcaa", "#b5cea8", "#9cdcfe", "#d7ba7d", "#4fc1ff", "#d16969", "#6a9955", "#3794ff"];
 const I18N = {
-ru:{title:"Hero Atlas — поиск героев Minecraft",placeholder:"Поиск героя: имя, ID или пак — например, flash",h1:"Найди {hero} за секунды",hero_noun:"героя",sub:"{h} записей в {p} паках FiskHeroes · поиск по имени, ID, паку и алиасам",tab_all:"Все",tab_packs:"📦 Паки",found:"Найдено: {n}",showing_heroes:"Показано {a} из {b} героев",showing_packs:"Показано {a} из {b} паков",copy_btn:"Копировать",copied:"Скопировано: {x}",empty:"Ничего не найдено. Попробуй часть имени, например flash, spider или человек-паук.",error:"Не удалось загрузить heroes_list.json. Проверь, что файл лежит рядом с index.html и сайт открыт по HTTPS.",retry:"Повторить",aka:"Также ищется как: {a}",show_heroes_btn:"Показать героев",examples:"Примеры:",no_source:"Источник не указан",loading:"Загрузка…",f_cmd:"Команда в игре:",f_data:"Данные:",f_list:"Полный список:",f_tests:"автотесты"},
-en:{title:"Hero Atlas — Minecraft Hero Search",placeholder:"Search a hero: name, ID or pack — e.g. flash",h1:"Find your {hero} in seconds",hero_noun:"hero",sub:"{h} entries in {p} FiskHeroes packs · search by name, ID, pack and aliases",tab_all:"All",tab_packs:"📦 Packs",found:"Found: {n}",showing_heroes:"Showing {a} of {b} heroes",showing_packs:"Showing {a} of {b} packs",copy_btn:"Copy",copied:"Copied: {x}",empty:"Nothing found. Try part of a name: flash, spider, one punch man…",error:"Failed to load heroes_list.json. Make sure the file sits next to index.html and the site is served over HTTPS.",retry:"Retry",aka:"Also searchable as: {a}",show_heroes_btn:"Show heroes",examples:"Examples:",no_source:"No source listed",loading:"Loading…",f_cmd:"In-game command:",f_data:"Data:",f_list:"Full list:",f_tests:"self-tests"},
-uk:{title:"Hero Atlas — пошук героїв Minecraft",placeholder:"Пошук героя: ім'я, ID або пак — наприклад, flash",h1:"Знайди {hero} за секунди",hero_noun:"героя",sub:"{h} записів у {p} паках FiskHeroes · пошук за ім'ям, ID, паком та аліасами",tab_all:"Усі",tab_packs:"📦 Пакети",found:"Знайдено: {n}",showing_heroes:"Показано {a} зі {b} героїв",showing_packs:"Показано {a} зі {b} паків",copy_btn:"Копіювати",copied:"Скопійовано: {x}",empty:"Нічого не знайдено. Спробуй частину імені: flash, spider, one punch man…",error:"Не вдалося завантажити heroes_list.json. Перевір, що файл лежить поруч з index.html, а сайт відкрито по HTTPS.",retry:"Повторити",aka:"Також шукається як: {a}",show_heroes_btn:"Показати героїв",examples:"Приклади:",no_source:"Джерело не вказане",loading:"Завантаження…",f_cmd:"Команда в грі:",f_data:"Дані:",f_list:"Повний список:",f_tests:"автотести"},
-es:{title:"Hero Atlas — buscador de héroes de Minecraft",placeholder:"Busca un héroe: nombre, ID o pack — p. ej., flash",h1:"Encuentra a tu {hero} en segundos",hero_noun:"héroe",sub:"{h} entradas en {p} packs de FiskHeroes · busca por nombre, ID, pack y alias",tab_all:"Todos",tab_packs:"📦 Packs",found:"Encontrados: {n}",showing_heroes:"Mostrando {a} de {b} héroes",showing_packs:"Mostrando {a} de {b} packs",copy_btn:"Copiar",copied:"Copiado: {x}",empty:"Nada encontrado. Prueba con parte del nombre: flash, spider, one punch man…",error:"No se pudo cargar heroes_list.json. Asegúrate de que el archivo esté junto a index.html y de que el sitio se sirva por HTTPS.",retry:"Reintentar",aka:"También se busca como: {a}",show_heroes_btn:"Mostrar héroes",examples:"Ejemplos:",no_source:"Fuente no indicada",loading:"Cargando…",f_cmd:"Comando en el juego:",f_data:"Datos:",f_list:"Lista completa:",f_tests:"autotests"},
-ko:{title:"Hero Atlas — 마인크래프트 히어로 검색",placeholder:"히어로 검색: 이름, ID 또는 팩 — 예: flash",h1:"{hero}를 몇 초 만에 찾아보세요",hero_noun:"히어로",sub:"FiskHeroes {p}개 팩의 {h}개 항목 · 이름, ID, 팩, 별칭으로 검색",tab_all:"전체",tab_packs:"📦 팩 목록",found:"검색 결과: {n}",showing_heroes:"히어로 {a}/{b}명 표시 중",showing_packs:"팩 {a}/{b}개 표시 중",copy_btn:"복사",copied:"복사됨: {x}",empty:"결과가 없습니다. 이름의 일부를 입력해 보세요: flash, spider, one punch man…",error:"heroes_list.json을 불러오지 못했습니다. 파일이 index.html 옆에 있고 사이트가 HTTPS로 제공되는지 확인하세요.",retry:"다시 시도",aka:"다른 검색어: {a}",show_heroes_btn:"히어로 보기",examples:"예시:",no_source:"출처 없음",loading:"불러오는 중…",f_cmd:"게임 내 명령어:",f_data:"데이터:",f_list:"전체 목록:",f_tests:"자가 테스트"},
-ja:{title:"Hero Atlas — マインクラフト ヒーロー検索",placeholder:"ヒーローを検索：名前・ID・パック — 例: flash",h1:"{hero}を数秒で見つけよう",hero_noun:"ヒーロー",sub:"FiskHeroes {p}パックの{h}件 · 名前・ID・パック・別名で検索",tab_all:"すべて",tab_packs:"📦 パック",found:"ヒット: {n}",showing_heroes:"ヒーロー {a}/{b} を表示",showing_packs:"パック {a}/{b} を表示",copy_btn:"コピー",copied:"コピーしました: {x}",empty:"見つかりませんでした。名前の一部を試してください：flash、spider、one punch man など",error:"heroes_list.json を読み込めませんでした。ファイルが index.html の隣にあり、サイトが HTTPS で配信されているか確認してください。",retry:"再試行",aka:"別名検索: {a}",show_heroes_btn:"ヒーローを表示",examples:"例:",no_source:"ソース未指定",loading:"読み込み中…",f_cmd:"ゲーム内コマンド:",f_data:"データ:",f_list:"全リスト:",f_tests:"自己テスト"},
-fr:{title:"Hero Atlas — recherche de héros Minecraft",placeholder:"Rechercher un héros : nom, ID ou pack — ex. flash",h1:"Trouve ton {hero} en quelques secondes",hero_noun:"héros",sub:"{h} entrées dans {p} packs FiskHeroes · recherche par nom, ID, pack et alias",tab_all:"Tous",tab_packs:"📦 Packs",found:"Trouvés : {n}",showing_heroes:"{a} héros affichés sur {b}",showing_packs:"{a} packs affichés sur {b}",copy_btn:"Copier",copied:"Copié : {x}",empty:"Aucun résultat. Essaie une partie du nom : flash, spider, one punch man…",error:"Impossible de charger heroes_list.json. Vérifie que le fichier est à côté de index.html et que le site est servi en HTTPS.",retry:"Réessayer",aka:"Aussi recherché comme : {a}",show_heroes_btn:"Afficher les héros",examples:"Exemples :",no_source:"Source non indiquée",loading:"Chargement…",f_cmd:"Commande en jeu :",f_data:"Données :",f_list:"Liste complète :",f_tests:"autotests"},
-de:{title:"Hero Atlas — Minecraft-Heldensuche",placeholder:"Held suchen: Name, ID oder Pack — z. B. flash",h1:"Finde deinen {hero} in Sekunden",hero_noun:"Held",sub:"{h} Einträge in {p} FiskHeroes-Packs · Suche nach Name, ID, Pack und Alias",tab_all:"Alle",tab_packs:"📦 Packs",found:"Gefunden: {n}",showing_heroes:"{a} von {b} Helden angezeigt",showing_packs:"{a} von {b} Packs angezeigt",copy_btn:"Kopieren",copied:"Kopiert: {x}",empty:"Nichts gefunden. Versuche einen Teil des Namens: flash, spider, one punch man…",error:"heroes_list.json konnte nicht geladen werden. Prüfe, dass die Datei neben der index.html liegt und die Seite über HTTPS ausgeliefert wird.",retry:"Wiederholen",aka:"Auch suchbar als: {a}",show_heroes_btn:"Helden anzeigen",examples:"Beispiele:",no_source:"Quelle nicht angegeben",loading:"Wird geladen…",f_cmd:"Spielbefehl:",f_data:"Daten:",f_list:"Vollständige Liste:",f_tests:"Selbsttests"}
+ru:{title:"Hero Atlas — поиск героев Minecraft",placeholder:"Поиск героя: имя, ID или пак — например, flash",h1:"Найди {hero} за секунды",hero_noun:"героя",sub:"{h} записей в {p} паках FiskHeroes · поиск по имени, ID, паку и алиасам",tab_all:"Все",tab_packs:"📦 Паки",found:"Найдено: {n}",showing_heroes:"Показано {a} из {b} героев",showing_packs:"Показано {a} из {b} паков",copy_btn:"Копировать",copied:"Скопировано: {x}",empty:"Ничего не найдено. Попробуй часть имени, например flash, spider или человек-паук.",error:"Не удалось загрузить heroes_list.json. Проверь, что файл лежит рядом с index.html и сайт открыт по HTTPS.",retry:"Повторить",aka:"Также ищется как: {a}",show_heroes_btn:"Показать героев",examples:"Примеры:",no_source:"Источник не указан",loading:"Загрузка…",f_cmd:"Команда в игре:",f_data:"Данные:",f_list:"Полный список:",f_tests:"автотесты",m_tier:"Тир",m_dr_fmt:"{v}% снижение урона",m_cost:"Цена",m_powers:"Способности",m_wiki:"Страница вики",m_builtin:"Встроенный костюм мода FiskHeroes 2.4.0 (Minecraft 1.7.10).",m_pack:"Костюм из херопака «{pack}» для FiskHeroes 2.4.0.",m_no_preview:"Превью недоступно: кастомная модель или костюм без текстуры.",m_src_wiki:"3D-рендер с fiskheroes.fandom.com",m_src_game:"Вид из игровых текстур костюма",m_prev:"Предыдущий",m_next:"Следующий",m_close:"Закрыть"},
+en:{title:"Hero Atlas — Minecraft Hero Search",placeholder:"Search a hero: name, ID or pack — e.g. flash",h1:"Find your {hero} in seconds",hero_noun:"hero",sub:"{h} entries in {p} FiskHeroes packs · search by name, ID, pack and aliases",tab_all:"All",tab_packs:"📦 Packs",found:"Found: {n}",showing_heroes:"Showing {a} of {b} heroes",showing_packs:"Showing {a} of {b} packs",copy_btn:"Copy",copied:"Copied: {x}",empty:"Nothing found. Try part of a name: flash, spider, one punch man…",error:"Failed to load heroes_list.json. Make sure the file sits next to index.html and the site is served over HTTPS.",retry:"Retry",aka:"Also searchable as: {a}",show_heroes_btn:"Show heroes",examples:"Examples:",no_source:"No source listed",loading:"Loading…",f_cmd:"In-game command:",f_data:"Data:",f_list:"Full list:",f_tests:"self-tests",m_tier:"Tier",m_dr_fmt:"{v}% damage reduction",m_cost:"Cost",m_powers:"Powers & abilities",m_wiki:"Wiki page",m_builtin:"One of the suits built into FiskHeroes 2.4.0 (Minecraft 1.7.10).",m_pack:"A suit from the {pack} heropack for FiskHeroes 2.4.0.",m_no_preview:"No preview: custom model or texture-less suit.",m_src_wiki:"3D render from fiskheroes.fandom.com",m_src_game:"Front view from the suit's in-game textures",m_prev:"Previous",m_next:"Next",m_close:"Close"},
+uk:{title:"Hero Atlas — пошук героїв Minecraft",placeholder:"Пошук героя: ім'я, ID або пак — наприклад, flash",h1:"Знайди {hero} за секунди",hero_noun:"героя",sub:"{h} записів у {p} паках FiskHeroes · пошук за ім'ям, ID, паком та аліасами",tab_all:"Усі",tab_packs:"📦 Пакети",found:"Знайдено: {n}",showing_heroes:"Показано {a} зі {b} героїв",showing_packs:"Показано {a} зі {b} паків",copy_btn:"Копіювати",copied:"Скопійовано: {x}",empty:"Нічого не знайдено. Спробуй частину імені: flash, spider, one punch man…",error:"Не вдалося завантажити heroes_list.json. Перевір, що файл лежить поруч з index.html, а сайт відкрито по HTTPS.",retry:"Повторити",aka:"Також шукається як: {a}",show_heroes_btn:"Показати героїв",examples:"Приклади:",no_source:"Джерело не вказане",loading:"Завантаження…",f_cmd:"Команда в грі:",f_data:"Дані:",f_list:"Повний список:",f_tests:"автотести",m_tier:"Тир",m_dr_fmt:"{v}% зниження урону",m_cost:"Ціна",m_powers:"Здібності",m_wiki:"Сторінка вікі",m_builtin:"Вбудований костюм мода FiskHeroes 2.4.0 (Minecraft 1.7.10).",m_pack:"Костюм із херопаку «{pack}» для FiskHeroes 2.4.0.",m_no_preview:"Превʼю недоступне: кастомна модель або костюм без текстури.",m_src_wiki:"3D-рендер із fiskheroes.fandom.com",m_src_game:"Вид з ігрових текстур костюма",m_prev:"Попередній",m_next:"Наступний",m_close:"Закрити"},
+es:{title:"Hero Atlas — buscador de héroes de Minecraft",placeholder:"Busca un héroe: nombre, ID o pack — p. ej., flash",h1:"Encuentra a tu {hero} en segundos",hero_noun:"héroe",sub:"{h} entradas en {p} packs de FiskHeroes · busca por nombre, ID, pack y alias",tab_all:"Todos",tab_packs:"📦 Packs",found:"Encontrados: {n}",showing_heroes:"Mostrando {a} de {b} héroes",showing_packs:"Mostrando {a} de {b} packs",copy_btn:"Copiar",copied:"Copiado: {x}",empty:"Nada encontrado. Prueba con parte del nombre: flash, spider, one punch man…",error:"No se pudo cargar heroes_list.json. Asegúrate de que el archivo esté junto a index.html y de que el sitio se sirva por HTTPS.",retry:"Reintentar",aka:"También se busca como: {a}",show_heroes_btn:"Mostrar héroes",examples:"Ejemplos:",no_source:"Fuente no indicada",loading:"Cargando…",f_cmd:"Comando en el juego:",f_data:"Datos:",f_list:"Lista completa:",f_tests:"autotests",m_tier:"Nivel",m_dr_fmt:"{v}% de reducción de daño",m_cost:"Coste",m_powers:"Poderes y habilidades",m_wiki:"Página de la wiki",m_builtin:"Uno de los trajes integrados de FiskHeroes 2.4.0 (Minecraft 1.7.10).",m_pack:"Un traje del heropack {pack} para FiskHeroes 2.4.0.",m_no_preview:"Vista previa no disponible: modelo personalizado o traje sin textura.",m_src_wiki:"Render 3D de fiskheroes.fandom.com",m_src_game:"Vista frontal de las texturas del traje",m_prev:"Anterior",m_next:"Siguiente",m_close:"Cerrar"},
+ko:{title:"Hero Atlas — 마인크래프트 히어로 검색",placeholder:"히어로 검색: 이름, ID 또는 팩 — 예: flash",h1:"{hero}를 몇 초 만에 찾아보세요",hero_noun:"히어로",sub:"FiskHeroes {p}개 팩의 {h}개 항목 · 이름, ID, 팩, 별칭으로 검색",tab_all:"전체",tab_packs:"📦 팩 목록",found:"검색 결과: {n}",showing_heroes:"히어로 {a}/{b}명 표시 중",showing_packs:"팩 {a}/{b}개 표시 중",copy_btn:"복사",copied:"복사됨: {x}",empty:"결과가 없습니다. 이름의 일부를 입력해 보세요: flash, spider, one punch man…",error:"heroes_list.json을 불러오지 못했습니다. 파일이 index.html 옆에 있고 사이트가 HTTPS로 제공되는지 확인하세요.",retry:"다시 시도",aka:"다른 검색어: {a}",show_heroes_btn:"히어로 보기",examples:"예시:",no_source:"출처 없음",loading:"불러오는 중…",f_cmd:"게임 내 명령어:",f_data:"데이터:",f_list:"전체 목록:",f_tests:"자가 테스트",m_tier:"티어",m_dr_fmt:"피해 감소 {v}%",m_cost:"비용",m_powers:"능력",m_wiki:"위키 문서",m_builtin:"FiskHeroes 2.4.0(Minecraft 1.7.10)에 기본 포함된 수트입니다.",m_pack:"FiskHeroes 2.4.0용 히어로팩 '{pack}'의 수트입니다.",m_no_preview:"미리보기 없음: 커스텀 모델 또는 텍스처가 없는 수트입니다.",m_src_wiki:"fiskheroes.fandom.com의 3D 렌더",m_src_game:"게임 내 텍스처의 정면 뷰",m_prev:"이전",m_next:"다음",m_close:"닫기"},
+ja:{title:"Hero Atlas — マインクラフト ヒーロー検索",placeholder:"ヒーローを検索：名前・ID・パック — 例: flash",h1:"{hero}を数秒で見つけよう",hero_noun:"ヒーロー",sub:"FiskHeroes {p}パックの{h}件 · 名前・ID・パック・別名で検索",tab_all:"すべて",tab_packs:"📦 パック",found:"ヒット: {n}",showing_heroes:"ヒーロー {a}/{b} を表示",showing_packs:"パック {a}/{b} を表示",copy_btn:"コピー",copied:"コピーしました: {x}",empty:"見つかりませんでした。名前の一部を試してください：flash、spider、one punch man など",error:"heroes_list.json を読み込めませんでした。ファイルが index.html の隣にあり、サイトが HTTPS で配信されているか確認してください。",retry:"再試行",aka:"別名検索: {a}",show_heroes_btn:"ヒーローを表示",examples:"例:",no_source:"ソース未指定",loading:"読み込み中…",f_cmd:"ゲーム内コマンド:",f_data:"データ:",f_list:"全リスト:",f_tests:"自己テスト",m_tier:"ティア",m_dr_fmt:"被ダメージ軽減 {v}%",m_cost:"コスト",m_powers:"能力",m_wiki:"ウィキページ",m_builtin:"FiskHeroes 2.4.0(Minecraft 1.7.10)に標準搭載のスーツです。",m_pack:"FiskHeroes 2.4.0用ヒーローパック「{pack}」のスーツです。",m_no_preview:"プレビューなし: カスタムモデルまたはテクスチャのないスーツです。",m_src_wiki:"fiskheroes.fandom.com の3Dレンダー",m_src_game:"ゲームテクスチャによる正面ビュー",m_prev:"前へ",m_next:"次へ",m_close:"閉じる"},
+fr:{title:"Hero Atlas — recherche de héros Minecraft",placeholder:"Rechercher un héros : nom, ID ou pack — ex. flash",h1:"Trouve ton {hero} en quelques secondes",hero_noun:"héros",sub:"{h} entrées dans {p} packs FiskHeroes · recherche par nom, ID, pack et alias",tab_all:"Tous",tab_packs:"📦 Packs",found:"Trouvés : {n}",showing_heroes:"{a} héros affichés sur {b}",showing_packs:"{a} packs affichés sur {b}",copy_btn:"Copier",copied:"Copié : {x}",empty:"Aucun résultat. Essaie une partie du nom : flash, spider, one punch man…",error:"Impossible de charger heroes_list.json. Vérifie que le fichier est à côté de index.html et que le site est servi en HTTPS.",retry:"Réessayer",aka:"Aussi recherché comme : {a}",show_heroes_btn:"Afficher les héros",examples:"Exemples :",no_source:"Source non indiquée",loading:"Chargement…",f_cmd:"Commande en jeu :",f_data:"Données :",f_list:"Liste complète :",f_tests:"autotests",m_tier:"Palier",m_dr_fmt:"{v} % de réduction de dégâts",m_cost:"Coût",m_powers:"Pouvoirs et capacités",m_wiki:"Page wiki",m_builtin:"L'un des costumes intégrés de FiskHeroes 2.4.0 (Minecraft 1.7.10).",m_pack:"Un costume du heropack {pack} pour FiskHeroes 2.4.0.",m_no_preview:"Aperçu indisponible : modèle personnalisé ou costume sans texture.",m_src_wiki:"Rendu 3D de fiskheroes.fandom.com",m_src_game:"Vue frontale issue des textures du jeu",m_prev:"Précédent",m_next:"Suivant",m_close:"Fermer"},
+de:{title:"Hero Atlas — Minecraft-Heldensuche",placeholder:"Held suchen: Name, ID oder Pack — z. B. flash",h1:"Finde deinen {hero} in Sekunden",hero_noun:"Held",sub:"{h} Einträge in {p} FiskHeroes-Packs · Suche nach Name, ID, Pack und Alias",tab_all:"Alle",tab_packs:"📦 Packs",found:"Gefunden: {n}",showing_heroes:"{a} von {b} Helden angezeigt",showing_packs:"{a} von {b} Packs angezeigt",copy_btn:"Kopieren",copied:"Kopiert: {x}",empty:"Nichts gefunden. Versuche einen Teil des Namens: flash, spider, one punch man…",error:"heroes_list.json konnte nicht geladen werden. Prüfe, dass die Datei neben der index.html liegt und die Seite über HTTPS ausgeliefert wird.",retry:"Wiederholen",aka:"Auch suchbar als: {a}",show_heroes_btn:"Helden anzeigen",examples:"Beispiele:",no_source:"Quelle nicht angegeben",loading:"Wird geladen…",f_cmd:"Spielbefehl:",f_data:"Daten:",f_list:"Vollständige Liste:",f_tests:"Selbsttests",m_tier:"Stufe",m_dr_fmt:"{v} % Schadensreduktion",m_cost:"Kosten",m_powers:"Kräfte & Fähigkeiten",m_wiki:"Wiki-Seite",m_builtin:"Einer der in FiskHeroes 2.4.0 (Minecraft 1.7.10) enthaltenen Anzüge.",m_pack:"Ein Anzug aus dem Heropack „{pack}“ für FiskHeroes 2.4.0.",m_no_preview:"Keine Vorschau: individuelles Modell oder Anzug ohne Textur.",m_src_wiki:"3D-Render von fiskheroes.fandom.com",m_src_game:"Frontansicht aus den Spieltexturen des Anzugs",m_prev:"Zurück",m_next:"Weiter",m_close:"Schließen"}
 };
 const LANG_NAMES = {ru:"Русский",en:"English",uk:"Українська",es:"Español",ko:"한국어",ja:"日本語",fr:"Français",de:"Deutsch"};
 let LANG = "ru";
@@ -140,9 +209,10 @@ function applyLang(code){
   try{localStorage.setItem("ha_lang",LANG)}catch(e){}
   fillStatic();
   if(state.data) render();
+  if(state.m) fillModal(); // re-localize the open modal
 }
 window.__setLang = applyLang;
-let state = {query:'', pack:'all', view:'heroes', data:null};
+let state = {query:'', pack:'all', view:'heroes', data:null, m:null};
 function norm(v){return (v||'').toLowerCase().trim()}
 function byId(id){return document.getElementById(id)}
 function toast(msg){const t=byId('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),1500)}
@@ -157,15 +227,17 @@ async function copy(text){
 }
 function escapeHtml(s){return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function attr(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}
-function mapData(raw, aliases){
+function mapData(raw, aliases, descriptions){
   aliases = aliases || {};
+  descriptions = descriptions || {};
   const packs = Object.entries(raw.packs).map(([key,p],idx)=>({
     key,
     display: DISPLAY[key] || key,
     source: (p.sources || []).join(', '),
     count: p.heroes.length,
     color: PALETTE[idx % PALETTE.length],
-    heroes: p.heroes.map(h=>({id:h.id,name:h.name,pack:key,packDisplay:DISPLAY[key]||key,command:'/suit '+h.id,aka:aliases[h.id]||[]}))
+    heroes: p.heroes.map(h=>({id:h.id,name:h.name,pack:key,packDisplay:DISPLAY[key]||key,command:'/suit '+h.id,aka:aliases[h.id]||[],
+      image:h.image||null,image_wiki:h.image_wiki||null,image_game:h.image_game||null,wiki:h.wiki||null,desc:descriptions[h.id]||null}))
   }));
   return {meta:{total:packs.reduce((a,p)=>a+p.count,0),packs:packs.length},packs};
 }
@@ -176,6 +248,9 @@ async function loadData(){
 }
 async function loadAliases(){
   try{const r=await fetch('./aliases.json',{cache:'no-store'});return r.ok ? await r.json() : {}}catch(e){return {}}
+}
+async function loadDescriptions(){
+  try{const r=await fetch('./descriptions.json',{cache:'no-store'});return r.ok ? await r.json() : {}}catch(e){return {}}
 }
 function flatHeroes(){return state.data.packs.flatMap(p=>p.heroes.map(h=>({...h,color:p.color})))}
 function filteredHeroes(){const q=norm(state.query);return flatHeroes().filter(h=>{const okPack = state.pack==='all' || h.pack===state.pack; if(!okPack) return false; if(!q) return true; return norm(h.name).includes(q)||norm(h.id).includes(q)||norm(h.packDisplay).includes(q)||norm(h.pack).includes(q)||(h.aka&&h.aka.some(a=>a.includes(q)));})}
@@ -194,7 +269,11 @@ function renderPackTabs(){
     render();
   });
 }
-function renderHeroes(items){if(!items.length) return '<div class="empty">'+t('empty')+'</div>';return `<div class="rows">${items.map(h=>`<div class="row"><div class="r-name"${h.aka&&h.aka.length?` title="${attr(t('aka').replace('{a}',h.aka.join(', ')))}"`:''}><b>${escapeHtml(h.name)}</b><span class="badge" style="border-color:${h.color}66;color:${h.color}">${escapeHtml(h.packDisplay)}</span></div><code class="r-id" data-copy="${attr(h.id)}">${escapeHtml(h.id)}</code><code class="r-cmd" data-copy="${attr(h.command)}" data-cmd="1">${escapeHtml(h.command)}</code><button class="btn r-btn" data-copy="${attr(h.command)}">${t('copy_btn')}</button></div>`).join('')}</div>`}
+function avaHtml(h){
+  if(h.image) return `<img class="${h.image.includes('/game/')?'px':''}" src="${attr(h.image)}" alt="${attr(h.name)}" loading="lazy" decoding="async">`;
+  return `<span class="ph">🦸</span>`;
+}
+function renderHeroes(items){if(!items.length) return '<div class="empty">'+t('empty')+'</div>';return `<div class="rows">${items.map(h=>`<div class="row" data-hero="${attr(h.id)}"><div class="r-ava">${avaHtml(h)}</div><div class="r-name"${h.aka&&h.aka.length?` title="${attr(t('aka').replace('{a}',h.aka.join(', ')))}"`:''}><b>${escapeHtml(h.name)}</b><span class="badge" style="border-color:${h.color}66;color:${h.color}">${escapeHtml(h.packDisplay)}</span></div><code class="r-id" data-copy="${attr(h.id)}">${escapeHtml(h.id)}</code><code class="r-cmd" data-copy="${attr(h.command)}" data-cmd="1">${escapeHtml(h.command)}</code><button class="btn r-btn" data-copy="${attr(h.command)}">${t('copy_btn')}</button></div>`).join('')}</div>`}
 function renderPacks(items){if(!items.length) return '<div class="empty">'+t('empty')+'</div>';return `<div class="grid">${items.map(p=>`<article class="pack-card"><div class="colorbar" style="background:${p.color}"></div><div class="topline"><div><h3>${escapeHtml(p.display)}</h3><div class="mini">${escapeHtml(p.key)}</div></div><div class="count" style="color:${p.color}">${p.count}</div></div><div class="mini">${escapeHtml(p.source || '')||t('no_source')}</div><div class="mini">${t('examples')} ${p.heroes.slice(0,3).map(h=>escapeHtml(h.name)).join(', ')}</div><div class="actions"><button class="btn" data-packjump="${p.key}">${t('show_heroes_btn')}</button></div></article>`).join('')}</div>`}
 function render(){
   const searching = !!norm(state.query);
@@ -218,7 +297,74 @@ function render(){
   content.innerHTML=state.view==='heroes'?renderHeroes(heroes):renderPacks(packs);
   content.querySelectorAll('[data-copy]').forEach(btn=>btn.onclick=()=>copy(btn.dataset.copy));
   content.querySelectorAll('[data-packjump]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.packjump;state.view='heroes';render();window.scrollTo({top:0,behavior:'smooth'})});
+  content.querySelectorAll('.row[data-hero]').forEach(row=>row.onclick=e=>{if(e.target.closest('[data-copy]'))return;openModal(row.dataset.hero)});
   byId('homePacks').querySelectorAll('[data-packjump]').forEach(btn=>btn.onclick=()=>{state.pack=btn.dataset.packjump;state.view='heroes';render();window.scrollTo({top:0,behavior:'smooth'})});
+}
+// ---- hero details modal ----
+function findHero(id){return flatHeroes().find(h=>h.id===id)}
+function openModal(heroId){
+  const list=filteredHeroes();
+  const idx=list.findIndex(h=>h.id===heroId);
+  state.m={list: idx>=0?list:flatHeroes(), idx: Math.max(idx,0)};
+  fillModal();
+  byId('modal').hidden=false;
+  document.body.style.overflow='hidden';
+}
+function closeModal(){state.m=null;byId('modal').hidden=true;document.body.style.overflow=''}
+function modalNav(d){if(!state.m)return;const n=state.m.list.length;state.m.idx=(state.m.idx+d+n)%n;fillModal()}
+function fmtDr(v){return String(v)}
+function fillModal(){
+  const h=state.m.list[state.m.idx];
+  const photo=byId('mPhoto');
+  photo.innerHTML=h.image
+    ? `<img class="${h.image.includes('/game/')?'px':''}" src="${attr(h.image)}" alt="${attr(h.name)}">`
+    : `<span class="ph">🦸</span>`;
+  const badge=byId('mBadge');
+  badge.hidden=false;
+  badge.style.borderColor=h.color+'66';badge.style.color=h.color;
+  badge.textContent=h.packDisplay;
+  byId('mName').textContent=h.name;
+  // chips: tier / damage reduction / cost from the wiki data
+  const chips=[];
+  if(h.desc&&h.desc.tier!==undefined) chips.push(`<span class="m-chip">${escapeHtml(t('m_tier'))} <b>${h.desc.tier}</b></span>`);
+  if(h.desc&&h.desc.dr!==undefined) chips.push(`<span class="m-chip">${t('m_dr_fmt').replace('{v}','<b>'+fmtDr(h.desc.dr)+'</b>')}</span>`);
+  if(h.desc&&h.desc.cost!==undefined) chips.push(`<span class="m-chip">${escapeHtml(t('m_cost'))}: <b>${h.desc.cost}</b> Tutridium</span>`);
+  byId('mChips').innerHTML=chips.join('');
+  // note (wiki lead paragraph) / fallback template description
+  const note=byId('mNote');
+  if(h.desc&&h.desc.note){note.hidden=false;note.textContent=h.desc.note}
+  else{note.hidden=false;note.textContent=h.pack==='fiskheroes'?t('m_builtin'):t('m_pack').replace('{pack}',h.packDisplay)}
+  // powers
+  const pSec=byId('mPowersSec'),pBox=byId('mPowers');
+  if(h.desc&&h.desc.powers&&h.desc.powers.length){pSec.hidden=false;pBox.hidden=false;pSec.textContent=t('m_powers');pBox.innerHTML=h.desc.powers.map(p=>`<span>${escapeHtml(p)}</span>`).join('')}
+  else{pSec.hidden=true;pBox.hidden=true;pBox.innerHTML=''}
+  // image source + no-preview caveat
+  const src=byId('mSrc');
+  const lines=[];
+  if(!h.image) lines.push(t('m_no_preview'));
+  else if(h.image===h.image_wiki) lines.push(t('m_src_wiki'));
+  else lines.push(t('m_src_game'));
+  src.hidden=false;src.textContent=lines.join(' · ');
+  // ids + copy buttons
+  byId('mId').textContent=h.id;
+  byId('mCmd').textContent=h.command;
+  byId('mIdCopy').textContent=t('copy_btn');
+  byId('mCmdCopy').textContent=t('copy_btn');
+  byId('mIdCopy').onclick=()=>copy(h.id);
+  byId('mCmdCopy').onclick=()=>copy(h.command);
+  // wiki link
+  const wiki=byId('mWiki');
+  if(h.wiki){wiki.hidden=false;wiki.href=h.wiki;wiki.textContent=t('m_wiki')}
+  else wiki.hidden=true;
+  // nav
+  byId('mPos').textContent=(state.m.idx+1)+' / '+state.m.list.length;
+  byId('mPrev').title=t('m_prev');byId('mNext').title=t('m_next');
+  byId('mClose').title=t('m_close');
+  byId('mPrev').onclick=()=>modalNav(-1);
+  byId('mNext').onclick=()=>modalNav(1);
+  byId('mClose').onclick=closeModal;
+  const panel=byId('modal').querySelector('.m-panel');
+  panel.scrollTop=0;
 }
 function renderError(){byId('content').innerHTML='<div class="empty">'+t('error')+' <button class="btn" data-retry>'+t('retry')+'</button></div>';byId('content').querySelector('[data-retry]').onclick=()=>init()}
 async function init(){
@@ -230,8 +376,8 @@ async function init(){
   }
   byId('counter').textContent=t('loading');
   try{
-    const [raw, aliases]=await Promise.all([loadData(), loadAliases()]);
-    state.data=mapData(raw, aliases);
+    const [raw, aliases, descs]=await Promise.all([loadData(), loadAliases(), loadDescriptions()]);
+    state.data=mapData(raw, aliases, descs);
   }catch(e){console.error('heroes_list.json load failed:',e);renderError();return}
   render();
 }
@@ -243,6 +389,14 @@ document.getElementById('chips').addEventListener('click',e=>{
 });
 // keep the sticky toolbar right below the header on any screen size
 new ResizeObserver(()=>document.documentElement.style.setProperty('--hdrH', byId('hdr').offsetHeight+'px')).observe(byId('hdr'));
+// modal: backdrop click + keyboard
+byId('mBack').onclick=closeModal;
+document.addEventListener('keydown',e=>{
+  if(!state.m) return;
+  if(e.key==='Escape') closeModal();
+  else if(e.key==='ArrowLeft') modalNav(-1);
+  else if(e.key==='ArrowRight') modalNav(1);
+});
 // language switcher
 byId('lang').innerHTML = Object.keys(I18N).map(c=>`<option value="${c}">${LANG_NAMES[c]}</option>`).join('');
 byId('lang').onchange = e => applyLang(e.target.value);

@@ -120,6 +120,38 @@ async function runSuite(){
   await w.copy('/suit test:hero');
   ok('копирование вызывает тост с командой', String(w.__lastToast).includes('/suit test:hero'));
 
+  // 9b. hero details modal: previews, description, navigation
+  const modal = () => d.getElementById('modal');
+  const flashRow = $$('.row[data-hero="fiskheroes:the_flash"]')[0];
+  if (flashRow) {
+    flashRow.click(); await tick(150);
+    ok('клик по строке открывает модалку', !modal().hidden);
+    ok('в модалке фото героя', $('#mPhoto img') && $('#mPhoto img').src.includes('assets/heroes/wiki/the_flash'));
+    ok('в модалке имя и пак', $('#mName').textContent === 'The Flash/Barry Allen' && $('#mBadge').textContent === 'FiskHeroes');
+    ok('в модалке чипы тира и снижения урона с вики', $('#mChips').textContent.includes('Тир 5') && $('#mChips').textContent.includes('91.2%'));
+    ok('в модалке команда', $('#mCmd').textContent === '/suit fiskheroes:the_flash');
+    ok('в модалке ссылка на вики', $('#mWiki').href === 'https://fiskheroes.fandom.com/wiki/The_Flash');
+    const pos0 = $('#mPos').textContent;
+    $('#mNext').click(); await tick();
+    ok('«›» листает героев вперёд', $('#mPos').textContent !== pos0 && !modal().hidden);
+    $('#mPrev').click(); await tick();
+    ok('«‹» возвращает обратно', $('#mPos').textContent === pos0);
+    d.getElementById('mClose').click(); await tick();
+    ok('✕ закрывает модалку', modal().hidden);
+    const stoneRow = $$('.row[data-hero="misc:power_stone"]')[0];
+    if (stoneRow) {
+      stoneRow.click(); await tick();
+      ok('герой без превью получает заглушку 🦸', !modal().hidden && !!$('#mPhoto .ph'));
+      ok('для героя без вики — текст-шаблон вместо описания', $('#mNote').textContent.length > 10 && $('#mWiki').hidden);
+      d.getElementById('mClose').click(); await tick();
+      ok('модалка закрыта после второго героя', modal().hidden);
+    }
+    flashRow.click(); await tick();
+    d.dispatchEvent(new w.KeyboardEvent('keydown', {key:'Escape', bubbles:true})); await tick();
+    ok('Escape закрывает модалку', modal().hidden);
+  }
+  $('[data-pack="all"]').click(); await tick();
+
   // 10. data consistency from the UI side
   ok('все отрендеренные ID уникальны', new Set($$('.row .r-id').map(e => e.textContent)).size === 535);
   ok('команды = "/suit " + ID', $$('.row .r-cmd').every((c, i) => c.textContent === '/suit ' + $$('.row .r-id')[i].textContent));

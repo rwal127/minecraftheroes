@@ -1,0 +1,393 @@
+{
+  "fiskheroes:ant_man": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Size Manipulation"
+    ],
+    "note": "He can change his size by shrinking. When shrunk down, he deals 50% more damage."
+  },
+  "fiskheroes:anti_monitor": {
+    "tier": 6,
+    "dr": 98.1
+  },
+  "fiskheroes:arrow": {
+    "tier": 2,
+    "dr": 85.0
+  },
+  "fiskheroes:arsenal": {
+    "dr": 85.2,
+    "tier": 3,
+    "cost": 12,
+    "powers": [
+      "Archery"
+    ],
+    "note": "<gallery> File:Arsenal Base.png|Arsenal Base Alt </gallery>Arsenal is a Tier 3 Suit."
+  },
+  "fiskheroes:atom": {
+    "tier": 4,
+    "dr": 95.0,
+    "powers": [
+      "Propelled Flight",
+      "Size Manipulation"
+    ],
+    "note": "He can change his size by shrinking. When shrunk down, he deals 50% more damage."
+  },
+  "fiskheroes:atom_smasher": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Size Manipulation",
+      "Superhuman Durability",
+      "Leaping"
+    ],
+    "note": "He can change his size by growing, while retaining his strength."
+  },
+  "fiskheroes:august_heart_comics": {
+    "tier": 2,
+    "dr": 87.5,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception",
+      "Cellular Regeneration"
+    ]
+  },
+  "fiskheroes:batman_dceu": {
+    "tier": 4,
+    "dr": 95.0,
+    "powers": [
+      "Utility Belt",
+      "Gliding"
+    ]
+  },
+  "fiskheroes:black_canary": {
+    "dr": 85.2,
+    "tier": 3,
+    "cost": 14,
+    "powers": [
+      "Canary Cry"
+    ],
+    "note": "<gallery> File:Black Canary (Laurel Lance).png|Black Canary (Laurel Lance) Base Alt </gallery>Black Canary (Laurel Lance) is a Tier 3 Suit."
+  },
+  "fiskheroes:black_canary_dinah": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Canary Cry"
+    ]
+  },
+  "fiskheroes:black_lightning": {
+    "tier": 3,
+    "dr": 92.2
+  },
+  "fiskheroes:captain_america": {
+    "dr": 93.3,
+    "tier": 6,
+    "cost": 36,
+    "powers": [
+      "Super-Soldier Serum",
+      "Shield Throwing"
+    ],
+    "note": "<gallery> File:Captain America Steve.png|Captain Americas Base Alt, Based on Civil War suit File:Captain America Steve Age Of Ultron.png|Captain America Age Of Ultron Alt File:Captain America Steve S.T.R.I.K.E Stealth.png|Captain America Steve S.T.R.I.K.E Stealth Suit File:Captain America Steve Museum.png|Captain America Steve Museum Alt File:Captain America Steve Nomad.png|Captain America Steve N"
+  },
+  "fiskheroes:captain_america_sam": {
+    "dr": 91.2,
+    "tier": 5,
+    "cost": 33,
+    "powers": [
+      "Wakandan Flightpack",
+      "Shield Throwing"
+    ],
+    "note": "<gallery> File:Captain America Sam Wilson.png|Captain America Sam Wilson Base Alt </gallery>Captain America (Sam Wilson) is a Tier 5 Suit."
+  },
+  "fiskheroes:captain_cold": {
+    "tier": 1,
+    "dr": 75.0,
+    "cost": 10,
+    "powers": [
+      "Cold Resistance",
+      "Cold Resistance"
+    ]
+  },
+  "fiskheroes:chronos": {
+    "tier": 1,
+    "dr": 90.0
+  },
+  "fiskheroes:citizen_steel": {
+    "tier": 3,
+    "dr": 92.2
+  },
+  "fiskheroes:colossus_xmen": {
+    "tier": 4,
+    "dr": 95.0,
+    "powers": [
+      "Superhuman Durability",
+      "Leaping",
+      "Fire Immunity"
+    ],
+    "note": "At his normal size, he stands at a little less than 3 blocks tall. You retain your perspective, and due to an extended range, you can interact with items further from you than the default range."
+  },
+  "fiskheroes:dark_archer": {
+    "tier": 2,
+    "dr": 85.0
+  },
+  "fiskheroes:deadpool_xmen": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Healing Factor"
+    ]
+  },
+  "fiskheroes:doctor_octopus": {
+    "dr": 80.8,
+    "tier": 2,
+    "note": "<gallery> File:Doctor Octopus.png|Doctor Octopus Base Alt </gallery>Doctor Octupus is a Tier 2 Suit."
+  },
+  "fiskheroes:doctor_strange": {
+    "dr": 80.8,
+    "tier": 2,
+    "note": "Doctor Strange is a Tier 2 Character"
+  },
+  "fiskheroes:falcon": {
+    "dr": 88.6,
+    "tier": 4,
+    "cost": 20,
+    "powers": [
+      "EXO-7 Flightpack"
+    ],
+    "note": "<gallery> File:Falcon Basic.png|Falcon Base Alt File:Falcon Civil War.png|Falcon Civil War Alt </gallery>Falcon is a Tier 4 Suit."
+  },
+  "fiskheroes:firestorm": {
+    "dr": 88.6,
+    "tier": 4,
+    "cost": 23,
+    "powers": [
+      "Firestorm Matrix",
+      "Controlled Flight"
+    ],
+    "note": "<gallery> File:Firestorm Ronnie.png|Firestorm Ronnie Basic Alt </gallery>Firestorm is a Tier 4 Suit."
+  },
+  "fiskheroes:firestorm_jax": {
+    "dr": 91.2,
+    "tier": 5,
+    "cost": 26,
+    "powers": [
+      "Firestorm Matrix",
+      "Controlled Flight"
+    ],
+    "note": "<gallery> File:Firestorm Jax.png|Firestorm Jax Basic Alt </gallery>Firestorm is a Tier 5 Suit."
+  },
+  "fiskheroes:geomancer": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Geokinesis"
+    ]
+  },
+  "fiskheroes:godspeed_comics": {
+    "tier": 3,
+    "dr": 92.2,
+    "note": "thumb|459x459px"
+  },
+  "fiskheroes:green_arrow": {
+    "tier": 3,
+    "dr": 90.0
+  },
+  "fiskheroes:guardian": {
+    "tier": 3,
+    "dr": 92.2
+  },
+  "fiskheroes:harbinger": {
+    "tier": 5,
+    "dr": 96.9,
+    "powers": [
+      "Can breathe in space"
+    ]
+  },
+  "fiskheroes:heatwave": {
+    "tier": 1,
+    "dr": 80.0,
+    "powers": [
+      "Heat Resistance"
+    ]
+  },
+  "fiskheroes:iron_man": {
+    "tier": 7,
+    "dr": 95.0,
+    "powers": [
+      "Propelled Flight",
+      "Repulsor Blast",
+      "Hovering",
+      "Sentry mode "
+    ]
+  },
+  "fiskheroes:iron_man_mk50": {
+    "tier": 5,
+    "dr": 96.9
+  },
+  "fiskheroes:kid_flash": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception",
+      "Cellular Regeneration"
+    ]
+  },
+  "fiskheroes:killer_frost": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Cryokinesis",
+      "Heat Weakness"
+    ]
+  },
+  "fiskheroes:martian_manhunter": {
+    "tier": 5,
+    "dr": 99.0,
+    "powers": [
+      "Shape-Shifting",
+      "Intangibility",
+      "Invisibility",
+      "Flight",
+      "Fire Weakness"
+    ],
+    "note": "At his normal size, he stands a little above normal height. You retain your perspective, and due to an extended range, you can interact with items further from you than the default range. This Martian Manhunter is from the Supergirl CW Show."
+  },
+  "fiskheroes:martian_manhunter_comics": {
+    "tier": 5,
+    "dr": 99.0,
+    "powers": [
+      "Shape-Shifting",
+      "Intangibility",
+      "Invisibility",
+      "Flight",
+      "Heat Vision",
+      "Fire Weakness"
+    ],
+    "note": "At his normal size, he stands a little above normal height. You retain your perspective, and due to an extended range, you can interact with items further from you than the default range."
+  },
+  "fiskheroes:mysterio": {
+    "dr": 85.8,
+    "tier": 3,
+    "note": "Mysterio is a Tier 3 Character"
+  },
+  "fiskheroes:obsidian": {
+    "tier": 3,
+    "dr": 92.2
+  },
+  "fiskheroes:prometheus": {
+    "tier": 3,
+    "dr": 90.0
+  },
+  "fiskheroes:reverse_flash": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception",
+      "Cellular Regeneration"
+    ]
+  },
+  "fiskheroes:rip_hunter": {
+    "dr": 75.0,
+    "tier": 1,
+    "cost": 10,
+    "note": "<gallery> File:Rip Hunter.png|Rip Hunters Base Alt File:Rip Hunter Time Master.png|Rip Hunters Time Master Alt </gallery>Rip Hunter is a Tier 1 Suit."
+  },
+  "fiskheroes:rupture": {
+    "dr": 85.2,
+    "tier": 3,
+    "note": "Rupture is a Tier 3 Character"
+  },
+  "fiskheroes:senor_cactus": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Cactus Physiology",
+      "Cellular Regeneration",
+      "Heat Resistance"
+    ]
+  },
+  "fiskheroes:shazam_dceu": {
+    "tier": 5,
+    "dr": 96.9
+  },
+  "fiskheroes:spectre": {
+    "tier": 6,
+    "dr": 98.1
+  },
+  "fiskheroes:the_flash": {
+    "tier": 5,
+    "dr": 91.2,
+    "cost": 35,
+    "powers": [
+      "Speed Force"
+    ]
+  },
+  "fiskheroes:the_flash_hunter": {
+    "tier": 4,
+    "dr": 88.6,
+    "powers": [
+      "Speed Force"
+    ]
+  },
+  "fiskheroes:the_flash_jay": {
+    "tier": 5,
+    "dr": 91.2,
+    "powers": [
+      "Speed Force"
+    ]
+  },
+  "fiskheroes:the_monitor": {
+    "tier": 6,
+    "dr": 98.1
+  },
+  "fiskheroes:the_rival": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception",
+      "Cellular Regeneration"
+    ]
+  },
+  "fiskheroes:the_tick": {
+    "dr": 96.9,
+    "tier": 9,
+    "powers": [
+      "Superhuman Durability",
+      "Explosion Immunity",
+      "Fire Immunity",
+      "Leaping (Sprint-Jump)"
+    ],
+    "note": "The Tick is a Tier 5 Character.thumb"
+  },
+  "fiskheroes:trajectory": {
+    "tier": 2,
+    "dr": 85.0,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception"
+    ]
+  },
+  "fiskheroes:vision": {
+    "tier": 5,
+    "dr": 96.9
+  },
+  "fiskheroes:zoom": {
+    "tier": 3,
+    "dr": 90.0,
+    "powers": [
+      "Super-Speed",
+      "Enhanced Reflexes",
+      "Accelerated Perception",
+      "Cellular Regeneration"
+    ]
+  }
+}

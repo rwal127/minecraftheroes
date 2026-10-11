@@ -8,3 +8,9 @@ _extract/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Артефакты инструментов превью (перегенерируются, в git не хранятся)
+__pycache__/
+research/out/sheets/
+research/out/wiki_suit_pages.json
+research/out/no_texture_heroes.json
