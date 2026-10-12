@@ -230,12 +230,13 @@ def main():
             if model.exists():
                 h["image_model"] = model.relative_to(repo).as_posix()
                 model_ok += 1
+            # canonical image: wiki render > custom model render > texture front view
             if h["image_wiki"]:
                 h["image"] = h["image_wiki"]
-            elif h["image_game"]:
-                h["image"] = h["image_game"]
             elif h.get("image_model"):
                 h["image"] = h["image_model"]
+            elif h["image_game"]:
+                h["image"] = h["image_game"]
 
     with_preview = sum(1 for p in heroes["packs"].values() for h in p["heroes"] if h["image"])
     wiki_only_count = sum(1 for p in heroes["packs"].values()

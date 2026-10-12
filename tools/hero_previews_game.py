@@ -33,6 +33,20 @@ SCALE = 4  # pixels per texture pixel in the output preview
 texture_index = {}  # open ZipFile -> {texture basename: [full paths]}
 
 
+# Heroes whose in-game look is a custom Tabula model, not the player skin: the texture
+# composer either fails them or shows the untransformed stand-in (Hulk -> Banner), so
+# don't emit game previews for them — tools/hero_previews_models.py renders their models.
+GAME_SKIP = {
+    "tgheroes:hulk", "tgheroes:red_hulk", "tgheroes:jugger", "tgheroes:thanos",
+    "tgheroes:thing", "tgheroes:mr_fantastic", "tgheroes:abomation", "tgheroes:modok",
+    "tgheroes:psylocke", "tgheroes:magik", "tgheroes:fff",
+    "jmctheroes:modok", "jmctheroes:hit_monkey", "jmctheroes:pork_grind",
+    "jmctheroes:spider_ham", "jmctheroes:ultron_mk1", "jmctheroes:groot",
+    "pwt:halloween_ghost", "pwt:halloween_scarecrow", "pwt:joker_cyberpunk", "pwt:toxin",
+    "skarlet:the_thing",
+}
+
+
 def parse_args():
     ap = argparse.ArgumentParser(
         description="Generate front-view suit previews from the textures inside the mod jar / heropacks.")
@@ -121,6 +135,76 @@ def renderer_texture_stack(archive, ns: str, hid: str):
     return [s for s in stack if s]
 
 
+def renderer_texture_pairs(archive, ns: str, hid: str):
+    """renderers/heroes/<hid>.js loadTextures({...}) as an ordered (key, path) list."""
+    p = f"assets/{ns}/renderers/heroes/{hid}.js"
+    if p not in archive.namelist():
+        return []
+    m = re.search(r"loadTextures\(\{(.*?)\}\)", archive.read(p).decode("utf-8", errors="replace"), re.S)
+    if not m:
+        return []
+    return re.findall(r'"(\w+)"\s*:\s*"([\w:./-]+)"', m.group(1))
+
+
+def compose_canvas(archive, stack):
+    """Alpha-composite the texture stack (bottom to top); None if nothing loads."""
+    names = set(archive.namelist())
+    layers = [load_rgba(archive.read(p)) for p in stack if p in names]
+    if not layers:
+        return None
+    canvas = Image.new("RGBA", layers[0].size, (0, 0, 0, 0))
+    for im in layers:
+        if im.size == canvas.size:
+            canvas.alpha_composite(im)
+    return canvas
+
+
+def gate_passes(canvas):
+    """Quality gate: a real player-model suit fills the torso/limb UV areas almost
+    completely; custom tabula models and blank/effect textures leave fragments there."""
+    s = canvas.width / 64  # texture scale (2x textures are 128 wide, etc.)
+
+    def coverage(part):
+        x, y, w, h = (int(v * s) for v in REG64[part])
+        region = canvas.crop((x, y, x + w, y + h))
+        hist = region.getchannel("A").histogram()
+        filled = sum(hist[17:])  # pixels with alpha > 16
+        return filled / (w * h)
+
+    cov = {p: coverage(p) for p in ("head", "body", "arm_r", "leg_r")}
+    if os.environ.get("PREVIEW_DEBUG"):
+        print(f"  COV head={cov['head']:.2f} body={cov['body']:.2f} "
+              f"arm={cov['arm_r']:.2f} leg={cov['leg_r']:.2f}")
+    # the head region is often transparent on purpose: unmasked heroes render the
+    # player's own head there, and cowls/capes can be separate custom meshes
+    return cov["body"] >= 0.55 and cov["arm_r"] >= 0.2 and cov["leg_r"] >= 0.2
+
+
+def front_view(canvas):
+    s = canvas.width / 64
+
+    def box(part):
+        x, y, w, h = (int(v * s) for v in REG64[part])
+        return (x, y, x + w, y + h)
+    has64 = canvas.height > 32 * s
+
+    front = Image.new("RGBA", (16, 32), (0, 0, 0, 0))
+    front.paste(canvas.crop(box("head")), (4, 0))
+    front.paste(canvas.crop(box("body")), (4, 8))
+    front.paste(canvas.crop(box("arm_r")), (0, 8))
+    front.paste(canvas.crop(box("leg_r")), (4, 20))
+    if has64:
+        front.paste(canvas.crop(box("arm_l")), (12, 8))
+        front.paste(canvas.crop(box("leg_l")), (8, 20))
+    else:  # 64x32: left limbs mirror the right ones
+        front.paste(canvas.crop(box("arm_r")).transpose(Image.FLIP_LEFT_RIGHT), (12, 8))
+        front.paste(canvas.crop(box("leg_r")).transpose(Image.FLIP_LEFT_RIGHT), (8, 20))
+
+    out = Image.new("RGBA", (16 * SCALE + 8, 32 * SCALE + 8), (0, 0, 0, 0))
+    out.alpha_composite(front.resize((16 * SCALE, 32 * SCALE), Image.NEAREST), (4, 4))
+    return out
+
+
 def composite_suit(archive, ns: str, hid: str):
     model_name = f"assets/{ns}/models/heroes/{hid}.json"
     candidates = []
@@ -143,57 +227,27 @@ def composite_suit(archive, ns: str, hid: str):
         if not candidates:
             return None
 
-    names = set(archive.namelist())
-    layers = [load_rgba(archive.read(p)) for p in candidates if p in names]
-    if not layers:
-        return None
+    stacks = [candidates]
+    # second chance: many renderers keep the base skin in a non-layer1 key (their
+    # layer1 is a blank/procedural stand-in), and slim-arm suits paint the limbs in a
+    # separate texture. Try single textures and base+overlay combos before giving up.
+    pairs = [(k, tex_path(v)) for k, v in renderer_texture_pairs(archive, ns, hid)]
+    pairs = [(k, p) for k, p in pairs if p]
+    base = next(iter(dict.fromkeys(candidates)), None)
+    for p in [p for _k, p in pairs]:                       # single textures
+        if [p] not in stacks:
+            stacks.append([p])
+    for p in [p for _k, p in pairs]:                       # base + one overlay
+        if base and p != base and [base, p] not in stacks:
+            stacks.append([base, p])
 
-    base = layers[0]
-    canvas = Image.new("RGBA", base.size, (0, 0, 0, 0))
-    for im in layers:
-        if im.size == canvas.size:
-            canvas.alpha_composite(im)
-
-    s = canvas.width / 64  # texture scale (2x textures are 128 wide, etc.)
-
-    # quality gate: a real player-model suit fills the torso/limb UV areas almost
-    # completely; custom tabula models leave fragments there -> no usable preview
-    def coverage(part):
-        x, y, w, h = (int(v * s) for v in REG64[part])
-        region = canvas.crop((x, y, x + w, y + h))
-        hist = region.getchannel("A").histogram()
-        filled = sum(hist[17:])  # pixels with alpha > 16
-        return filled / (w * h)
-
-    cov = {p: coverage(p) for p in ("head", "body", "arm_r", "leg_r")}
-    if os.environ.get("PREVIEW_DEBUG"):
-        print(f"  COV {ns}:{hid} head={cov['head']:.2f} body={cov['body']:.2f} "
-              f"arm={cov['arm_r']:.2f} leg={cov['leg_r']:.2f}")
-    # the head region is often transparent on purpose: unmasked heroes render the
-    # player's own head there, and cowls/capes can be separate custom meshes
-    if cov["body"] < 0.55 or cov["arm_r"] < 0.2 or cov["leg_r"] < 0.2:
-        return None
-
-    def box(part):
-        x, y, w, h = (int(v * s) for v in REG64[part])
-        return (x, y, x + w, y + h)
-    has64 = canvas.height > 32 * s
-
-    front = Image.new("RGBA", (16, 32), (0, 0, 0, 0))
-    front.paste(canvas.crop(box("head")), (4, 0))
-    front.paste(canvas.crop(box("body")), (4, 8))
-    front.paste(canvas.crop(box("arm_r")), (0, 8))
-    front.paste(canvas.crop(box("leg_r")), (4, 20))
-    if has64:
-        front.paste(canvas.crop(box("arm_l")), (12, 8))
-        front.paste(canvas.crop(box("leg_l")), (8, 20))
-    else:  # 64x32: left limbs mirror the right ones
-        front.paste(canvas.crop(box("arm_r")).transpose(Image.FLIP_LEFT_RIGHT), (12, 8))
-        front.paste(canvas.crop(box("leg_r")).transpose(Image.FLIP_LEFT_RIGHT), (8, 20))
-
-    out = Image.new("RGBA", (16 * SCALE + 8, 32 * SCALE + 8), (0, 0, 0, 0))
-    out.alpha_composite(front.resize((16 * SCALE, 32 * SCALE), Image.NEAREST), (4, 4))
-    return out
+    for stack in stacks[:14]:
+        canvas = compose_canvas(archive, stack)
+        if canvas is None:
+            continue
+        if gate_passes(canvas):
+            return front_view(canvas)
+    return None
 
 
 def main():
@@ -238,6 +292,8 @@ def main():
         for h in pack["heroes"]:
             hid = h["id"].split(":", 1)[1]
             if sample and hid not in sample:
+                continue
+            if h["id"] in GAME_SKIP and not sample:
                 continue
             try:
                 preview = composite_suit(archive, ns, hid)

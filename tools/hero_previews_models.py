@@ -56,9 +56,13 @@ OVERRIDES = {
     "tmf:the_mandarin_aa": [],
     "unconventional:mosquito": [], "unconventional:nick_fury": [],
     "unconventional:ronin": [], "unconventional:wanda": [],
+    # skin + add-on heroes: their look is the player skin (hair/arms/weapon props are
+    # modeled separately) -> let the game-texture composer render them instead
+    "tgheroes:emma_frost": [], "tgheroes:jean": [], "tgheroes:she_hulk": [], "tgheroes:rogue": [],
+    "sabri:black_widow": [], "sabri:doctor_doom_comics": [], "jmctheroes:moon_knight": [],
     # main body parts only: drop banner-form arms / wings / weapon props
     "tgheroes:hulk": ["hulk_"],
-    "tgheroes:fff": ["foom_head", "foom_body", "foom_rightArm", "foom_leftArm", "foom_rightLeg", "foom_leftLeg"],
+    "tgheroes:fff": {"vars": ["foom_"]},  # main foom body, not the fly_* duplicates
     "jmctheroes:groot": ["groothead", "grootchest", "grootrightarm", "grootleftarm", "grootrightleg", "grootleftleg"],
 }
 
@@ -195,6 +199,37 @@ def box_quads(box, m, tw, th, tex, quads):
         quads.append(([apply(m, c) for c in corners], rect, tw, th, tex))
 
 
+def drop_overlay_boxes(nodes):
+    """Vanilla skins duplicate parts as inflated 'hat/overlay' shells (cube + cube_ol).
+    In still previews the shell just paints its dithered texture over the base box
+    (painter's algorithm), so drop any box whose bounds duplicate an earlier box's."""
+    boxes = []
+    def collect(ns):
+        for n in ns:
+            boxes.extend(n["boxes"])
+            collect(n["children"])
+    collect(nodes)
+    skip = set()
+    for i, b in enumerate(boxes):
+        for j in range(i):
+            o = boxes[j]
+            if id(b) in skip or id(o) in skip:
+                continue
+            def eff(bb, a):
+                return bb["dim" + a] + 2 * bb.get("expand" + a, 0)
+            if all(abs(b[k] - o[k]) < 1.6 for k in ("posX", "posY", "posZ"))                and all(eff(b, a) >= eff(o, a) - 0.4 for a in "XYZ")                and any(eff(b, a) > eff(o, a) + 0.1 for a in "XYZ"):
+                skip.add(id(b))
+                break
+    def apply(ns):
+        out = []
+        for n in ns:
+            n = dict(n, boxes=[b for b in n["boxes"] if id(b) not in skip])
+            n["children"] = apply(n["children"])
+            out.append(n)
+        return out
+    return apply(nodes)
+
+
 def paint_quad(img, pix, rect, tex):
     ux, uy, uw, uh = rect
     xs = [p[0] for p in pix]
@@ -220,8 +255,8 @@ def render_world(quads, height=136, pad=4):
     W = int(math.ceil((maxx - minx) * sc)) + 2 * pad + 2 * margin
     H = height + 2 * margin
     img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    for q in sorted(quads, key=lambda q: sum(p[2] for p in q[0]) / 4, reverse=True):
-        pix = [((p[0] - minx) * sc + pad + margin, (maxy - p[1]) * sc + pad + margin) for p in q[0]]
+    for q in sorted(quads, key=lambda q: sum(p[2] for p in q[0]) / 4):  # far (small z) first, near (+z viewer) last
+        pix = [((p[0] - minx) * sc + pad + margin, (p[1] - miny) * sc + pad + margin) for p in q[0]]  # y grows down
         ux, uy, uw, uh = q[1]
         tex = q[4]
         kx, ky = tex.width / max(1.0, q[2]), tex.height / max(1.0, q[3])
@@ -330,6 +365,25 @@ def parse_effects(zf, ns, js):
     return resolved
 
 
+def effects_with_parents(zf, ns, js, depth=3):
+    """parse_effects on js; if empty, chase extend("ns:parent") and use the parent's
+    model effects (child renderers often only add props on top of the parent's body)."""
+    effects = parse_effects(zf, ns, js)
+    if effects or depth == 0:
+        return effects
+    m = re.search(r'extend\(\s*"([\w:.-]+)"', js)
+    if not m:
+        return effects
+    ref = m.group(1)
+    pns, pname = (ref.split(":", 1) + [""])[:2] if ":" in ref else (ns, ref)
+    pfile = f"assets/{pns or ns}/renderers/heroes/{pname}.js"
+    try:
+        pjs = zf.read(pfile).decode("utf-8", errors="replace")
+    except KeyError:
+        return effects
+    return effects_with_parents(zf, pns or ns, pjs, depth - 1)
+
+
 def render_hero(zf, ns, hid, js):
     """Returns (PIL.Image, None) or (None, skip reason).
 
@@ -338,16 +392,21 @@ def render_hero(zf, ns, hid, js):
     origin — the common case); "anchors" re-rigs each effect onto ModelBiped slots using
     the JS anchor/offset/scale values (for parts authored locally). The first mode whose
     result passes the sanity gates wins."""
-    effects = parse_effects(zf, ns, js)
+    effects = effects_with_parents(zf, ns, js)
     if not effects:
         return None, "no usable .tbl model effects"
     forced = OVERRIDES.get(f"{ns}:{hid}")
     if forced is not None and not forced:
         return None, "overridden: no model preview by design"
     if forced:
-        needles = set(forced)
-        kept = [e for e in effects if any(nd in e["tbl"] for nd in needles)]
-        effects = kept or effects
+        if isinstance(forced, dict):
+            prefixes = tuple(forced.get("vars", []))
+            kept = [e for e in effects if e["var"].startswith(prefixes)] if prefixes else []
+        else:
+            needles = set(forced)
+            kept = [e for e in effects if any(nd in e["tbl"] for nd in needles)]
+        if kept:
+            effects = kept
     effects = effects[:MAX_EFFECTS]
 
     loaded = []
@@ -366,6 +425,7 @@ def render_hero(zf, ns, hid, js):
     def build(mode):
         quads = []
         for e, nodes, tex in loaded:
+            nodes = drop_overlay_boxes(nodes)
             base = mat_identity()
             if mode == "anchors":
                 a = ANCHORS.get(e["anchor"], (0, 0, 0))
@@ -465,8 +525,8 @@ def main():
             hid = h["id"].split(":", 1)[1]
             if sample and h["id"] not in sample:
                 continue
-            if h.get("image_game") and not sample:
-                continue  # already has a texture-composed preview
+            if (h.get("image_game") or h.get("image_wiki")) and not sample:
+                continue  # covered by the texture composer / wiki render already
             rfile = f"assets/{ns}/renderers/heroes/{hid}.js"
             if rfile not in names:
                 continue

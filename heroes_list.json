@@ -6,15 +6,15 @@
     "total": 535,
     "packs": 21,
     "previews": {
-      "total_with_preview": 456,
+      "total_with_preview": 472,
       "wiki_renders": 56,
-      "game_front_views": 429,
-      "model_renders": 27,
+      "game_front_views": 448,
+      "model_renders": 24,
       "builtins_with_preview": "67/67",
       "wiki_source": "fiskheroes.fandom.com — 3D-рендеры, вики описывает только встроенные костюмы",
       "game_source": "фронтальный вид, собранный из текстур костюмов в jar/херопаках",
       "model_source": "офлайн-рендер Tabula-моделей из херопаков (tools/hero_previews_models.py)",
-      "without_preview": 79,
+      "without_preview": 63,
       "without_preview_note": "кастомные модели без превью-геометрии, предметы-гаджеты и герои вообще без текстур костюма"
     }
   },
@@ -1078,11 +1078,11 @@
         {
           "id": "tgheroes:emma_frost",
           "name": "Emma Frost",
-          "image": "assets/heroes/models/tgheroes__emma_frost.png",
+          "image": "assets/heroes/game/tgheroes__emma_frost.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__emma_frost.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/tgheroes__emma_frost.png"
+          "image_model": null
         },
         {
           "id": "tgheroes:fff",
@@ -1168,9 +1168,9 @@
         {
           "id": "tgheroes:infinity_gauntlet",
           "name": "Infinity",
-          "image": null,
+          "image": "assets/heroes/game/tgheroes__infinity_gauntlet.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__infinity_gauntlet.png",
           "wiki": null,
           "image_model": null
         },
@@ -1195,11 +1195,11 @@
         {
           "id": "tgheroes:jean",
           "name": "Jean Grey",
-          "image": "assets/heroes/models/tgheroes__jean.png",
+          "image": "assets/heroes/game/tgheroes__jean.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__jean.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/tgheroes__jean.png"
+          "image_model": null
         },
         {
           "id": "tgheroes:jubilee",
@@ -1384,9 +1384,9 @@
         {
           "id": "tgheroes:rogue",
           "name": "Rogue/Anna Marie",
-          "image": null,
+          "image": "assets/heroes/game/tgheroes__rogue.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__rogue.png",
           "wiki": null,
           "image_model": null
         },
@@ -1429,11 +1429,11 @@
         {
           "id": "tgheroes:she_hulk",
           "name": "She-Hulk/Jennifer Walters",
-          "image": "assets/heroes/models/tgheroes__she_hulk.png",
+          "image": "assets/heroes/game/tgheroes__she_hulk.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__she_hulk.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/tgheroes__she_hulk.png"
+          "image_model": null
         },
         {
           "id": "tgheroes:silver_surfer",
@@ -1510,9 +1510,9 @@
         {
           "id": "tgheroes:vision",
           "name": "Vision",
-          "image": null,
+          "image": "assets/heroes/game/tgheroes__vision.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__vision.png",
           "wiki": null,
           "image_model": null
         },
@@ -1528,9 +1528,9 @@
         {
           "id": "tgheroes:wasp",
           "name": "Wasp/Hope Van Dyne",
-          "image": null,
+          "image": "assets/heroes/game/tgheroes__wasp.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tgheroes__wasp.png",
           "wiki": null,
           "image_model": null
         },
@@ -1652,9 +1652,9 @@
         {
           "id": "dhhp:atom_eve",
           "name": "Atom Eve",
-          "image": null,
+          "image": "assets/heroes/game/dhhp__atom_eve.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/dhhp__atom_eve.png",
           "wiki": null,
           "image_model": null
         },
@@ -2208,11 +2208,11 @@
         {
           "id": "jmctheroes:moon_knight",
           "name": "Moon Knight",
-          "image": "assets/heroes/models/jmctheroes__moon_knight.png",
+          "image": "assets/heroes/game/jmctheroes__moon_knight.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/jmctheroes__moon_knight.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/jmctheroes__moon_knight.png"
+          "image_model": null
         },
         {
           "id": "jmctheroes:mr_fantastic",
@@ -2316,9 +2316,9 @@
         {
           "id": "jmctheroes:scarlet_spider",
           "name": "Scarlet Spider/Ben Reilly",
-          "image": null,
+          "image": "assets/heroes/game/jmctheroes__scarlet_spider.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/jmctheroes__scarlet_spider.png",
           "wiki": null,
           "image_model": null
         },
@@ -2888,11 +2888,11 @@
         {
           "id": "sabri:black_widow",
           "name": "Black Widow",
-          "image": "assets/heroes/models/sabri__black_widow.png",
+          "image": "assets/heroes/game/sabri__black_widow.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sabri__black_widow.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/sabri__black_widow.png"
+          "image_model": null
         },
         {
           "id": "sabri:cyclops_xmen",
@@ -2906,27 +2906,27 @@
         {
           "id": "sabri:doctor_doom_comics",
           "name": "Doctor Doom",
-          "image": "assets/heroes/models/sabri__doctor_doom_comics.png",
+          "image": "assets/heroes/game/sabri__doctor_doom_comics.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sabri__doctor_doom_comics.png",
           "wiki": null,
-          "image_model": "assets/heroes/models/sabri__doctor_doom_comics.png"
+          "image_model": null
         },
         {
           "id": "sabri:doctor_doom_f4",
           "name": "Doctor Doom",
-          "image": null,
+          "image": "assets/heroes/game/sabri__doctor_doom_f4.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sabri__doctor_doom_f4.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "sabri:kang_the_conqueror",
           "name": "Kang the Conqueror",
-          "image": null,
+          "image": "assets/heroes/game/sabri__kang_the_conqueror.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sabri__kang_the_conqueror.png",
           "wiki": null,
           "image_model": null
         },
@@ -3165,9 +3165,9 @@
         {
           "id": "shadows:backpack",
           "name": "Backpack",
-          "image": null,
+          "image": "assets/heroes/game/shadows__backpack.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/shadows__backpack.png",
           "wiki": null,
           "image_model": null
         },
@@ -3713,9 +3713,9 @@
         {
           "id": "sind:mark38",
           "name": "Iron Man/Mark 38 (XXXVIII) - Igor",
-          "image": null,
+          "image": "assets/heroes/game/sind__mark38.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__mark38.png",
           "wiki": null,
           "image_model": null
         },
@@ -3866,9 +3866,9 @@
         {
           "id": "sind:mark7_bracelets",
           "name": "Iron Man/Mark 07 (VII)",
-          "image": null,
+          "image": "assets/heroes/game/sind__mark7_bracelets.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__mark7_bracelets.png",
           "wiki": null,
           "image_model": null
         },
@@ -4000,11 +4000,11 @@
         {
           "id": "skarlet:blue_beetle_dceu",
           "name": "Blue Beetle",
-          "image": null,
+          "image": "assets/heroes/models/skarlet__blue_beetle_dceu.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/skarlet__blue_beetle_dceu.png"
         },
         {
           "id": "skarlet:green_goblin",
@@ -4135,11 +4135,11 @@
         {
           "id": "skarlet:ultron_comics",
           "name": "Ultron",
-          "image": null,
+          "image": "assets/heroes/models/skarlet__ultron_comics.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/skarlet__ultron_comics.png"
         },
         {
           "id": "skarlet:wolverine_comics",
@@ -4197,11 +4197,11 @@
         {
           "id": "stellar:cloak_shadow",
           "name": "Cloak Shadow",
-          "image": null,
+          "image": "assets/heroes/models/stellar__cloak_shadow.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/stellar__cloak_shadow.png"
         },
         {
           "id": "stellar:danny_phantom",
@@ -4358,18 +4358,18 @@
         {
           "id": "pwt:sukuna",
           "name": "Sukuna",
-          "image": null,
+          "image": "assets/heroes/game/pwt__sukuna.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/pwt__sukuna.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "pwt:sukuna_heian",
           "name": "Ryomen Sukuna",
-          "image": null,
+          "image": "assets/heroes/game/pwt__sukuna_heian.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/pwt__sukuna_heian.png",
           "wiki": null,
           "image_model": null
         },
