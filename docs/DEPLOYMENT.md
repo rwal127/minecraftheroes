@@ -6,7 +6,7 @@
 
 Cloudflare сейчас по умолчанию ведёт новые Git-подключения через **Workers**-флоу («Set up your application»):
 
-1. **Workers & Pages** → **Create** → подключить GitHub-репозиторий `rwal127/minecraftheroes`.
+1. **Workers & Pages** → **Create** → подключить GitHub-репозиторий `<ваш-логин>/minecraftheroes`.
 2. В окне «Set up your application»:
    - **Project name**: `minecraftheroes`
    - **Build command**: *(пусто)*
