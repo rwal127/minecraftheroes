@@ -43,6 +43,8 @@ python tools/hero_previews_game.py --mc-root "C:\Games\Minecraft" the_flash,zoom
 | `--repo` | корень каталога (по умолчанию — текущий чекаут) |
 
 Входы: `versions/SuperHERO/mods/FiskHeroes-1.7.10-2.4.0.jar`, `versions/SuperHERO/fiskheroes/*.zip` (активные паки) и `fiskheroes/.marketplace/*.zip` (неактивные), `heroes_list.json`.
+Если костюм не рисует голову (в игре видна голова игрока), под маску дорисовывается процедурная дефолтная голова игрока — свой пиксель-арт, текстуры Mojang не используются. Так ~118 героев выглядят как игрок в костюме, а не безголовый костюм.
+
 Выходы: `assets/heroes/game/<pack>__<hero>.png`, `research/out/no_texture_heroes.json` (список героев без превью).
 Отладка: env `PREVIEW_DEBUG=1` печатает покрытие UV-областей по каждому герою.
 

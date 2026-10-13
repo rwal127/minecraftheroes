@@ -146,6 +146,29 @@ def renderer_texture_pairs(archive, ns: str, hid: str):
     return re.findall(r'"(\w+)"\s*:\s*"([\w:./-]+)"', m.group(1))
 
 
+def default_head(s):
+    """Procedural generic player face (8x8, scaled): what an unmasked player's head
+    looks like in game. Our own pixel art - no Mojang textures are committed."""
+    px = Image.new("RGBA", (8, 8), (0, 0, 0, 0))
+    p = px.load()
+    SKIN, SKIN_D = (199, 138, 94, 255), (176, 118, 78, 255)
+    HAIR, WHITE = (59, 42, 30, 255), (238, 238, 238, 255)
+    EYE, MOUTH = (72, 58, 138, 255), (150, 96, 66, 255)
+    for x in range(8):
+        for y in range(8):
+            p[x, y] = SKIN
+    for x in range(8):          # hair fringe
+        p[x, 0] = HAIR
+    for x in (0, 1, 6, 7):      # sideburns
+        p[x, 1] = HAIR
+    p[0, 2] = HAIR; p[7, 2] = HAIR
+    p[1, 4] = WHITE; p[2, 4] = EYE   # eyes: white + iris
+    p[5, 4] = EYE; p[6, 4] = WHITE
+    p[3, 5] = SKIN_D; p[4, 5] = SKIN_D
+    p[3, 6] = MOUTH; p[4, 6] = MOUTH
+    return px.resize((8 * s, 8 * s), Image.NEAREST)
+
+
 def compose_canvas(archive, stack):
     """Alpha-composite the texture stack (bottom to top); None if nothing loads."""
     names = set(archive.namelist())
@@ -246,6 +269,16 @@ def composite_suit(archive, ns: str, hid: str):
         if canvas is None:
             continue
         if gate_passes(canvas):
+            s = max(1, round(canvas.width / 64))
+            x0, y0, side = 8 * s, 8 * s, 8 * s
+            region = canvas.crop((x0, y0, x0 + side, y0 + side))
+            hist = region.getchannel("A").histogram()
+            if sum(hist[17:]) / (side * side) < 0.15:
+                # unmasked hero: the player's own head shows in game - draw it behind the suit
+                under = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+                under.paste(default_head(s), (x0, y0))
+                under.alpha_composite(canvas)
+                canvas = under
             return front_view(canvas)
     return None
 
