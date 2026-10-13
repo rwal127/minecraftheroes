@@ -269,16 +269,16 @@ def composite_suit(archive, ns: str, hid: str):
         if canvas is None:
             continue
         if gate_passes(canvas):
+            # the player's own head sits under the suit head in game: cowls leave
+            # transparent eye holes (The Flash), some helmets don't paint a head at all
+            # (Black Adam). Always draw the procedural head underneath - opaque suit
+            # pixels simply cover it.
             s = max(1, round(canvas.width / 64))
             x0, y0, side = 8 * s, 8 * s, 8 * s
-            region = canvas.crop((x0, y0, x0 + side, y0 + side))
-            hist = region.getchannel("A").histogram()
-            if sum(hist[17:]) / (side * side) < 0.15:
-                # unmasked hero: the player's own head shows in game - draw it behind the suit
-                under = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
-                under.paste(default_head(s), (x0, y0))
-                under.alpha_composite(canvas)
-                canvas = under
+            under = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+            under.paste(default_head(s), (x0, y0))
+            under.alpha_composite(canvas)
+            canvas = under
             return front_view(canvas)
     return None
 

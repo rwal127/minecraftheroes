@@ -14,3 +14,6 @@ __pycache__/
 research/out/sheets/
 research/out/wiki_suit_pages.json
 research/out/no_texture_heroes.json
+
+# разовые страницы сравнения (локальные, в git не нужны)
+research/out/compare.html

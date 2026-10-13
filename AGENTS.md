@@ -90,9 +90,10 @@ pointing at a local game install; the install is never committed.
 ### Quality gates (do not "fix" these away)
 
 - The texture gate checks body ≥ 0.55 and arm/leg ≥ 0.2 coverage of the skin UV areas;
-  **the head is deliberately not checked** — unmasked heroes have an empty head region
-  by design (the player's head shows in game; we draw the procedural head instead).
-  Re-adding a head check would reject ~100 good previews.
+  **the head is deliberately not checked** — the player's own head sits under the suit
+  head in game, so the composer always draws the procedural head underneath it (eye
+  holes in cowls show it, unmasked heroes show the whole face). Re-adding a head check
+  would reject ~100 good previews.
 - Model-render gates reject empty, too-small and "scene-like" (army/portal) renders.
 - `GAME_SKIP` in the game composer lists model-look heroes whose texture compose would
   be misleading (e.g. Hulk would show Bruce Banner).
