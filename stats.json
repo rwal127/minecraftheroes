@@ -1,0 +1,7563 @@
+{
+ "fiskheroes:agent_liberty": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:ant_man": {
+  "tier": 4,
+  "abilities": [
+   "Change Size",
+   "Giant Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:anti_monitor": {
+  "tier": 10,
+  "abilities": [
+   "Antimatter Beam",
+   "Antimatter Blast",
+   "Toggle Shadow Form",
+   "Giant Mode",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:arrow": {
+  "tier": 4,
+  "abilities": [
+   "Cycle Arrows",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:arsenal": {
+  "tier": 3,
+  "abilities": [
+   "Cycle Arrows",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:atom": {
+  "tier": 6,
+  "abilities": [
+   "Change Size",
+   "Miniaturize Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:atom_smasher": {
+  "tier": 6,
+  "abilities": [
+   "Change Size"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:august_heart_comics": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:batman_dceu": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:black_canary": {
+  "tier": 3,
+  "abilities": [
+   "Canary Cry"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:black_canary_dinah": {
+  "tier": 4,
+  "abilities": [
+   "Canary Cry"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:black_lightning": {
+  "tier": 6,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:black_manta_dceu": {
+  "tier": 7,
+  "abilities": [
+   "Manta Ray Blast",
+   "Toggle Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:black_panther": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Claws"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:captain_america": {
+  "tier": 6,
+  "abilities": [
+   "Shield Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "fiskheroes:captain_america_sam": {
+  "tier": 5,
+  "abilities": [
+   "Shield Throw",
+   "fiskheroes:dyn/flight_super_boost",
+   "Boost"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:captain_cold": {
+  "tier": 1,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:chronos": {
+  "tier": 5,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:citizen_steel": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Steel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:colossus_xmen": {
+  "tier": 7,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:crossbones": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Charged Punch"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:dark_archer": {
+  "tier": 4,
+  "abilities": [
+   "Cycle Arrows",
+   "Toggle Smoke Bombs",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:deadpool_xmen": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:deathstroke_dceu": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle Grenades",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:doctor_octopus": {
+  "tier": 2,
+  "abilities": [
+   "Tentacle Jab",
+   "Tentacle Grab",
+   "Tentacle Strike",
+   "Toggle Tentacles"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "fiskheroes:doctor_strange": {
+  "tier": 2,
+  "abilities": [
+   "Toggle Blade",
+   "Toggle Shield",
+   "Spell Wheel",
+   "Aim"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:falcon": {
+  "tier": 4,
+  "abilities": [
+   "Wing Shield",
+   "Reload",
+   "Aim",
+   "fiskheroes:dyn/flight_super_boost",
+   "Boost"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:firestorm": {
+  "tier": 4,
+  "abilities": [
+   "Shoot"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:firestorm_jax": {
+  "tier": 5,
+  "abilities": [
+   "Shoot"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:geomancer": {
+  "tier": 4,
+  "abilities": [
+   "Create Tremor",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:godspeed_comics": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:green_arrow": {
+  "tier": 5,
+  "abilities": [
+   "Cycle Arrows",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:guardian": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:harbinger": {
+  "tier": 9,
+  "abilities": [
+   "Cosmic Energy Beam",
+   "Gravity Manipulation",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:heatwave": {
+  "tier": 2,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:iron_man": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:iron_man_mk50": {
+  "tier": 8,
+  "abilities": [
+   "Crab Cannon",
+   "Toggle Blade",
+   "Nanite Shield",
+   "Nanite Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:iron_man_mk85": {
+  "tier": 8,
+  "abilities": [
+   "Repulsor Beams",
+   "Toggle Blade",
+   "Toggle Shield",
+   "Nanite Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:kid_flash": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:killer_frost": {
+  "tier": 3,
+  "abilities": [
+   "Charge Ice",
+   "Freeze Spike"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:martian_manhunter": {
+  "tier": 8,
+  "abilities": [
+   "Shape-Shift",
+   "Shape-Shift Reset",
+   "Toggle Intangibility",
+   "Toggle Invisibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:martian_manhunter_comics": {
+  "tier": 9,
+  "abilities": [
+   "Shape-Shift",
+   "Shape-Shift Reset",
+   "Toggle Intangibility",
+   "Toggle Invisibility",
+   "Heat Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:mysterio": {
+  "tier": 3,
+  "abilities": [
+   "Charged Beam",
+   "Boost",
+   "Energy Projection",
+   "Illusion Wheel",
+   "fiskheroes:dyn/flight_super_boost"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:obsidian": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Shadow Form",
+   "Shadow Chain",
+   "Shadow Dome"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:prometheus": {
+  "tier": 5,
+  "abilities": [
+   "Cycle Arrows",
+   "Toggle Throwing Stars",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:reverse_flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:rip_hunter": {
+  "tier": 1,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:rupture": {
+  "tier": 3,
+  "abilities": [
+   "Charge Energy"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:savitar": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Spike"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:senor_cactus": {
+  "tier": 5,
+  "abilities": [
+   "Point",
+   "Spike Burst"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:shazam_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:spectre": {
+  "tier": 10,
+  "abilities": [
+   "Energy Projection",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:spider_man": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision",
+   "Toggle Web Wings"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "fiskheroes:spider_man_ps4": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "fiskheroes:spider_man_raimi": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "fiskheroes:spider_man_webb": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "fiskheroes:spodermen": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_tank",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:the_flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:the_flash_hunter": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:the_flash_jay": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:the_monitor": {
+  "tier": 10,
+  "abilities": [
+   "Cosmic Energy Beam",
+   "Telekinesis Grab",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:the_rival": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "fiskheroes:the_tick": {
+  "tier": 8,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:trajectory": {
+  "tier": 3,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_speed",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:vision": {
+  "tier": 9,
+  "abilities": [
+   "Mind Stone Blast",
+   "Toggle Intangibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:wild_dog": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "fiskheroes:zoom": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "misc:black_adam": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Lightning Beam",
+   "Lightning Discharge",
+   "SHAZAM!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:charles_xavier": {
+  "tier": 5,
+  "abilities": [
+   "Telekinesis",
+   "Invisibility",
+   "Psionic Blast"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:choso": {
+  "tier": 7,
+  "abilities": [
+   "Piercing Blood",
+   "Blood Fist",
+   "Blood Edge",
+   "Blood Spikes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:eren_yeager": {
+  "tier": 4,
+  "abilities": [
+   "Titan Shift",
+   "Refill Gas",
+   "ODM Zip",
+   "Release",
+   "Toggle Blades",
+   "Harden Fists",
+   "Boost",
+   "Regenerate"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:ezio": {
+  "tier": 2,
+  "abilities": [
+   "Slide",
+   "Toggle Hidden Blades"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "misc:infinity_gauntlet": {
+  "tier": 1,
+  "abilities": [
+   "Empowered Punch",
+   "Telekinesis",
+   "Regeneration",
+   "Accelerate Own Time",
+   "Giant Mode",
+   "Teleport",
+   "Spell Menu",
+   "Decelerate Time",
+   "Mind Stone Blast",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:invincible": {
+  "tier": 9,
+  "abilities": [
+   "Speed Punches",
+   "Toggle/Adjust Super-Speed",
+   "Ground Smash",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:invincible_variants": {
+  "tier": 9,
+  "abilities": [
+   "Speed Punches",
+   "Next Variant Design",
+   "Toggle/Adjust Super-Speed",
+   "Previous Variant Design",
+   "Ground Smash",
+   "Lock Variant Design",
+   "Slow-Motion Vision",
+   "Change Variant Design"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:john_wick": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:master_chief": {
+  "tier": 8,
+  "abilities": [
+   "Toggle Cortana",
+   "Activate Blade",
+   "Mob Scan",
+   "Change Gadget",
+   "Grappleshot",
+   "Toggle Night Vision",
+   "Toggle Overshield",
+   "Run Diagnostics",
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:metro_man": {
+  "tier": 9,
+  "abilities": [
+   "Heat Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "misc:mind_stone": {
+  "tier": 2,
+  "abilities": [
+   "Mind Stone Blast"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:power_stone": {
+  "tier": 2,
+  "abilities": [
+   "Charged Beam",
+   "Empowered Punch"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:powerplex": {
+  "tier": 5,
+  "abilities": [
+   "Lightning Beam",
+   "Lightning Discharge"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:punisher": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:reality_stone": {
+  "tier": 2,
+  "abilities": [
+   "Giant Mode",
+   "Spell Menu"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:reverse_flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Vibrate",
+   "Phase",
+   "Lightning Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "misc:soul_stone": {
+  "tier": 2,
+  "abilities": [
+   "Regeneration"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:space_stone": {
+  "tier": 2,
+  "abilities": [
+   "Telekinesis",
+   "Teleport",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "misc:sunspot": {
+  "tier": 5,
+  "abilities": [
+   "Shoot",
+   "Solar Form"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "misc:time_stone": {
+  "tier": 2,
+  "abilities": [
+   "Decelerate Time",
+   "Accelerate Own Time"
+  ],
+  "traits": [
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "morningstar:batman_arkham": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Utility Belt",
+   "Night Vision",
+   "Shield Throw",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "morningstar:flash_earth90": {
+  "tier": 5,
+  "abilities": [
+   "Super Speed",
+   "FlashTime",
+   "Vibration",
+   "Arm Vortex",
+   "Lightning-Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "morningstar:flash_normal": {
+  "tier": 5,
+  "abilities": [
+   "Super Speed",
+   "FlashTime",
+   "Vibration",
+   "Arm Vortex",
+   "Lightning-Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "morningstar:flash_rebirth": {
+  "tier": 7,
+  "abilities": [
+   "Super Speed",
+   "FlashTime",
+   "Vibration",
+   "Arm Vortex",
+   "Lightning Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "morningstar:ghost_rider_revamped": {
+  "tier": 10,
+  "abilities": [
+   "Penance Stare",
+   "Hellfire",
+   "Accelerated Perception",
+   "Teleport",
+   "Hell Cycle",
+   "Soul Manipulation",
+   "Spirit of Vengeance"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "morningstar:iceman_comic": {
+  "tier": 5,
+  "abilities": [
+   "Charge Ice",
+   "Ice Shield",
+   "Ice Spike",
+   "Ice Beam",
+   "Ice Form"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "morningstar:omni_man": {
+  "tier": 8,
+  "abilities": [
+   "Ground Smash",
+   "Charged Punch",
+   "EarthQuake",
+   "Super Speed",
+   "Super Boost",
+   "Interstellar Travel",
+   "Thunder Clap"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "morningstar:punisher_comic": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Utility Belt",
+   "Shield Throw",
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "morningstar:spiderman_comic": {
+  "tier": 7,
+  "abilities": [
+   "Web Shooters",
+   "Web Zip",
+   "Web Swinging",
+   "Spider-Sense",
+   "Web Wings"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "morningstar:spiderman_merchandise": {
+  "tier": 7,
+  "abilities": [
+   "Web Shooters",
+   "Web Zip",
+   "Web Swinging",
+   "Spider-Sense"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "morningstar:superman_comic": {
+  "tier": 9,
+  "abilities": [
+   "Freeze Breath",
+   "Heat Vision",
+   "EarthQuake",
+   "Super Speed",
+   "Super Boost",
+   "Interstellar Travel",
+   "Thunder Clap",
+   "Suit Up"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "tgheroes:abomation": {
+  "tier": 9,
+  "abilities": [
+   "Brutal Swipes",
+   "Toggle Bone Armor",
+   "Super Jump:",
+   "Super Jump: Normal",
+   "Toxic Surge",
+   "Earthquake"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:angel": {
+  "tier": 3,
+  "abilities": [
+   "Wing Shield",
+   "Aim",
+   "Archangel Release"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:ant_man": {
+  "tier": 4,
+  "abilities": [
+   "Wrist Gauntlets",
+   "Change Size",
+   "Giant Mode",
+   "Call Antonio",
+   "Miniaturize Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:apocalypse": {
+  "tier": 9,
+  "abilities": [
+   "Energy Blast",
+   "Energy Beam",
+   "Teleport",
+   "Telekinesis",
+   "Giant Mode",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:beast": {
+  "tier": 7,
+  "abilities": [
+   "Wall Climb:",
+   "Wall Climb: Off"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:black_panther": {
+  "tier": 7,
+  "abilities": [
+   "Anti-Metal Claws",
+   "Hard-Light Shielding",
+   "Kinetic Push",
+   "Panther Dash",
+   "Tremble Before Bast"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:black_widow": {
+  "tier": 4,
+  "abilities": [
+   "Widow Bite: Off",
+   "Widow Bite:",
+   "Reload",
+   "Grapling Cable",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:bucky": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Grenades",
+   "Reload",
+   "Shield Throw",
+   "Arm Block",
+   "Bionic Punch",
+   "Armed & Dangerous",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:bunshee": {
+  "tier": 3,
+  "abilities": [
+   "Sonic Waves",
+   "Scream"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:cable": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Energy Projection",
+   "Teleport",
+   "Telekinesis",
+   "Grenades",
+   "Grenades Type:",
+   "Grenades Type: Basic",
+   "Forcefield",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:cap": {
+  "tier": 6,
+  "abilities": [
+   "Shield Throw",
+   "Toggle Grenades",
+   "Reload",
+   "Shield Bash",
+   "Charge Lightning",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:cap_marvel": {
+  "tier": 10,
+  "abilities": [
+   "Photon Blasts",
+   "Photon Beam",
+   "Binary Form",
+   "Space Burst"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:cyclops": {
+  "tier": 3,
+  "abilities": [
+   "Optic Beam",
+   "Optic Blast"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:deadpool": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Teleport",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:doctor_doom": {
+  "tier": 7,
+  "abilities": [
+   "Concussive Blasts",
+   "Teleport",
+   "Doom's Magic",
+   "Doom Shield",
+   "Choose Shield",
+   "Aim",
+   "Telekinesis",
+   "Electric Shock"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:emma_frost": {
+  "tier": 1,
+  "abilities": [
+   "Psionic Lightning",
+   "Telekinesis",
+   "Psionic Shield",
+   "Paralysis",
+   "Diamond Form"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:fff": {
+  "tier": 7,
+  "abilities": [
+   "Fire Breath",
+   "Smash Ground",
+   "Create Tremor",
+   "Acid Mist",
+   "Giant Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:galactus": {
+  "tier": 10,
+  "abilities": [
+   "Cosmic Beam",
+   "Teleport",
+   "Summon Black Hole",
+   "Giant Mode",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:gambit": {
+  "tier": 3,
+  "abilities": [
+   "Throw Card",
+   "Charge Energy",
+   "Draw Cards"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:ghost": {
+  "tier": 3,
+  "abilities": [
+   "Phase Cloak",
+   "Jolting Strike",
+   "Reload",
+   "Wraithform",
+   "Overload Pulse",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:hawkeye": {
+  "tier": 3,
+  "abilities": [
+   "Bow Horizontal",
+   "Cycle Arrows",
+   "Wakizashi Slash"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:hela": {
+  "tier": 10,
+  "abilities": [
+   "Soulpiercer Blades",
+   "Death Dash",
+   "Goddes Of Death"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:hulk": {
+  "tier": 9,
+  "abilities": [
+   "Gamma Smash",
+   "Hulk Smash",
+   "Super Jump:",
+   "Super Jump: Normal",
+   "Gamma Transformation",
+   "Enrage Mode",
+   "Hammer Blow",
+   "Gamma Eruption",
+   "Thunderclap"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:human_torch": {
+  "tier": 3,
+  "abilities": [
+   "Fire Beam",
+   "Nova's Collapse",
+   "Flame On"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:iceman": {
+  "tier": 2,
+  "abilities": [
+   "Cryo Spike",
+   "Ice:",
+   "Ice: Spikes",
+   "Cryo From",
+   "Cryo Beam",
+   "Cryo Wall"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:infinity_gauntlet": {
+  "tier": 1,
+  "abilities": [
+   "Mind Stone Blast",
+   "Power Beam",
+   "Soul Shield",
+   "Self Acceleration",
+   "Teleport",
+   "Telekinesis",
+   "Power Punch",
+   "Soul Heal",
+   "Slow Time",
+   "Cloak Illusion"
+  ],
+  "traits": [
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "tgheroes:invisible_woman": {
+  "tier": 3,
+  "abilities": [
+   "Forcefield",
+   "Invisibility",
+   "Forcefield Blast",
+   "Blast Type:",
+   "Blast Type: Push",
+   "Aim",
+   "Aim Type:",
+   "Aim Type: Basic",
+   "Telekinesis"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:ironman": {
+  "tier": 8,
+  "abilities": [
+   "Suit Up",
+   "Fly Boost",
+   "Hulkbuster",
+   "Maximum Pulse",
+   "Nanite Blade",
+   "Nanite Shield",
+   "Nanite Hammers",
+   "Smash Ground",
+   "Battle Mod",
+   "Create Tremor"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:jean": {
+  "tier": 3,
+  "abilities": [
+   "Psi Burst",
+   "Phoenix Flare",
+   "Release Phoenix",
+   "Release Dark Phoenix",
+   "Release White Phoenix",
+   "Choose Phoenix",
+   "Mental Storm",
+   "Avatar of Flame",
+   "Terror Field",
+   "Song of the Cosmos"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:jubilee": {
+  "tier": 3,
+  "abilities": [
+   "Atomic Blast",
+   "Fireworks"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:jugger": {
+  "tier": 9,
+  "abilities": [
+   "Ground Smash"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:kang": {
+  "tier": 7,
+  "abilities": [
+   "Energy Beam",
+   "Forcefield",
+   "Save Position",
+   "Reset Position",
+   "Teleport To Saved Position",
+   "Magnetic Gravity Control"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:kitty_pryde": {
+  "tier": 3,
+  "abilities": [
+   "Intangible Camouflage",
+   "Intangibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:loki": {
+  "tier": 10,
+  "abilities": [
+   "Illusions",
+   "Trickster's Escape",
+   "Frostgrasp",
+   "Teleportation",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:madelyne": {
+  "tier": 1,
+  "abilities": [
+   "Psionic Lightning",
+   "Sorcery",
+   "Healing Beam",
+   "Paralysis",
+   "Magic Shield"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:magik": {
+  "tier": 3,
+  "abilities": [
+   "Limbo Flare",
+   "Soul Dissection",
+   "Release Darkchylde",
+   "Limbo Dash",
+   "Stepping Discs"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:magneto": {
+  "tier": 5,
+  "abilities": [
+   "Scrap Strike",
+   "Magnetic Rays",
+   "Metal Scrap",
+   "Magnetic Telekinesis",
+   "Scrap Jab",
+   "Magnetic Gravity Control",
+   "Metal Shield"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:mandarin": {
+  "tier": 6,
+  "abilities": [
+   "Daimonic - Illushion",
+   "Daimonic - Gravity Manipulation",
+   "Remaker - Poison Gas",
+   "Influence - Impact Beam",
+   "Incandescence - Fire Beam",
+   "Spin - Vortex",
+   "Lightning - Pulse",
+   "Spectral - Invisibility",
+   "Liar - Paralysis",
+   "Hand:"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:modok": {
+  "tier": 6,
+  "abilities": [
+   "Psionic Pulse",
+   "Neural Barrier",
+   "Pulse Slam"
+  ],
+  "traits": [
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:mr_fantastic": {
+  "tier": 5,
+  "abilities": [
+   "Hand Jab",
+   "Aim",
+   "Hand Grab",
+   "Ball Form",
+   "Hand Strike",
+   "Hand Hammer",
+   "Arms Outstretched"
+  ],
+  "traits": [
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:namor": {
+  "tier": 7,
+  "abilities": [
+   "Wrath of Neptune",
+   "Tidal Wave",
+   "Tidal Rush"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:nightcrawler": {
+  "tier": 3,
+  "abilities": [
+   "Teleport",
+   "Tail Grab",
+   "Tail Jab",
+   "Use Tail"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:omega_red": {
+  "tier": 4,
+  "abilities": [
+   "Tentacle Jab",
+   "Tentacle Grab",
+   "Aim",
+   "Drain Life Energy",
+   "Super Heal",
+   "Tentacle Strike",
+   "Tentacles"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:proff_x": {
+  "tier": 1,
+  "abilities": [
+   "Psionic Lightning",
+   "Mind Beam",
+   "Telekinesis",
+   "Paralysis",
+   "Mind Shield"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:psylocke": {
+  "tier": 3,
+  "abilities": [
+   "Psi-blade Dash",
+   "Invisibility",
+   "Aim",
+   "DANCE OF THE BUTTERFLY"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:quicksilver": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Create Speed Tornado",
+   "Intangibility",
+   "Wall Run:",
+   "Wall Run: Off"
+  ],
+  "traits": [
+   "t_speed",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:red_hulk": {
+  "tier": 9,
+  "abilities": [
+   "Hellfire Rage",
+   "Smash Ground",
+   "Super Jump:",
+   "Super Jump: Normal",
+   "Thermal Slam",
+   "Gamma Transformation",
+   "Create Tremor",
+   "Thermalclap"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:red_skull": {
+  "tier": 5,
+  "abilities": [
+   "Teleport",
+   "Toggle Grenades",
+   "Reload",
+   "Teleport to Coords",
+   "X Y Z",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:rescue": {
+  "tier": 8,
+  "abilities": [
+   "Energy Blast",
+   "Repulsor Shields",
+   "Magnetism Control",
+   "Missiles Barrage"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:rogue": {
+  "tier": 3,
+  "abilities": [
+   "Powers of Wolverine",
+   "Teleport",
+   "Ultimate Form",
+   "Powers of Angel",
+   "Toggle Slow-Motion Vision",
+   "Powers of Colossus",
+   "Energy Beam",
+   "Claws",
+   "Powers of Nightcrawler",
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:s_witch": {
+  "tier": 1,
+  "abilities": [
+   "Witchcraft",
+   "Teleportation",
+   "Chaos Magic",
+   "Area Of Chaos",
+   "Aim",
+   "Aim Type:",
+   "Aim Type: Basic",
+   "Forcefield",
+   "Telekinesis",
+   "Chaos Beam"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:sabertooth": {
+  "tier": 4,
+  "abilities": [
+   "Claws",
+   "Heightened Perception",
+   "Wall Climb:",
+   "Wall Climb: Off"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:sentinel": {
+  "tier": 6,
+  "abilities": [
+   "Cables Strike",
+   "Optic Beam",
+   "Cables Grab",
+   "Ground Smash",
+   "Cables Jab",
+   "Repulsor Blast",
+   "Cables"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:sentry": {
+  "tier": 10,
+  "abilities": [
+   "Solar Vision",
+   "Dark Energy Manipulation",
+   "Solar Punch",
+   "To The Shades",
+   "Sentry Burst",
+   "Psychic Terror",
+   "Toggle/Adjust Super-Speed",
+   "Sentry"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "tgheroes:she_hulk": {
+  "tier": 9,
+  "abilities": [
+   "Court Slam",
+   "Gamma Charge",
+   "Super Jump:",
+   "Super Jump: Normal",
+   "Limit Breaker",
+   "Gamma Transformation",
+   "Shockwave Slam"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:silver_surfer": {
+  "tier": 9,
+  "abilities": [
+   "Energy Beam",
+   "Intangibility",
+   "Aim",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:storm": {
+  "tier": 3,
+  "abilities": [
+   "Lightning Strike",
+   "Fog",
+   "Vortex",
+   "Tornado"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tgheroes:strange": {
+  "tier": 2,
+  "abilities": [
+   "Mystic Blade",
+   "Shield of Seraphim",
+   "Teleport",
+   "Eldritch Spells",
+   "Winds of Watoomb",
+   "Telekinesis",
+   "By The Eye Of Agamotto",
+   "Flames of Faltine",
+   "Teleport to Coords",
+   "X Y Z"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:taskmaster": {
+  "tier": 5,
+  "abilities": [
+   "Bow Horizontal",
+   "Shield Throw",
+   "Copy Entity's Power",
+   "Utility Belt",
+   "Copy New Power",
+   "Copied Powers List",
+   "Taskmaster Smash",
+   "Claws",
+   "Choose Available Power",
+   "Grapling Cable"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:thanos": {
+  "tier": 10,
+  "abilities": [
+   "Power Lightning",
+   "Judgment of the Titan",
+   "Cosmic Beam",
+   "Cloak Illusion",
+   "Infinity Gauntlent",
+   "Infinity Snap",
+   "Empowered Punch",
+   "Slow Time",
+   "Teleport to Coords",
+   "X Y Z"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:thing": {
+  "tier": 7,
+  "abilities": [
+   "Create Tremor",
+   "Smash Ground",
+   "Throw Stone",
+   "Thunderclap"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:thor": {
+  "tier": 10,
+  "abilities": [
+   "God-Blast",
+   "X Y Z",
+   "Bifrost",
+   "Bifrost Coords.",
+   "Warrior's Madness",
+   "Charge Mjolnir",
+   "Summon Electrical Storm",
+   "Thorsleep"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "tgheroes:ultron": {
+  "tier": 8,
+  "abilities": [
+   "Energy Blast",
+   "Judgment Protocol",
+   "Encephalo-Beam",
+   "Energy Beam",
+   "Ultron Virus"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:vision": {
+  "tier": 9,
+  "abilities": [
+   "Solar Beam",
+   "Holographic Disguise",
+   "Density Type:",
+   "Density Type: Normal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "tgheroes:war_mach": {
+  "tier": 8,
+  "abilities": [
+   "Aim",
+   "Minigun",
+   "Rockets",
+   "Rockets Reload",
+   "Arm Gun",
+   "Nanite Blade",
+   "Nanite Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:wasp": {
+  "tier": 4,
+  "abilities": [
+   "Energy Blast",
+   "Change Size",
+   "Giant Mode",
+   "Miniaturize Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tgheroes:wolverine": {
+  "tier": 4,
+  "abilities": [
+   "Claws",
+   "Heightened Perception",
+   "Berserk Mode",
+   "Wall Climb:",
+   "Wall Climb: Off"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:x_23": {
+  "tier": 3,
+  "abilities": [
+   "Claws",
+   "Heightened Perception",
+   "Killer Mode",
+   "Wall Climb:",
+   "Wall Climb: Off"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tgheroes:yellow_jacket": {
+  "tier": 4,
+  "abilities": [
+   "Energy Pulse Stingers",
+   "Change Size",
+   "Stingers Open",
+   "Stingers Blast",
+   "Miniaturize Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "8thpack:genji": {
+  "tier": 5,
+  "abilities": [
+   "Deflect",
+   "Dash",
+   "Activate shurikens",
+   "Ultimate",
+   "Throw Shurikens"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "8thpack:killercroc": {
+  "tier": 8,
+  "abilities": [
+   "Roar",
+   "Tail Swipe Attack"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "8thpack:nebula": {
+  "tier": 6,
+  "abilities": [
+   "Arm Cannon",
+   "Jetpack Wings"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "8thpack:phaseshifter": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Phase",
+   "Slide",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "8thpack:pilote": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Toggle Grapple",
+   "Slide",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "8thpack:spot": {
+  "tier": 2,
+  "abilities": [
+   "Teleport",
+   "Shadow Dome",
+   "Enter Coords (X Y Z Dimension)",
+   "Reset Coords",
+   "Transform",
+   "This location isnt valid ):"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "8thpack:spot_black": {
+  "tier": 6,
+  "abilities": [
+   "Teleport",
+   "Teleport to Coordinates",
+   "Shadow Dome",
+   "Enter Coords (X Y Z Dimension)",
+   "Reset Coords"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "dhhp:aqualad": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Water-Pack",
+   "Toggle Water-Bearer",
+   "Cycle Weapon",
+   "Cycle Weapon Swords (1/3)",
+   "Cycle Weapon Mace (2/3)",
+   "Cycle Weapon Whips (3/3)",
+   "Water Projection"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "dhhp:atom_eve": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Atom Blast",
+   "Telekinesis Grab",
+   "Shield",
+   "Atom Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "dhhp:blossom": {
+  "tier": 7,
+  "abilities": [
+   "Heat Vision",
+   "Freeze Breath",
+   "Toggle/Adjust Super-Speed",
+   "Heat Breath"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "dhhp:bubbles": {
+  "tier": 7,
+  "abilities": [
+   "Heat Vision",
+   "Ultrasonic Scream",
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "dhhp:buttercup": {
+  "tier": 7,
+  "abilities": [
+   "Heat Vision",
+   "Smash Ground",
+   "Create Tremor",
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "dhhp:doctorfate": {
+  "tier": 10,
+  "abilities": [
+   "Order Beam",
+   "Wheel Of Fate",
+   "Transform",
+   "Teleport",
+   "Nabu's Wrath",
+   "Ankh Shielding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:galactus": {
+  "tier": 10,
+  "abilities": [
+   "Energy Projection",
+   "Teleport",
+   "Change Size",
+   "Hover",
+   "Devour",
+   "Create Tremor"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:gojo": {
+  "tier": 2,
+  "abilities": [
+   "Toggle Blade",
+   "Acid Flower"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:invincible": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "dhhp:joker_comics": {
+  "tier": 2,
+  "abilities": [
+   "Toggle Blade",
+   "Acid Flower"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:nightwing": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Escrima Sticks",
+   "Toggle Lightning",
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "dhhp:omniman": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "dhhp:raven": {
+  "tier": 3,
+  "abilities": [
+   "Shadow Projection",
+   "Shadow Beam",
+   "Spell Book",
+   "Wing Shielding",
+   "Darkness",
+   "Daughter Of Trigon"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:red_hood": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle/Cycle Utility Belt",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "dhhp:red_x": {
+  "tier": 5,
+  "abilities": [
+   "Charge Teleport",
+   "Teleport",
+   "Toggle/Cycle Utility Belt",
+   "Illusion Tech",
+   "X Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "dhhp:rick": {
+  "tier": 2,
+  "abilities": [
+   "X(Number) Y(Number) Z(Number)",
+   "Teleport"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "dhhp:scarlet_spider": {
+  "tier": 7,
+  "abilities": [
+   "Cycle Weaponry",
+   "Web Zip",
+   "Toggle Mark",
+   "Toggle Invisibility",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision",
+   "Bone Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "dhhp:starfire": {
+  "tier": 3,
+  "abilities": [
+   "Energy-Beam",
+   "Energy Projection",
+   "Blast",
+   "Tamaranean-Rage"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "dhhp:superboy": {
+  "tier": 8,
+  "abilities": [
+   "Activate DNA Shield",
+   "Toggle/Adjust Super-Speed",
+   "Heat Vision",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "dhhp:superman_kc": {
+  "tier": 9,
+  "abilities": [
+   "Heat Vision",
+   "Freeze Breath",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Absorb Solar Energy (Hold)",
+   "Absorb Solar Energy"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "dhhp:terra": {
+  "tier": 2,
+  "abilities": [
+   "Smash Ground",
+   "Hover",
+   "Create Tremor",
+   "Rage",
+   "Toggle Charged Punch",
+   "Geokinetic flight"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:thor_mcu": {
+  "tier": 5,
+  "abilities": [
+   "Summon Mjolnir",
+   "Hover",
+   "Throw Mjolnir",
+   "Charge Lightning"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "dhhp:thragg": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "ironmaniac:iron_man_mark_1": {
+  "tier": 5,
+  "abilities": [
+   "Flamethrower"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ironmaniac:iron_man_mark_2": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ironmaniac:iron_man_mark_3": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Toggle Shield",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ironmaniac:iron_man_mark_5": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Unibeam",
+   "Suit Up"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ironmaniac:war_machine_mark_1": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Machineguns",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:8ball": {
+  "tier": 4,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:agent_spider": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:allen": {
+  "tier": 9,
+  "abilities": [
+   "Create Tremor",
+   "Toggle Slow-Motion Vision",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:anissa": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:arkham_knight": {
+  "tier": 7,
+  "abilities": [
+   "Reload",
+   "Toggle/Cycle Utility Belt",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:batman_comics": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Kryptonite Knuckles",
+   "Rebreather"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:beta_ray_bill": {
+  "tier": 8,
+  "abilities": [
+   "Lightning Blast",
+   "Spin Stormbreaker",
+   "Summon Lightning",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:big_wheel": {
+  "tier": 8,
+  "abilities": [],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:bizarro": {
+  "tier": 9,
+  "abilities": [
+   "Flame Breath",
+   "Frost Vision",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:black_adam_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Lightning Beam",
+   "Interstellar Travel",
+   "SHAZAM!!!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:blue_beetle_dceu": {
+  "tier": 8,
+  "abilities": [
+   "Energy Beam",
+   "Reach Shield",
+   "Reach Blade",
+   "Toggle Scarab"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:chainsaw_man": {
+  "tier": 6,
+  "abilities": [
+   "Devil Transformation",
+   "Back to Human Form"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:conquest": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:daredevil": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Billy Clubs",
+   "Billy Club Zip"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:darkseid": {
+  "tier": 10,
+  "abilities": [
+   "Shoot Omega Beams"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:doctor_fate": {
+  "tier": 10,
+  "abilities": [
+   "Magic Blasts",
+   "Forcefield",
+   "Beam of Order",
+   "Teleport",
+   "Summon the Power of Order",
+   "Telekinesis Grab"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Intangibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:flash_dceu": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:groot": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Claws"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:hellboy": {
+  "tier": 8,
+  "abilities": [
+   "Create Tremor",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:hit_monkey": {
+  "tier": 2,
+  "abilities": [
+   "Reload Gun",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:human_torch": {
+  "tier": 4,
+  "abilities": [
+   "Aim",
+   "Flame On!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:immortal": {
+  "tier": 8,
+  "abilities": [
+   "Create Tremor"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:invincible": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:invisible_woman": {
+  "tier": 4,
+  "abilities": [
+   "Forcefield",
+   "Invisibility",
+   "Telekinesis"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:iron_legion": {
+  "tier": 6,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:jay_garrick": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Intangibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:katana_man": {
+  "tier": 7,
+  "abilities": [
+   "Devil Transformation",
+   "Reload Gun",
+   "Back to Human Form",
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:killer_moth": {
+  "tier": 3,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:kite_man": {
+  "tier": 4,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:lantern_ring_green": {
+  "tier": 9,
+  "abilities": [
+   "Aim",
+   "Wall Construct",
+   "Punching Glove Construct",
+   "Transport Entity",
+   "Energy Beam",
+   "Transform",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:lantern_ring_yellow": {
+  "tier": 9,
+  "abilities": [
+   "Aim",
+   "Spell Wheel",
+   "Wall Construct",
+   "Punching Glove Construct",
+   "Transport Entity",
+   "Energy Beam",
+   "Transform",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:modok": {
+  "tier": 7,
+  "abilities": [
+   "Energy Beam",
+   "Telekinesis Grab"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:moon_knight": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Crescent Darts",
+   "Toggle Truncheon"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:mr_fantastic": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Shield",
+   "Boxing Glove",
+   "Punch",
+   "Extend Arm",
+   "Change Size"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:omniman": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Smash Ground",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:phantasm": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Toggle Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:pork_grind": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Ham Smasher"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:power": {
+  "tier": 6,
+  "abilities": [
+   "Next Weapon"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:prowler": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Power Enhancements"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:red_death": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Intangibility",
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:red_hood": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle/Cycle Utility Belt",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:red_skull": {
+  "tier": 4,
+  "abilities": [
+   "Shield Throw",
+   "Reload",
+   "Teleport",
+   "Equip/Unequip Pistol",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:reverse_flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Intangibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "jmctheroes:rhino": {
+  "tier": 7,
+  "abilities": [
+   "Create Tremor",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:scarlet_spider": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:shazam_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Lightning Beam",
+   "Interstellar Travel",
+   "SHAZAM!!!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:spider_2099": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Claws"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_ham": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Comically Large Hammer"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_man": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_man_1610": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_man_noir": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_man_tobey": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Toggle Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_miles": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Venom Blast",
+   "Invisibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:spider_punk": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Spider-Sense",
+   "Guitar Blast"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:star_lord": {
+  "tier": 5,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:superboy": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:supergirl_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Freeze Breath",
+   "Heat Vision",
+   "Solar Charged Heat Vision",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:superior_spider_man": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Mechanical Arm Jab",
+   "Mechanical Arm's Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:superman_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Freeze Breath",
+   "Heat Vision",
+   "Solar Charged Heat Vision",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:superman_god": {
+  "tier": 9,
+  "abilities": [
+   "Freeze Breath",
+   "Moustache Beam",
+   "Moustache Charged Beam",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:thing": {
+  "tier": 8,
+  "abilities": [
+   "Create Tremor",
+   "Smash Ground"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "jmctheroes:ultimate_ultron": {
+  "tier": 8,
+  "abilities": [
+   "Energy Projection",
+   "Energy Beams",
+   "Telekinesis Grab",
+   "Heat Generation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:ultron_mk1": {
+  "tier": 2,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "jmctheroes:ultron_prime": {
+  "tier": 7,
+  "abilities": [
+   "Energy Projection",
+   "Energy Beams",
+   "Telekinesis Grab"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:venom": {
+  "tier": 8,
+  "abilities": [
+   "Change Size",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Symbiote Shield",
+   "Symbiote Blade",
+   "Mask! Copy!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:viltrumite_soldier": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Cycle Design Options",
+   "Toggle Slow-Motion Vision",
+   "- Next Body Part",
+   "- Previous Body Part",
+   "Create Tremor",
+   "Lock Design",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:wally_west": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Vibrate",
+   "Summon Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:war_machine_mk1": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Shoulder Turret",
+   "Hand Guns"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:war_machine_mk2": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Shoulder Turret",
+   "Hand Guns",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:war_machine_mk3": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Shoulder Turret",
+   "Hand Guns",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "jmctheroes:zod_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Heat Vision",
+   "Solar Charged Heat Vision",
+   "Toggle Slow-Motion Vision",
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Interstellar Travel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "nameless:anti_ock": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Slow-Motion Vision",
+   "fiskheroes:gliding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:batman_beyond": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Toggle Claws",
+   "Toggle Boosters",
+   "Toggle Invisibility",
+   "nameless:dyn/gliding_boost"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:big_time": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Slow-Motion Vision",
+   "Switch to Next: Red",
+   "Switch to Next: Blue",
+   "Switch to Next: Green",
+   "Toggle Camoflague",
+   "Toggle Stingers",
+   "Switch to Previous: Blue",
+   "Switch to Previous: Red"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:bizarro": {
+  "tier": 9,
+  "abilities": [
+   "Arctic Vision",
+   "Boost",
+   "Flame Breath",
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "fiskheroes:teleport_delay"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "nameless:brightburn": {
+  "tier": 8,
+  "abilities": [
+   "Heat Vision",
+   "Raging Heat Vision",
+   "Boost",
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Anger Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "nameless:doctor_octopus_ps4": {
+  "tier": 4,
+  "abilities": [
+   "Tentacle Jab",
+   "Tentacle Grab",
+   "Tentacle Strike",
+   "Toggle Tentacles"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:iron_fist": {
+  "tier": 3,
+  "abilities": [
+   "Toggle Iron Fist",
+   "Meditate"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:iron_man": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:iron_spider": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Aim",
+   "Web Zip",
+   "Waldo Shield",
+   "Slow-Motion Vision",
+   "Waldo Jab",
+   "Toggle Waldos",
+   "Backpack Transform",
+   "fiskheroes:gliding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:joker": {
+  "tier": 1,
+  "abilities": [
+   "Reload",
+   "Toggle Knuckle Dusters",
+   "Toggle Flag",
+   "Aim"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:kid_flash": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Stealth Mode",
+   "Toggle Arctic Mode"
+  ],
+  "traits": [
+   "t_speed",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:luke_cage": {
+  "tier": 7,
+  "abilities": [
+   "Harlem Express",
+   "Power Slam",
+   "Sweet Christmas!"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:nightwing": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Toggle Wingsuit",
+   "Toggle Electricity"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:quasar": {
+  "tier": 9,
+  "abilities": [
+   "Quantum Beam",
+   "Boost",
+   "Quantum Blast",
+   "Forcefield",
+   "fiskheroes:teleport_delay"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "nameless:red_hood": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:robin": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "nameless:spider_man_2099": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Claws",
+   "Web Zip",
+   "Toggle Gliding",
+   "Toggle Accelerated Decoy",
+   "fiskheroes:gliding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "nameless:spider_uk": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shoo'as",
+   "Web Zip",
+   "Slow-Motion Vision",
+   "Toggle Bri'ish Heri'age",
+   "SCOTLAND FOREVER!!!",
+   "fiskheroes:gliding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "nameless:superman_dcu": {
+  "tier": 9,
+  "abilities": [
+   "Heat Vision",
+   "Boost",
+   "Freeze Breath",
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Block",
+   "fiskheroes:teleport_delay"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "nameless:superman_fleischer": {
+  "tier": 7,
+  "abilities": [
+   "Boost",
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "nameless:venom90": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Slow-Motion Vision",
+   "Toggle Symbiote",
+   "fiskheroes:gliding"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "ninjago:cole": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Slow-Motion Vision",
+   "Spinjitzu"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ninjago:jay": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Slow-Motion Vision",
+   "Spinjitzu"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ninjago:kai": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Slow-Motion Vision",
+   "Spinjitzu"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "ninjago:zane": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Slow-Motion Vision",
+   "Spinjitzu"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:kingpin": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Ram",
+   "Block",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:kingpin_sv": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Ram",
+   "Block",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:punisher": {
+  "tier": 3,
+  "abilities": [
+   "Reload",
+   "Toggle Grenades",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:shocker": {
+  "tier": 4,
+  "abilities": [
+   "Charge Gauntlets",
+   "Concentrated Blast",
+   "Concussive Blast",
+   "Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:spider_man_cw": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision",
+   "Toggle Mechanical Wings"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "runnyhero:vulture": {
+  "tier": 4,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "runnyhero:white_tiger": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Claws",
+   "Tiger Strike"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "sabri:black_panther": {
+  "tier": 8,
+  "abilities": [
+   "Toggle Claws",
+   "Fill Kinetic Energy",
+   "Kinetic Energy Pulse",
+   "Nanite Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "sabri:black_widow": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Toggle Widow's Bite",
+   "Combine Batons",
+   "Seperate Batons",
+   "Grapple",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:cyclops_xmen": {
+  "tier": 4,
+  "abilities": [
+   "Optic Blast",
+   "Optic Shot",
+   "Chaos Blast"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:doctor_doom_comics": {
+  "tier": 8,
+  "abilities": [
+   "Shield Throw",
+   "Electricity Blast",
+   "Telekinesis Grab",
+   "Teleport",
+   "Forcefield",
+   "Spell Wheel"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:doctor_doom_f4": {
+  "tier": 6,
+  "abilities": [
+   "Electricity Blast"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:kang_the_conqueror": {
+  "tier": 7,
+  "abilities": [
+   "Energy Projection",
+   "Telekinesis Grab",
+   "Teleport",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:namor": {
+  "tier": 8,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:quicksilver_xmen": {
+  "tier": 2,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Speed Knockback"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "sabri:sandman_raimi": {
+  "tier": 1,
+  "abilities": [
+   "Toggle Sand Fist",
+   "Toggle Sand Hammer",
+   "Toggle Sand Mace",
+   "Toggle Sand Cloud Form",
+   "Change Size",
+   "Castle Form",
+   "Sand Transformation"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sabri:silver_surfer_f4": {
+  "tier": 10,
+  "abilities": [
+   "Boost",
+   "Cosmic Energy Blast",
+   "Toggle Intangibility",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "sabri:thanos": {
+  "tier": 9,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sabri:thor": {
+  "tier": 8,
+  "abilities": [
+   "Lightning Blast",
+   "Spin Mjolnir",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "sabri:wolverine_xmen": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Claws",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "secretheroes:ghost_spider": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "secretheroes:godspeed": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Vibrational Sonics",
+   "Godly Display"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "secretheroes:herobrine": {
+  "tier": 10,
+  "abilities": [
+   "Teleport",
+   "Toggle Invisibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "secretheroes:homelander": {
+  "tier": 8,
+  "abilities": [
+   "Heat Vision",
+   "Toggle/Adjust Super-Speed",
+   "Milkshake",
+   "Intimidation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "secretheroes:hulk": {
+  "tier": 8,
+  "abilities": [
+   "Thunderclap",
+   "Smash Ground",
+   "Gamma Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "secretheroes:impulse": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "secretheroes:mining_armor": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Intangibility",
+   "Change Size",
+   "Miniaturize Suit",
+   "Eternium Laser",
+   "Toggle Mineral Grenades (use on self)",
+   "Toggle Night Vision"
+  ],
+  "traits": [
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "secretheroes:moon_knight": {
+  "tier": 6,
+  "abilities": [
+   "Conjure Weapon",
+   "Toggle Jacket",
+   "Mr. Knight",
+   "Moon Knight",
+   "OSCAR"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "secretheroes:red_death_comics": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "secretheroes:saitama": {
+  "tier": 10,
+  "abilities": [
+   "Consecutive Normal Punches",
+   "Killer Move: Serious Series - SERIOUS PUNCH",
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Serious"
+  ],
+  "traits": [
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "secretheroes:spider_man_black_raimi": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "secretheroes:star_labs_speedster_comics": {
+  "tier": 3,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Toggle Suit"
+  ],
+  "traits": [
+   "t_speed",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "secretheroes:the_flash": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "secretheroes:the_flash_iris": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "secretheroes:vibe": {
+  "tier": 2,
+  "abilities": [
+   "Aim",
+   "Vibe Blasts",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "secretheroes:xs": {
+  "tier": 4,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "shadows:aragami": {
+  "tier": 4,
+  "abilities": [
+   "Aim",
+   "Aim : Shadow Pull",
+   "Aim : Warp Strike",
+   "Throwing Stars",
+   "Mesmerize/Silhouette",
+   "Ledge Teleport",
+   "Wraith",
+   "Shadow Kill",
+   "Whisper",
+   "Blood Smoke(Punch To Activate)"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "shadows:backpack": {
+  "tier": 1,
+  "abilities": [
+   "Store Limit Reached",
+   "Store",
+   "Take"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:backpack_equipment_visual": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:dipdapdoe": {
+  "tier": 1,
+  "abilities": [
+   "Look For Match With Player (Input Player Name)",
+   "Solo",
+   "Play",
+   "Practise",
+   "Reset Input",
+   "Confirm Selected Player",
+   "Practise Against Computer (Easy)",
+   "Reset",
+   "Back To Menu",
+   "Select"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:double_jump": {
+  "tier": 1,
+  "abilities": [
+   "Toggle Web Swinging"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:forced_sentry": {
+  "tier": 1,
+  "abilities": [
+   "Forced Sentry",
+   "Radius Forced Sentry"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:golem": {
+  "tier": 8,
+  "abilities": [
+   "Ground Shatter",
+   "Release The Curse",
+   "Disable Orginal Punching",
+   "Punch"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "shadows:hue_man": {
+  "tier": 5,
+  "abilities": [
+   "Dual Aim",
+   "Teleport On Entity",
+   "Teleport Out of Quantum Realm",
+   "Teleport In to Quantum Realm",
+   "X(Number) Y(Number) Z(Number)",
+   "Teleport",
+   "Recharging Hues",
+   "Save",
+   "Load",
+   "Energy Projection"
+  ],
+  "traits": [
+   "t_tank",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "shadows:hunter": {
+  "tier": 2,
+  "abilities": [
+   "Cycle Arrows",
+   "Reload",
+   "Bow Horizontal",
+   "Disable Punch",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "shadows:mage": {
+  "tier": 2,
+  "abilities": [
+   "Slot-1",
+   "Slot-2",
+   "Slot-3",
+   "Open Mask",
+   "Telekinesis Grab"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:necrosword": {
+  "tier": 8,
+  "abilities": [
+   "Sword",
+   "Tentacle Jab",
+   "Transform",
+   "Tentacle Grab",
+   "Back Tentacles",
+   "Slow Motion"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "shadows:power_ranger_wind_blue": {
+  "tier": 5,
+  "abilities": [
+   "Water Sprinting",
+   "Use Storm Striker (Hold)",
+   "Ninja Movement",
+   "Toggle Weapon",
+   "Transform Weapon",
+   "Storm Striker (Other Morphers Needed)",
+   "Storm Striker",
+   "Toggle",
+   "Toggle Glider",
+   "Transform"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "shadows:power_ranger_wind_red": {
+  "tier": 5,
+  "abilities": [
+   "Ninja Movement",
+   "Toggle Weapon",
+   "Transform Weapon",
+   "Storm Striker (Other Morphers Needed)",
+   "Storm Striker",
+   "Toggle",
+   "Toggle Glider",
+   "Transform",
+   "Channel Ninja Power",
+   "Use Weapon"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "shadows:power_ranger_wind_yellow": {
+  "tier": 5,
+  "abilities": [
+   "Ground Form",
+   "Ninja Movement",
+   "Toggle Weapon",
+   "Transform Weapon",
+   "Storm Striker (Other Morphers Needed)",
+   "Storm Striker",
+   "Toggle",
+   "Toggle Glider",
+   "Transform",
+   "Channel Ninja Power"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "shadows:random": {
+  "tier": 8,
+  "abilities": [
+   "Health Too Low",
+   "Randomize"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:runic_magic": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:shadow": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Shadow Form",
+   "Umbra Jab",
+   "Umbra Grab",
+   "Shadow Dome",
+   "Darkness Cloak",
+   "Solidify Shadows"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "shadows:silver_speed": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision",
+   "Phase(Sneak Or Sprint And Jump)",
+   "Phase(Hold Jump Unless Sneaking)",
+   "Wall Run"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "shadows:sorcerer": {
+  "tier": 2,
+  "abilities": [
+   "Select Runes",
+   "Next Page",
+   "Use Selected Rune",
+   "Previous Page",
+   "fiskheroes:modifier.spell.fail",
+   "fiskheroes:blade",
+   "shadows:dyn/1boolean_reset",
+   "fiskheroes:shield_blocking",
+   "shadows:dyn/5boolean_reset",
+   "shadows:dyn/6boolean_reset"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "shadows:steve": {
+  "tier": 4,
+  "abilities": [
+   "Slot Change",
+   "Telekinesis",
+   "Slot1",
+   "Slot2",
+   "Slot3",
+   "Herobrine Transform",
+   "Teleport"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "shadows:superior_spider": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Talons",
+   "Tentacle Jab",
+   "Web Zip",
+   "Tentacle Grab",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision",
+   "Miniaturize Suit",
+   "Toggle Tentacles",
+   "Toggle Web Wings"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "shadows:tornado": {
+  "tier": 2,
+  "abilities": [
+   "Tornado Shield",
+   "Tornado Attack",
+   "Tornado",
+   "Disable Punch"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "shadows:vampire": {
+  "tier": 8,
+  "abilities": [
+   "Wolf",
+   "Grab(Bite)",
+   "Drink Blood(From Equipment Wheel)",
+   "Change Color(Hold Dye)",
+   "Bat Slam",
+   "RGB",
+   "Shadows",
+   "Levitate",
+   "Disable Punch"
+  ],
+  "traits": [
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "sind:39_jetpack": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:42_1": {
+  "tier": 2,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:42_2": {
+  "tier": 2,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:42_3": {
+  "tier": 2,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:42_4": {
+  "tier": 2,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:ironlegiondrone": {
+  "tier": 6,
+  "abilities": [
+   "Aim Repulsor Blast",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Wrist Rockets",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:ironspider": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Activate Instant Kill Mode",
+   "Toggle Web Wings",
+   "Nanite Transformation",
+   "Toggle Pincers",
+   "TENTACLES"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "sind:mark1": {
+  "tier": 5,
+  "abilities": [
+   "Flamethrower - (Empty)",
+   "Flamethrower",
+   "Reload Flamethrower - (Coal)",
+   "Reload Flamethrower",
+   "Arm Rocket",
+   "Right-Click - Arm Rocket",
+   "Reload Arm Rocket - (Gunpowder)",
+   "Reload Arm Rocket",
+   "Disable Punch"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark10": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "sind:mark11": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark12": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark13": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark14": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark15": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Toggle Stealth",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark16": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Toggle Blades",
+   "Sentry Mode",
+   "Toggle Stealth",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark17": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark18": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Toggle Stealth",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark19": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "sind:mark2": {
+  "tier": 6,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Arm Shield",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark20": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark21": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark22": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Shoot Arm Guns"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark23": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Repulsor Beams"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark24": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark25": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Smash Ground",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark26": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Smash Ground",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark27": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark28": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark29": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Smash Ground",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark3": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Arm Shield",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark30": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Toggle Blades",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark31": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "sind:mark32": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Toggle Blades",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark33": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Toggle Blades",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark34": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Claw Grab",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark35": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Claw Grab",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark36": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Sonic Repulsors",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark37": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Toggle Harpoons"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark38": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Ground Pound",
+   "Smash Ground",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark39": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark4": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark40": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "sind:mark41": {
+  "tier": 6,
+  "abilities": [
+   "Aim Repulsor Blast",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Split Attack",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark42": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Mob Scan",
+   "Unibeam",
+   "Summon Torso",
+   "Summon Legs",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark43": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Seismic Stomp",
+   "Deploy Flares",
+   "Change Arm"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark44": {
+  "tier": 8,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Seismic Stomp",
+   "Change Arm",
+   "Arm Lock",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark45": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark46": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark47": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark48": {
+  "tier": 8,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Seismic Stomp",
+   "Sentry Mode",
+   "Smash Ground",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark49": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Sentry Blast",
+   "Mob Scan",
+   "Sentry Mode",
+   "Sentry Beams",
+   "Toggle Sentries"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark5": {
+  "tier": 6,
+  "abilities": [
+   "Aim Repulsor Blast",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Drop Case",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark50": {
+  "tier": 8,
+  "abilities": [
+   "Crab Cannon",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Displacer Cannons",
+   "Mob Scan",
+   "Unibeam",
+   "Magnet/Arm Lasers",
+   "Nanite Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark6": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark7": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark7_bracelets": {
+  "tier": 7,
+  "abilities": [
+   "Summon Mark 7",
+   "Aim Repulsor Blast",
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Deploy Flares",
+   "Fire Shoulder Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark8": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Deploy Flares",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:mark9": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Fire Chest Torpedoes",
+   "Rockets",
+   "Arm Lasers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:tony": {
+  "tier": 1,
+  "abilities": [
+   "Summon Suit",
+   "Suit set seems to be incomplete",
+   "Suit is incompatible. Please equip a different suit",
+   "Suit is too damaged to be summoned",
+   "Please equip a suit to be summoned",
+   "Summon Mark 7 Pod",
+   "Summon",
+   "Mob Scan",
+   "Toggle Tony Stark Skin",
+   "Summon STARK Drones"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:tony_equip": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "sind:warmachine_mk1": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Launch the Ex-Wife",
+   "Right-Click - Launch the Ex-Wife",
+   "Reload the Ex-Wife - (TNT)",
+   "Reload the Ex-Wife"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:warmachine_mk2": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Shoot Shoulder Gun",
+   "Reload Shoulder Gun",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:warmachine_mk3": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Sentry Mode",
+   "Shoot Shoulder Gun/Missiles",
+   "Reload Shoulder Gun/Missiles",
+   "Fire Chest Torpedoes"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "sind:warmachine_mk4": {
+  "tier": 7,
+  "abilities": [
+   "Aim Repulsor Blast/Beams",
+   "Aim Repulsor Blast/Shield",
+   "Aim Repulsor Blast/Sonic Repulsors",
+   "Aim Repulsor Blast",
+   "Unibeam",
+   "Mob Scan",
+   "Micro Bombs",
+   "Right-Click - Micro Bombs",
+   "Swap Shoulder Gun Mode",
+   "Sentry Mode"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:ash_williams": {
+  "tier": 1,
+  "abilities": [
+   "Aim Boomstick",
+   "Equip/Unequip Chainsaw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:batman_arkham": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:batman_comics": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Toggle Kryptonite Ring"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:batman_thomas": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle/Cycle Utility Belt",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:batwoman_comics": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:blue_beetle_dceu": {
+  "tier": 8,
+  "abilities": [
+   "Aim",
+   "Toggle Blades",
+   "Toggle Buster Sword",
+   "Wing Shield",
+   "Scarab Transformation"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:green_goblin": {
+  "tier": 7,
+  "abilities": [
+   "Toggle Glider Blades",
+   "Twin Machine Guns",
+   "Throw Razor Bats"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:gwenpool": {
+  "tier": 3,
+  "abilities": [
+   "Reload",
+   "Toggle Grenades",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:gwenpool_future": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Toggle Grenades",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:harley_quinn": {
+  "tier": 1,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:human_torch": {
+  "tier": 4,
+  "abilities": [
+   "Shoot",
+   "Flame On/Off",
+   "What time is it Ben?"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:invisible_woman": {
+  "tier": 3,
+  "abilities": [
+   "Toggle Invisibility",
+   "Psionic Pull",
+   "Psionic Push",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "skarlet:miss_martian": {
+  "tier": 8,
+  "abilities": [
+   "Telekinesis Grab",
+   "Toggle Intangibility",
+   "Toggle Invisibility",
+   "Heat Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:mister_fantastic": {
+  "tier": 7,
+  "abilities": [
+   "Elastic Grab",
+   "Elastic Pull",
+   "Toggle Elongated Arms"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "skarlet:silk": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision",
+   "Web Claw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "skarlet:spider_girl": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "skarlet:spider_gwen": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "skarlet:supergirl_dceu": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Heat Vision",
+   "Slow-Motion Vision",
+   "Super Spit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "skarlet:superman_comics": {
+  "tier": 9,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Boost",
+   "Heat Vision",
+   "Slow-Motion Vision",
+   "Freeze Breath"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "skarlet:the_thing": {
+  "tier": 7,
+  "abilities": [
+   "Dismount"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:ultron_comics": {
+  "tier": 9,
+  "abilities": [
+   "Aim",
+   "Encephalo-Beam",
+   "Forcefield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "skarlet:wolverine_comics": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Claws"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "skarlet:wonder_woman_comics": {
+  "tier": 8,
+  "abilities": [
+   "Shield Throw",
+   "Lasso of Truth",
+   "Toggle/Adjust Super-Speed"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_archery"
+  ]
+ },
+ "skarlet:x23_comics": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Claws"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "stellar:booster_gold": {
+  "tier": 7,
+  "abilities": [
+   "Energy Blasts",
+   "Force Field",
+   "Toggle Slow-Motion Vision",
+   "Save Temporal Position",
+   "Load Temporal Position"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "stellar:cloak": {
+  "tier": 1,
+  "abilities": [
+   "Change",
+   "Detach Cloak"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "stellar:cloak_shadow": {
+  "tier": 1,
+  "abilities": [
+   "Change",
+   "Detach Cloak"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "stellar:danny_phantom": {
+  "tier": 8,
+  "abilities": [
+   "Aim",
+   "Toggle Intangibility",
+   "Cold Beam",
+   "Ghostly Wail",
+   "Ghost Transform",
+   "Ecto Beam",
+   "Telekinesis"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "stellar:dr_manhattan": {
+  "tier": 10,
+  "abilities": [
+   "Disintegrate",
+   "Telekinesis Grab",
+   "Teleport",
+   "Fabricate Item",
+   "Toggle Intangibility",
+   "Matter Manipulation",
+   "Change Size",
+   "Meditate"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "stellar:pepsi_man": {
+  "tier": 7,
+  "abilities": [
+   "Throw Pepsi Can",
+   "Hydrate!",
+   "Shake Pepsi Can"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_jump"
+  ]
+ },
+ "stellar:quantum_suit": {
+  "tier": 2,
+  "abilities": [
+   "Toggle Suit",
+   "QR Travel",
+   "Leave The Quantum Realm"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "stellar:spawn": {
+  "tier": 7,
+  "abilities": [
+   "Chain Jab",
+   "Teleport",
+   "Chain Grab",
+   "Toggle Invisibility",
+   "Wisp Form",
+   "Transform",
+   "Toggle Chains"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "stellar:wasp": {
+  "tier": 5,
+  "abilities": [
+   "Change Size",
+   "Aim",
+   "Miniaturize Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "pwt:batman_cyberpunk": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Bow Horizontal",
+   "Reload",
+   "Change Projectile",
+   "Toggle Gun",
+   "Download Data",
+   "Download Complete",
+   "Unreadable Data",
+   "No Data To Download",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "pwt:carnage": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Tentacle Jab",
+   "Tentacle Grab",
+   "Web Zip",
+   "Cycle Blades",
+   "Toggle Web Swinging",
+   "Toggle",
+   "Toggle Tentacles",
+   "Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "pwt:david_martinez_pre": {
+  "tier": 2,
+  "abilities": [
+   "Reload",
+   "Sandevistan",
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "pwt:halloween_ghost": {
+  "tier": 1,
+  "abilities": [
+   "Hide",
+   "Ksssss",
+   "Mimic Enderman",
+   "POP",
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "pwt:halloween_scarecrow": {
+  "tier": 2,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "pwt:joker_cyberpunk": {
+  "tier": 7,
+  "abilities": [
+   "Reload",
+   "Toggle Reaper Scythe",
+   "Overheat...",
+   "Sandevistan",
+   "Inject Venom",
+   "Full Capacity",
+   "Refilling...",
+   "Mantis Blade",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_archery"
+  ]
+ },
+ "pwt:riot": {
+  "tier": 8,
+  "abilities": [
+   "Charge BioMass",
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Cycle Blades",
+   "Toggle Web Swinging",
+   "Toggle",
+   "Toggle Thorns",
+   "Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "pwt:robin_cyberpunk": {
+  "tier": 5,
+  "abilities": [
+   "Toggle/Cycle Utility Belt",
+   "Equip/Unequip Gauntlets",
+   "Toggle Grappling",
+   "Call Hoverboard"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "pwt:spider_man_symbiot_webb": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Yes",
+   "Web Zip",
+   "No",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision",
+   "Remove Symbiote",
+   "Keep The Symbiote",
+   "Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "pwt:spider_man_symbiot_webb_3": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision",
+   "Blade"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "pwt:sukuna": {
+  "tier": 8,
+  "abilities": [
+   "Cleave",
+   "Dismantle",
+   "Charge Energy",
+   "Slow Motion",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "pwt:sukuna_heian": {
+  "tier": 9,
+  "abilities": [
+   "Cleave",
+   "Dismantle Max Output",
+   "Shake",
+   "Dismantle",
+   "Charge Energy",
+   "Start Chant",
+   "Slow Motion",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "pwt:toxin": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Tentacle Jab",
+   "Tentacle Strike",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Claws",
+   "Tentacles",
+   "Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "pwt:trickster_aftermath": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Shield",
+   "Protective Spell",
+   "Sike",
+   "Hey How you doing",
+   "Charged Beam",
+   "Space Manipulation",
+   "Toggle Intangibility",
+   "SpellMenu",
+   "Mark/Unmark",
+   "great ? nice"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "pwt:venom": {
+  "tier": 8,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Tentacle Jab",
+   "Tentacle Grab",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Tentacles",
+   "Symbiote"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "tmf:dna_blitzwolfer_18": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_cannonbolt_16": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_ditto_23": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_eyeguy_24": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_frankenstrike_20": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_snareoh_19": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_upchuck_22": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_waybig_25": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:dna_wildvine_17": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:iron_man_mk1_aa": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Toggle Shield",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:iron_man_mk1_aa_backpack": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Toggle Shield",
+   "Unibeam",
+   "Toggle Suit"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:iron_man_silver_centurion_aa": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Toggle Shield",
+   "Unibeam"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:iron_man_space_aa": {
+  "tier": 7,
+  "abilities": [
+   "Aim",
+   "Toggle Shield"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:iron_man_stealth_aa": {
+  "tier": 6,
+  "abilities": [
+   "Aim",
+   "Toggle Shield",
+   "Unibeam",
+   "Toggle Invisibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:not_hero_time": {
+  "tier": 1,
+  "abilities": [],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omni_galvanic_modulator": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omni_recal": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omnitrix": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omnitrix_grey_matter": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omnitrix_grey_matter_crafting": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:omnitrix_upchuck": {
+  "tier": 10,
+  "abilities": [
+   "Set Mistransformations",
+   "Trigger Fusion",
+   "Set Waybig Size",
+   "Upload",
+   "Capture Mode",
+   "Select Alien",
+   "Activate Galvanic Modulator",
+   "Revert",
+   "Change Color",
+   "Tamper"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "tmf:the_deep": {
+  "tier": 6,
+  "abilities": [
+   "Camouflage"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "tmf:the_mandarin_aa": {
+  "tier": 6,
+  "abilities": [
+   "Shockwave",
+   "Teleport",
+   "Toggle Armor"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "transformers_pack:g1_hook": {
+  "tier": 10,
+  "abilities": [
+   "Reload",
+   "Transform",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "transformers_pack:g1_optimus_prime": {
+  "tier": 10,
+  "abilities": [
+   "Reload",
+   "Transform",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:artemis_yj": {
+  "tier": 2,
+  "abilities": [
+   "Cycle Arrows",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:batman_dceu_tactical": {
+  "tier": 6,
+  "abilities": [
+   "Toggle/Cycle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:batman_reeves": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:batman_rocksteady": {
+  "tier": 7,
+  "abilities": [
+   "Reload",
+   "Toggle Utility Belt",
+   "Hack Suit Data Drive",
+   "Copy Data",
+   "Paste Data",
+   "Scan Target",
+   "Delete Data",
+   "Cycle Target",
+   "Detective Mode",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:batman_telltale": {
+  "tier": 5,
+  "abilities": [
+   "Toggle Utility Belt"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:black_bolt_comics": {
+  "tier": 7,
+  "abilities": [
+   "I'm Sorry"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:black_canary_e2": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Canary Cry",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:black_cat_ps4": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Claws",
+   "Grapple Zip",
+   "Toggle Grapple Ropes",
+   "Toggle Grenades",
+   "Cycle Grenade | Flashbang",
+   "Cycle Grenade | E.M.P."
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "unconventional:captain_america_jw": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Shield Throw",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:captain_carter_what_if": {
+  "tier": 6,
+  "abilities": [
+   "Shield Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "unconventional:catwoman_telltale": {
+  "tier": 3,
+  "abilities": [
+   "Toggle Claws",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "unconventional:deadpool_xmen_origins": {
+  "tier": 6,
+  "abilities": [
+   "Toggle Blades",
+   "Optic Blast",
+   "Slow-Motion Vision",
+   "Warp"
+  ],
+  "traits": [
+   "t_melee",
+   "t_jump",
+   "t_archery"
+  ]
+ },
+ "unconventional:deathstroke_rocksteady": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle Grenades",
+   "Cycle Grenade | Flashbang",
+   "Cycle Grenade | Explosive",
+   "Cycle Grenade | Smoke",
+   "Cycle Grenade | Neural",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:edith": {
+  "tier": 1,
+  "abilities": [
+   "Main Menu",
+   "Blackout Illusion",
+   "UnLock",
+   "Lock"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "unconventional:electro": {
+  "tier": 5,
+  "abilities": [
+   "Electricity Beam",
+   "Teleport"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:emiko_adachi": {
+  "tier": 4,
+  "abilities": [
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:five": {
+  "tier": 1,
+  "abilities": [
+   "Reload",
+   "Toggle Slow-Motion Vision",
+   "Teleport",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:ghost": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Phase",
+   "Invisibility",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:hawkeye": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Cycle Arrows",
+   "Bow Horizontal",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:kate_bishop": {
+  "tier": 3,
+  "abilities": [
+   "Cycle Arrows",
+   "Bow Horizontal"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:mosquito": {
+  "tier": 10,
+  "abilities": [
+   "Aim"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "unconventional:nick_fury": {
+  "tier": 3,
+  "abilities": [
+   "Reload",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:pietro": {
+  "tier": 2,
+  "abilities": [
+   "Toggle/Adjust Super-Speed",
+   "Toggle Slow-Motion Vision"
+  ],
+  "traits": [
+   "t_melee",
+   "t_speed",
+   "t_tank"
+  ]
+ },
+ "unconventional:radioactive_man": {
+  "tier": 9,
+  "abilities": [
+   "Radiation Beam",
+   "Radiation Outburst",
+   "Radiation Shield"
+  ],
+  "traits": [
+   "t_archery"
+  ]
+ },
+ "unconventional:red_guardian": {
+  "tier": 6,
+  "abilities": [
+   "Shield Throw"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:robin_rocksteady": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Toggle Utility Belt",
+   "Scan Target",
+   "Cycle Target",
+   "Detective Mode",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:ronin": {
+  "tier": 5,
+  "abilities": [
+   "Reload",
+   "Cycle Arrows",
+   "Bow Horizontal",
+   "Toggle Throwing Stars",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:soldier_boy": {
+  "tier": 8,
+  "abilities": [
+   "Reload",
+   "Charged Beam",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:spider_man_miles_ps5": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Venom Burst",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision",
+   "Camouflage",
+   "Venom"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:spider_man_miles_sv": {
+  "tier": 7,
+  "abilities": [
+   "Toggle/Cycle Web Shooters",
+   "Web Zip",
+   "Toggle Web Swinging",
+   "Toggle Slow-Motion Vision",
+   "Camouflage",
+   "Venom Punch"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:spoiler_comics": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Utility Belt",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:sss_og": {
+  "tier": 5,
+  "abilities": [],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:taskmaster": {
+  "tier": 6,
+  "abilities": [
+   "Cycle Arrows",
+   "Shield Throw",
+   "Reload",
+   "Cycle Weapons",
+   "Bow Horizontal",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:the_signal_comics": {
+  "tier": 4,
+  "abilities": [
+   "Toggle Escrimas",
+   "Toggle Shadow Form",
+   "Toggle Utility Belt",
+   "Shadow Chain",
+   "Shadow Dome",
+   "Toggle Invisibility"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:tigress_yj": {
+  "tier": 4,
+  "abilities": [
+   "Reload",
+   "Cycle Arrows",
+   "Bow Horizontal",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:wanda": {
+  "tier": 2,
+  "abilities": [
+   "Psionic Shield",
+   "Telekinesis Grab",
+   "Boost",
+   "Enable/Disable Phasing",
+   "Cast Spell",
+   "Psionic Beam",
+   "Aim/Psionic Blast",
+   "fiskheroes:dyn/flight_super_boost"
+  ],
+  "traits": [
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:white_wolf": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Shield Throw",
+   "Block",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_jump"
+  ]
+ },
+ "unconventional:winter_soldier": {
+  "tier": 6,
+  "abilities": [
+   "Reload",
+   "Shield Throw",
+   "Toggle Smoke Bombs",
+   "Switch Mode",
+   "Block",
+   "Aim"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ },
+ "unconventional:yellow_jacket": {
+  "tier": 6,
+  "abilities": [
+   "Change Size",
+   "Charge Stingers",
+   "Miniaturize Suit",
+   "Toggle Stingers"
+  ],
+  "traits": [
+   "t_melee",
+   "t_tank",
+   "t_archery"
+  ]
+ }
+}

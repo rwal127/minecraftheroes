@@ -1,7 +1,8 @@
-# Builds descriptions.json: per-hero suit stats scraped from the FiskHeroes wiki suit
-# pages (the same info the wiki shows per suit: tier, damage reduction, Tutridium cost,
-# power groups). Only built-in suits have wiki pages; heropack heroes get a localized
-# template description in the UI instead.
+# Builds descriptions.json: per-hero wiki-only numbers for built-in suits —
+# damage reduction and Tutridium cost scraped from the FiskHeroes wiki suit
+# pages. Tier and abilities are NOT taken from the wiki: they come from the
+# game's own hero definitions via tools/fetch_hero_stats.py (stats.json), and
+# the UI composes localized template descriptions from that data.
 #
 # Usage:
 #   python tools/fetch_descriptions.py [--repo PATH] [--refresh]
@@ -18,9 +19,6 @@ import requests
 from wiki_previews import WIKI_PAGE, UA, WIKI
 
 REPO = Path(__file__).resolve().parent.parent
-
-# Suits page: tier -> damage reduction (a tier is a damage-reduction band)
-TIER_DR = {1: 75.0, 2: 80.8, 3: 85.2, 4: 88.6, 5: 91.2, 6: 93.3, 7: 94.8, 8: 96.0, 9: 96.9, 10: 97.6}
 
 
 def fetch_wikitext(title: str, cache: dict, refresh=False) -> str | None:
@@ -54,42 +52,17 @@ def strip_markup(wt: str) -> str:
 
 
 def parse_suit_page(wt: str) -> dict | None:
-    """Extract (tier, damage reduction %, Tutridium cost, power groups, intro) from a
-    suit page."""
+    """Extract (damage reduction %, Tutridium cost) from a suit page."""
     text = strip_markup(wt)
     desc = {}
-
-    m = re.search(r"is a Tier (\d+) character", text)
-    if m:
-        desc["tier"] = int(m.group(1))
 
     m = re.search(r"\+\s*([\d.]+)\s*% Damage Reduction", text)
     if m:
         desc["dr"] = float(m.group(1))
-        if "tier" not in desc:  # DR -> nearest tier band
-            desc["tier"] = min(TIER_DR, key=lambda t: abs(TIER_DR[t] - desc["dr"]))
 
     m = re.search(r"==\s*'?Cost'?\s*==\s*\n+\s*(\d+)\s+Tutridium", text)
     if m:
         desc["cost"] = int(m.group(1))
-
-    # power groups: top-level bold bullets of the Powers & Abilities section
-    # (stat bullets like "* + 85% Damage Reduction" are excluded)
-    m = re.search(r"==\s*'''Powers & Abilities'''\s*==(.*?)(?=\n==\s*'''[^=]|\Z)", wt, re.S)
-    if m:
-        powers = [p for p in re.findall(r"^\* ?'''([^']+?)'''", m.group(1), re.M)
-                  if not p.startswith("+") and p.strip() not in ("Stats", "Effects")]
-        if powers:
-            desc["powers"] = powers
-
-    # lead-section paragraphs minus the "X is a Tier N" line and confusion notes
-    lead = wt.split("==", 1)[0]
-    lead = strip_markup(lead)
-    paras = [re.sub(r"\s+", " ", p).strip() for p in lead.split("\n\n")]
-    paras = [p for p in paras
-             if p and not re.search(r"is a Tier \d+ character", p) and not p.startswith("Note:")]
-    if paras:
-        desc["note"] = paras[0][:400]
 
     return desc or None
 
@@ -119,12 +92,13 @@ def main(refresh=False, repo=REPO):
     cache_path.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     (repo / "descriptions.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"descriptions: {len(out)}/{len(builtins)} built-in heroes -> descriptions.json")
+    print(f"descriptions: {len(out)}/{len(builtins)} built-in heroes -> descriptions.json "
+          f"(dr: {sum(1 for v in out.values() if 'dr' in v)}, cost: {sum(1 for v in out.values() if 'cost' in v)})")
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(
-        description="Build descriptions.json from the FiskHeroes wiki suit pages.")
+        description="Build descriptions.json (dr/cost) from the FiskHeroes wiki suit pages.")
     ap.add_argument("--repo", type=Path, default=REPO,
                     help=f"catalog repo root (default: {REPO})")
     ap.add_argument("--refresh", action="store_true",

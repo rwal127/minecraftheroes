@@ -6,15 +6,15 @@
     "total": 535,
     "packs": 21,
     "previews": {
-      "total_with_preview": 472,
+      "total_with_preview": 501,
       "wiki_renders": 56,
-      "game_front_views": 448,
-      "model_renders": 24,
+      "game_front_views": 464,
+      "model_renders": 37,
       "builtins_with_preview": "67/67",
       "wiki_source": "fiskheroes.fandom.com — 3D-рендеры, вики описывает только встроенные костюмы",
       "game_source": "фронтальный вид, собранный из текстур костюмов в jar/херопаках",
       "model_source": "офлайн-рендер Tabula-моделей из херопаков (tools/hero_previews_models.py)",
-      "without_preview": 63,
+      "without_preview": 34,
       "without_preview_note": "кастомные модели без превью-геометрии, предметы-гаджеты и герои вообще без текстур костюма"
     }
   },
@@ -702,9 +702,9 @@
         {
           "id": "misc:invincible_variants",
           "name": "Invincible Variants",
-          "image": null,
+          "image": "assets/heroes/game/misc__invincible_variants.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/misc__invincible_variants.png",
           "wiki": null,
           "image_model": null
         },
@@ -738,20 +738,20 @@
         {
           "id": "misc:mind_stone",
           "name": "Mind Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__mind_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__mind_stone.png"
         },
         {
           "id": "misc:power_stone",
           "name": "Power Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__power_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__power_stone.png"
         },
         {
           "id": "misc:powerplex",
@@ -774,11 +774,11 @@
         {
           "id": "misc:reality_stone",
           "name": "Reality Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__reality_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__reality_stone.png"
         },
         {
           "id": "misc:reverse_flash",
@@ -792,20 +792,20 @@
         {
           "id": "misc:soul_stone",
           "name": "Soul Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__soul_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__soul_stone.png"
         },
         {
           "id": "misc:space_stone",
           "name": "Space Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__space_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__space_stone.png"
         },
         {
           "id": "misc:sunspot",
@@ -819,11 +819,11 @@
         {
           "id": "misc:time_stone",
           "name": "Time Stone",
-          "image": null,
+          "image": "assets/heroes/models/misc__time_stone.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/misc__time_stone.png"
         }
       ]
     },
@@ -1087,11 +1087,11 @@
         {
           "id": "tgheroes:fff",
           "name": "Fin Fang Foom",
-          "image": null,
+          "image": "assets/heroes/models/tgheroes__fff.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/tgheroes__fff.png"
         },
         {
           "id": "tgheroes:galactus",
@@ -1661,29 +1661,29 @@
         {
           "id": "dhhp:blossom",
           "name": "Blossom",
-          "image": null,
+          "image": "assets/heroes/models/dhhp__blossom.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/dhhp__blossom.png"
         },
         {
           "id": "dhhp:bubbles",
           "name": "Bubbles",
-          "image": null,
+          "image": "assets/heroes/models/dhhp__bubbles.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/dhhp__bubbles.png"
         },
         {
           "id": "dhhp:buttercup",
           "name": "Buttercup",
-          "image": null,
+          "image": "assets/heroes/models/dhhp__buttercup.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/dhhp__buttercup.png"
         },
         {
           "id": "dhhp:doctorfate",
@@ -1929,9 +1929,9 @@
         {
           "id": "jmctheroes:allen",
           "name": "Allen The Alien",
-          "image": null,
+          "image": "assets/heroes/game/jmctheroes__allen.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/jmctheroes__allen.png",
           "wiki": null,
           "image_model": null
         },
@@ -1974,11 +1974,11 @@
         {
           "id": "jmctheroes:big_wheel",
           "name": "Jackson Weele/Big Wheel",
-          "image": null,
+          "image": "assets/heroes/models/jmctheroes__big_wheel.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/jmctheroes__big_wheel.png"
         },
         {
           "id": "jmctheroes:bizarro",
@@ -2253,9 +2253,9 @@
         {
           "id": "jmctheroes:power",
           "name": "Power",
-          "image": null,
+          "image": "assets/heroes/game/jmctheroes__power.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/jmctheroes__power.png",
           "wiki": null,
           "image_model": null
         },
@@ -2603,9 +2603,9 @@
         {
           "id": "nameless:brightburn",
           "name": "Brightburn",
-          "image": null,
+          "image": "assets/heroes/game/nameless__brightburn.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/nameless__brightburn.png",
           "wiki": null,
           "image_model": null
         },
@@ -3371,45 +3371,45 @@
         {
           "id": "sind:39_jetpack",
           "name": "Iron Man/Mark 39 (XXXIX) - StarBoost / Gemini",
-          "image": null,
+          "image": "assets/heroes/game/sind__39_jetpack.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__39_jetpack.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "sind:42_1",
           "name": "Iron Man/Mark 42 (XLII) - Prodigal Son",
-          "image": null,
+          "image": "assets/heroes/game/sind__42_1.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__42_1.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "sind:42_2",
           "name": "Iron Man/Mark 42 (XLII) - Prodigal Son",
-          "image": null,
+          "image": "assets/heroes/game/sind__42_2.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__42_2.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "sind:42_3",
           "name": "Iron Man/Mark 42 (XLII) - Prodigal Son",
-          "image": null,
+          "image": "assets/heroes/game/sind__42_3.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__42_3.png",
           "wiki": null,
           "image_model": null
         },
         {
           "id": "sind:42_4",
           "name": "Iron Man/Mark 42 (XLII) - Prodigal Son",
-          "image": null,
+          "image": "assets/heroes/game/sind__42_4.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/sind__42_4.png",
           "wiki": null,
           "image_model": null
         },
@@ -4188,9 +4188,9 @@
         {
           "id": "stellar:cloak",
           "name": "Cloak",
-          "image": null,
+          "image": "assets/heroes/game/stellar__cloak.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/stellar__cloak.png",
           "wiki": null,
           "image_model": null
         },
@@ -4340,9 +4340,9 @@
         {
           "id": "pwt:spider_man_symbiot_webb",
           "name": "Spider-Man",
-          "image": null,
+          "image": "assets/heroes/game/pwt__spider_man_symbiot_webb.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/pwt__spider_man_symbiot_webb.png",
           "wiki": null,
           "image_model": null
         },
@@ -4501,9 +4501,9 @@
         {
           "id": "tmf:iron_man_mk1_aa_backpack",
           "name": "Iron Man",
-          "image": null,
+          "image": "assets/heroes/game/tmf__iron_man_mk1_aa_backpack.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tmf__iron_man_mk1_aa_backpack.png",
           "wiki": null,
           "image_model": null
         },
@@ -4609,9 +4609,9 @@
         {
           "id": "tmf:the_mandarin_aa",
           "name": "The Mandarin",
-          "image": null,
+          "image": "assets/heroes/game/tmf__the_mandarin_aa.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/tmf__the_mandarin_aa.png",
           "wiki": null,
           "image_model": null
         }
@@ -4626,20 +4626,20 @@
         {
           "id": "transformers_pack:g1_hook",
           "name": "Hook",
-          "image": null,
+          "image": "assets/heroes/models/transformers_pack__g1_hook.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/transformers_pack__g1_hook.png"
         },
         {
           "id": "transformers_pack:g1_optimus_prime",
           "name": "Optimus Prime",
-          "image": null,
+          "image": "assets/heroes/models/transformers_pack__g1_optimus_prime.png",
           "image_wiki": null,
           "image_game": null,
           "wiki": null,
-          "image_model": null
+          "image_model": "assets/heroes/models/transformers_pack__g1_optimus_prime.png"
         }
       ]
     },
@@ -4841,9 +4841,9 @@
         {
           "id": "unconventional:nick_fury",
           "name": "Nick Fury",
-          "image": null,
+          "image": "assets/heroes/game/unconventional__nick_fury.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/unconventional__nick_fury.png",
           "wiki": null,
           "image_model": null
         },
@@ -4886,9 +4886,9 @@
         {
           "id": "unconventional:ronin",
           "name": "Ronin/Clint Barton",
-          "image": null,
+          "image": "assets/heroes/game/unconventional__ronin.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/unconventional__ronin.png",
           "wiki": null,
           "image_model": null
         },
@@ -4967,9 +4967,9 @@
         {
           "id": "unconventional:wanda",
           "name": "Wanda Maximoff",
-          "image": null,
+          "image": "assets/heroes/game/unconventional__wanda.png",
           "image_wiki": null,
-          "image_game": null,
+          "image_game": "assets/heroes/game/unconventional__wanda.png",
           "wiki": null,
           "image_model": null
         },

@@ -18,9 +18,10 @@ pip install requests Pillow
 1. hero_previews_game.py    → assets/heroes/game/*.png
 2. hero_previews_models.py  → assets/heroes/models/*.png
 3. wiki_previews.py         → assets/heroes/wiki/*.png + мерж полей в heroes_list.json
-4. fetch_descriptions.py    → descriptions.json
-5. make_sheets.py           → research/out/sheets/*.png (QA, в git не хранится)
-6. tests/validate_data.py   → проверка целостности всего выше
+4. fetch_hero_stats.py      → stats.json
+5. fetch_descriptions.py    → descriptions.json
+6. make_sheets.py           → research/out/sheets/*.png (QA, в git не хранится)
+7. tests/validate_data.py   → проверка целостности всего выше
 ```
 
 ---
@@ -94,9 +95,30 @@ python tools/wiki_previews.py --wiki-research "D:\backup\wiki_research" --repo .
 
 Выходы: `assets/heroes/wiki/<hero>.<ext>` (640px по ширине), обновлённый `heroes_list.json`.
 
-## tools/fetch_descriptions.py — описания со страниц костюмов
+## tools/fetch_hero_stats.py — игровые данные героев (stats.json)
 
-Обходит страницы встроенных костюмов через MediaWiki API (`action=parse&prop=wikitext`) и собирает то же, что показывает вики: **тир**, **% снижения урона**, **цену в Tutridium**, группы **способностей** и интро-абзац страницы. Из «Powers & Abilities» выкидываются служебные группы `Stats`/`Effects` и стат-буллеты (`* + 85% Damage Reduction` — попадает в поле `dr`, а не в способности).
+Достаёт из локальной установки игры определения каждого героя (`data/heroes/*.js` — 67 встроенных в jar мода, остальные в 21 херопаке) и собирает `stats.json`: `{hero_id: {tier, abilities[], traits[]}}`. Названия способностей с кодов `key.*` раскрываются через `assets/fiskheroes/lang/en_US.lang` мода; майнкрафт-цветовые коды (`§a`) срезаются. Черты (`t_melee`, `t_speed`, `t_tank`, `t_jump`, `t_archery`) выводятся из плоских модификаторов атрибутов (`addAttribute(..., 0)`) по порогам — из них и тира сайт собирает шаблонное описание на языке интерфейса, так что текстовое описание есть у всех 535 героев.
+
+Грабли (уже решены в коде, не сломайте):
+
+- варианты героев делегируют в общие базы (`implement("sind:external/iron_man_base")`): тир приходит первым аргументом `base.init(hero, N, ...)`, способности и атрибуты живут в базовом файле — базы парсятся и мержатся;
+- часть паков обфусцирована: у `secretheroes` — таблица строк (`_0x550e[5]` → `setTier`), разворачивается в `deobfuscate()`; у пары героев — ротация таблицы с функцией-декодером, regex бессилен, файл исполняется в **node** со стабом-рекордером (`parse_with_node`, нужен установленный node; без него эти герои останутся без ти);
+- приёмник вызова бывает не `hero`, а локальный идентификатор обфусцированного файла — регэкспы допускают оба варианта.
+
+```bash
+python tools/fetch_hero_stats.py --mc-root "C:\Games\Minecraft"
+```
+
+| Параметр | Описание |
+|---|---|
+| `--mc-root` | **обязателен** (или env `MC_ROOT`): путь к клиенту игры с `versions/SuperHERO/mods/` и `versions/SuperHERO/fiskheroes/` |
+| `--repo` | корень каталога |
+
+Выход: `stats.json` (535 записей: тир 535/535, способности ~506, черты 535).
+
+## tools/fetch_descriptions.py — вики-числа для встроенных костюмов
+
+Обходит страницы встроенных костюмов через MediaWiki API (`action=parse&prop=wikitext`) и собирает то, чего нет в игровых данных: **% снижения урона** и **цену в Tutridium**. Тир и способности берутся из `stats.json` (см. `fetch_hero_stats.py`) — вики-тексты не используются.
 
 ```bash
 python tools/fetch_descriptions.py
@@ -109,7 +131,7 @@ python tools/fetch_descriptions.py --refresh   # перекачать wikitext, 
 | `--refresh` | принудительно перекачать страницы (по умолчанию используется кэш) |
 
 Кэш: `research/out/wiki_suit_pages.json` (gitignored) — повторные прогоны не ходят в сеть. Между запросами пауза 1 с, до 4 ретраев.
-Выход: `descriptions.json` — `{hero_id: {tier, dr, cost, powers[], note}}`. Херопак-герои получают шаблонное описание в самом UI (сайт переводит его на язык интерфейса).
+Выход: `descriptions.json` — `{hero_id: {dr, cost}}` для 54 встроенных героев с вики-страницами.
 
 ## tools/make_sheets.py — QA-контакт-листы
 
@@ -146,7 +168,7 @@ python tools/merge_aliases.py [--repo PATH]
 
 ## tests/validate_data.py — валидация данных (не деплоится)
 
-Проверяет целостность всего каталога без браузера: точность счётчиков, уникальность и формат ID (`pack:hero`), принадлежность ID своим пакам, отсутствие устаревших полей статусов, существование **и декодируемость** (PIL) всех файлов превью, консистентность `meta.previews`, валидность `aliases.json` и `descriptions.json`. Код выхода ≠ 0 при любой ошибке — удобно для CI.
+Проверяет целостность всего каталога без браузера: точность счётчиков, уникальность и формат ID (`pack:hero`), принадлежность ID своим пакам, отсутствие устаревших полей статусов, существование **и декодируемость** (PIL) всех файлов превью, консистентность `meta.previews`, валидность `aliases.json`, `descriptions.json` и `stats.json`. Код выхода ≠ 0 при любой ошибке — удобно для CI.
 
 ```bash
 python tests/validate_data.py

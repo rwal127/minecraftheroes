@@ -116,6 +116,20 @@ async function runSuite(){
   ok('чипс применяет свой запрос', chipQ !== '' && $('#search').value === chipQ && $$('.row').length > 0);
   $('#clearBtn').click(); await tick();
 
+  // 8b. ability search filter (⚡ toggle in the search bar)
+  $('#ablBtn').click(); await tick();
+  ok('иконка способностей активирует режим поиска по способностям', $('#ablBtn').classList.contains('on') && $('#search').placeholder.length > 0);
+  await search('invisibility');
+  ok('«invisibility» в режиме способностей → >= 10 героев', $$('.row').length >= 10);
+  await search('web swinging');
+  ok('«web swinging» находит только пауков-плюющих паутиной', $$('.row').length >= 5 && ids().includes('fiskheroes:spider_man'));
+  await search('zzzz_no_such_ability');
+  ok('пустой результат по способностям — отдельная заглушка', $$('.empty').length === 1 && $$('.empty')[0].textContent.includes('способности'));
+  $('#ablBtn').click(); await tick();
+  ok('повторный клик выключает режим способностей', !$('#ablBtn').classList.contains('on') && $$('.row').length === 0);
+  $('#clearBtn').click(); await tick();
+  ok('после очистки — все 535 строк', $$('.row').length === 535);
+
   // 9. copy wiring (toast stubbed)
   await w.copy('/suit test:hero');
   ok('копирование вызывает тост с командой', String(w.__lastToast).includes('/suit test:hero'));
@@ -131,9 +145,10 @@ async function runSuite(){
     const mDecoded = await waitFor(() => mImg0 && mImg0.complete && mImg0.naturalWidth > 0, 10000);
     ok('фото в модалке реально декодировано (naturalWidth > 0)', !!mDecoded);
     ok('в модалке имя и пак', $('#mName').textContent === 'The Flash/Barry Allen' && $('#mBadge').textContent === 'FiskHeroes');
-    ok('в модалке чипы тира и снижения урона с вики', $('#mChips').textContent.includes('Тир 5') && $('#mChips').textContent.includes('91.2%'));
+    ok('в модалке чипы тира и снижения урона', $('#mChips').textContent.includes('Тир 5') && $('#mChips').textContent.includes('91.2%'));
     ok('в модалке команда', $('#mCmd').textContent === '/suit fiskheroes:the_flash');
-    ok('в модалке ссылка на вики', $('#mWiki').href === 'https://fiskheroes.fandom.com/wiki/The_Flash');
+    ok('в модалке шаблонное описание: тир + жирные «Особенности:» с новой строки, ссылки на вики нет',
+       $('#mNote').textContent.includes('тир 5') && $('#mNote').innerHTML.includes('<br><b>') && $('#mNote').innerHTML.includes('<b>Особенности:</b>') && $('#mPowers').children.length > 0 && $('#mWiki') === null);
     const pos0 = $('#mPos').textContent;
     $('#mNext').click(); await tick();
     ok('«›» листает героев вперёд', $('#mPos').textContent !== pos0 && !modal().hidden);
@@ -144,8 +159,8 @@ async function runSuite(){
     const stoneRow = $$('.row[data-hero="misc:power_stone"]')[0];
     if (stoneRow) {
       stoneRow.click(); await tick();
-      ok('герой без превью получает заглушку 🦸', !modal().hidden && !!$('#mPhoto .ph'));
-      ok('для героя без вики — текст-шаблон вместо описания', $('#mNote').textContent.length > 10 && $('#mWiki').hidden);
+      ok('для героя без превью — заглушка 🦸', !modal().hidden && !!$('#mPhoto .ph'));
+      ok('для героя из пака — шаблонное описание с тиром', $('#mNote').textContent.includes('тир'));
       d.getElementById('mClose').click(); await tick();
       ok('модалка закрыта после второго героя', modal().hidden);
     }

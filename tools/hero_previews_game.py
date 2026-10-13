@@ -36,6 +36,14 @@ texture_index = {}  # open ZipFile -> {texture basename: [full paths]}
 # Heroes whose in-game look is a custom Tabula model, not the player skin: the texture
 # composer either fails them or shows the untransformed stand-in (Hulk -> Banner), so
 # don't emit game previews for them — tools/hero_previews_models.py renders their models.
+# Suits that are worn OVER the player's own body (accessories or assembling armor):
+# the composer underlays a default player body so the preview shows a player wearing
+# the pieces - exactly the in-game look.
+ACCESSORY_UNDERLAY = {
+    "nameless:brightburn", "sind:39_jetpack", "sind:42_1", "sind:42_2", "sind:42_3",
+    "sind:42_4", "sind:tony_equip",
+}
+
 GAME_SKIP = {
     "tgheroes:hulk", "tgheroes:red_hulk", "tgheroes:jugger", "tgheroes:thanos",
     "tgheroes:thing", "tgheroes:mr_fantastic", "tgheroes:abomation", "tgheroes:modok",
@@ -44,6 +52,7 @@ GAME_SKIP = {
     "jmctheroes:spider_ham", "jmctheroes:ultron_mk1", "jmctheroes:groot",
     "pwt:halloween_ghost", "pwt:halloween_scarecrow", "pwt:joker_cyberpunk", "pwt:toxin",
     "skarlet:the_thing",
+    "transformers_pack:g1_hook", "transformers_pack:g1_optimus_prime",  # robots: skin-layout compose is meaningless
 }
 
 
@@ -144,6 +153,22 @@ def renderer_texture_pairs(archive, ns: str, hid: str):
     if not m:
         return []
     return re.findall(r'"(\w+)"\s*:\s*"([\w:./-]+)"', m.group(1))
+
+
+def player_underlay(canvas, s):
+    """Full default player (procedural head + body/arms/legs) under the suit canvas —
+    what accessory/partial suits look like in game: the player's own body with armor
+    pieces on top."""
+    under = Image.new("RGBA", (64 * s, 64 * s), (0, 0, 0, 0))
+    d = Image.new("RGBA", (8 * s, 8 * s), (0, 0, 0, 0))
+    under.paste(default_head(s), (8 * s, 8 * s))
+    SHIRT, SKIN, DENIM = (36, 112, 112, 255), (199, 138, 94, 255), (54, 66, 118, 255)
+    for box, color in (((20, 20, 8, 12), SHIRT), ((44, 20, 4, 12), SKIN), ((36, 52, 4, 12), SKIN),
+                       ((4, 20, 4, 12), DENIM), ((20, 52, 4, 12), DENIM)):
+        piece = Image.new("RGBA", (box[2] * s, box[3] * s), color)
+        under.paste(piece, (box[0] * s, box[1] * s))
+    under.alpha_composite(canvas)
+    return under
 
 
 def default_head(s):
@@ -247,27 +272,46 @@ def composite_suit(archive, ns: str, hid: str):
         candidates = (found[f"{hid}_layer1.png"][:1] + found[f"{hid}.png"][:1]
                       + found[f"{hid}_l1.png"][:1] + found[f"{hid}_layer2.png"][:1]
                       + found[f"{hid}_l2.png"][:1])
-        if not candidates:
-            return None
+
+    pairs = [(k, tex_path(v)) for k, v in renderer_texture_pairs(archive, ns, hid)]
+    pairs = [(k, p) for k, p in pairs if p]
+    if not candidates and pairs:
+        # heroes whose loadTextures has no layer1/base at all (per-part suits,
+        # accessory-only suits): start from the hero's own texture list
+        candidates = [pairs[0][1]]
+
+    if not candidates:
+        return None
 
     stacks = [candidates]
     # second chance: many renderers keep the base skin in a non-layer1 key (their
     # layer1 is a blank/procedural stand-in), and slim-arm suits paint the limbs in a
-    # separate texture. Try single textures and base+overlay combos before giving up.
-    pairs = [(k, tex_path(v)) for k, v in renderer_texture_pairs(archive, ns, hid)]
-    pairs = [(k, p) for k, p in pairs if p]
+    # separate texture. Try single textures, base+overlay combos and - when there is
+    # no base at all - cumulative stacks of the hero's textures (head/jacket/pants
+    # painted in separate files).
     base = next(iter(dict.fromkeys(candidates)), None)
-    for p in [p for _k, p in pairs]:                       # single textures
+    singles = [p for _k, p in pairs]
+    for p in singles:                                      # single textures
         if [p] not in stacks:
             stacks.append([p])
-    for p in [p for _k, p in pairs]:                       # base + one overlay
-        if base and p != base and [base, p] not in stacks:
-            stacks.append([base, p])
+    if base:                                               # base + one overlay
+        for p in singles:
+            if p != base and [base, p] not in stacks:
+                stacks.append([base, p])
+    seen = []                                              # cumulative in loadTextures order
+    for p in dict.fromkeys(singles):                       # (per-part suits: head/jacket/pants files)
+        seen.append(p)
+        stack = list(dict.fromkeys(seen))
+        if len(stack) > 1 and stack not in stacks:
+            stacks.append(stack)
 
-    for stack in stacks[:14]:
+    accessory = f"{ns}:{hid}" in ACCESSORY_UNDERLAY
+    for stack in stacks[:24]:
         canvas = compose_canvas(archive, stack)
         if canvas is None:
             continue
+        if accessory:
+            canvas = player_underlay(canvas, max(1, round(canvas.width / 64)))
         if gate_passes(canvas):
             # the player's own head sits under the suit head in game: cowls leave
             # transparent eye holes (The Flash), some helmets don't paint a head at all

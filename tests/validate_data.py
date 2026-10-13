@@ -13,10 +13,12 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "heroes_list.json"
 ALIASES = ROOT / "aliases.json"
 DESCRIPTIONS = ROOT / "descriptions.json"
+STATS = ROOT / "stats.json"
 ID_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_]+$")
 FORBIDDEN_KEYS = {"status", "active_total", "marketplace_total", "note", "all_ids"}
 HERO_KEYS = {"id", "name", "image", "image_wiki", "image_game", "image_model", "wiki"}
-DESC_KEYS = {"tier", "dr", "cost", "powers", "note"}
+DESC_KEYS = {"dr", "cost"}
+TRAIT_KEYS = {"t_melee", "t_speed", "t_tank", "t_jump", "t_archery"}
 
 errors = []
 
@@ -116,17 +118,38 @@ def main() -> int:
         check(not unknown, f"all description keys are known hero IDs (unknown: {unknown[:5]})")
         check(all(set(v) <= DESC_KEYS for v in descs.values()),
               f"description entries only use keys {sorted(DESC_KEYS)}")
-        check(all(isinstance(v.get("tier"), int) and 1 <= v["tier"] <= 10 for v in descs.values() if "tier" in v),
-              "tiers are integers 1..10")
         check(all(isinstance(v.get("dr"), (int, float)) and 0 < v["dr"] < 100 for v in descs.values() if "dr" in v),
               "damage reduction is a percentage")
-        check(all(isinstance(v.get("powers"), list) and all(isinstance(x, str) for x in v["powers"])
-                  for v in descs.values() if "powers" in v),
-              "powers are lists of strings")
-        print(f"  {len(descs)} wiki descriptions ({sum(1 for v in descs.values() if 'tier' in v)} with tier, "
-              f"{sum(1 for v in descs.values() if 'powers' in v)} with powers)")
+        print(f"  {len(descs)} wiki-only numbers ({sum(1 for v in descs.values() if 'dr' in v)} with dr, "
+              f"{sum(1 for v in descs.values() if 'cost' in v)} with cost)")
     else:
         print("descriptions.json: not found (optional)")
+
+    if STATS.exists():
+        print("stats.json checks:")
+        stats = json.loads(STATS.read_text(encoding="utf-8"))
+        missing = sorted(set(ids) - set(stats))
+        check(not missing, f"every hero has a stats entry (missing: {missing[:5]})")
+        unknown = sorted(set(stats) - set(ids))
+        check(not unknown, f"all stats keys are known hero IDs (unknown: {unknown[:5]})")
+        check(all(set(v) <= {"tier", "abilities", "traits"} for v in stats.values()),
+              "stats entries only use keys {abilities, tier, traits}")
+        bad_tier = [k for k, v in stats.items() if "tier" in v and v["tier"] is not None
+                    and (not isinstance(v["tier"], int) or not 1 <= v["tier"] <= 10)]
+        check(not bad_tier, f"tiers are integers 1..10 or null (bad: {bad_tier[:5]})")
+        bad_abilities = [k for k, v in stats.items()
+                         if not isinstance(v.get("abilities"), list)
+                         or not all(isinstance(a, str) and a.strip() for a in v["abilities"])]
+        check(not bad_abilities, f"abilities are lists of non-empty strings (bad: {bad_abilities[:5]})")
+        bad_traits = [k for k, v in stats.items()
+                      if not set(v.get("traits", [])) <= TRAIT_KEYS]
+        check(not bad_traits, f"traits use known keys {sorted(TRAIT_KEYS)} (bad: {bad_traits[:5]})")
+        print(f"  {len(stats)} hero stat entries "
+              f"({sum(1 for v in stats.values() if v.get('tier') is not None)} with tier, "
+              f"{sum(1 for v in stats.values() if v.get('abilities'))} with abilities, "
+              f"{sum(1 for v in stats.values() if v.get('traits'))} with traits)")
+    else:
+        print("stats.json: not found (optional)")
 
     if errors:
         print(f"FAILED: {len(errors)} error(s)")

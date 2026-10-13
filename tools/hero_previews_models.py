@@ -43,26 +43,28 @@ MAX_W_H_RATIO = 1.9       # wider than tall by this much -> multi-entity scene (
 # Only needed where the generic heuristic picks wrong (checked on the QA sheet).
 OVERRIDES = {
     # gadget items and skin-only add-ons: no meaningful model preview exists
-    "misc:mind_stone": [], "misc:power_stone": [], "misc:reality_stone": [],
-    "misc:soul_stone": [], "misc:space_stone": [], "misc:time_stone": [],
     "misc:infinity_gauntlet": [], "misc:invincible_variants": [],
+    # omnitrix devices have unpainted geometry (black square) - nothing to show
+    "tmf:omni_galvanic_modulator": [], "tmf:omni_recal": [], "tmf:omnitrix": [],
+    "tmf:omnitrix_grey_matter": [], "tmf:omnitrix_grey_matter_crafting": [], "tmf:omnitrix_upchuck": [],
     "tgheroes:infinity_gauntlet": [],
     "tgheroes:wasp": [], "tgheroes:vision": [],           # skin + alex arms/wings only
-    "jmctheroes:power": [], "jmctheroes:big_wheel": [],
-    "shadows:power_ranger_wind_yellow": [], "shadows:power_ranger_wind_blue": [],
-    "shadows:power_ranger_wind_red": [], "shadows:backpack": [],
+    "jmctheroes:power": [],
+        "shadows:power_ranger_wind_yellow": [], "shadows:power_ranger_wind_blue": [],
+    "shadows:power_ranger_wind_red": [],
     "jmctheroes:scarlet_spider": [], "sabri:kang_the_conqueror": [],  # effect-only props
-    "shadows:hunter": [], "stellar:cloak": [],
+    "stellar:cloak": [],
     "tmf:the_mandarin_aa": [],
-    "unconventional:mosquito": [], "unconventional:nick_fury": [],
-    "unconventional:ronin": [], "unconventional:wanda": [],
+    "unconventional:ronin": [],  # covered by the texture composer
+    "unconventional:mosquito": [], "unconventional:nick_fury": [], "unconventional:wanda": [],
+    "shadows:hunter": [], "shadows:necrosword": [], "unconventional:edith": [],
     # skin + add-on heroes: their look is the player skin (hair/arms/weapon props are
     # modeled separately) -> let the game-texture composer render them instead
     "tgheroes:emma_frost": [], "tgheroes:jean": [], "tgheroes:she_hulk": [], "tgheroes:rogue": [],
     "sabri:black_widow": [], "sabri:doctor_doom_comics": [], "jmctheroes:moon_knight": [],
     # main body parts only: drop banner-form arms / wings / weapon props
     "tgheroes:hulk": ["hulk_"],
-    "tgheroes:fff": {"vars": ["foom_"]},  # main foom body, not the fly_* duplicates
+    "tgheroes:fff": {"vars": ["foom_"], "max_aspect": 2.4},  # winged dragon: legitimately wide
     "jmctheroes:groot": ["groothead", "grootchest", "grootrightarm", "grootleftarm", "grootrightleg", "grootleftleg"],
 }
 
@@ -298,7 +300,12 @@ def find_tbl(zf, ns, ref):
     return (exact or sorted(hits, key=lambda n: zf.getinfo(n).file_size))[0]
 
 
-def parse_effects(zf, ns, js):
+def parse_effects(zf, ns, js, texmap_override=None):
+    """Extract model effects from renderer JS: var -> {tbl, texture, anchor, offset, scale}."""
+    load = re.search(r"loadTextures\(\{(.*?)\}\)", js, re.S)
+    texmap = dict(re.findall(r'"(\w+)"\s*:\s*"([\w:./-]+)"', load.group(1))) if load else {}
+    if texmap_override is not None:
+        texmap = texmap_override
     """Extract model effects from renderer JS: var -> {tbl, texture, anchor, offset, scale}.
 
     Patterns seen in the wild:
@@ -321,9 +328,11 @@ def parse_effects(zf, ns, js):
 
     for m in re.finditer(r'(\w+)\s*=\s*renderer\.createResource\(\s*"MODEL"\s*,\s*"([\w:./-]+)"', js):
         resources[m.group(1)] = {"ref": m.group(2)}
-    for m in re.finditer(r'(\w+)\.texture\.set\(\s*"(\w+)"\s*\)', js):
+    for m in re.finditer(r'(\w+)\.texture\.set\(\s*(?:(\w+)|null)?\s*(?:,\s*"(\w+)")?\s*\)', js):
         if m.group(1) in resources:
-            resources[m.group(1)]["texkey"] = m.group(2)
+            # texture.set(base) or texture.set(base, lights) / set(null, "stone"):
+            # the lights layer carries the actual color for gem/prop models
+            resources[m.group(1)]["texkey"] = m.group(3) or m.group(2)
 
     # chained: var = renderer.createEffect("fiskheroes:model").setModel(...)
     for m in re.finditer(
@@ -365,23 +374,55 @@ def parse_effects(zf, ns, js):
     return resolved
 
 
-def effects_with_parents(zf, ns, js, depth=3):
-    """parse_effects on js; if empty, chase extend("ns:parent") and use the parent's
-    model effects (child renderers often only add props on top of the parent's body)."""
-    effects = parse_effects(zf, ns, js)
+def _script_path(ns, ref, kind):
+    """'ns:name' or 'name' -> zip path of a helper script (extend() parent or
+    implement() external, the latter living under renderers/heroes/external/)."""
+    if ":" in ref:
+        rns, rn = ref.split(":", 1)
+        rns = rns or ns
+    else:
+        rns, rn = ns, ref
+    if kind == "implement" and "/" in rn:
+        return f"assets/{rns}/renderers/heroes/{rn}.js"
+    return f"assets/{rns}/renderers/heroes/{rn}.js"
+
+
+def effects_with_parents(zf, ns, js, depth=3, texmap_override=None):
+    """parse_effects on js; if empty, chase extend("ns:parent") (parent supplies the
+    body models) and implement("ns:external/name") (external scripts build custom
+    models, e.g. Transformers/Powerpuff). Texture keys always resolve against the
+    hero's own loadTextures (externals receive them as create() arguments)."""
+    effects = parse_effects(zf, ns, js, texmap_override)
     if effects or depth == 0:
         return effects
-    m = re.search(r'extend\(\s*"([\w:.-]+)"', js)
-    if not m:
-        return effects
-    ref = m.group(1)
-    pns, pname = (ref.split(":", 1) + [""])[:2] if ":" in ref else (ns, ref)
-    pfile = f"assets/{pns or ns}/renderers/heroes/{pname}.js"
-    try:
-        pjs = zf.read(pfile).decode("utf-8", errors="replace")
-    except KeyError:
-        return effects
-    return effects_with_parents(zf, pns or ns, pjs, depth - 1)
+    load = re.search(r"loadTextures\(\{(.*?)\}\)", js, re.S)
+    hero_texmap = dict(re.findall(r'"(\w+)"\s*:\s*"([\w:./-]+)"', load.group(1))) if load else {}
+    ext_refs = re.findall(r'(\w+)\s*=\s*implement\(\s*"([\w:./-]+)"', js)
+    for pattern, kind, refs in ((r'extend\(\s*"([\w:.-]+)"', "extend", re.findall(r'extend\(\s*"([\w:.-]+)"', js)),
+                                (None, "implement", ext_refs)):
+        for ref in refs:
+            var, ref = ref if kind == "implement" else (None, ref)
+            path = _script_path(ns, ref, kind)
+            try:
+                sjs = zf.read(path).decode("utf-8", errors="replace")
+            except KeyError:
+                continue
+            sub = effects_with_parents(zf, ns, sjs, depth - 1)
+            if kind == "implement":
+                # the external script's texture.set() refers to the create() argument
+                # names; map them to the string keys the hero passes:
+                #   var = implement("ns:external/x"); ... var.create(renderer, "model", "model_lights")
+                call = re.search(
+                    re.escape(var) + r'\.create\(\s*\w+\s*(?:,\s*"(\w+)")?(?:,\s*"(\w+)")?\)', js)
+                resolved = []
+                for e in sub:
+                    if e.get("tex") is None and call and call.group(1) in hero_texmap:
+                        e = dict(e, tex=resolve_tex(zf, ns, hero_texmap[call.group(1)]))
+                    resolved.append(e)
+                sub = resolved
+            if sub:
+                return sub
+    return effects
 
 
 def render_hero(zf, ns, hid, js):
@@ -396,6 +437,9 @@ def render_hero(zf, ns, hid, js):
     if not effects:
         return None, "no usable .tbl model effects"
     forced = OVERRIDES.get(f"{ns}:{hid}")
+    max_aspect = MAX_W_H_RATIO
+    if isinstance(forced, dict) and "max_aspect" in forced:
+        max_aspect = forced["max_aspect"]
     if forced is not None and not forced:
         return None, "overridden: no model preview by design"
     if forced:
@@ -442,7 +486,7 @@ def render_hero(zf, ns, hid, js):
             return "empty render", None
         if img.width * img.height < MIN_PIXELS:
             return f"too small ({img.width}x{img.height})", None
-        if img.width / max(1, img.height) > MAX_W_H_RATIO:
+        if img.width / max(1, img.height) > max_aspect:
             return f"scene-like aspect ({img.width}x{img.height})", None
         return None, img
 
