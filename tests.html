@@ -156,7 +156,7 @@ async function runSuite(){
     ok('«‹» возвращает обратно', $('#mPos').textContent === pos0);
     d.getElementById('mClose').click(); await tick();
     ok('✕ закрывает модалку', modal().hidden);
-    const stoneRow = $$('.row[data-hero="misc:power_stone"]')[0];
+    const stoneRow = $$('.row[data-hero="tmf:omnitrix"]')[0];  // omnitrix has no textures at all - permanently without a preview
     if (stoneRow) {
       stoneRow.click(); await tick();
       ok('для героя без превью — заглушка 🦸', !modal().hidden && !!$('#mPhoto .ph'));
