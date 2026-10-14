@@ -1,105 +1,106 @@
-# Hero Atlas — каталог героев Minecraft (FiskHeroes)
+# Hero Atlas — Minecraft FiskHeroes hero catalog
 
-Статический веб-каталог всех героев и костюмов из мода **Fisk's Superheroes (FiskHeroes) 2.4.0** для Minecraft 1.7.10: **535 героев в 21 паке**. Один кодбейс работает и как обычный сайт, и как **Telegram Mini App**. Без бэкенда, без базы данных, без сборки. Оформление — палитра **VS Code Dark+**.
+A static web catalog of every hero and suit from the Minecraft mod **Fisk's Superheroes
+(FiskHeroes) 2.4.0** (1.7.10): **535 heroes in 21 packs**. The same codebase works as a
+regular website and a **Telegram Mini App**. No backend, no database, no build step;
+styling is the **VS Code Dark+** palette.
 
-**Что умеет:**
+## Features
 
-- **интерфейс на 8 языках** — русский, English, українська, español, 한국어, 日本語, français, deutsch (кнопка-иконка Lucide `languages` в шапке: текста нет, клик открывает нативный выпадающий список; выбор запоминается, язык автоопределяется из браузера/Telegram);
-- **превью у каждого героя в списке** — 501 из 535 (все 67 встроенных): 56 3D-рендеров с [fiskheroes.fandom.com](https://fiskheroes.fandom.com), 464 фронтальных вида из текстур костюмов и 37 офлайн-рендеров кастомных Tabula-моделей; у героев без превью — заглушка 🦸;
-- **карточка героя по клику на строку**: большое фото, пак, тир, % снижения урона (для встроенных костюмов), цена в Tutridium, чипы способностей и шаблонное описание, собранное из игровых данных героя (тир и происхождение, ниже — жирная строка «Особенности»); описание есть у всех 535 героев и переводится на язык интерфейса; команда и ID с копированием; листинг ‹ › по текущему отфильтрованному списку, Esc/клик мимо — закрыть;
-- **фильтр по способностям** — иконка ⚡ в строке поиска открывает панель со всеми умениями каталога (852 уникальных, у каждого — число героев, владеющих им): чекбоксы выбирают умения (герой подходит под любое из отмеченных), встроенный мини-поиск сужает список, «Сбросить» очищает, на иконке показывается счётчик выбранных; поиск в панели понимает **русские, украинские и другие алиасы и акронимы** (`телепорт`, `тп`, `інвиз`, `суперскорость`, `regeneracion` — файл `ability_aliases.json`, свыше 500 алиасов на 201 умение), работает без учёта регистра и диакритики; фильтр сочетается с поиском по имени и вкладкой пака;
-- глобальный поиск по имени героя, части имени, ID и названию пака — показывает все совпадающие варианты во всех паках;
-- поиск учитывает **алиасы**: русские и английские названия, транслит и акронимы (`one punch man` → Saitama и Sukuna, `человек-паук` → все Spider-Man, `оптимус прайм` → Optimus Prime);
-- просмотр любого пака отдельно (вкладки пако́в + кнопка «📦 Паки»);
-- показ точного ID и готовой команды `/suit packname:heroname`;
-- копирование команды одним нажатием (Clipboard API с fallback для Telegram WebView);
-- счётчики героев/паков вычисляются из JSON динамически — при обновлении данных ничего в коде править не нужно.
+- **8 UI languages** (ru, en, uk, es, ko, ja, fr, de); auto-detected, choice remembered.
+- **Previews for 501/535 heroes** (all 67 built-in suits), generated offline by the repo
+  tools: 56 3D renders, 464 front views composed from suit textures and 37 renders of
+  custom Tabula models; heroes with nothing to render get a placeholder.
+- **Hero card** (click a row): large preview, pack, tier, damage reduction and Tutridium
+  cost for built-in suits, ability chips, a translated template description, hero ID and
+  a ready `/suit packname:heroname` command with one-click copy; `‹ ›` navigation over the
+  filtered list, `Esc` closes.
+- **Search** by name, partial name, ID and pack name across all packs, with **aliases**:
+  Russian and English names, translit and acronyms (`one punch man` → Saitama,
+  `человек-паук` → every Spider-Man).
+- **Ability filter** (⚡ icon): a panel listing every ability in the catalog with its hero
+  count; checkboxes match any selected ability, the mini-search understands multilingual
+  aliases and acronyms, plus reset and a selection counter on the icon. Combines with name
+  search and pack tabs.
+- Separate pack browsing (pack tabs + «📦 Packs» button).
+- All counters are computed from JSON at runtime — updating the data needs no code changes.
 
-## Структура репозитория
+## Repository layout
 
 ```
-├── index.html                # всё приложение (HTML+CSS+JS, без зависимостей и сборки)
-├── heroes_list.json          # источник каталога: герои, ID, паки, пути превью
-├── stats.json                # игровые данные каждого героя: тир, способности, особенности (из jar/херопаков)
-├── descriptions.json         # вики-числа для встроенных костюмов: % снижения урона и цена в Tutridium
-├── aliases.json              # алиасы поиска для каждого героя (RU + EN + акронимы)
-├── hero_atlas_commands.txt   # плоский текстовый список всех команд /suit
-├── wrangler.toml             # конфиг Cloudflare (статические assets, деплой из Git)
-├── assets/
-│   ├── hero_atlas_map.png        # карта всех паков и героев
-│   ├── hero_atlas_overview.png   # компактный обзор паков
-│   └── heroes/                   # превью героев (~530 PNG, ≈11 МБ)
-│       ├── wiki/                 #   3D-рендеры с fiskheroes.fandom.com (56 шт., 640px)
-│       ├── game/                 #   фронтальные виды из текстур костюмов (464 шт., 72×136)
-│       └── models/               #   рендеры кастомных Tabula-моделей (24 шт.)
-├── docs/DEPLOYMENT.md        # пошагово: Cloudflare + Telegram BotFather
-├── docs/scripts/README.md    # описания всех скриптов: параметры, входы/выходы, грабли
-├── tools/
-│   ├── hero_previews_game.py   # фронтальные превью из текстур (--mc-root — путь к клиенту игры)
-│   ├── hero_previews_models.py # офлайн-рендер кастомных Tabula-моделей (.tbl) без запуска игры
-│   ├── wiki_previews.py        # докачка вики-рендеров + мерж полей image/wiki в heroes_list.json
-│   ├── fetch_hero_stats.py     # stats.json: тир/способности/черты из data/heroes/*.js в jar и херопаках
-│   ├── fetch_descriptions.py   # descriptions.json: % снижения урона и цена со страниц вики
-│   ├── make_sheets.py          # QA-контакт-листы превью → research/out/sheets/ (в git не хранятся)
-│   ├── generate_commands.py    # перегенерация hero_atlas_commands.txt из JSON
-│   └── merge_aliases.py        # сборка aliases.json из research/out/agent_*.json
-├── research/                 # задания и выдача субагентов-ресёрчеров алиасов
-├── tests/validate_data.py      # автотесты целостности данных
-├── tests.html                # автотесты интерфейса в браузере (64 проверки)
-└── .nojekyll
+index.html               the whole app (vanilla HTML/CSS/JS, no dependencies, no build)
+heroes_list.json         single source of truth: meta + packs.<ns>.{sources, count, heroes}
+stats.json               per-hero game data: tier, abilities, traits (parsed from jar/heropacks)
+descriptions.json        damage reduction % and Tutridium cost for built-in suits
+aliases.json             search aliases per hero (RU/EN/translit/acronyms)
+ability_aliases.json     ability-filter aliases (202 abilities, 601 aliases)
+hero_atlas_commands.txt  flat /suit command list
+wrangler.toml            Cloudflare config (static assets, git-integration deploy)
+assets/heroes/           previews, ~556 PNG ≈ 12 MB:
+                         wiki/ 56 3D renders · game/ 464 texture front views · models/ 37 Tabula renders
+docs/                    deployment guide + per-script documentation
+tools/                   preview/data generation scripts (see docs/scripts/README.md)
+research/                alias research inputs/outputs
+tests/validate_data.py   data integrity tests
+tests.html               in-browser UI test suite
 ```
 
-## Как обновлять каталог (главный сценарий)
+## Updating the catalog
 
-Сайт загружает `heroes_list.json` динамически (`fetch`, без кэша). Обновление = замена одного файла:
+The site fetches `heroes_list.json` with no cache, so an update is replacing one file
+(keep the exact hero key set: `id, name, image, image_wiki, image_game, image_model, wiki`):
 
-1. Заменить `heroes_list.json` (структура: `meta` + `packs.<namespace>.{sources, count, heroes:[{id, name, image, image_wiki, image_game, wiki}]}`).
-2. (Опционально) перегенерировать список команд: `python tools/generate_commands.py`.
-3. Прогнать тесты: `python tests/validate_data.py`.
-4. Закоммитить и запушить в `main` — публикация обновится автоматически (Cloudflare Pages деплоит из `main`).
+1. Replace `heroes_list.json`.
+2. Optionally regenerate the command list: `python tools/generate_commands.py`.
+3. Run the data tests: `python tests/validate_data.py` — must pass.
+4. Commit to `main` — Cloudflare Workers static assets deploy automatically.
 
-Никаких счётчиков в коде нет: totals считаются из JSON при загрузке. У пако́в не отображаются никакие статусы доступности — каталог показывает всех героев.
+## Regenerating previews and data
 
-## Как перегенерировать превью и описания
-
-Нужен локальный клиент игры с модом (jar + херопаки в репозиторий не попадают): расположение передаётся параметром `--mc-root` или переменной `MC_ROOT`, ничего не зашито в код. Кэш ресёрча вики (для докачки без повторных запросов) по умолчанию ищется в `<mc-root>/wiki_research/`, можно указать отдельно через `--wiki-research`.
+Needs a local game client (jar + heropacks are never committed); its location is passed
+via `--mc-root` (env `MC_ROOT`), nothing is hardcoded:
 
 ```bash
-python tools/hero_previews_game.py --mc-root "C:\Games\Minecraft"   # 1) assets/heroes/game/*.png из текстур jar/херопаков
-python tools/hero_previews_models.py --mc-root "C:\Games\Minecraft" # 2) assets/heroes/models/*.png — рендер Tabula-моделей
-python tools/wiki_previews.py --mc-root "C:\Games\Minecraft"        # 3) assets/heroes/wiki/*.png + мерж всех полей в heroes_list.json
-python tools/fetch_hero_stats.py --mc-root "C:\Games\Minecraft"     # 4) stats.json: тир/способности/черты всех героев (нужен node для пары обфусцированных паков)
-python tools/fetch_descriptions.py                                  # 5) descriptions.json: % снижения урона и цена с вики (--refresh — перекачать)
-python tools/make_sheets.py                                         # 6) QA-контакт-листы → research/out/sheets/
-python tests/validate_data.py                                       # 7) проверить целостность
+python tools/hero_previews_game.py   --mc-root "C:\Games\Minecraft"  # game/ front views from suit textures
+python tools/hero_previews_models.py --mc-root "C:\Games\Minecraft"  # models/ Tabula-model renders
+python tools/wiki_previews.py        --mc-root "C:\Games\Minecraft"  # wiki/ renders + merge into heroes_list.json
+python tools/fetch_hero_stats.py     --mc-root "C:\Games\Minecraft"  # stats.json: tier/abilities/traits
+python tools/fetch_descriptions.py                                   # descriptions.json: dr %, Tutridium cost
+python tools/make_sheets.py                                          # QA contact sheets (gitignored)
+python tests/validate_data.py                                        # verify integrity
 ```
 
-Подробно про каждый скрипт — параметры, входы/выходы, грабли вики и гейт качества — в [docs/scripts/README.md](docs/scripts/README.md).
+Parameters, inputs/outputs and quality gates for every script:
+[docs/scripts/README.md](docs/scripts/README.md).
 
-Превью есть у 472/535 героев (все 67 встроенных). Кастомные Tabula-модели (Hulk, Thanos, MODOK…), которые нельзя собрать из скин-раскладки, рендерит `hero_previews_models.py` прямо из геометрии `.tbl`-файлов. Остальные 63 — герои-трансформации (формы омнитрикса Ben 10), предметы-гаджеты (камни бесконечности, перчатка) и герои, собранные целиком из эффектов: превью для них физически не из чего собрать (гейт качества в обоих генераторах осознанно не пропускает мусор; голова при этом не проверяется — у героев без шлема она прозрачна намеренно).
+The 34 heroes without a preview are transformation forms (Ben 10 omnitrix shapes), gadget
+items (infinity stones, the gauntlet) and effect-only heroes — there is nothing to render;
+the quality gates in the generators deliberately reject garbage instead.
 
-## Локальный запуск
-
-Нужен любой статический сервер (для корректного `fetch` JSON):
+## Local development
 
 ```bash
-python -m http.server 8080
-# открыть http://localhost:8080
+python -m http.server 8123    # open http://127.0.0.1:8123 (tests: /tests.html)
 ```
 
-## Деплой
+A static server is required — `file://` cannot fetch the JSON.
 
-Инструкция целиком в [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Коротко:
+## Deployment
 
-- **Cloudflare Pages**: подключить GitHub-репозиторий, Framework preset — `None`, build command — пусто, output dir — `/`. Каждый push в `main` = автоматический деплой.
-- **Telegram Mini App**: в `@BotFather` → `/setmenubutton` → выбрать бота → вставить HTTPS-ссылку сайта. Тот же URL, что и у сайта; отдельного приложения не нужно.
+Full guide: [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Short version: connect the repo to
+Cloudflare (Workers static assets, no framework, output `/`) — every push to `main`
+deploys. For the Telegram Mini App, set the site URL as the bot's menu button via
+@BotFather (`/setmenubutton`).
 
-## Тесты
+## Tests
 
-- **Автотесты данных** (без браузера): `python tests/validate_data.py` — целостность JSON: точное соответствие счётчиков, уникальность и формат ID, соответствие ID своим пакам, отсутствие устаревших полей статусов, существование всех файлов превью, валидация `aliases.json`, `descriptions.json` и `stats.json`.
-- **Автотесты интерфейса** (нужен любой браузер): открой [`tests.html`](tests.html) — страница грузит каталог в iframe и прогоняет проверки: рендер 535 строк, карточки и фильтры, переход «Показать героев» с лендинга, вид «Паки», поиск по имени/ID/алиасам (RU/EN/акронимы), фильтр по способностям (панель ⚡: чекбоксы, мини-поиск, сброс, счётчик на иконке), счётчики, очистка, чипсы, копирование, **модалка героя** (фото, чипы тира/снижения урона, шаблонное описание с тиром и жирной строкой «Особенности», способности, навигация, заглушка без превью, Esc), **загрузка картинок** (декодирование аватарок при прокрутке пака, размер и видимость рамок 36×48, pixelated для игровых видов, alt, HTTP 200, lazy-атрибут), уникальность ID и **переключение всех 8 языков**. Итог — в заголовке страницы и в списке (PASS/FAIL по каждому пункту).
-- **Вручную** (только реальный Telegram-клиент): открытие каталога кнопкой меню бота, поведение экранной клавиатуры в Mini App.
+- `python tests/validate_data.py` — JSON integrity: counters, ID format/uniqueness,
+  per-pack counts, preview files exist and decode, aliases/descriptions/stats validity.
+- Open [`tests.html`](tests.html) in a browser — runs the UI suite (rendering, filters,
+  alias search, ability panel, copy, hero modal, image loading, 8-language switching)
+  and prints `PASSED: n/n` in the title.
+- Telegram-only behavior (Mini App chrome, keyboard) is checked manually.
 
-## Лицензия
+## License
 
-MIT — см. [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).
