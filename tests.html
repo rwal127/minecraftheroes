@@ -116,17 +116,33 @@ async function runSuite(){
   ok('чипс применяет свой запрос', chipQ !== '' && $('#search').value === chipQ && $$('.row').length > 0);
   $('#clearBtn').click(); await tick();
 
-  // 8b. ability search filter (⚡ toggle in the search bar)
+  // 8b. ability filter panel (⚡ checkbox picker)
+  const panelShown = () => !$('#ablPanel').hidden && w.getComputedStyle($('#ablPanel')).display !== 'none';
   $('#ablBtn').click(); await tick();
-  ok('иконка способностей активирует режим поиска по способностям', $('#ablBtn').classList.contains('on') && $('#search').placeholder.length > 0);
-  await search('invisibility');
-  ok('«invisibility» в режиме способностей → >= 10 героев', $$('.row').length >= 10);
-  await search('web swinging');
-  ok('«web swinging» находит только пауков-плюющих паутиной', $$('.row').length >= 5 && ids().includes('fiskheroes:spider_man'));
-  await search('zzzz_no_such_ability');
-  ok('пустой результат по способностям — отдельная заглушка', $$('.empty').length === 1 && $$('.empty')[0].textContent.includes('способности'));
-  $('#ablBtn').click(); await tick();
-  ok('повторный клик выключает режим способностей', !$('#ablBtn').classList.contains('on') && $$('.row').length === 0);
+  ok('⚡ открывает панель умений с чекбоксами и счётчиком', panelShown() && $$('#ablList .abl-item').length >= 400 && $$('#ablList .abl-item input').every(i => i.type === 'checkbox'));
+  const flt = $('#ablFilter');
+  flt.value = 'web swinging'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  const narrow = $$('#ablList .abl-item');
+  ok('мини-фильтр панели сужает список умений', narrow.length >= 1 && narrow.length < 50);
+  flt.value = 'телепорт'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  ok('алиасы: «телепорт» находит Teleport', $$('#ablList .abl-item input').some(i => i.value === 'Teleport'));
+  flt.value = 'інвиз'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  ok('алиасы: украинский «інвиз» находит Toggle Invisibility', $$('#ablList .abl-item input').some(i => i.value === 'Toggle Invisibility'));
+  flt.value = 'тп'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  ok('акроним: «тп» находит Teleport', $$('#ablList .abl-item input').some(i => i.value === 'Teleport'));
+  flt.value = 'web swinging'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  const narrow2 = $$('#ablList .abl-item');
+  ok('после алиасов фильтр по имени работает как раньше', narrow2.length >= 1 && narrow2.length < 50);
+  narrow2[0].querySelector('input').click(); await tick();
+  const n1 = $$('.row').length;
+  ok('чекбокс умения фильтрует героев (Найдено: ' + n1 + ')', n1 > 0 && ids().includes('fiskheroes:spider_man'));
+  flt.value = ''; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  $$('#ablList .abl-item input')[0].click(); await tick();
+  ok('второе умение расширяет выборку (любое из выбранных)', $$('.row').length >= n1 && $('#ablBtn').getAttribute('data-n') === '2');
+  $('#ablReset').click(); await tick();
+  ok('«Сбросить» очищает фильтр — снова 535 строк', $$('.row').length === 535 && !$('#ablBtn').hasAttribute('data-n') && !$$('#ablList .abl-item input').some(i => i.checked));
+  d.dispatchEvent(new w.KeyboardEvent('keydown', {key:'Escape', bubbles:true})); await tick();
+  ok('Escape закрывает панель умений', !panelShown());
   $('#clearBtn').click(); await tick();
   ok('после очистки — все 535 строк', $$('.row').length === 535);
 

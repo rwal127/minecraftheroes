@@ -14,6 +14,7 @@ DATA = ROOT / "heroes_list.json"
 ALIASES = ROOT / "aliases.json"
 DESCRIPTIONS = ROOT / "descriptions.json"
 STATS = ROOT / "stats.json"
+ABILITY_ALIASES = ROOT / "ability_aliases.json"
 ID_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_]+$")
 FORBIDDEN_KEYS = {"status", "active_total", "marketplace_total", "note", "all_ids"}
 HERO_KEYS = {"id", "name", "image", "image_wiki", "image_game", "image_model", "wiki"}
@@ -150,6 +151,27 @@ def main() -> int:
               f"{sum(1 for v in stats.values() if v.get('traits'))} with traits)")
     else:
         print("stats.json: not found (optional)")
+
+    if ABILITY_ALIASES.exists() and STATS.exists():
+        print("ability_aliases.json checks:")
+        ability_aliases = json.loads(ABILITY_ALIASES.read_text(encoding="utf-8"))
+        ability_aliases.pop("_comment", None)
+        stats_universe = {a for v in stats.values() for a in v.get("abilities", [])}
+        unknown = sorted(set(ability_aliases) - stats_universe)
+        check(not unknown, f"all alias keys are known ability names (unknown: {unknown[:5]})")
+        check(all(isinstance(v, list) and all(isinstance(a, str) and a == a.lower().strip() and a.strip()
+                  for a in v) for v in ability_aliases.values()),
+              "alias values are lists of lowercase non-empty strings")
+        freq = {}
+        for v in stats.values():
+            for a in v.get("abilities", []):
+                freq[a] = freq.get(a, 0) + 1
+        missed = sorted(a for a, n in freq.items() if n >= 2 and a not in ability_aliases)
+        check(not missed, f"every ability with 2+ heroes has aliases (missed: {missed[:5]})")
+        print(f"  {len(ability_aliases)} aliased abilities of {len(stats_universe)} "
+              f"(covers {sum(n for a, n in freq.items() if a in ability_aliases)}/{sum(freq.values())} hero-ability pairs)")
+    elif ABILITY_ALIASES.exists():
+        print("ability_aliases.json: stats.json missing, cannot cross-check")
 
     if errors:
         print(f"FAILED: {len(errors)} error(s)")
