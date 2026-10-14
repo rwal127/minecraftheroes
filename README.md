@@ -22,6 +22,11 @@ styling is the **VS Code Dark+** palette.
   count; checkboxes match any selected ability, the mini-search understands multilingual
   aliases and acronyms, plus reset and a selection counter on the icon. Combines with name
   search and pack tabs.
+- **List & gallery views**: a flying pill docked to the toolbar's bottom edge flips the
+  catalog between the classic list and a card gallery (2 cards per row by default); a round
+  button at the lower right sets 2/3/4 cards per row in gallery mode. Both choices are
+  remembered. The pack-chip strip dissolves smoothly under the counter instead of being
+  cut off.
 - Separate pack browsing (pack tabs + «📦 Packs» button).
 - All counters are computed from JSON at runtime — updating the data needs no code changes.
 
@@ -97,8 +102,8 @@ deploys. For the Telegram Mini App, set the site URL as the bot's menu button vi
 - `python tests/validate_data.py` — JSON integrity: counters, ID format/uniqueness,
   per-pack counts, preview files exist and decode, aliases/descriptions/stats validity.
 - Open [`tests.html`](tests.html) in a browser — runs the UI suite (rendering, filters,
-  alias search, ability panel, copy, hero modal, image loading, 8-language switching)
-  and prints `PASSED: n/n` in the title.
+  alias search, ability panel, copy, hero modal, list/gallery views, image loading,
+  8-language switching) and prints `PASSED: n/n` in the title.
 - Telegram-only behavior (Mini App chrome, keyboard) is checked manually.
 
 ## License

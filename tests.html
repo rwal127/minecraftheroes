@@ -37,6 +37,8 @@ async function runSuite(){
   const results = [];
   const ok = (name, cond, detail='') => { results.push({name, pass:!!cond, detail}); };
 
+  // deterministic start: default view (list) even if a previous run left localStorage in gallery mode
+  if (w.__setView) { w.__setView('list'); w.__setCols(2); }
   // wait for app init (DOM-based: `let state` is not reachable from outside)
   const ready = await waitFor(() => $$('.row').length === 535);
   ok('приложение загрузилось, 535 строк отрендерено', !!ready, ready ? '' : 'init не завершился');
@@ -232,6 +234,30 @@ async function runSuite(){
   // 10. data consistency from the UI side
   ok('все отрендеренные ID уникальны', new Set($$('.row .r-id').map(e => e.textContent)).size === 535);
   ok('команды = "/suit " + ID', $$('.row .r-cmd').every((c, i) => c.textContent === '/suit ' + $$('.row .r-id')[i].textContent));
+
+  // 10b. gallery view: flying switch, card grid, cards-per-row FAB
+  w.__setView('list'); w.__setCols(2); await tick(150);
+  const fabGone = () => d.getElementById('colFab').hidden && w.getComputedStyle(d.getElementById('colFab')).display === 'none';
+  ok('кнопка количества скрыта в режиме списка', fabGone());
+  d.getElementById('vsGal').click(); await tick(250);
+  ok('галерея: 535 карточек, строк нет', $$('#content .g-card').length === 535 && $$('.row').length === 0);
+  ok('по умолчанию 2 карточки в ряд', $('#content .cards').style.getPropertyValue('--cols') === '2' && $('#colN').textContent === '2');
+  ok('у карточек галереи есть превью-блоки и команды', $$('#content .g-photo').length === 535 && $$('#content .g-cmd').length === 535);
+  ok('переключатель вида: галерея активна', d.getElementById('vsGal').classList.contains('on') && !d.getElementById('vsList').classList.contains('on'));
+  d.getElementById('colFab').click(); await tick();
+  ok('кнопка количества открывает поповер 2/3/4', !d.getElementById('colPop').hidden && $$('#colPop .cp').length === 3);
+  $$('#colPop .cp')[1].click(); await tick(250);
+  ok('выбор «3» перестраивает сетку и закрывает поповер', $('#content .cards').style.getPropertyValue('--cols') === '3' && $('#colN').textContent === '3' && d.getElementById('colPop').hidden);
+  const gCard = $('#content .g-card[data-hero="fiskheroes:the_flash"]');
+  gCard.querySelector('.g-btn').click(); await tick();
+  ok('кнопка карточки копирует команду', String(w.__lastToast).includes('/suit fiskheroes:the_flash'));
+  gCard.click(); await tick(150);
+  ok('клик по карточке открывает модалку', !d.getElementById('modal').hidden);
+  d.getElementById('mClose').click(); await tick();
+  d.getElementById('colFab').click(); await tick();
+  $$('#colPop .cp')[0].click(); await tick(150);
+  d.getElementById('vsList').click(); await tick(250);
+  ok('возврат к списку: 535 строк, кнопка количества скрыта', $$('.row').length === 535 && $$('.g-card').length === 0 && fabGone() && $('#colN').textContent === '2');
 
   // 11. language switcher (8 languages)
   const langOptions = $$('#lang option').map(o => o.value);
