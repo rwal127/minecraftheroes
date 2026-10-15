@@ -132,6 +132,11 @@ async function runSuite(){
   ok('алиасы: украинский «інвиз» находит Toggle Invisibility', $$('#ablList .abl-item input').some(i => i.value === 'Toggle Invisibility'));
   flt.value = 'тп'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
   ok('акроним: «тп» находит Teleport', $$('#ablList .abl-item input').some(i => i.value === 'Teleport'));
+  const tpItem = () => $$('#ablList .abl-item').find(li => li.querySelector('input').value === 'Teleport');
+  ok('название умения локализовано (Teleport → «Телепортация», оригинал — в тултипе)',
+     tpItem() && tpItem().querySelector('span').textContent === 'Телепортация' && tpItem().title.includes('Teleport'));
+  flt.value = '순간이동'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
+  ok('мини-фильтр ищет по переводу на любом языке (순간이동 → Teleport)', $$('#ablList .abl-item input').some(i => i.value === 'Teleport'));
   flt.value = 'web swinging'; flt.dispatchEvent(new w.Event('input', {bubbles:true})); await tick();
   const narrow2 = $$('#ablList .abl-item');
   ok('после алиасов фильтр по имени работает как раньше', narrow2.length >= 1 && narrow2.length < 50);
@@ -167,6 +172,8 @@ async function runSuite(){
     ok('в модалке команда', $('#mCmd').textContent === '/suit fiskheroes:the_flash');
     ok('в модалке шаблонное описание: тир + жирные «Особенности:» с новой строки, ссылки на вики нет',
        $('#mNote').textContent.includes('тир 5') && $('#mNote').innerHTML.includes('<br><b>') && $('#mNote').innerHTML.includes('<b>Особенности:</b>') && $('#mPowers').children.length > 0 && $('#mWiki') === null);
+    ok('чипсы умений в модалке локализованы (английский оригинал — в тултипе)',
+       [...$$('#mPowers span')].some(s => s.title.length > 0 && s.textContent !== s.title));
     const pos0 = $('#mPos').textContent;
     $('#mNext').click(); await tick();
     ok('«›» листает героев вперёд', $('#mPos').textContent !== pos0 && !modal().hidden);
@@ -273,6 +280,11 @@ async function runSuite(){
   ok('UK: счётчик на украинском', $('#counter').textContent.startsWith('Показано 535 зі 535'));
   w.__setLang('ja'); await tick(150);
   ok('JA: счётчик на японском', $('#counter').textContent.includes('ヒーロー 535/535'));
+  $('#ablBtn').click(); await tick();
+  w.__setLang('de'); await tick(150);
+  ok('DE: открытая панель умений перерисовывается (Teleport → Teleportation)',
+     $$('#ablList .abl-item').some(i => i.querySelector('input').value === 'Teleport' && i.querySelector('span').textContent === 'Teleportation'));
+  d.dispatchEvent(new w.KeyboardEvent('keydown', {key:'Escape', bubbles:true})); await tick();
   w.__setLang('ru'); await tick(150);
   ok('переключатель: возврат на RU', $('#counter').textContent.startsWith('Показано 535 из 535'));
 

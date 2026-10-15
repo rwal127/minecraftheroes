@@ -243,7 +243,9 @@ de:{title:"Hero Atlas — Minecraft-Heldensuche",placeholder:"Held suchen: Name,
 };
 const LANG_NAMES = {ru:"Русский",en:"English",uk:"Українська",es:"Español",ko:"한국어",ja:"日本語",fr:"Français",de:"Deutsch"};
 let LANG = "ru";
+let ABL_I18N = {}; // ability name -> {ru,uk,es,ko,ja,fr,de} from ability_i18n.json
 function t(key){const d=I18N[LANG]||I18N.ru;return d[key]!==undefined?d[key]:(I18N.ru[key]!==undefined?I18N.ru[key]:key)}
+function abName(name){const m=ABL_I18N[name];return m&&m[LANG]?m[LANG]:name}
 function detectLang(){
   try{
     const tg = window.Telegram && Telegram.WebApp && Telegram.WebApp.locale;
@@ -282,7 +284,7 @@ function applyLang(code){
   LANG = I18N[code] ? code : "ru";
   try{localStorage.setItem("ha_lang",LANG)}catch(e){}
   fillStatic();
-  if(state.data) render();
+  if(state.data){ render(); if(!byId('ablPanel').hidden) renderAblPanel(); }
   if(state.m) fillModal(); // re-localize the open modal
 }
 window.__setLang = applyLang;
@@ -336,6 +338,9 @@ async function loadStats(){
 }
 async function loadAbilityAliases(){
   try{const r=await fetch('./ability_aliases.json',{cache:'no-store'});return r.ok ? await r.json() : {}}catch(e){return {}}
+}
+async function loadAbilityI18n(){
+  try{const r=await fetch('./ability_i18n.json',{cache:'no-store'});const j=r.ok?await r.json():{};delete j._comment;return j}catch(e){return {}}
 }
 function flatHeroes(){return state.data.packs.flatMap(p=>p.heroes.map(h=>({...h,color:p.color})))}
 function filteredHeroes(){const q=norm(state.query);return flatHeroes().filter(h=>{const okPack = state.pack==='all' || h.pack===state.pack; if(!okPack) return false; if(q && !(norm(h.name).includes(q)||norm(h.id).includes(q)||norm(h.packDisplay).includes(q)||norm(h.pack).includes(q)||(h.aka&&h.aka.some(a=>norm(a).includes(q))))) return false; if(state.selAbilities.size && !(h.stats&&h.stats.abilities&&h.stats.abilities.some(a=>state.selAbilities.has(a)))) return false; return true;})}
@@ -471,7 +476,7 @@ function fillModal(){
   else note.textContent=h.pack==='fiskheroes'?t('m_builtin'):t('m_pack').replace('{pack}',h.packDisplay);
   // abilities (from the game's hero definitions)
   const pSec=byId('mPowersSec'),pBox=byId('mPowers');
-  if(st.abilities&&st.abilities.length){pSec.hidden=false;pBox.hidden=false;pSec.textContent=t('m_powers');pBox.innerHTML=st.abilities.map(p=>`<span>${escapeHtml(p)}</span>`).join('')}
+  if(st.abilities&&st.abilities.length){pSec.hidden=false;pBox.hidden=false;pSec.textContent=t('m_powers');pBox.innerHTML=st.abilities.map(p=>{const loc=abName(p);return `<span${loc!==p?` title="${attr(p)}"`:''}>${escapeHtml(loc)}</span>`}).join('')}
   else{pSec.hidden=true;pBox.hidden=true;pBox.innerHTML=''}
   // image source + no-preview caveat
   const src=byId('mSrc');
@@ -508,7 +513,8 @@ async function init(){
   }
   byId('counter').textContent=t('loading');
   try{
-    const [raw, aliases, descs, stats, ablAliases]=await Promise.all([loadData(), loadAliases(), loadDescriptions(), loadStats(), loadAbilityAliases()]);
+    const [raw, aliases, descs, stats, ablAliases, ablI18n]=await Promise.all([loadData(), loadAliases(), loadDescriptions(), loadStats(), loadAbilityAliases(), loadAbilityI18n()]);
+    ABL_I18N=ablI18n;
     state.data=mapData(raw, aliases, descs, stats);
     collectAbilities(ablAliases);
   }catch(e){console.error('heroes_list.json load failed:',e);renderError();return}
@@ -520,15 +526,21 @@ function collectAbilities(aliasMap){
   aliasMap = aliasMap || {};
   const m=new Map();
   flatHeroes().forEach(h=>(h.stats&&h.stats.abilities||[]).forEach(a=>m.set(a,(m.get(a)||0)+1)));
-  state.abilities=[...m].map(([name,n])=>({name,n,aliases:aliasMap[name]||[]})).sort((x,y)=>x.name.localeCompare(y.name));
+  state.abilities=[...m].map(([name,n])=>{
+    const tr=ABL_I18N[name]||null;
+    const hay=norm([name,...(aliasMap[name]||[]),...Object.values(tr||{})].join(' '));
+    return {name,n,aliases:aliasMap[name]||[],hay};
+  }).sort((x,y)=>x.name.localeCompare(y.name));
 }
 function renderAblPanel(){
   const q=norm(byId('ablFilter').value);
-  const items=(state.abilities||[]).filter(a=>!q||norm(a.name).includes(q)||(a.aliases||[]).some(al=>norm(al).includes(q)));
+  const items=(state.abilities||[]).filter(a=>!q||a.hay.includes(q));
   byId('ablList').innerHTML=items.length
     ? items.map(a=>{
-        const hint=(a.aliases&&a.aliases.length)?` title="${attr(t('aka').replace('{a}',a.aliases.join(', ')))}"`:'';
-        return `<label class="abl-item"${hint}><input type="checkbox" value="${attr(a.name)}"${state.selAbilities.has(a.name)?' checked':''}><span>${escapeHtml(a.name)}</span><b>${a.n}</b></label>`;
+        const disp=abName(a.name);
+        const tipParts=[disp!==a.name?a.name:null,(a.aliases&&a.aliases.length)?t('aka').replace('{a}',a.aliases.join(', ')):null].filter(Boolean);
+        const hint=tipParts.length?` title="${attr(tipParts.join('  ·  '))}"`:'';
+        return `<label class="abl-item"${hint}><input type="checkbox" value="${attr(a.name)}"${state.selAbilities.has(a.name)?' checked':''}><span>${escapeHtml(disp)}</span><b>${a.n}</b></label>`;
       }).join('')
     : `<div class="abl-empty">${t('empty_abl')}</div>`;
 }

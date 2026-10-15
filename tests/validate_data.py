@@ -15,6 +15,8 @@ ALIASES = ROOT / "aliases.json"
 DESCRIPTIONS = ROOT / "descriptions.json"
 STATS = ROOT / "stats.json"
 ABILITY_ALIASES = ROOT / "ability_aliases.json"
+ABILITY_I18N = ROOT / "ability_i18n.json"
+I18N_LANGS = {"ru", "uk", "es", "ko", "ja", "fr", "de"}
 ID_RE = re.compile(r"^[a-z0-9_]+:[a-z0-9_]+$")
 FORBIDDEN_KEYS = {"status", "active_total", "marketplace_total", "note", "all_ids"}
 HERO_KEYS = {"id", "name", "image", "image_wiki", "image_game", "image_model", "wiki"}
@@ -172,6 +174,25 @@ def main() -> int:
               f"(covers {sum(n for a, n in freq.items() if a in ability_aliases)}/{sum(freq.values())} hero-ability pairs)")
     elif ABILITY_ALIASES.exists():
         print("ability_aliases.json: stats.json missing, cannot cross-check")
+
+    if ABILITY_I18N.exists() and STATS.exists():
+        print("ability_i18n.json checks:")
+        ability_i18n = json.loads(ABILITY_I18N.read_text(encoding="utf-8"))
+        ability_i18n.pop("_comment", None)
+        stats_universe = {a for v in stats.values() for a in v.get("abilities", [])}
+        unknown = sorted(set(ability_i18n) - stats_universe)
+        check(not unknown, f"all i18n keys are known ability names (unknown: {unknown[:5]})")
+        bad = [k for k, v in ability_i18n.items()
+               if set(v) != I18N_LANGS or not all(isinstance(s, str) and s.strip() for s in v.values())]
+        check(not bad, f"i18n entries map every ability to a non-empty string in each of {sorted(I18N_LANGS)} (bad: {bad[:5]})")
+        identical = [k for k, v in ability_i18n.items() if all(v[l] == k for l in I18N_LANGS)]
+        check(not identical, f"no entry is identical to English in all languages — omit it instead (bad: {identical[:5]})")
+        raw_keys = [k for k in ability_i18n if re.match(r"^[a-z0-9_]+:[a-z0-9_./]+$", k)]
+        check(not raw_keys, f"no leaked internal mod keys are translated (bad: {raw_keys[:5]})")
+        print(f"  {len(ability_i18n)} localized abilities of {len(stats_universe)} "
+              f"(the rest fall back to the English original)")
+    elif ABILITY_I18N.exists():
+        print("ability_i18n.json: stats.json missing, cannot cross-check")
 
     if errors:
         print(f"FAILED: {len(errors)} error(s)")

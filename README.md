@@ -12,15 +12,18 @@ styling is the **VS Code Dark+** palette.
   tools: 56 3D renders, 464 front views composed from suit textures and 37 renders of
   custom Tabula models; heroes with nothing to render get a placeholder.
 - **Hero card** (click a row): large preview, pack, tier, damage reduction and Tutridium
-  cost for built-in suits, ability chips, a translated template description, hero ID and
+  cost for built-in suits, ability chips (localized, English original in the tooltip),
+  a translated template description, hero ID and
   a ready `/suit packname:heroname` command with one-click copy; `‹ ›` navigation over the
   filtered list, `Esc` closes.
 - **Search** by name, partial name, ID and pack name across all packs, with **aliases**:
   Russian and English names, translit and acronyms (`one punch man` → Saitama,
   `человек-паук` → every Spider-Man).
 - **Ability filter** (⚡ icon): a panel listing every ability in the catalog with its hero
-  count; checkboxes match any selected ability, the mini-search understands multilingual
-  aliases and acronyms, plus reset and a selection counter on the icon. Combines with name
+  count; ability names are localized into all 8 UI languages via `ability_i18n.json`
+  (the English original stays in the tooltip); checkboxes match any selected ability, the
+  mini-search understands multilingual aliases, acronyms and the localized names
+  themselves, plus reset and a selection counter on the icon. Combines with name
   search and pack tabs.
 - **List & gallery views**: a Material-style segmented control in the toolbar flips the
   catalog between the classic list and a card gallery (2 cards per row by default); a second
@@ -39,6 +42,7 @@ stats.json               per-hero game data: tier, abilities, traits (parsed fro
 descriptions.json        damage reduction % and Tutridium cost for built-in suits
 aliases.json             search aliases per hero (RU/EN/translit/acronyms)
 ability_aliases.json     ability-filter aliases (202 abilities, 601 aliases)
+ability_i18n.json        localized ability names, 830 abilities × 7 languages (en = the key)
 hero_atlas_commands.txt  flat /suit command list
 wrangler.toml            Cloudflare config (static assets, git-integration deploy)
 assets/heroes/           previews, ~556 PNG ≈ 12 MB:
