@@ -70,13 +70,17 @@
     .tab.active{background:var(--sel);color:#fff;border-color:var(--sel)}
     /* the counter floats over the chip strip and fades it out smoothly — no hard cut */
     .counter{position:absolute;right:0;top:50%;transform:translateY(-50%);color:var(--muted);font-size:12px;white-space:nowrap;padding:4px 2px 4px 52px;background:linear-gradient(to right,rgba(30,30,30,0),rgba(30,30,30,.98) 46px,rgba(30,30,30,.98))}
-    /* flying view switch docked to the toolbar's bottom edge */
-    .vswitch{position:absolute;right:calc(var(--gx) - 4px);bottom:-19px;display:flex;gap:2px;padding:3px;background:var(--panel);border:1px solid var(--line);border-radius:999px;box-shadow:var(--shadow);transition:opacity .15s}
-    .vswitch.dim{opacity:.4;pointer-events:none}
-    .vs-btn{display:grid;place-items:center;width:38px;height:28px;padding:0;border:0;border-radius:999px;background:transparent;color:var(--muted);transition:background .15s,color .15s}
-    .vs-btn:hover{color:var(--text)}
-    .vs-btn.on{background:var(--sel);color:#fff}
-    .vs-btn svg{width:15px;height:15px}
+    /* view controls: segmented buttons (Material 3 pattern) on their own toolbar row */
+    .viewrow{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-top:8px}
+    .seg{display:flex;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:2px}
+    .seg[hidden]{display:none}
+    .seg.dim{opacity:.4;pointer-events:none}
+    .seg-btn{display:flex;align-items:center;justify-content:center;gap:6px;min-width:40px;height:30px;padding:0 11px;border:0;border-radius:999px;background:transparent;color:var(--muted);font-size:12px;font-weight:700;transition:background .15s,color .15s}
+    .seg-btn svg{width:15px;height:15px;flex:0 0 auto}
+    .seg-btn:hover{color:var(--text)}
+    .seg-btn.on{background:var(--sel);color:#fff}
+    .seg-lbl{display:none}
+    @media (min-width:640px){.seg-lbl{display:inline}}
     .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.pack-card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:var(--cardPad);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:10px}
     .pack-card .topline{display:flex;justify-content:space-between;gap:8px;align-items:start}.pack-card h3{margin:0;font-size:18px;line-height:1.15}.pack-card .mini{font-size:12px;color:var(--muted)}
     .count{font-size:28px;font-weight:900;line-height:1;letter-spacing:-.04em}.colorbar{height:7px;border-radius:999px}
@@ -108,17 +112,6 @@
     .g-cmd{display:block;min-width:0;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:#ce9178;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;cursor:pointer;background:#1b1b1b;border:1px solid var(--line);border-radius:8px;padding:5px 8px}
     .g-cmd:hover{color:var(--link)}
     .g-btn{width:100%;margin-top:auto;padding-left:4px;padding-right:4px;font-size:11px}
-    /* floating cards-per-row button (lower right, gallery mode only) */
-    .fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border-radius:50%;background:var(--btn);border:1px solid var(--btn);color:#fff;box-shadow:var(--shadow);z-index:35;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:background .15s,border-color .15s}
-    .fab[hidden]{display:none} /* flex must not resurrect a hidden node */
-    .fab:hover{background:var(--accent);border-color:var(--accent)}
-    .fab svg{width:16px;height:16px}
-    .fab b{font-size:11px;line-height:1.1}
-    .colpop{position:fixed;right:16px;bottom:calc(72px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:8px;z-index:35}
-    .colpop[hidden]{display:none}
-    .cp{width:44px;height:34px;padding:0;border-radius:9px;border:1px solid var(--line);background:var(--panel2);color:var(--text);font-weight:700;font-size:13px;transition:background .12s,border-color .12s}
-    .cp:hover{border-color:var(--accent)}
-    .cp.on{background:var(--sel);border-color:var(--sel);color:#fff}
     /* hero details modal */
     .modal{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:18px}
     .modal[hidden]{display:none}
@@ -192,20 +185,21 @@
       <div class="tabs-wrap" id="tabsWrap"><div class="tabs" id="packTabs"></div></div>
       <div class="counter" id="counter">Загрузка…</div>
     </div>
-    <div class="vswitch" id="vswitch" role="group">
-      <button class="vs-btn on" id="vsList" type="button" aria-pressed="true" title="Список"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg></button>
-      <button class="vs-btn" id="vsGal" type="button" aria-pressed="false" title="Галерея"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></button>
+    <div class="viewrow">
+      <div class="seg" id="vswitch" role="group">
+        <button class="seg-btn on" id="vsList" type="button" aria-pressed="true" aria-label="Список" title="Список"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"/><path d="M3 12h18"/><path d="M3 18h18"/></svg><span class="seg-lbl">Список</span></button>
+        <button class="seg-btn" id="vsGal" type="button" aria-pressed="false" aria-label="Галерея" title="Галерея"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg><span class="seg-lbl">Галерея</span></button>
+      </div>
+      <div class="seg" id="colSeg" role="group" hidden>
+        <button class="seg-btn cp on" data-cols="2" type="button">2</button>
+        <button class="seg-btn cp" data-cols="3" type="button">3</button>
+        <button class="seg-btn cp" data-cols="4" type="button">4</button>
+      </div>
     </div>
   </div>
   <section><div id="content"><div class="empty">Загрузка данных…</div></div></section>
 </main>
 <footer class="footer"><span id="fCmd">Команда в игре:</span> <code>/suit packname:heroname</code> · <span id="fData">Данные:</span> <code>heroes_list.json + stats.json</code> · <span id="fList">Полный список:</span> <a style="color:var(--link)" href="hero_atlas_commands.txt">hero_atlas_commands.txt</a> · <a style="color:var(--link)" href="tests.html" id="fTests">автотесты</a></footer>
-<div class="colpop" id="colPop" hidden>
-  <button class="cp" data-cols="2" type="button">2</button>
-  <button class="cp" data-cols="3" type="button">3</button>
-  <button class="cp" data-cols="4" type="button">4</button>
-</div>
-<button class="fab" id="colFab" type="button" hidden title="Карточек в ряд"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg><b id="colN">2</b></button>
 <div class="toast" id="toast">Скопировано</div>
 <div class="modal" id="modal" hidden>
   <button class="m-back" id="mBack" type="button" tabindex="-1" aria-hidden="true"></button>
@@ -271,7 +265,12 @@ function fillStatic(){
   byId("ablReset").textContent = t("abl_reset");
   byId("vsList").title = t("view_list");
   byId("vsGal").title = t("view_gallery");
-  byId("colFab").title = t("gal_cols");
+  byId("colSeg").title = t("gal_cols");
+  byId("vsList").setAttribute("aria-label", t("view_list"));
+  byId("vsGal").setAttribute("aria-label", t("view_gallery"));
+  byId("colSeg").setAttribute("aria-label", t("gal_cols"));
+  byId("vsList").querySelector(".seg-lbl").textContent = t("view_list");
+  byId("vsGal").querySelector(".seg-lbl").textContent = t("view_gallery");
   byId("h1").innerHTML = t("h1").replace("{hero}","<span>"+escapeHtml(t("hero_noun"))+"</span>");
   byId("sub").innerHTML = t("sub").replace("{h}","<b id=\"statHeroes\">"+(state.data?state.data.meta.total:"—")+"</b>").replace("{p}","<b id=\"statPacks\">"+(state.data?state.data.packs.length:"—")+"</b>");
   byId("fCmd").textContent = t("f_cmd");
@@ -390,7 +389,7 @@ function render(){
   syncViewUI();
   syncTabsFade();
 }
-// ---- view switch (list / gallery) + cards-per-row floating button ----
+// ---- view switch (list / gallery) + cards-per-row segmented control ----
 function syncViewUI(){
   const gallery = state.view==='heroes' && state.hview==='gallery';
   byId('vsList').classList.toggle('on', state.hview==='list');
@@ -398,9 +397,8 @@ function syncViewUI(){
   byId('vsList').setAttribute('aria-pressed', String(state.hview==='list'));
   byId('vsGal').setAttribute('aria-pressed', String(state.hview==='gallery'));
   byId('vswitch').classList.toggle('dim', state.view!=='heroes');
-  byId('colFab').hidden = !gallery;
-  byId('colN').textContent = state.hcols;
-  byId('colPop').querySelectorAll('.cp').forEach(b=>b.classList.toggle('on', parseInt(b.dataset.cols,10)===state.hcols));
+  byId('colSeg').hidden = !gallery;
+  byId('colSeg').querySelectorAll('.cp').forEach(b=>b.classList.toggle('on', parseInt(b.dataset.cols,10)===state.hcols));
 }
 function setView(v){
   state.hview = v==='gallery' ? 'gallery' : 'list';
@@ -419,16 +417,9 @@ window.__setView = setView;
 window.__setCols = setCols;
 byId('vsList').onclick = ()=>setView('list');
 byId('vsGal').onclick = ()=>setView('gallery');
-byId('colFab').onclick = ()=>{byId('colPop').hidden=!byId('colPop').hidden;syncViewUI()};
-byId('colPop').addEventListener('click',e=>{
-  const b=e.target.closest('.cp');if(!b)return;
-  setCols(b.dataset.cols);
-  byId('colPop').hidden=true;
-});
-document.addEventListener('click',e=>{
-  const p=byId('colPop');
-  if(p.hidden||e.target.closest('#colPop')||e.target.closest('#colFab'))return;
-  p.hidden=true;
+byId('colSeg').addEventListener('click',e=>{
+  const b=e.target.closest('.cp');
+  if(b) setCols(b.dataset.cols);
 });
 // smooth gradient fade on the chip strip's left edge once it is scrolled
 function syncTabsFade(){

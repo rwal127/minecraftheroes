@@ -22,9 +22,9 @@ styling is the **VS Code Dark+** palette.
   count; checkboxes match any selected ability, the mini-search understands multilingual
   aliases and acronyms, plus reset and a selection counter on the icon. Combines with name
   search and pack tabs.
-- **List & gallery views**: a flying pill docked to the toolbar's bottom edge flips the
-  catalog between the classic list and a card gallery (2 cards per row by default); a round
-  button at the lower right sets 2/3/4 cards per row in gallery mode. Both choices are
+- **List & gallery views**: a Material-style segmented control in the toolbar flips the
+  catalog between the classic list and a card gallery (2 cards per row by default); a second
+  segmented control next to it sets 2/3/4 cards per row in gallery mode. Both choices are
   remembered. The pack-chip strip dissolves smoothly under the counter instead of being
   cut off.
 - Separate pack browsing (pack tabs + «📦 Packs» button).
